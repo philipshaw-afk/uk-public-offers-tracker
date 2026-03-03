@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UK Takeover Code Tracker | M&A Monitor</title>
+<title>UK Takeover Code Tracker | M&amp;A Monitor</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#F7F8FA;--s:#fff;--b:#E4E8EF;--bl:#F0F2F6;--t:#131B2C;--t2:#4F5B76;--t3:#8992A8;--a:#1751D0;--al:#EBF0FF;--ah:#133FA8;--g:#0B7A55;--gb:#EAFAF4;--am:#A85D00;--ab:#FFF7E6;--r:#C13A1B;--rb:#FFF0ED;--p:#6941C6;--pb:#F4F3FF;--tl:#0D7490;--tb:#ECFEFF;--h:#F4F6FA;--ss:0 1px 3px rgba(19,27,44,.04);--sm:0 4px 20px rgba(19,27,44,.06)}
@@ -18,12 +18,10 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 
 .page{max-width:1440px;margin:0 auto;padding:0 40px}
 
-/* Hero */
 .hero{padding:36px 0 0}
 .hero h1{font-family:'Instrument Serif',Georgia,serif;font-size:34px;font-weight:400;letter-spacing:-.4px;line-height:1.15;margin-bottom:6px}
 .hero .desc{color:var(--t2);font-size:14.5px;line-height:1.5;max-width:640px;margin-bottom:18px}
 
-/* Subscribe bar */
 .sub-bar{background:var(--al);border:1px solid #D4DFFF;border-radius:8px;padding:12px 18px;display:flex;align-items:center;gap:10px;margin-bottom:24px;flex-wrap:wrap}
 .sub-bar .mail-icon{font-size:16px}
 .sub-bar p{font-size:13.5px;color:var(--t);flex:1}
@@ -32,7 +30,6 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 .sub-btn{background:var(--a);color:#fff;border:0;padding:7px 16px;border-radius:6px;font-size:12.5px;font-weight:600;cursor:pointer;text-decoration:none;white-space:nowrap;transition:all .15s}
 .sub-btn:hover{background:var(--ah)}
 
-/* Updates cards */
 .updates{margin-bottom:24px}
 .updates-title{font-family:'Instrument Serif',Georgia,serif;font-size:20px;font-weight:400;font-style:italic;color:var(--t);margin-bottom:10px}
 .updates-list{display:flex;gap:12px;flex-wrap:wrap}
@@ -47,14 +44,12 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 .uc-name{font-size:13.5px;font-weight:700;color:var(--t)}
 .uc-text{font-size:12.5px;color:var(--t2);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
-/* KPIs */
 .kpi-row{display:flex;gap:14px;margin-bottom:20px;flex-wrap:wrap}
 .kpi-card{background:var(--s);border:1px solid var(--b);border-radius:8px;padding:14px 18px;flex:1;min-width:120px;box-shadow:var(--ss)}
 .kpi-v{font-size:24px;font-weight:700;letter-spacing:-.3px;font-variant-numeric:tabular-nums}
 .kpi-v .u{font-size:14px;font-weight:500;color:var(--t3)}
 .kpi-l{font-size:10.5px;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
 
-/* Controls */
 .ctrl{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex-wrap:wrap}
 .sbox{position:relative;flex:0 1 280px}
 .sbox input{width:100%;padding:8px 10px 8px 32px;border:1.5px solid var(--b);border-radius:6px;font-size:12.5px;font-family:inherit;color:var(--t);background:var(--s);outline:0;transition:all .15s}
@@ -66,7 +61,6 @@ select.f{padding:8px 28px 8px 9px;border:1.5px solid var(--b);border-radius:6px;
 .dc{font-size:11.5px;color:var(--t3);font-weight:500;white-space:nowrap}
 .dc b{color:var(--t)}
 
-/* Table */
 .tcard{background:var(--s);border-radius:10px;box-shadow:var(--ss);border:1px solid var(--b);overflow:hidden;margin-bottom:32px}
 .tscr{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
@@ -85,14 +79,12 @@ tbody td{padding:9px 10px;font-size:12.5px;color:var(--t);border-bottom:1px soli
 tbody td:first-child{padding-left:14px}
 tbody tr:last-child td{border-bottom:0}
 
-/* Column width controls */
-th.col-target,td.col-target{width:120px;max-width:130px;white-space:normal}
-th.col-status,td.col-status{width:85px;max-width:95px;white-space:normal}
+/* Column width controls - narrower Target/Status/Bidder, wider Comments */
+th.col-target,td.col-target{width:120px;max-width:130px}
+th.col-status,td.col-status{width:85px;max-width:100px;white-space:normal}
 th.col-bidder,td.col-bidder{width:100px;max-width:120px;white-space:normal}
-th.col-start,td.col-start{white-space:normal}
 th.col-comments,td.col-comments{min-width:450px}
 
-/* Status dot */
 .sd{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:6px;vertical-align:middle;flex-shrink:0}
 .sd-green{background:#22C55E}
 .sd-amber{background:#F59E0B}
@@ -130,15 +122,12 @@ th.col-comments,td.col-comments{min-width:450px}
 .dt{white-space:nowrap;color:var(--t2);font-size:12px}
 .offer-price{font-weight:600;white-space:nowrap}
 
-/* Footer */
 .tfr{padding:11px 14px;display:flex;align-items:center;justify-content:space-between;background:#F5F7FA;border-top:1px solid var(--b);font-size:11.5px;color:var(--t3)}
 .tfr a{color:var(--a);text-decoration:none;font-weight:600}
 
-/* Legend */
 .legend{display:flex;gap:20px;margin-bottom:28px;flex-wrap:wrap}
 .leg-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--t2)}
 
-/* Info section */
 .info-section{background:var(--s);border:1px solid var(--b);border-radius:10px;padding:28px 32px;margin-bottom:32px;box-shadow:var(--ss)}
 .info-section h3{font-family:'Instrument Serif',Georgia,serif;font-size:22px;font-weight:400;margin-bottom:12px}
 .info-section p{font-size:13.5px;color:var(--t2);line-height:1.65;margin-bottom:12px;max-width:800px}
@@ -154,7 +143,6 @@ th.col-comments,td.col-comments{min-width:450px}
 .report-info{font-size:12.5px;font-weight:600;line-height:1.3}
 .report-sub{font-size:11px;color:var(--t3);font-weight:500}
 
-/* Loading */
 .loading{text-align:center;padding:40px;color:var(--t3);font-size:14px}
 .loading-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--a);margin:0 3px;animation:ld .6s infinite alternate}
 .loading-dot:nth-child(2){animation-delay:.2s}
@@ -174,8 +162,8 @@ th.col-comments,td.col-comments{min-width:450px}
 
 <header class="hdr">
   <a href="#" class="logo">
-    <img src="https://raw.githubusercontent.com/philipshaw-afk/ma-monitor-assets/main/rounded%20edge%20logo.png" alt="M&A Monitor">
-    <div class="logo-t">M&A Monitor <span>/ UK Tracker</span></div>
+    <img src="https://raw.githubusercontent.com/philipshaw-afk/ma-monitor-assets/main/rounded%20edge%20logo.png" alt="M&amp;A Monitor">
+    <div class="logo-t">M&amp;A Monitor <span>/ UK Tracker</span></div>
   </a>
   <div style="display:flex;align-items:center;gap:20px">
     <a href="https://www.ma-monitor.co.uk" style="text-decoration:none;color:var(--a);font-size:13px;font-weight:600">www.ma-monitor.co.uk</a>
@@ -186,12 +174,12 @@ th.col-comments,td.col-comments{min-width:450px}
 <div class="page">
   <div class="hero ai">
     <h1>All companies in an offer period under the UK Takeover Code</h1>
-    <p class="desc">Every live offer period tracked daily — status, premiums, hedge fund activity, and commentary by M&amp;A Monitor's deal intelligence team.</p>
+    <p class="desc">Every live offer period tracked daily &#x2014; status, premiums, hedge fund activity, and commentary by M&amp;A Monitor's deal intelligence team.</p>
   </div>
 
   <div class="sub-bar ai d1">
     <span class="mail-icon">&#x1F4E7;</span>
-    <p>Receive the full tracker table by email each morning, email <a href="/cdn-cgi/l/email-protection#2b4e455a5e4259424e580d081d1f10464a06464445425f4459054844055e40">enquiries&#64;ma-monitor.co.uk</a> or subscribe here:</p>
+    <p>Receive the full tracker table by email each morning, email <a href="mailto:enquiries&#64;ma-monitor.co.uk">enquiries&#64;ma-monitor.co.uk</a> or subscribe here:</p>
     <a href="http://eepurl.com/jzWCMs" target="_blank" class="sub-btn">Subscribe via Email</a>
   </div>
 
@@ -224,7 +212,7 @@ th.col-comments,td.col-comments{min-width:450px}
           <th data-c="sector" onclick="sort('sector')">Sector <span class="ar">&#x25B2;</span></th>
           <th class="col-status" data-c="status" onclick="sort('status')">Status <span class="ar">&#x25B2;</span></th>
           <th class="col-bidder" data-c="bidder" onclick="sort('bidder')">Bidder(s) <span class="ar">&#x25B2;</span></th>
-          <th class="col-start" data-c="start" onclick="sort('start')">Offer Start <span class="ar">&#x25B2;</span></th>
+          <th data-c="start" onclick="sort('start')">Offer Start <span class="ar">&#x25B2;</span></th>
           <th data-c="hf" onclick="sort('hf')">Hedge Fund %<br><span style="font-size:8px;font-weight:500;color:var(--t3);text-transform:none;letter-spacing:0">daily change</span> <span class="ar">&#x25B2;</span></th>
           <th data-c="offer" class="ns">Offer Price</th>
           <th data-c="value" class="so" onclick="sort('value')">Equity Value <span class="ar">&#x25BC;</span></th>
@@ -263,7 +251,7 @@ th.col-comments,td.col-comments{min-width:450px}
       <li>Offer price bumps</li>
     </ul>
     <p class="note">This information is not displayed on this page.</p>
-    <p class="contact">For questions on coverage or access to the underlying transaction data, please contact <a href="/cdn-cgi/l/email-protection#90f5fee1e5f9e2f9f5e3b6b3a6a4abfdf1bdfdfffef9e4ffe2bef3ffbee5fb">enquiries&#64;ma-monitor.co.uk</a></p>
+    <p class="contact">For questions on coverage or access to the underlying transaction data, please contact <a href="mailto:enquiries&#64;ma-monitor.co.uk">enquiries&#64;ma-monitor.co.uk</a></p>
 
     <p style="font-weight:600;font-size:13px;margin-bottom:10px">Illustrative reports:</p>
     <div class="reports">
@@ -274,26 +262,26 @@ th.col-comments,td.col-comments{min-width:450px}
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // =====================================================================
 // CONFIGURATION
 // =====================================================================
-const SHEET_ID = '1boruU93nmK9LQQR7q04JHSkPTlVZITZmIPv5dorWFu0';
-const DEALS_TAB = 'Deals';
-const UPDATES_TAB = 'Updates';
-const DEALS_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${DEALS_TAB}`;
-const UPDATES_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${UPDATES_TAB}`;
+var SHEET_ID = '1boruU93nmK9LQQR7q04JHSkPTlVZITZmIPv5dorWFu0';
+var DEALS_TAB = 'Deals';
+var UPDATES_TAB = 'Updates';
+var DEALS_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=' + DEALS_TAB;
+var UPDATES_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=' + UPDATES_TAB;
 
 // =====================================================================
 // CSV PARSER
 // =====================================================================
 function parseCSV(text) {
-  const rows = [];
-  let row = [];
-  let cell = '';
-  let inQuotes = false;
-  for (let i = 0; i < text.length; i++) {
-    const ch = text[i];
+  var rows = [];
+  var row = [];
+  var cell = '';
+  var inQuotes = false;
+  for (var i = 0; i < text.length; i++) {
+    var ch = text[i];
     if (inQuotes) {
       if (ch === '"' && text[i + 1] === '"') { cell += '"'; i++; }
       else if (ch === '"') { inQuotes = false; }
@@ -303,51 +291,53 @@ function parseCSV(text) {
       else if (ch === ',') { row.push(cell.trim()); cell = ''; }
       else if (ch === '\n' || (ch === '\r' && text[i + 1] === '\n')) {
         row.push(cell.trim()); cell = '';
-        if (row.some(c => c !== '')) rows.push(row);
+        if (row.some(function(c) { return c !== ''; })) rows.push(row);
         row = [];
         if (ch === '\r') i++;
       } else { cell += ch; }
     }
   }
   row.push(cell.trim());
-  if (row.some(c => c !== '')) rows.push(row);
+  if (row.some(function(c) { return c !== ''; })) rows.push(row);
   return rows;
 }
 
 // =====================================================================
 // DATA LOADING
 // =====================================================================
-let deals = [];
+var deals = [];
 
 async function loadData() {
   try {
-    const [dealsRes, updatesRes] = await Promise.all([
+    var responses = await Promise.all([
       fetch(DEALS_URL),
       fetch(UPDATES_URL)
     ]);
+    var dealsRes = responses[0];
+    var updatesRes = responses[1];
 
     if (!dealsRes.ok) throw new Error('Failed to fetch deals data');
     if (!updatesRes.ok) throw new Error('Failed to fetch updates data');
 
-    const dealsCsv = await dealsRes.text();
-    const updatesCsv = await updatesRes.text();
+    var dealsCsv = await dealsRes.text();
+    var updatesCsv = await updatesRes.text();
 
     // Parse deals
-    const dealsRows = parseCSV(dealsCsv);
-    const dealsHeader = dealsRows[0];
-    deals = dealsRows.slice(1).map(row => {
-      const get = (name) => {
-        const idx = dealsHeader.findIndex(h => h.toLowerCase().includes(name.toLowerCase()));
+    var dealsRows = parseCSV(dealsCsv);
+    var dealsHeader = dealsRows[0];
+    deals = dealsRows.slice(1).map(function(row) {
+      var get = function(name) {
+        var idx = dealsHeader.findIndex(function(h) { return h.toLowerCase().includes(name.toLowerCase()); });
         return idx >= 0 ? (row[idx] || '') : '';
       };
 
-      let hfStr = get('Held by Hedge').replace('%', '').trim();
-      let hf = parseFloat(hfStr) || 0;
-      let evStr = get('Equity Value').replace(/[^0-9.]/g, '');
-      let v = parseInt(evStr) || 0;
-      let premStr = get('Premium').replace('%', '').trim();
-      let prem = (premStr === '' || premStr === 'n.a' || premStr === 'n.a.' || premStr === 'n/a') ? null : (parseInt(premStr) || null);
-      let hfC = get('Daily change').trim();
+      var hfStr = get('Held by Hedge').replace('%', '').trim();
+      var hf = parseFloat(hfStr) || 0;
+      var evStr = get('Equity Value').replace(/[^0-9.]/g, '');
+      var v = parseInt(evStr) || 0;
+      var premStr = get('Premium').replace('%', '').trim();
+      var prem = (premStr === '' || premStr === 'n.a' || premStr === 'n.a.' || premStr === 'n/a') ? null : (parseInt(premStr) || null);
+      var hfC = get('Daily change').trim();
       if (!hfC) hfC = 'no change';
 
       return {
@@ -364,14 +354,14 @@ async function loadData() {
         hfC: hfC,
         com: get('Comments').replace(/\s+/g, ' ').trim()
       };
-    }).filter(d => d.t !== '');
+    }).filter(function(d) { return d.t !== ''; });
 
     // Parse updates
-    const updatesRows = parseCSV(updatesCsv);
-    const updatesHeader = updatesRows[0];
-    const updates = updatesRows.slice(1).map(row => {
-      const get = (name) => {
-        const idx = updatesHeader.findIndex(h => h.toLowerCase().includes(name.toLowerCase()));
+    var updatesRows = parseCSV(updatesCsv);
+    var updatesHeader = updatesRows[0];
+    var updates = updatesRows.slice(1).map(function(row) {
+      var get = function(name) {
+        var idx = updatesHeader.findIndex(function(h) { return h.toLowerCase().includes(name.toLowerCase()); });
         return idx >= 0 ? (row[idx] || '') : '';
       };
       return {
@@ -380,15 +370,15 @@ async function loadData() {
         text: get('Update').trim(),
         date: get('Date').trim()
       };
-    }).filter(u => u.n !== '' && u.text !== '');
+    }).filter(function(u) { return u.n !== '' && u.text !== ''; });
 
-    // Render updates (title stays as just "Updates")
+    // Render updates - title stays as just "Updates"
     renderUpdates(updates);
     document.getElementById('updates-title').textContent = 'Updates';
 
     // Update footer date
-    const today = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-    document.getElementById('footer-date').textContent = `Data as at ${today} \u00B7 Source: M&A Monitor DataBase`;
+    var today = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+    document.getElementById('footer-date').textContent = 'Data as at ' + today + ' \u00B7 Source: M&A Monitor DataBase';
 
     buildFilters();
     go();
@@ -401,14 +391,14 @@ async function loadData() {
 }
 
 function renderUpdates(updates) {
-  const el = document.getElementById('updates-list');
+  var el = document.getElementById('updates-list');
   if (updates.length === 0) {
     el.innerHTML = '<div style="padding:12px 18px;color:var(--t3);font-size:13px">No updates today.</div>';
     return;
   }
-  el.innerHTML = updates.map(u => {
-    const dateHtml = u.date ? `<span class="uc-date">${u.date}</span>` : '';
-    return `<div class="update-card"><div class="uc-status uc-status-${u.s}"></div><div class="uc-body">${dateHtml}<span class="uc-name">${u.n}</span><span class="uc-text">${u.text}</span></div></div>`;
+  el.innerHTML = updates.map(function(u) {
+    var dateHtml = u.date ? '<span class="uc-date">' + u.date + '</span>' : '';
+    return '<div class="update-card"><div class="uc-status uc-status-' + u.s + '"></div><div class="uc-body">' + dateHtml + '<span class="uc-name">' + u.n + '</span><span class="uc-text">' + u.text + '</span></div></div>';
   }).join('');
 }
 
@@ -427,36 +417,36 @@ function statusClass(s) {
 }
 function premHtml(p) {
   if (p === null) return '<span class="prem-pill prem-na">n.a</span>';
-  const c = p >= 40 ? 'prem-high' : p >= 15 ? 'prem-mid' : 'prem-low';
-  return `<span class="prem-pill ${c}">${p}%</span>`;
+  var c = p >= 40 ? 'prem-high' : p >= 15 ? 'prem-mid' : 'prem-low';
+  return '<span class="prem-pill ' + c + '">' + p + '%</span>';
 }
-function fmtVal(v) { return v >= 1000 ? `\u00A3${(v / 1000).toFixed(1)}bn` : `\u00A3${v}m`; }
+function fmtVal(v) { return v >= 1000 ? '\u00A3' + (v / 1000).toFixed(1) + 'bn' : '\u00A3' + v + 'm'; }
 function hfHtml(hf, c) {
-  let cls = 'hf-flat', txt = c;
+  var cls = 'hf-flat', txt = c;
   if (c.includes('\u2191') || c.includes('up')) cls = 'hf-up';
   if (c.includes('\u2193') || c.includes('down')) cls = 'hf-down';
-  return `<span class="hf-cell">${hf}%<span class="hf-change ${cls}">${txt}</span></span>`;
+  return '<span class="hf-cell">' + hf + '%<span class="hf-change ' + cls + '">' + txt + '</span></span>';
 }
-function parseDate(s) { if (!s) return null; const p = s.split(/[\/\-]/); return new Date(p[2], p[1] - 1, p[0]); }
+function parseDate(s) { if (!s) return null; var p = s.split(/[\/\-]/); return new Date(p[2], p[1] - 1, p[0]); }
 
-let cs = { col: 'value', asc: false };
+var cs = { col: 'value', asc: false };
 
 function buildFilters() {
-  const sts = [...new Set(deals.map(d => d.st))].sort();
-  const s1 = document.getElementById('fStatus');
+  var sts = Array.from(new Set(deals.map(function(d) { return d.st; }))).sort();
+  var s1 = document.getElementById('fStatus');
   s1.innerHTML = '<option value="">All Statuses</option>';
-  sts.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; s1.appendChild(o); });
-  const secs = [...new Set(deals.map(d => d.sec))].sort();
-  const s2 = document.getElementById('fSector');
+  sts.forEach(function(s) { var o = document.createElement('option'); o.value = s; o.textContent = s; s1.appendChild(o); });
+  var secs = Array.from(new Set(deals.map(function(d) { return d.sec; }))).sort();
+  var s2 = document.getElementById('fSector');
   s2.innerHTML = '<option value="">All Sectors</option>';
-  secs.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; s2.appendChild(o); });
+  secs.forEach(function(s) { var o = document.createElement('option'); o.value = s; o.textContent = s; s2.appendChild(o); });
 }
 
 function getData() {
-  const q = document.getElementById('q').value.toLowerCase();
-  const st = document.getElementById('fStatus').value;
-  const sec = document.getElementById('fSector').value;
-  return deals.filter(d => {
+  var q = document.getElementById('q').value.toLowerCase();
+  var st = document.getElementById('fStatus').value;
+  var sec = document.getElementById('fSector').value;
+  return deals.filter(function(d) {
     if (q && !d.t.toLowerCase().includes(q) && !d.b.toLowerCase().includes(q)) return false;
     if (st && d.st !== st) return false;
     if (sec && d.sec !== sec) return false;
@@ -465,16 +455,16 @@ function getData() {
 }
 
 function doSort(data) {
-  const c = cs.col;
-  data.sort((a, b) => {
-    let av, bv;
+  var c = cs.col;
+  data.sort(function(a, b) {
+    var av, bv;
     switch (c) {
       case 'value': av = a.v; bv = b.v; break;
       case 'target': return cs.asc ? a.t.localeCompare(b.t) : b.t.localeCompare(a.t);
       case 'sector': return cs.asc ? a.sec.localeCompare(b.sec) : b.sec.localeCompare(a.sec);
       case 'status': return cs.asc ? a.st.localeCompare(b.st) : b.st.localeCompare(a.st);
       case 'bidder': return cs.asc ? a.b.localeCompare(b.b) : b.b.localeCompare(a.b);
-      case 'premium': av = a.prem ?? -999; bv = b.prem ?? -999; break;
+      case 'premium': av = a.prem !== null ? a.prem : -999; bv = b.prem !== null ? b.prem : -999; break;
       case 'hf': av = a.hf; bv = b.hf; break;
       case 'start': av = parseDate(a.start) || new Date(0); bv = parseDate(b.start) || new Date(0); break;
       case 'pusu': av = parseDate(a.pusu) || new Date(2099, 0); bv = parseDate(b.pusu) || new Date(2099, 0); break;
@@ -486,43 +476,58 @@ function doSort(data) {
 }
 
 function render(data) {
-  const tb = document.getElementById('tb');
-  tb.innerHTML = data.map((d, i) => `<tr style="animation:fu .2s ease-out ${.01 * i}s both">
-    <td class="col-target"><div class="target-cell"><span class="sd ${statusColor(d.st)}"></span><span class="tn">${d.t}</span></div></td>
-    <td style="font-size:11.5px;color:var(--t2)">${d.sec}</td>
-    <td class="col-status"><span class="status-badge ${statusClass(d.st)}">${d.st}</span></td>
-    <td class="col-bidder"><span class="bn" title="${d.b}">${d.b}</span></td>
-    <td class="dt col-start">${d.start}</td>
-    <td>${hfHtml(d.hf, d.hfC)}</td>
-    <td class="offer-price">${d.offer}</td>
-    <td class="vc">${fmtVal(d.v)}</td>
-    <td>${premHtml(d.prem)}</td>
-    <td class="dt">${d.pusu || '\u2014'}</td>
-    <td class="comment-cell col-comments">${d.com}</td>
-  </tr>`).join('');
+  var tb = document.getElementById('tb');
+  var html = '';
+  for (var i = 0; i < data.length; i++) {
+    var d = data[i];
+    html += '<tr style="animation:fu .2s ease-out ' + (.01 * i) + 's both">'
+      + '<td class="col-target"><div class="target-cell"><span class="sd ' + statusColor(d.st) + '"></span><span class="tn">' + d.t + '</span></div></td>'
+      + '<td style="font-size:11.5px;color:var(--t2)">' + d.sec + '</td>'
+      + '<td class="col-status"><span class="status-badge ' + statusClass(d.st) + '">' + d.st + '</span></td>'
+      + '<td class="col-bidder"><span class="bn" title="' + d.b + '">' + d.b + '</span></td>'
+      + '<td class="dt">' + d.start + '</td>'
+      + '<td>' + hfHtml(d.hf, d.hfC) + '</td>'
+      + '<td class="offer-price">' + d.offer + '</td>'
+      + '<td class="vc">' + fmtVal(d.v) + '</td>'
+      + '<td>' + premHtml(d.prem) + '</td>'
+      + '<td class="dt">' + (d.pusu || '\u2014') + '</td>'
+      + '<td class="comment-cell col-comments">' + d.com + '</td>'
+      + '</tr>';
+  }
+  tb.innerHTML = html;
 
-  document.getElementById('dc').innerHTML = `Showing <b>${data.length}</b> of ${deals.length}`;
+  document.getElementById('dc').innerHTML = 'Showing <b>' + data.length + '</b> of ' + deals.length;
   updateKpis(data);
 }
 
 function updateKpis(data) {
-  const formal = data.filter(d => d.st === 'Formal offer').length;
-  const indicative = data.filter(d => d.st === 'Indicative offer').length;
-  const noprice = data.length - formal - indicative;
-  const tv = data.reduce((s, d) => s + d.v, 0);
-  const avgHf = data.filter(d => d.hf > 0);
-  const meanHf = avgHf.length ? (avgHf.reduce((s, d) => s + d.hf, 0) / avgHf.length) : 0;
-  document.getElementById('kpis').innerHTML = `
-    <div class="kpi-card"><div class="kpi-v">${data.length}</div><div class="kpi-l">Offer Periods</div></div>
-    <div class="kpi-card"><div class="kpi-v" style="color:var(--g)">${formal}</div><div class="kpi-l">Formal Offers</div></div>
-    <div class="kpi-card"><div class="kpi-v" style="color:var(--am)">${indicative}</div><div class="kpi-l">Indicative</div></div>
-    <div class="kpi-card"><div class="kpi-v" style="color:var(--r)">${noprice}</div><div class="kpi-l">No Price</div></div>
-    <div class="kpi-card"><div class="kpi-v">\u00A3${(tv / 1000).toFixed(1)}<span class="u">bn</span></div><div class="kpi-l">Total Value</div></div>
-    <div class="kpi-card"><div class="kpi-v">${meanHf.toFixed(1)}<span class="u">%</span></div><div class="kpi-l">Avg HF %</div></div>`;
+  var formal = data.filter(function(d) { return d.st === 'Formal offer'; }).length;
+  var indicative = data.filter(function(d) { return d.st === 'Indicative offer'; }).length;
+  var noprice = data.length - formal - indicative;
+  var tv = data.reduce(function(s, d) { return s + d.v; }, 0);
+  var avgHf = data.filter(function(d) { return d.hf > 0; });
+  var meanHf = avgHf.length ? (avgHf.reduce(function(s, d) { return s + d.hf; }, 0) / avgHf.length) : 0;
+  document.getElementById('kpis').innerHTML = ''
+    + '<div class="kpi-card"><div class="kpi-v">' + data.length + '</div><div class="kpi-l">Offer Periods</div></div>'
+    + '<div class="kpi-card"><div class="kpi-v" style="color:var(--g)">' + formal + '</div><div class="kpi-l">Formal Offers</div></div>'
+    + '<div class="kpi-card"><div class="kpi-v" style="color:var(--am)">' + indicative + '</div><div class="kpi-l">Indicative</div></div>'
+    + '<div class="kpi-card"><div class="kpi-v" style="color:var(--r)">' + noprice + '</div><div class="kpi-l">No Price</div></div>'
+    + '<div class="kpi-card"><div class="kpi-v">\u00A3' + (tv / 1000).toFixed(1) + '<span class="u">bn</span></div><div class="kpi-l">Total Value</div></div>'
+    + '<div class="kpi-card"><div class="kpi-v">' + meanHf.toFixed(1) + '<span class="u">%</span></div><div class="kpi-l">Avg HF %</div></div>';
 }
 
 function sort(col) {
-  document.querySelectorAll('thead th').forEach(h => h.classList.remove('so'));
+  document.querySelectorAll('thead th').forEach(function(h) { h.classList.remove('so'); });
   if (cs.col === col) cs.asc = !cs.asc;
   else { cs.col = col; cs.asc = (col === 'value' || col === 'premium' || col === 'hf') ? false : true; }
-  const th = document.querySelector(`th[data-c=
+  var th = document.querySelector('th[data-c="' + col + '"]');
+  if (th) { th.classList.add('so'); th.querySelector('.ar').textContent = cs.asc ? '\u25B2' : '\u25BC'; }
+  go();
+}
+
+function go() { render(doSort(getData())); }
+
+loadData();
+</script>
+</body>
+</html>
