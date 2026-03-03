@@ -86,10 +86,9 @@ tbody td:first-child{padding-left:14px}
 tbody tr:last-child td{border-bottom:0}
 
 /* Column width controls */
-th.col-target,td.col-target{width:120px;max-width:130px;white-space:normal}
-th.col-status,td.col-status{width:85px;max-width:95px;white-space:normal}
-th.col-bidder,td.col-bidder{width:100px;max-width:120px;white-space:normal}
-th.col-start,td.col-start{white-space:normal}
+th.col-target,td.col-target{max-width:130px}
+th.col-status,td.col-status{max-width:95px}
+th.col-bidder,td.col-bidder{max-width:110px}
 th.col-comments,td.col-comments{min-width:450px}
 
 /* Status dot */
@@ -101,7 +100,8 @@ th.col-comments,td.col-comments{min-width:450px}
 .target-cell{display:flex;align-items:center;gap:0;white-space:nowrap}
 .tn{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
-.bn{color:var(--t2);font-size:12px;white-space:normal;word-wrap:break-word;line-height:1.35}
+.bn{color:var(--t2);font-size:12px;max-width:110px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bn:hover{white-space:normal;overflow:visible}
 
 .vc{font-weight:600;white-space:nowrap}
 
@@ -119,7 +119,7 @@ th.col-comments,td.col-comments{min-width:450px}
 .prem-low{background:var(--rb);color:var(--r)}
 .prem-na{background:#F0F0F0;color:var(--t3)}
 
-.status-badge{display:inline-block;padding:2px 7px;border-radius:4px;font-size:10.5px;font-weight:700;white-space:normal;line-height:1.3}
+.status-badge{display:inline-flex;padding:2px 7px;border-radius:4px;font-size:10.5px;font-weight:700;white-space:nowrap}
 .st-formal{background:var(--gb);color:var(--g)}
 .st-indicative{background:var(--ab);color:var(--am)}
 .st-approach{background:var(--rb);color:var(--r)}
@@ -191,7 +191,7 @@ th.col-comments,td.col-comments{min-width:450px}
 
   <div class="sub-bar ai d1">
     <span class="mail-icon">&#x1F4E7;</span>
-    <p>Receive the full tracker table by email each morning, email <a href="/cdn-cgi/l/email-protection#2b4e455a5e4259424e580d081d1f10464a06464445425f4459054844055e40">enquiries&#64;ma-monitor.co.uk</a> or subscribe here:</p>
+    <p>Receive the full tracker table by email each morning, email <a href="mailto:enquiries&#64;ma-monitor.co.uk">enquiries&#64;ma-monitor.co.uk</a> or subscribe here:</p>
     <a href="http://eepurl.com/jzWCMs" target="_blank" class="sub-btn">Subscribe via Email</a>
   </div>
 
@@ -224,7 +224,7 @@ th.col-comments,td.col-comments{min-width:450px}
           <th data-c="sector" onclick="sort('sector')">Sector <span class="ar">&#x25B2;</span></th>
           <th class="col-status" data-c="status" onclick="sort('status')">Status <span class="ar">&#x25B2;</span></th>
           <th class="col-bidder" data-c="bidder" onclick="sort('bidder')">Bidder(s) <span class="ar">&#x25B2;</span></th>
-          <th class="col-start" data-c="start" onclick="sort('start')">Offer Start <span class="ar">&#x25B2;</span></th>
+          <th data-c="start" onclick="sort('start')">Offer Start <span class="ar">&#x25B2;</span></th>
           <th data-c="hf" onclick="sort('hf')">Hedge Fund %<br><span style="font-size:8px;font-weight:500;color:var(--t3);text-transform:none;letter-spacing:0">daily change</span> <span class="ar">&#x25B2;</span></th>
           <th data-c="offer" class="ns">Offer Price</th>
           <th data-c="value" class="so" onclick="sort('value')">Equity Value <span class="ar">&#x25BC;</span></th>
@@ -263,7 +263,7 @@ th.col-comments,td.col-comments{min-width:450px}
       <li>Offer price bumps</li>
     </ul>
     <p class="note">This information is not displayed on this page.</p>
-    <p class="contact">For questions on coverage or access to the underlying transaction data, please contact <a href="/cdn-cgi/l/email-protection#90f5fee1e5f9e2f9f5e3b6b3a6a4abfdf1bdfdfffef9e4ffe2bef3ffbee5fb">enquiries&#64;ma-monitor.co.uk</a></p>
+    <p class="contact">For questions on coverage or access to the underlying transaction data, please contact <a href="mailto:enquiries&#64;ma-monitor.co.uk">enquiries&#64;ma-monitor.co.uk</a></p>
 
     <p style="font-weight:600;font-size:13px;margin-bottom:10px">Illustrative reports:</p>
     <div class="reports">
@@ -274,7 +274,7 @@ th.col-comments,td.col-comments{min-width:450px}
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // =====================================================================
 // CONFIGURATION
 // =====================================================================
@@ -492,7 +492,7 @@ function render(data) {
     <td style="font-size:11.5px;color:var(--t2)">${d.sec}</td>
     <td class="col-status"><span class="status-badge ${statusClass(d.st)}">${d.st}</span></td>
     <td class="col-bidder"><span class="bn" title="${d.b}">${d.b}</span></td>
-    <td class="dt col-start">${d.start}</td>
+    <td class="dt">${d.start}</td>
     <td>${hfHtml(d.hf, d.hfC)}</td>
     <td class="offer-price">${d.offer}</td>
     <td class="vc">${fmtVal(d.v)}</td>
@@ -525,4 +525,14 @@ function sort(col) {
   document.querySelectorAll('thead th').forEach(h => h.classList.remove('so'));
   if (cs.col === col) cs.asc = !cs.asc;
   else { cs.col = col; cs.asc = (col === 'value' || col === 'premium' || col === 'hf') ? false : true; }
-  const th = document.querySelector(`th[data-c=
+  const th = document.querySelector(`th[data-c="${col}"]`);
+  if (th) { th.classList.add('so'); th.querySelector('.ar').textContent = cs.asc ? '\u25B2' : '\u25BC'; }
+  go();
+}
+
+function go() { render(doSort(getData())); }
+
+loadData();
+</script>
+</body>
+</html>
