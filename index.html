@@ -43,6 +43,7 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 .uc-status-amber{background:#F59E0B}
 .uc-status-red{background:#EF4444}
 .uc-body{padding:12px 16px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.uc-date{font-size:10.5px;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.03em}
 .uc-name{font-size:13.5px;font-weight:700;color:var(--t)}
 .uc-text{font-size:12.5px;color:var(--t2);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
@@ -84,6 +85,12 @@ tbody td{padding:9px 10px;font-size:12.5px;color:var(--t);border-bottom:1px soli
 tbody td:first-child{padding-left:14px}
 tbody tr:last-child td{border-bottom:0}
 
+/* Column width controls */
+th.col-target,td.col-target{max-width:130px}
+th.col-status,td.col-status{max-width:95px}
+th.col-bidder,td.col-bidder{max-width:110px}
+th.col-comments,td.col-comments{min-width:450px}
+
 /* Status dot */
 .sd{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:6px;vertical-align:middle;flex-shrink:0}
 .sd-green{background:#22C55E}
@@ -91,14 +98,14 @@ tbody tr:last-child td{border-bottom:0}
 .sd-red{background:#EF4444}
 
 .target-cell{display:flex;align-items:center;gap:0;white-space:nowrap}
-.tn{font-weight:600}
+.tn{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
-.bn{color:var(--t2);font-size:12px;max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bn{color:var(--t2);font-size:12px;max-width:110px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bn:hover{white-space:normal;overflow:visible}
 
 .vc{font-weight:600;white-space:nowrap}
 
-.comment-cell{font-size:11.5px;color:var(--t2);min-width:400px;line-height:1.4}
+.comment-cell{font-size:11.5px;color:var(--t2);min-width:450px;line-height:1.4}
 
 .hf-cell{font-weight:600;white-space:nowrap}
 .hf-change{font-size:10px;display:block;margin-top:1px}
@@ -179,7 +186,7 @@ tbody tr:last-child td{border-bottom:0}
 <div class="page">
   <div class="hero ai">
     <h1>All companies in an offer period under the UK Takeover Code</h1>
-    <p class="desc">Every live offer period tracked daily — status, premiums, hedge fund activity, and commentary by M&A Monitor's deal intelligence team.</p>
+    <p class="desc">Every live offer period tracked daily — status, premiums, hedge fund activity, and commentary by M&amp;A Monitor's deal intelligence team.</p>
   </div>
 
   <div class="sub-bar ai d1">
@@ -189,7 +196,7 @@ tbody tr:last-child td{border-bottom:0}
   </div>
 
   <div class="updates ai d1">
-    <div class="updates-title" id="updates-title">Updates:</div>
+    <div class="updates-title" id="updates-title">Updates</div>
     <div class="updates-list" id="updates-list">
       <div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div>
     </div>
@@ -213,17 +220,17 @@ tbody tr:last-child td{border-bottom:0}
     <div class="tscr">
       <table>
         <thead><tr>
-          <th data-c="target" onclick="sort('target')">Target <span class="ar">&#x25B2;</span></th>
+          <th class="col-target" data-c="target" onclick="sort('target')">Target <span class="ar">&#x25B2;</span></th>
           <th data-c="sector" onclick="sort('sector')">Sector <span class="ar">&#x25B2;</span></th>
-          <th data-c="status" onclick="sort('status')">Status <span class="ar">&#x25B2;</span></th>
-          <th data-c="bidder" onclick="sort('bidder')">Bidder(s) <span class="ar">&#x25B2;</span></th>
+          <th class="col-status" data-c="status" onclick="sort('status')">Status <span class="ar">&#x25B2;</span></th>
+          <th class="col-bidder" data-c="bidder" onclick="sort('bidder')">Bidder(s) <span class="ar">&#x25B2;</span></th>
           <th data-c="start" onclick="sort('start')">Offer Start <span class="ar">&#x25B2;</span></th>
+          <th data-c="hf" onclick="sort('hf')">Hedge Fund %<br><span style="font-size:8px;font-weight:500;color:var(--t3);text-transform:none;letter-spacing:0">daily change</span> <span class="ar">&#x25B2;</span></th>
           <th data-c="offer" class="ns">Offer Price</th>
           <th data-c="value" class="so" onclick="sort('value')">Equity Value <span class="ar">&#x25BC;</span></th>
           <th data-c="premium" onclick="sort('premium')">Premium <span class="ar">&#x25B2;</span></th>
           <th data-c="pusu" onclick="sort('pusu')">PUSU / Exp. Completion <span class="ar">&#x25B2;</span></th>
-          <th data-c="hf" onclick="sort('hf')">Hedge Fund %<br><span style="font-size:8px;font-weight:500;color:var(--t3);text-transform:none;letter-spacing:0">daily change</span> <span class="ar">&#x25B2;</span></th>
-          <th class="ns">Comments</th>
+          <th class="ns col-comments">Comments</th>
         </tr></thead>
         <tbody id="tb">
           <tr><td colspan="11"><div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div></td></tr>
@@ -231,7 +238,7 @@ tbody tr:last-child td{border-bottom:0}
       </table>
     </div>
     <div class="tfr">
-      <span id="footer-date">Source: M&A Monitor DataBase</span>
+      <span id="footer-date">Source: M&amp;A Monitor DataBase</span>
     </div>
   </div>
 
@@ -243,7 +250,7 @@ tbody tr:last-child td{border-bottom:0}
 
   <div class="info-section ai d4">
     <h3>What's behind the tracker</h3>
-    <p>For each company in an offer period, M&A Monitor maintains a full transaction record designed to support valuation and precedent analysis, including a comprehensive narrative and background to the development and progression of each deal. The database also tracks all Rule 8.3 disclosures for each offer period, allowing detailed analysis of shareholder behaviour and trading activity.</p>
+    <p>For each company in an offer period, M&amp;A Monitor maintains a full transaction record designed to support valuation and precedent analysis, including a comprehensive narrative and background to the development and progression of each deal. The database also tracks all Rule 8.3 disclosures for each offer period, allowing detailed analysis of shareholder behaviour and trading activity.</p>
     <p>In addition to the status information shown here, the database includes (inter alia) the following data points for UK and Ireland:</p>
     <ul>
       <li>8.3 shareholder register, updated instantly</li>
@@ -260,7 +267,7 @@ tbody tr:last-child td{border-bottom:0}
 
     <p style="font-weight:600;font-size:13px;margin-bottom:10px">Illustrative reports:</p>
     <div class="reports">
-      <a href="Fnac-Darty-report.pdf" target="_blank" class="report-card"><span class="report-icon">&#x1F4C4;</span><div><div class="report-info">M&A Monitor Deal Report</div><div class="report-sub">Fnac-Darty report.pdf</div></div></a>
+      <a href="Fnac-Darty-report.pdf" target="_blank" class="report-card"><span class="report-icon">&#x1F4C4;</span><div><div class="report-info">M&amp;A Monitor Deal Report</div><div class="report-sub">Fnac-Darty report.pdf</div></div></a>
       <a href="Rule8-3SampleReport.xls" target="_blank" class="report-card"><span class="report-icon">&#x1F4CA;</span><div><div class="report-info">8.3 Report Example</div><div class="report-sub">Rule8-3SampleReport.xls</div></div></a>
       <a href="Share-register.pdf" target="_blank" class="report-card"><span class="report-icon">&#x1F4CB;</span><div><div class="report-info">Share Register Example</div><div class="report-sub">Share register.pdf</div></div></a>
     </div>
@@ -269,16 +276,11 @@ tbody tr:last-child td{border-bottom:0}
 
 <script>
 // =====================================================================
-// CONFIGURATION — Replace these with your Google Sheet IDs
+// CONFIGURATION
 // =====================================================================
-// Your Google Sheet ID (the long string from the URL)
 const SHEET_ID = '1boruU93nmK9LQQR7q04JHSkPTlVZITZmIPv5dorWFu0';
-
-// Tab names (must match exactly what you name the tabs in Google Sheets)
 const DEALS_TAB = 'Deals';
 const UPDATES_TAB = 'Updates';
-
-// Build the CSV fetch URLs from the published Google Sheet
 const DEALS_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${DEALS_TAB}`;
 const UPDATES_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${UPDATES_TAB}`;
 
@@ -313,13 +315,12 @@ function parseCSV(text) {
 }
 
 // =====================================================================
-// DATA LOADING — Fetches live from Google Sheets on every page load
+// DATA LOADING
 // =====================================================================
 let deals = [];
 
 async function loadData() {
   try {
-    // Fetch both tabs in parallel
     const [dealsRes, updatesRes] = await Promise.all([
       fetch(DEALS_URL),
       fetch(UPDATES_URL)
@@ -340,19 +341,12 @@ async function loadData() {
         return idx >= 0 ? (row[idx] || '') : '';
       };
 
-      // Parse HF%
       let hfStr = get('Held by Hedge').replace('%', '').trim();
       let hf = parseFloat(hfStr) || 0;
-
-      // Parse equity value
       let evStr = get('Equity Value').replace(/[^0-9.]/g, '');
       let v = parseInt(evStr) || 0;
-
-      // Parse premium
       let premStr = get('Premium').replace('%', '').trim();
       let prem = (premStr === '' || premStr === 'n.a' || premStr === 'n.a.' || premStr === 'n/a') ? null : (parseInt(premStr) || null);
-
-      // Parse HF change
       let hfC = get('Daily change').trim();
       if (!hfC) hfC = 'no change';
 
@@ -383,31 +377,19 @@ async function loadData() {
       return {
         n: get('Target').trim(),
         s: get('Colour').trim().toLowerCase() || 'red',
-        text: get('Update').trim()
+        text: get('Update').trim(),
+        date: get('Date').trim()
       };
     }).filter(u => u.n !== '' && u.text !== '');
 
-    // Render updates
+    // Render updates (title stays as just "Updates")
     renderUpdates(updates);
-
-    // Update the date in the updates title from the sheet
-    const dateStr = updates.length > 0 ? (() => {
-      // Try to get date from first row if there's a Date column
-      const dateIdx = updatesHeader.findIndex(h => h.toLowerCase().includes('date'));
-      if (dateIdx >= 0 && updatesRows[1] && updatesRows[1][dateIdx]) {
-        return updatesRows[1][dateIdx].trim();
-      }
-      return new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
-    })() : '';
-    if (dateStr) {
-      document.getElementById('updates-title').textContent = `Updates ${dateStr}:`;
-    }
+    document.getElementById('updates-title').textContent = 'Updates';
 
     // Update footer date
     const today = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
     document.getElementById('footer-date').textContent = `Data as at ${today} \u00B7 Source: M&A Monitor DataBase`;
 
-    // Build filters and render table
     buildFilters();
     go();
 
@@ -424,13 +406,14 @@ function renderUpdates(updates) {
     el.innerHTML = '<div style="padding:12px 18px;color:var(--t3);font-size:13px">No updates today.</div>';
     return;
   }
-  el.innerHTML = updates.map(u =>
-    `<div class="update-card"><div class="uc-status uc-status-${u.s}"></div><div class="uc-body"><span class="uc-name">${u.n}</span><span class="uc-text">${u.text}</span></div></div>`
-  ).join('');
+  el.innerHTML = updates.map(u => {
+    const dateHtml = u.date ? `<span class="uc-date">${u.date}</span>` : '';
+    return `<div class="update-card"><div class="uc-status uc-status-${u.s}"></div><div class="uc-body">${dateHtml}<span class="uc-name">${u.n}</span><span class="uc-text">${u.text}</span></div></div>`;
+  }).join('');
 }
 
 // =====================================================================
-// TABLE RENDERING (same logic as before)
+// TABLE RENDERING
 // =====================================================================
 function statusColor(s) {
   if (s === 'Formal offer') return 'sd-green';
@@ -505,17 +488,17 @@ function doSort(data) {
 function render(data) {
   const tb = document.getElementById('tb');
   tb.innerHTML = data.map((d, i) => `<tr style="animation:fu .2s ease-out ${.01 * i}s both">
-    <td><div class="target-cell"><span class="sd ${statusColor(d.st)}"></span><span class="tn">${d.t}</span></div></td>
+    <td class="col-target"><div class="target-cell"><span class="sd ${statusColor(d.st)}"></span><span class="tn">${d.t}</span></div></td>
     <td style="font-size:11.5px;color:var(--t2)">${d.sec}</td>
-    <td><span class="status-badge ${statusClass(d.st)}">${d.st}</span></td>
-    <td><span class="bn" title="${d.b}">${d.b}</span></td>
+    <td class="col-status"><span class="status-badge ${statusClass(d.st)}">${d.st}</span></td>
+    <td class="col-bidder"><span class="bn" title="${d.b}">${d.b}</span></td>
     <td class="dt">${d.start}</td>
+    <td>${hfHtml(d.hf, d.hfC)}</td>
     <td class="offer-price">${d.offer}</td>
     <td class="vc">${fmtVal(d.v)}</td>
     <td>${premHtml(d.prem)}</td>
     <td class="dt">${d.pusu || '\u2014'}</td>
-    <td>${hfHtml(d.hf, d.hfC)}</td>
-    <td class="comment-cell">${d.com}</td>
+    <td class="comment-cell col-comments">${d.com}</td>
   </tr>`).join('');
 
   document.getElementById('dc').innerHTML = `Showing <b>${data.length}</b> of ${deals.length}`;
@@ -549,7 +532,6 @@ function sort(col) {
 
 function go() { render(doSort(getData())); }
 
-// Load data on page load
 loadData();
 </script>
 </body>
