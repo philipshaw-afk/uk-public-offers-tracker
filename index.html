@@ -179,7 +179,7 @@ th.col-comments,td.col-comments{min-width:450px}
 
   <div class="sub-bar ai d1">
     <span class="mail-icon">&#x1F4E7;</span>
-    <p>Receive the full tracker table by email each morning, email <a href="/cdn-cgi/l/email-protection#04616a75716d766d6177222732303f696529696b6a6d706b762a676b2a716f">enquiries&#64;ma-monitor.co.uk</a> or subscribe here:</p>
+    <p>Receive the full tracker table by email each morning, email <a href="mailto:enquiries&#64;ma-monitor.co.uk">enquiries&#64;ma-monitor.co.uk</a> or subscribe here:</p>
     <a href="http://eepurl.com/jzWCMs" target="_blank" class="sub-btn">Subscribe via Email</a>
   </div>
 
@@ -251,7 +251,7 @@ th.col-comments,td.col-comments{min-width:450px}
       <li>Offer price bumps</li>
     </ul>
     <p class="note">This information is not displayed on this page.</p>
-    <p class="contact">For questions on coverage or access to the underlying transaction data, please contact <a href="/cdn-cgi/l/email-protection#bbded5caced2c9d2dec89d988d8f80d6da96d6d4d5d2cfd4c995d8d495ced0">enquiries&#64;ma-monitor.co.uk</a></p>
+    <p class="contact">For questions on coverage or access to the underlying transaction data, please contact <a href="mailto:enquiries&#64;ma-monitor.co.uk">enquiries&#64;ma-monitor.co.uk</a></p>
 
     <p style="font-weight:600;font-size:13px;margin-bottom:10px">Illustrative reports:</p>
     <div class="reports">
@@ -262,7 +262,7 @@ th.col-comments,td.col-comments{min-width:450px}
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // =====================================================================
 // CONFIGURATION
 // =====================================================================
@@ -520,4 +520,14 @@ function sort(col) {
   document.querySelectorAll('thead th').forEach(function(h) { h.classList.remove('so'); });
   if (cs.col === col) cs.asc = !cs.asc;
   else { cs.col = col; cs.asc = (col === 'value' || col === 'premium' || col === 'hf') ? false : true; }
-  var th = document.querySelector('th[data-c="' + 
+  var th = document.querySelector('th[data-c="' + col + '"]');
+  if (th) { th.classList.add('so'); th.querySelector('.ar').textContent = cs.asc ? '\u25B2' : '\u25BC'; }
+  go();
+}
+
+function go() { render(doSort(getData())); }
+
+loadData();
+</script>
+</body>
+</html>
