@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK Takeover Code Tracker | M&A Monitor</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F8FA;--s:#fff;--b:#E4E8EF;--bl:#F0F2F6;--t:#131B2C;--t2:#4F5B76;--t3:#8992A8;--a:#1751D0;--al:#EBF0FF;--ah:#133FA8;--g:#0B7A55;--gb:#EAFAF4;--am:#A85D00;--ab:#FFF7E6;--r:#C13A1B;--rb:#FFF0ED;--p:#6941C6;--pb:#F4F3FF;--tl:#0D7490;--tb:#ECFEFF;--h:#F4F6FA;--ss:0 1px 3px rgba(19,27,44,.04);--sm:0 4px 20px rgba(19,27,44,.06)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:var(--t);-webkit-font-smoothing:antialiased}
+
+.hdr{background:var(--s);border-bottom:1px solid var(--b);padding:0 40px;height:58px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px);background:rgba(255,255,255,.93)}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--t)}
+.logo img{height:32px;width:auto;border-radius:4px}
+.logo-t{font-weight:700;font-size:15.5px;letter-spacing:-.3px}
+.logo-t span{color:var(--t3);font-weight:500}
+
+.page{max-width:1440px;margin:0 auto;padding:0 40px}
+
+/* Hero */
+.hero{padding:36px 0 0}
+.hero h1{font-family:'Instrument Serif',Georgia,serif;font-size:34px;font-weight:400;letter-spacing:-.4px;line-height:1.15;margin-bottom:6px}
+.hero .desc{color:var(--t2);font-size:14.5px;line-height:1.5;max-width:640px;margin-bottom:18px}
+
+/* Subscribe bar */
+.sub-bar{background:var(--al);border:1px solid #D4DFFF;border-radius:8px;padding:12px 18px;display:flex;align-items:center;gap:10px;margin-bottom:24px;flex-wrap:wrap}
+.sub-bar .mail-icon{font-size:16px}
+.sub-bar p{font-size:13.5px;color:var(--t);flex:1}
+.sub-bar p a{color:var(--a);font-weight:600;text-decoration:none}
+.sub-bar p a:hover{text-decoration:underline}
+.sub-btn{background:var(--a);color:#fff;border:0;padding:7px 16px;border-radius:6px;font-size:12.5px;font-weight:600;cursor:pointer;text-decoration:none;white-space:nowrap;transition:all .15s}
+.sub-btn:hover{background:var(--ah)}
+
+/* Updates cards */
+.updates{margin-bottom:24px}
+.updates-title{font-family:'Instrument Serif',Georgia,serif;font-size:20px;font-weight:400;font-style:italic;color:var(--t);margin-bottom:10px}
+.updates-list{display:flex;gap:12px;flex-wrap:wrap}
+.update-card{background:var(--s);border:1px solid var(--b);border-radius:8px;box-shadow:var(--ss);display:flex;overflow:hidden;flex:1;min-width:260px;transition:box-shadow .15s,transform .15s}
+.update-card:hover{box-shadow:var(--sm);transform:translateY(-1px)}
+.uc-status{width:6px;flex-shrink:0}
+.uc-status-green{background:#22C55E}
+.uc-status-amber{background:#F59E0B}
+.uc-status-red{background:#EF4444}
+.uc-body{padding:12px 16px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.uc-name{font-size:13.5px;font-weight:700;color:var(--t)}
+.uc-text{font-size:12.5px;color:var(--t2);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* KPIs */
+.kpi-row{display:flex;gap:14px;margin-bottom:20px;flex-wrap:wrap}
+.kpi-card{background:var(--s);border:1px solid var(--b);border-radius:8px;padding:14px 18px;flex:1;min-width:120px;box-shadow:var(--ss)}
+.kpi-v{font-size:24px;font-weight:700;letter-spacing:-.3px;font-variant-numeric:tabular-nums}
+.kpi-v .u{font-size:14px;font-weight:500;color:var(--t3)}
+.kpi-l{font-size:10.5px;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
+
+/* Controls */
+.ctrl{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.sbox{position:relative;flex:0 1 280px}
+.sbox input{width:100%;padding:8px 10px 8px 32px;border:1.5px solid var(--b);border-radius:6px;font-size:12.5px;font-family:inherit;color:var(--t);background:var(--s);outline:0;transition:all .15s}
+.sbox input:focus{border-color:var(--a);box-shadow:0 0 0 3px rgba(23,81,208,.07)}
+.sbox input::placeholder{color:var(--t3)}
+.si{position:absolute;left:9px;top:50%;transform:translateY(-50%);color:var(--t3);pointer-events:none}
+.flt-g{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+select.f{padding:8px 28px 8px 9px;border:1.5px solid var(--b);border-radius:6px;font-size:12px;font-family:inherit;color:var(--t);font-weight:500;background:var(--s) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%238992A8' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 8px center;appearance:none;cursor:pointer;outline:0}
+.dc{font-size:11.5px;color:var(--t3);font-weight:500;white-space:nowrap}
+.dc b{color:var(--t)}
+
+/* Table */
+.tcard{background:var(--s);border-radius:10px;box-shadow:var(--ss);border:1px solid var(--b);overflow:hidden;margin-bottom:32px}
+.tscr{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+thead th{background:#F5F7FA;padding:10px 10px;text-align:left;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);border-bottom:1px solid var(--b);white-space:nowrap;cursor:pointer;user-select:none;transition:color .12s}
+thead th:hover{color:var(--t)}
+thead th.so{color:var(--a)}
+thead th .ar{display:inline-block;margin-left:2px;font-size:8px;opacity:0;transition:opacity .12s}
+thead th:hover .ar{opacity:.4}
+thead th.so .ar{opacity:1}
+thead th:first-child{padding-left:14px}
+thead th.ns{cursor:default}
+thead th.ns:hover{color:var(--t3)}
+tbody tr{transition:background .1s}
+tbody tr:hover{background:var(--h)}
+tbody td{padding:9px 10px;font-size:12.5px;color:var(--t);border-bottom:1px solid var(--bl);vertical-align:top}
+tbody td:first-child{padding-left:14px}
+tbody tr:last-child td{border-bottom:0}
+
+/* Status dot */
+.sd{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:6px;vertical-align:middle;flex-shrink:0}
+.sd-green{background:#22C55E}
+.sd-amber{background:#F59E0B}
+.sd-red{background:#EF4444}
+
+.target-cell{display:flex;align-items:center;gap:0;white-space:nowrap}
+.tn{font-weight:600}
+
+.bn{color:var(--t2);font-size:12px;max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bn:hover{white-space:normal;overflow:visible}
+
+.vc{font-weight:600;white-space:nowrap}
+
+.comment-cell{font-size:11.5px;color:var(--t2);min-width:400px;line-height:1.4}
+
+.hf-cell{font-weight:600;white-space:nowrap}
+.hf-change{font-size:10px;display:block;margin-top:1px}
+.hf-up{color:var(--g)}
+.hf-down{color:var(--r)}
+.hf-flat{color:var(--t3)}
+
+.prem-pill{display:inline-flex;padding:2px 7px;border-radius:4px;font-size:11.5px;font-weight:600}
+.prem-high{background:var(--gb);color:var(--g)}
+.prem-mid{background:var(--ab);color:var(--am)}
+.prem-low{background:var(--rb);color:var(--r)}
+.prem-na{background:#F0F0F0;color:var(--t3)}
+
+.status-badge{display:inline-flex;padding:2px 7px;border-radius:4px;font-size:10.5px;font-weight:700;white-space:nowrap}
+.st-formal{background:var(--gb);color:var(--g)}
+.st-indicative{background:var(--ab);color:var(--am)}
+.st-approach{background:var(--rb);color:var(--r)}
+.st-talks{background:var(--rb);color:var(--r)}
+.st-strategic{background:var(--rb);color:var(--r)}
+.st-sales{background:var(--rb);color:var(--r)}
+
+.dt{white-space:nowrap;color:var(--t2);font-size:12px}
+.offer-price{font-weight:600;white-space:nowrap}
+
+/* Footer */
+.tfr{padding:11px 14px;display:flex;align-items:center;justify-content:space-between;background:#F5F7FA;border-top:1px solid var(--b);font-size:11.5px;color:var(--t3)}
+.tfr a{color:var(--a);text-decoration:none;font-weight:600}
+
+/* Legend */
+.legend{display:flex;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.leg-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--t2)}
+
+/* Info section */
+.info-section{background:var(--s);border:1px solid var(--b);border-radius:10px;padding:28px 32px;margin-bottom:32px;box-shadow:var(--ss)}
+.info-section h3{font-family:'Instrument Serif',Georgia,serif;font-size:22px;font-weight:400;margin-bottom:12px}
+.info-section p{font-size:13.5px;color:var(--t2);line-height:1.65;margin-bottom:12px;max-width:800px}
+.info-section ul{margin:0 0 16px 20px;font-size:13px;color:var(--t2);line-height:1.7}
+.info-section .note{font-size:12.5px;color:var(--t3);font-style:italic;margin-bottom:16px}
+.info-section .contact{font-size:13.5px;color:var(--t2);margin-bottom:20px}
+.info-section .contact a{color:var(--a);font-weight:600;text-decoration:none}
+
+.reports{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+.report-card{background:var(--bg);border:1px solid var(--b);border-radius:8px;padding:14px 18px;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--t);transition:all .15s;min-width:200px}
+.report-card:hover{border-color:var(--a);box-shadow:var(--sm);transform:translateY(-1px)}
+.report-icon{font-size:22px}
+.report-info{font-size:12.5px;font-weight:600;line-height:1.3}
+.report-sub{font-size:11px;color:var(--t3);font-weight:500}
+
+/* Loading */
+.loading{text-align:center;padding:40px;color:var(--t3);font-size:14px}
+.loading-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--a);margin:0 3px;animation:ld .6s infinite alternate}
+.loading-dot:nth-child(2){animation-delay:.2s}
+.loading-dot:nth-child(3){animation-delay:.4s}
+@keyframes ld{from{opacity:.3;transform:translateY(0)}to{opacity:1;transform:translateY(-6px)}}
+.error-msg{text-align:center;padding:30px;color:var(--r);font-size:13px;background:var(--rb);border-radius:8px;margin-bottom:20px}
+
+@media(max-width:1024px){.page,.hdr{padding-left:20px;padding-right:20px}.hero h1{font-size:26px}.kpi-row{gap:8px}}
+@media(max-width:768px){.ctrl{flex-direction:column;align-items:stretch}.kpi-row{flex-wrap:wrap}}
+
+@keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.ai{animation:fu .4s ease-out both}
+.d1{animation-delay:.05s}.d2{animation-delay:.1s}.d3{animation-delay:.15s}.d4{animation-delay:.2s}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <a href="#" class="logo">
+    <img src="https://raw.githubusercontent.com/philipshaw-afk/ma-monitor-assets/main/rounded%20edge%20logo.png" alt="M&A Monitor">
+    <div class="logo-t">M&A Monitor <span>/ UK Tracker</span></div>
+  </a>
+  <div style="display:flex;align-items:center;gap:20px">
+    <a href="https://www.ma-monitor.co.uk" style="text-decoration:none;color:var(--a);font-size:13px;font-weight:600">www.ma-monitor.co.uk</a>
+    <span style="color:var(--t2);font-size:13px;font-weight:500">020 8944 9700</span>
+  </div>
+</header>
+
+<div class="page">
+  <div class="hero ai">
+    <h1>All companies in an offer period under the UK Takeover Code</h1>
+    <p class="desc">Every live offer period tracked daily — status, premiums, hedge fund activity, and commentary by M&A Monitor's deal intelligence team.</p>
+  </div>
+
+  <div class="sub-bar ai d1">
+    <span class="mail-icon">&#x1F4E7;</span>
+    <p>Receive the full tracker table by email each morning, email <a href="mailto:enquiries&#64;ma-monitor.co.uk">enquiries&#64;ma-monitor.co.uk</a> or subscribe here:</p>
+    <a href="#" class="sub-btn">Subscribe via Email</a>
+  </div>
+
+  <div class="updates ai d1">
+    <div class="updates-title" id="updates-title">Updates:</div>
+    <div class="updates-list" id="updates-list">
+      <div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div>
+    </div>
+  </div>
+
+  <div class="kpi-row ai d2" id="kpis"></div>
+
+  <div class="ctrl ai d2">
+    <div class="sbox">
+      <svg class="si" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="q" placeholder="Search target or bidder..." oninput="go()">
+    </div>
+    <div class="flt-g">
+      <select class="f" id="fStatus" onchange="go()"><option value="">All Statuses</option></select>
+      <select class="f" id="fSector" onchange="go()"><option value="">All Sectors</option></select>
+      <span class="dc" id="dc"></span>
+    </div>
+  </div>
+
+  <div class="tcard ai d3">
+    <div class="tscr">
+      <table>
+        <thead><tr>
+          <th data-c="target" onclick="sort('target')">Target <span class="ar">&#x25B2;</span></th>
+          <th data-c="sector" onclick="sort('sector')">Sector <span class="ar">&#x25B2;</span></th>
+          <th data-c="status" onclick="sort('status')">Status <span class="ar">&#x25B2;</span></th>
+          <th data-c="bidder" onclick="sort('bidder')">Bidder(s) <span class="ar">&#x25B2;</span></th>
+          <th data-c="start" onclick="sort('start')">Offer Start <span class="ar">&#x25B2;</span></th>
+          <th data-c="offer" class="ns">Offer Price</th>
+          <th data-c="value" class="so" onclick="sort('value')">Equity Value <span class="ar">&#x25BC;</span></th>
+          <th data-c="premium" onclick="sort('premium')">Premium <span class="ar">&#x25B2;</span></th>
+          <th data-c="pusu" onclick="sort('pusu')">PUSU / Exp. Completion <span class="ar">&#x25B2;</span></th>
+          <th data-c="hf" onclick="sort('hf')">Hedge Fund %<br><span style="font-size:8px;font-weight:500;color:var(--t3);text-transform:none;letter-spacing:0">daily change</span> <span class="ar">&#x25B2;</span></th>
+          <th class="ns">Comments</th>
+        </tr></thead>
+        <tbody id="tb">
+          <tr><td colspan="11"><div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tfr">
+      <span id="footer-date">Source: M&A Monitor DataBase</span>
+    </div>
+  </div>
+
+  <div class="legend ai d4">
+    <div class="leg-item"><span class="sd sd-green"></span> 2.7 (formal offer) published</div>
+    <div class="leg-item"><span class="sd sd-amber"></span> Indicative offer announced with price</div>
+    <div class="leg-item"><span class="sd sd-red"></span> In offer period, but no potential price published</div>
+  </div>
+
+  <div class="info-section ai d4">
+    <h3>What's behind the tracker</h3>
+    <p>For each company in an offer period, M&A Monitor maintains a full transaction record designed to support valuation and precedent analysis, including a comprehensive narrative and background to the development and progression of each deal. The database also tracks all Rule 8.3 disclosures for each offer period, allowing detailed analysis of shareholder behaviour and trading activity.</p>
+    <p>In addition to the status information shown here, the database includes (inter alia) the following data points for UK and Ireland:</p>
+    <ul>
+      <li>8.3 shareholder register, updated instantly</li>
+      <li>Behavioural analysis of shareholders</li>
+      <li>Average trading prices in 8.3s</li>
+      <li>Deal valuation</li>
+      <li>Bid premia for multiple data points, including custom data</li>
+      <li>Transaction multiples</li>
+      <li>Competing offer history</li>
+      <li>Offer price bumps</li>
+    </ul>
+    <p class="note">This information is not displayed on this page.</p>
+    <p class="contact">For questions on coverage or access to the underlying transaction data, please contact <a href="mailto:enquiries&#64;ma-monitor.co.uk">enquiries&#64;ma-monitor.co.uk</a></p>
+
+    <p style="font-weight:600;font-size:13px;margin-bottom:10px">Illustrative reports:</p>
+    <div class="reports">
+      <a href="#" class="report-card"><span class="report-icon">&#x1F4C4;</span><div><div class="report-info">M&A Monitor Deal Report</div><div class="report-sub">Fnac-Darty report.pdf</div></div></a>
+      <a href="#" class="report-card"><span class="report-icon">&#x1F4CA;</span><div><div class="report-info">8.3 Report Example</div><div class="report-sub">Rule8-3SampleReport.xls</div></div></a>
+      <a href="#" class="report-card"><span class="report-icon">&#x1F4CB;</span><div><div class="report-info">Share Register Example</div><div class="report-sub">Share register.pdf</div></div></a>
+    </div>
+  </div>
+</div>
+
+<script>
+// =====================================================================
+// CONFIGURATION — Replace these with your Google Sheet IDs
+// =====================================================================
+// Your Google Sheet ID (the long string from the URL)
+const SHEET_ID = '1boruU93nmK9LQQR7q04JHSkPTlVZITZmIPv5dorWFu0';
+
+// Tab names (must match exactly what you name the tabs in Google Sheets)
+const DEALS_TAB = 'Deals';
+const UPDATES_TAB = 'Updates';
+
+// Build the CSV fetch URLs from the published Google Sheet
+const DEALS_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${DEALS_TAB}`;
+const UPDATES_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${UPDATES_TAB}`;
+
+// =====================================================================
+// CSV PARSER
+// =====================================================================
+function parseCSV(text) {
+  const rows = [];
+  let row = [];
+  let cell = '';
+  let inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (inQuotes) {
+      if (ch === '"' && text[i + 1] === '"') { cell += '"'; i++; }
+      else if (ch === '"') { inQuotes = false; }
+      else { cell += ch; }
+    } else {
+      if (ch === '"') { inQuotes = true; }
+      else if (ch === ',') { row.push(cell.trim()); cell = ''; }
+      else if (ch === '\n' || (ch === '\r' && text[i + 1] === '\n')) {
+        row.push(cell.trim()); cell = '';
+        if (row.some(c => c !== '')) rows.push(row);
+        row = [];
+        if (ch === '\r') i++;
+      } else { cell += ch; }
+    }
+  }
+  row.push(cell.trim());
+  if (row.some(c => c !== '')) rows.push(row);
+  return rows;
+}
+
+// =====================================================================
+// DATA LOADING — Fetches live from Google Sheets on every page load
+// =====================================================================
+let deals = [];
+
+async function loadData() {
+  try {
+    // Fetch both tabs in parallel
+    const [dealsRes, updatesRes] = await Promise.all([
+      fetch(DEALS_URL),
+      fetch(UPDATES_URL)
+    ]);
+
+    if (!dealsRes.ok) throw new Error('Failed to fetch deals data');
+    if (!updatesRes.ok) throw new Error('Failed to fetch updates data');
+
+    const dealsCsv = await dealsRes.text();
+    const updatesCsv = await updatesRes.text();
+
+    // Parse deals
+    const dealsRows = parseCSV(dealsCsv);
+    const dealsHeader = dealsRows[0];
+    deals = dealsRows.slice(1).map(row => {
+      const get = (name) => {
+        const idx = dealsHeader.findIndex(h => h.toLowerCase().includes(name.toLowerCase()));
+        return idx >= 0 ? (row[idx] || '') : '';
+      };
+
+      // Parse HF%
+      let hfStr = get('Held by Hedge').replace('%', '').trim();
+      let hf = parseFloat(hfStr) || 0;
+
+      // Parse equity value
+      let evStr = get('Equity Value').replace(/[^0-9.]/g, '');
+      let v = parseInt(evStr) || 0;
+
+      // Parse premium
+      let premStr = get('Premium').replace('%', '').trim();
+      let prem = (premStr === '' || premStr === 'n.a' || premStr === 'n.a.' || premStr === 'n/a') ? null : (parseInt(premStr) || null);
+
+      // Parse HF change
+      let hfC = get('Daily change').trim();
+      if (!hfC) hfC = 'no change';
+
+      return {
+        t: get('Target').replace(/\s+/g, ' ').trim(),
+        sec: get('Sector').replace(/\s+/g, ' ').trim().replace(/\u00a0/g, ' ').trim(),
+        st: get('Status').replace(/\s+/g, ' ').trim(),
+        b: get('Bidder').replace(/\s+/g, ' ').trim(),
+        start: get('Offer period start').trim(),
+        offer: get('Latest offer').trim() || 'n.a',
+        v: v,
+        prem: prem,
+        pusu: get('PUSU').trim(),
+        hf: hf,
+        hfC: hfC,
+        com: get('Comments').replace(/\s+/g, ' ').trim()
+      };
+    }).filter(d => d.t !== '');
+
+    // Parse updates
+    const updatesRows = parseCSV(updatesCsv);
+    const updatesHeader = updatesRows[0];
+    const updates = updatesRows.slice(1).map(row => {
+      const get = (name) => {
+        const idx = updatesHeader.findIndex(h => h.toLowerCase().includes(name.toLowerCase()));
+        return idx >= 0 ? (row[idx] || '') : '';
+      };
+      return {
+        n: get('Target').trim(),
+        s: get('Colour').trim().toLowerCase() || 'red',
+        text: get('Update').trim()
+      };
+    }).filter(u => u.n !== '' && u.text !== '');
+
+    // Render updates
+    renderUpdates(updates);
+
+    // Update the date in the updates title from the sheet
+    const dateStr = updates.length > 0 ? (() => {
+      // Try to get date from first row if there's a Date column
+      const dateIdx = updatesHeader.findIndex(h => h.toLowerCase().includes('date'));
+      if (dateIdx >= 0 && updatesRows[1] && updatesRows[1][dateIdx]) {
+        return updatesRows[1][dateIdx].trim();
+      }
+      return new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+    })() : '';
+    if (dateStr) {
+      document.getElementById('updates-title').textContent = `Updates ${dateStr}:`;
+    }
+
+    // Update footer date
+    const today = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+    document.getElementById('footer-date').textContent = `Data as at ${today} \u00B7 Source: M&A Monitor DataBase`;
+
+    // Build filters and render table
+    buildFilters();
+    go();
+
+  } catch (err) {
+    console.error('Error loading data:', err);
+    document.getElementById('updates-list').innerHTML = '<div class="error-msg">Unable to load updates. Check that the Google Sheet is published.</div>';
+    document.getElementById('tb').innerHTML = '<tr><td colspan="11"><div class="error-msg">Unable to load deal data. Check that the Google Sheet is published and the Sheet ID is correct.</div></td></tr>';
+  }
+}
+
+function renderUpdates(updates) {
+  const el = document.getElementById('updates-list');
+  if (updates.length === 0) {
+    el.innerHTML = '<div style="padding:12px 18px;color:var(--t3);font-size:13px">No updates today.</div>';
+    return;
+  }
+  el.innerHTML = updates.map(u =>
+    `<div class="update-card"><div class="uc-status uc-status-${u.s}"></div><div class="uc-body"><span class="uc-name">${u.n}</span><span class="uc-text">${u.text}</span></div></div>`
+  ).join('');
+}
+
+// =====================================================================
+// TABLE RENDERING (same logic as before)
+// =====================================================================
+function statusColor(s) {
+  if (s === 'Formal offer') return 'sd-green';
+  if (s === 'Indicative offer') return 'sd-amber';
+  return 'sd-red';
+}
+function statusClass(s) {
+  if (s === 'Formal offer') return 'st-formal';
+  if (s === 'Indicative offer') return 'st-indicative';
+  return 'st-approach';
+}
+function premHtml(p) {
+  if (p === null) return '<span class="prem-pill prem-na">n.a</span>';
+  const c = p >= 40 ? 'prem-high' : p >= 15 ? 'prem-mid' : 'prem-low';
+  return `<span class="prem-pill ${c}">${p}%</span>`;
+}
+function fmtVal(v) { return v >= 1000 ? `\u00A3${(v / 1000).toFixed(1)}bn` : `\u00A3${v}m`; }
+function hfHtml(hf, c) {
+  let cls = 'hf-flat', txt = c;
+  if (c.includes('\u2191') || c.includes('up')) cls = 'hf-up';
+  if (c.includes('\u2193') || c.includes('down')) cls = 'hf-down';
+  return `<span class="hf-cell">${hf}%<span class="hf-change ${cls}">${txt}</span></span>`;
+}
+function parseDate(s) { if (!s) return null; const p = s.split(/[\/\-]/); return new Date(p[2], p[1] - 1, p[0]); }
+
+let cs = { col: 'value', asc: false };
+
+function buildFilters() {
+  const sts = [...new Set(deals.map(d => d.st))].sort();
+  const s1 = document.getElementById('fStatus');
+  s1.innerHTML = '<option value="">All Statuses</option>';
+  sts.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; s1.appendChild(o); });
+  const secs = [...new Set(deals.map(d => d.sec))].sort();
+  const s2 = document.getElementById('fSector');
+  s2.innerHTML = '<option value="">All Sectors</option>';
+  secs.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; s2.appendChild(o); });
+}
+
+function getData() {
+  const q = document.getElementById('q').value.toLowerCase();
+  const st = document.getElementById('fStatus').value;
+  const sec = document.getElementById('fSector').value;
+  return deals.filter(d => {
+    if (q && !d.t.toLowerCase().includes(q) && !d.b.toLowerCase().includes(q)) return false;
+    if (st && d.st !== st) return false;
+    if (sec && d.sec !== sec) return false;
+    return true;
+  });
+}
+
+function doSort(data) {
+  const c = cs.col;
+  data.sort((a, b) => {
+    let av, bv;
+    switch (c) {
+      case 'value': av = a.v; bv = b.v; break;
+      case 'target': return cs.asc ? a.t.localeCompare(b.t) : b.t.localeCompare(a.t);
+      case 'sector': return cs.asc ? a.sec.localeCompare(b.sec) : b.sec.localeCompare(a.sec);
+      case 'status': return cs.asc ? a.st.localeCompare(b.st) : b.st.localeCompare(a.st);
+      case 'bidder': return cs.asc ? a.b.localeCompare(b.b) : b.b.localeCompare(a.b);
+      case 'premium': av = a.prem ?? -999; bv = b.prem ?? -999; break;
+      case 'hf': av = a.hf; bv = b.hf; break;
+      case 'start': av = parseDate(a.start) || new Date(0); bv = parseDate(b.start) || new Date(0); break;
+      case 'pusu': av = parseDate(a.pusu) || new Date(2099, 0); bv = parseDate(b.pusu) || new Date(2099, 0); break;
+      default: return 0;
+    }
+    return cs.asc ? av - bv : bv - av;
+  });
+  return data;
+}
+
+function render(data) {
+  const tb = document.getElementById('tb');
+  tb.innerHTML = data.map((d, i) => `<tr style="animation:fu .2s ease-out ${.01 * i}s both">
+    <td><div class="target-cell"><span class="sd ${statusColor(d.st)}"></span><span class="tn">${d.t}</span></div></td>
+    <td style="font-size:11.5px;color:var(--t2)">${d.sec}</td>
+    <td><span class="status-badge ${statusClass(d.st)}">${d.st}</span></td>
+    <td><span class="bn" title="${d.b}">${d.b}</span></td>
+    <td class="dt">${d.start}</td>
+    <td class="offer-price">${d.offer}</td>
+    <td class="vc">${fmtVal(d.v)}</td>
+    <td>${premHtml(d.prem)}</td>
+    <td class="dt">${d.pusu || '\u2014'}</td>
+    <td>${hfHtml(d.hf, d.hfC)}</td>
+    <td class="comment-cell">${d.com}</td>
+  </tr>`).join('');
+
+  document.getElementById('dc').innerHTML = `Showing <b>${data.length}</b> of ${deals.length}`;
+  updateKpis(data);
+}
+
+function updateKpis(data) {
+  const formal = data.filter(d => d.st === 'Formal offer').length;
+  const indicative = data.filter(d => d.st === 'Indicative offer').length;
+  const noprice = data.length - formal - indicative;
+  const tv = data.reduce((s, d) => s + d.v, 0);
+  const avgHf = data.filter(d => d.hf > 0);
+  const meanHf = avgHf.length ? (avgHf.reduce((s, d) => s + d.hf, 0) / avgHf.length) : 0;
+  document.getElementById('kpis').innerHTML = `
+    <div class="kpi-card"><div class="kpi-v">${data.length}</div><div class="kpi-l">Offer Periods</div></div>
+    <div class="kpi-card"><div class="kpi-v" style="color:var(--g)">${formal}</div><div class="kpi-l">Formal Offers</div></div>
+    <div class="kpi-card"><div class="kpi-v" style="color:var(--am)">${indicative}</div><div class="kpi-l">Indicative</div></div>
+    <div class="kpi-card"><div class="kpi-v" style="color:var(--r)">${noprice}</div><div class="kpi-l">No Price</div></div>
+    <div class="kpi-card"><div class="kpi-v">\u00A3${(tv / 1000).toFixed(1)}<span class="u">bn</span></div><div class="kpi-l">Total Value</div></div>
+    <div class="kpi-card"><div class="kpi-v">${meanHf.toFixed(1)}<span class="u">%</span></div><div class="kpi-l">Avg HF %</div></div>`;
+}
+
+function sort(col) {
+  document.querySelectorAll('thead th').forEach(h => h.classList.remove('so'));
+  if (cs.col === col) cs.asc = !cs.asc;
+  else { cs.col = col; cs.asc = (col === 'value' || col === 'premium' || col === 'hf') ? false : true; }
+  const th = document.querySelector(`th[data-c="${col}"]`);
+  if (th) { th.classList.add('so'); th.querySelector('.ar').textContent = cs.asc ? '\u25B2' : '\u25BC'; }
+  go();
+}
+
+function go() { render(doSort(getData())); }
+
+// Load data on page load
+loadData();
+</script>
+</body>
+</html>
