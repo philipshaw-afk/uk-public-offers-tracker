@@ -10,7 +10,7 @@
     "prem": 33,
     "pusu": "31-12-2026",
     "hf": 5.0,
-    "hfC": "▲ 0.1pp",
+    "hfC": "no change",
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. “Hard” irrevocable undertakings of 42% place Nuveen well to reach 75% of votes needed."
   },
   {
@@ -23,8 +23,8 @@
     "v": 8054,
     "prem": 60,
     "pusu": "31-12-2026",
-    "hf": 19.9,
-    "hfC": "▼ 0.7pp",
+    "hf": 22.0,
+    "hfC": "▲ 2.2pp",
     "com": "Scheme of arrangement made at same terms as indicative proposal. Expected to become effective during H2 2026."
   },
   {
@@ -37,7 +37,7 @@
     "v": 2356,
     "prem": 74,
     "pusu": "31-07-2026",
-    "hf": 34.2,
+    "hf": 34.4,
     "hfC": "▲ 0.2pp",
     "com": "Approved by target shareholders. Completion still subject to regulatory approvals, with a long stop date of 31 July 2026."
   },
@@ -51,7 +51,7 @@
     "v": 2340,
     "prem": 37,
     "pusu": "30-09-2026",
-    "hf": 36.1,
+    "hf": 36.3,
     "hfC": "▲ 0.2pp",
     "com": "Shareholders have overwhelmingly approved the scheme, but still subject to regulatory approval. Completion expected some time in Q3."
   },
@@ -66,7 +66,7 @@
     "prem": 6,
     "pusu": "27-03-2026",
     "hf": 4.1,
-    "hfC": "▲ 0.1pp",
+    "hfC": "no change",
     "com": "Talks ongoing with three parties: Advent International, Tinicum/Blackstone Consortium and Arcline Investment Management. On 5 March 2026, Advent announced a 270p proposal, plus 2p final dividend. As it's at a sizeable discount to current share price, will likely need to go higher."
   },
   {
@@ -136,7 +136,7 @@
     "prem": null,
     "pusu": "",
     "hf": 11.6,
-    "hfC": "▲ 4.8pp",
+    "hfC": "no change",
     "com": "Strategic review and formal sales process. No approaches mentioned."
   },
   {
@@ -178,7 +178,7 @@
     "prem": 33,
     "pusu": "12-03-2026",
     "hf": 38.2,
-    "hfC": "▲ 0.4pp",
+    "hfC": "no change",
     "com": "Going as planned - shareholders approved scheme on 26 February 2026, with 84.02% of votes. Expected to become effective on 12 March 2026."
   },
   {
@@ -192,7 +192,7 @@
     "prem": 16,
     "pusu": "02-05-2027",
     "hf": 8.0,
-    "hfC": "▲ 0.1pp",
+    "hfC": "no change",
     "com": "Consortium has gone hostile. Board had rejected indicative offer, calling it highly opportunistic and fundamentally undervaluing company."
   },
   {
@@ -206,8 +206,8 @@
     "prem": 33,
     "pusu": "30-09-2026",
     "hf": 14.6,
-    "hfC": "▲0.4pp",
-    "com": "Offer, by scheme of arrangement, from Qatar-based bank, expected to complete Q3. Undertakings of 19.5%. Offer follows strategic review addressing \"persistent discount to its realisable asset value\". Hedge Fund % change adjusted for opening positions declared in days after announcement."
+    "hfC": "no change",
+    "com": "Offer, by scheme of arrangement, from Qatar-based bank, expected to complete Q3. Undertakings of 19.5%. Offer follows strategic review addressing \"persistent discount to its realisable asset value\"."
   },
   {
     "t": "CAPRICORN ENERGY PLC",
@@ -219,7 +219,7 @@
     "v": 188,
     "prem": null,
     "pusu": "08-04-2026",
-    "hf": 0.0,
+    "hf": 0,
     "hfC": "n.a",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given. Discussions were ongoing and the board was seeking clarity around Alamadiyaf al-Masiyyah's funding arrangements."
   },
@@ -233,8 +233,8 @@
     "v": 186,
     "prem": 27,
     "pusu": "30-06-2026",
-    "hf": 11.7,
-    "hfC": "▲ 0.5pp",
+    "hf": 12.1,
+    "hfC": "▲ 0.4pp",
     "com": "Scheme of arrangement requiring 75% of votes. Undertakings & letters of intent for just 9.22%. Completion expected Q2."
   },
   {
@@ -261,8 +261,8 @@
     "v": 150,
     "prem": 21,
     "pusu": "30-04-2026",
-    "hf": 46.8,
-    "hfC": "no change",
+    "hf": 46.9,
+    "hfC": "▲ 0.1pp",
     "com": "Offer seems to be proceeding as planned. Scheme meetings scheduled for 19 March 2026."
   },
   {
@@ -289,8 +289,8 @@
     "v": 87,
     "prem": 57,
     "pusu": "30-06-2026",
-    "hf": 13.4,
-    "hfC": "no change",
+    "hf": 14.0,
+    "hfC": "▲ 0.5pp",
     "com": "Expected to complete at some point in H1 2026. Shareholder votes scheduled for 12 March 2026."
   },
   {
