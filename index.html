@@ -88,7 +88,6 @@ tbody td{padding:9px 10px;font-size:12.5px;color:var(--t);border-bottom:1px soli
 tbody td:first-child{padding-left:14px}
 tbody tr:last-child td{border-bottom:0}
 
-/* Column width controls - narrower Target/Status/Bidder, wider Comments */
 th.col-target,td.col-target{width:120px;max-width:130px}
 th.col-status,td.col-status{width:85px;max-width:100px;white-space:normal}
 th.col-bidder,td.col-bidder{width:100px;max-width:120px;white-space:normal}
@@ -281,6 +280,10 @@ var UPDATES_TAB = 'Updates';
 var DEALS_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=' + DEALS_TAB;
 var UPDATES_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=' + UPDATES_TAB;
 
+// Static JSON fallback (hosted on same domain - no firewall issues)
+var STATIC_DEALS_URL = 'data/deals.json';
+var STATIC_UPDATES_URL = 'data/updates.json';
+
 // =====================================================================
 // CSV PARSER
 // =====================================================================
@@ -316,76 +319,93 @@ function parseCSV(text) {
 // =====================================================================
 var deals = [];
 
+async function loadFromStatic() {
+  var responses = await Promise.all([
+    fetch(STATIC_DEALS_URL),
+    fetch(STATIC_UPDATES_URL)
+  ]);
+  if (!responses[0].ok || !responses[1].ok) throw new Error('Static files not available');
+  var dealsData = await responses[0].json();
+  var updatesData = await responses[1].json();
+  return { deals: dealsData, updates: updatesData, source: 'static' };
+}
+
+async function loadFromSheets() {
+  var responses = await Promise.all([
+    fetch(DEALS_URL),
+    fetch(UPDATES_URL)
+  ]);
+  if (!responses[0].ok || !responses[1].ok) throw new Error('Google Sheets not available');
+
+  var dealsCsv = await responses[0].text();
+  var updatesCsv = await responses[1].text();
+
+  var dealsRows = parseCSV(dealsCsv);
+  var dealsHeader = dealsRows[0];
+  var parsedDeals = dealsRows.slice(1).map(function(row) {
+    var get = function(name) {
+      var idx = dealsHeader.findIndex(function(h) { return h.toLowerCase().includes(name.toLowerCase()); });
+      return idx >= 0 ? (row[idx] || '') : '';
+    };
+
+    var hfStr = get('Held by Hedge').replace('%', '').trim();
+    var hf = parseFloat(hfStr) || 0;
+    var evStr = get('Equity Value').replace(/[^0-9.]/g, '');
+    var v = parseInt(evStr) || 0;
+    var premStr = get('Premium').replace('%', '').trim();
+    var prem = (premStr === '' || premStr === 'n.a' || premStr === 'n.a.' || premStr === 'n/a') ? null : (parseInt(premStr) || null);
+    var hfC = get('Daily change').trim();
+    if (!hfC) hfC = 'no change';
+
+    return {
+      t: get('Target').replace(/\s+/g, ' ').trim(),
+      sec: get('Sector').replace(/\s+/g, ' ').trim().replace(/\u00a0/g, ' ').trim(),
+      st: get('Status').replace(/\s+/g, ' ').trim(),
+      b: get('Bidder').replace(/\s+/g, ' ').trim(),
+      start: get('Offer period start').trim(),
+      offer: get('Latest offer').trim() || 'n.a',
+      v: v,
+      prem: prem,
+      pusu: get('PUSU').trim(),
+      hf: hf,
+      hfC: hfC,
+      com: get('Comments').replace(/\s+/g, ' ').trim()
+    };
+  }).filter(function(d) { return d.t !== ''; });
+
+  var updatesRows = parseCSV(updatesCsv);
+  var updatesHeader = updatesRows[0];
+  var parsedUpdates = updatesRows.slice(1).map(function(row) {
+    var get = function(name) {
+      var idx = updatesHeader.findIndex(function(h) { return h.toLowerCase().includes(name.toLowerCase()); });
+      return idx >= 0 ? (row[idx] || '') : '';
+    };
+    return {
+      n: get('Target').trim(),
+      s: get('Colour').trim().toLowerCase() || 'red',
+      text: get('Update').trim(),
+      date: get('Date').trim()
+    };
+  }).filter(function(u) { return u.n !== '' && u.text !== ''; });
+
+  return { deals: parsedDeals, updates: parsedUpdates, source: 'sheets' };
+}
+
 async function loadData() {
   try {
-    var responses = await Promise.all([
-      fetch(DEALS_URL),
-      fetch(UPDATES_URL)
-    ]);
-    var dealsRes = responses[0];
-    var updatesRes = responses[1];
+    var data;
+    try {
+      data = await loadFromStatic();
+    } catch (e) {
+      console.log('Static files not available, trying Google Sheets...');
+      data = await loadFromSheets();
+    }
 
-    if (!dealsRes.ok) throw new Error('Failed to fetch deals data');
-    if (!updatesRes.ok) throw new Error('Failed to fetch updates data');
+    deals = data.deals;
 
-    var dealsCsv = await dealsRes.text();
-    var updatesCsv = await updatesRes.text();
-
-    // Parse deals
-    var dealsRows = parseCSV(dealsCsv);
-    var dealsHeader = dealsRows[0];
-    deals = dealsRows.slice(1).map(function(row) {
-      var get = function(name) {
-        var idx = dealsHeader.findIndex(function(h) { return h.toLowerCase().includes(name.toLowerCase()); });
-        return idx >= 0 ? (row[idx] || '') : '';
-      };
-
-      var hfStr = get('Held by Hedge').replace('%', '').trim();
-      var hf = parseFloat(hfStr) || 0;
-      var evStr = get('Equity Value').replace(/[^0-9.]/g, '');
-      var v = parseInt(evStr) || 0;
-      var premStr = get('Premium').replace('%', '').trim();
-      var prem = (premStr === '' || premStr === 'n.a' || premStr === 'n.a.' || premStr === 'n/a') ? null : (parseInt(premStr) || null);
-      var hfC = get('Daily change').trim();
-      if (!hfC) hfC = 'no change';
-
-      return {
-        t: get('Target').replace(/\s+/g, ' ').trim(),
-        sec: get('Sector').replace(/\s+/g, ' ').trim().replace(/\u00a0/g, ' ').trim(),
-        st: get('Status').replace(/\s+/g, ' ').trim(),
-        b: get('Bidder').replace(/\s+/g, ' ').trim(),
-        start: get('Offer period start').trim(),
-        offer: get('Latest offer').trim() || 'n.a',
-        v: v,
-        prem: prem,
-        pusu: get('PUSU').trim(),
-        hf: hf,
-        hfC: hfC,
-        com: get('Comments').replace(/\s+/g, ' ').trim()
-      };
-    }).filter(function(d) { return d.t !== ''; });
-
-    // Parse updates
-    var updatesRows = parseCSV(updatesCsv);
-    var updatesHeader = updatesRows[0];
-    var updates = updatesRows.slice(1).map(function(row) {
-      var get = function(name) {
-        var idx = updatesHeader.findIndex(function(h) { return h.toLowerCase().includes(name.toLowerCase()); });
-        return idx >= 0 ? (row[idx] || '') : '';
-      };
-      return {
-        n: get('Target').trim(),
-        s: get('Colour').trim().toLowerCase() || 'red',
-        text: get('Update').trim(),
-        date: get('Date').trim()
-      };
-    }).filter(function(u) { return u.n !== '' && u.text !== ''; });
-
-    // Render updates - title stays as just "Updates"
-    renderUpdates(updates);
+    renderUpdates(data.updates);
     document.getElementById('updates-title').textContent = 'Updates';
 
-    // Update footer date
     var today = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
     document.getElementById('footer-date').textContent = 'Data as at ' + today + ' \u00B7 Source: M&A Monitor DataBase';
 
