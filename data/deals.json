@@ -9,8 +9,8 @@
     "v": 9503,
     "prem": 33,
     "pusu": "31-12-2026",
-    "hf": 5.0,
-    "hfC": "no change",
+    "hf": 5.1,
+    "hfC": "▲ 0.1pp",
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. “Hard” irrevocable undertakings of 42% place Nuveen well to reach 75% of votes needed."
   },
   {
@@ -23,8 +23,8 @@
     "v": 8054,
     "prem": 60,
     "pusu": "31-12-2026",
-    "hf": 22.0,
-    "hfC": "▲ 2.2pp",
+    "hf": 22.5,
+    "hfC": "▲ 0.5pp",
     "com": "Scheme of arrangement made at same terms as indicative proposal. Expected to become effective during H2 2026."
   },
   {
@@ -38,7 +38,7 @@
     "prem": 74,
     "pusu": "31-07-2026",
     "hf": 34.4,
-    "hfC": "▲ 0.2pp",
+    "hfC": "no change",
     "com": "Approved by target shareholders. Completion still subject to regulatory approvals, with a long stop date of 31 July 2026."
   },
   {
@@ -51,7 +51,7 @@
     "v": 2340,
     "prem": 37,
     "pusu": "30-09-2026",
-    "hf": 36.3,
+    "hf": 36.5,
     "hfC": "▲ 0.2pp",
     "com": "Shareholders have overwhelmingly approved the scheme, but still subject to regulatory approval. Completion expected some time in Q3."
   },
@@ -65,9 +65,9 @@
     "v": 1132,
     "prem": 6,
     "pusu": "27-03-2026",
-    "hf": 4.1,
+    "hf": 21.3,
     "hfC": "no change",
-    "com": "Talks ongoing with three parties: Advent International, Tinicum/Blackstone Consortium and Arcline Investment Management. On 5 March 2026, Advent announced a 270p proposal, plus 2p final dividend. As it's at a sizeable discount to current share price, will likely need to go higher."
+    "com": "Talks ongoing with three parties: Advent International, Tinicum/Blackstone Consortium and Arcline Investment Management. On 5 March 2026, Advent announced a 270p proposal, plus 2p final dividend. As it's at a sizeable discount to current share price, will likely need to go higher. Hedge fund % change adjusted for opening position declared today."
   },
   {
     "t": "SPIRE HEALTHCARE GROUP PLC",
@@ -107,8 +107,8 @@
     "v": 577,
     "prem": 43,
     "pusu": "30-06-2026",
-    "hf": 25.2,
-    "hfC": "no change",
+    "hf": 26.0,
+    "hfC": "▲ 0.8pp",
     "com": "Shareholders approved scheme on 11 March. Still subject to regulatory approval, with parties aiming to complete by end of Q2 2026."
   },
   {
@@ -135,8 +135,8 @@
     "v": 414,
     "prem": null,
     "pusu": "",
-    "hf": 11.6,
-    "hfC": "no change",
+    "hf": 11.7,
+    "hfC": "▲ 0.1pp",
     "com": "Strategic review and formal sales process. No approaches mentioned."
   },
   {
@@ -163,23 +163,9 @@
     "v": 340,
     "prem": 27,
     "pusu": "30-06-2026",
-    "hf": 46.4,
-    "hfC": "no change",
+    "hf": 46.5,
+    "hfC": "▲ 0.1pp",
     "com": "Bidder has switched from scheme to takeover offer to \"increase certainty of execution\". Bidder's support for offer in respect of 50.14% is above the minimum acceptance condition of 50%. On 20 Feb 2026, timetable suspended due to outstanding regulatory conditions. Completion expected in Q2."
-  },
-  {
-    "t": "KITWAVE GROUP PLC (DELETED)",
-    "sec": "Distributors",
-    "st": "Formal offer",
-    "b": "OEP CAPITAL ADVISORS LP",
-    "start": "22-01-2026",
-    "offer": "295p",
-    "v": 251,
-    "prem": 33,
-    "pusu": "12-03-2026",
-    "hf": 38.2,
-    "hfC": "no change",
-    "com": "Became effective this morning."
   },
   {
     "t": "CAB PAYMENTS HOLDINGS PLC",
@@ -191,8 +177,8 @@
     "v": 213,
     "prem": 16,
     "pusu": "02-05-2027",
-    "hf": 8.0,
-    "hfC": "no change",
+    "hf": 8.1,
+    "hfC": "▲ 0.1pp",
     "com": "Consortium has gone hostile. Board had rejected indicative offer, calling it highly opportunistic and fundamentally undervaluing company."
   },
   {
@@ -205,8 +191,8 @@
     "v": 190,
     "prem": 33,
     "pusu": "30-09-2026",
-    "hf": 14.6,
-    "hfC": "no change",
+    "hf": 16.1,
+    "hfC": "▲ 1.5pp",
     "com": "Offer, by scheme of arrangement, from Qatar-based bank, expected to complete Q3. Undertakings of 19.5%. Offer follows strategic review addressing \"persistent discount to its realisable asset value\"."
   },
   {
@@ -219,7 +205,7 @@
     "v": 188,
     "prem": null,
     "pusu": "08-04-2026",
-    "hf": 0,
+    "hf": 14.4,
     "hfC": "no change",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given. Discussions were ongoing and the board was seeking clarity around Alamadiyaf al-Masiyyah's funding arrangements."
   },
@@ -233,8 +219,8 @@
     "v": 186,
     "prem": 27,
     "pusu": "30-06-2026",
-    "hf": 12.1,
-    "hfC": "▲ 0.4pp",
+    "hf": 12.4,
+    "hfC": "▲ 0.3pp",
     "com": "Scheme of arrangement requiring 75% of votes. Undertakings & letters of intent for just 9.22%. Completion expected Q2."
   },
   {
@@ -261,8 +247,8 @@
     "v": 150,
     "prem": 21,
     "pusu": "30-04-2026",
-    "hf": 46.9,
-    "hfC": "▲ 0.1pp",
+    "hf": 47.2,
+    "hfC": "▲ 0.3pp",
     "com": "Offer seems to be proceeding as planned. Scheme meetings scheduled for 19 March 2026."
   },
   {
@@ -289,8 +275,8 @@
     "v": 87,
     "prem": 57,
     "pusu": "30-06-2026",
-    "hf": 14.0,
-    "hfC": "▲ 0.5pp",
+    "hf": 14.6,
+    "hfC": "▲ 0.6pp",
     "com": "Expected to complete at some point in H1 2026. Shareholders voted in favour on 12 March 2026."
   },
   {
