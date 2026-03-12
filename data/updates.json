@@ -1,5 +1,11 @@
 [
   {
+    "n": "Kitwave Group Plc",
+    "s": "green",
+    "text": "Scheme expected to become effective today.",
+    "date": "12 March 2026"
+  },
+  {
     "n": "Capricorn Energy Plc",
     "s": "red",
     "text": "New Addition: Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given.",
@@ -10,11 +16,5 @@
     "s": "green",
     "text": "Shareholders approve scheme, with 98.5% of votes in favour. Aim is for completion by end of Q2 2026.",
     "date": "11 March 2026"
-  },
-  {
-    "n": "Kitwave Group Plc",
-    "s": "green",
-    "text": "Court sanctions scheme. Completion scheduled for 12 March 2026.",
-    "date": "10 March 2026"
   }
 ]
