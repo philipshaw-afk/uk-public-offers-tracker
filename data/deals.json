@@ -9,7 +9,7 @@
     "v": 9503,
     "prem": 33,
     "pusu": "31-12-2026",
-    "hf": 5.2,
+    "hf": 5.3,
     "hfC": "▲ 0.1pp",
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. “Hard” irrevocable undertakings of 42% place Nuveen well to reach 75% of votes needed."
   },
@@ -23,8 +23,8 @@
     "v": 8054,
     "prem": 60,
     "pusu": "31-12-2026",
-    "hf": 22.7,
-    "hfC": "no change",
+    "hf": 22.9,
+    "hfC": "▲ 0.2pp",
     "com": "Scheme of arrangement made at same terms as indicative proposal. Expected to become effective during H2 2026."
   },
   {
@@ -66,7 +66,7 @@
     "prem": 6,
     "pusu": "27-03-2026",
     "hf": 20.5,
-    "hfC": "▼ 0.5pp",
+    "hfC": "no change",
     "com": "Talks ongoing with three parties: Advent International, Tinicum/Blackstone Consortium and Arcline Investment Management. On 5 March 2026, Advent announced a 270p proposal, plus 2p final dividend. As it's at a sizeable discount to current share price, will likely need to go higher."
   },
   {
@@ -107,8 +107,8 @@
     "v": 577,
     "prem": 43,
     "pusu": "30-06-2026",
-    "hf": 31.7,
-    "hfC": "▲ 2.9pp",
+    "hf": 31.5,
+    "hfC": "▼ 0.2pp",
     "com": "Shareholders approved scheme on 11 March. Still subject to regulatory approval, with parties aiming to complete by end of Q2 2026."
   },
   {
@@ -177,8 +177,8 @@
     "v": 250,
     "prem": 32,
     "pusu": "02-05-2027",
-    "hf": 8.2,
-    "hfC": "▲ 0.1pp",
+    "hf": 8.1,
+    "hfC": "▼ 0.1pp",
     "com": "Helios consortium has gone hostile, with 85p formal offer. Board had rejected indicative offer, calling it highly opportunistic and fundamentally undervaluing company. StoneX now made an approach regarding a potential \"white knight\" offer at 95p"
   },
   {
@@ -191,8 +191,8 @@
     "v": 190,
     "prem": 33,
     "pusu": "30-09-2026",
-    "hf": 17.4,
-    "hfC": "no change",
+    "hf": 18.2,
+    "hfC": "▼ 0.8pp",
     "com": "Offer, by scheme of arrangement, from Qatar-based bank, expected to complete Q3. Undertakings of 19.5%. Offer follows strategic review addressing \"persistent discount to its realisable asset value\"."
   },
   {
@@ -206,7 +206,7 @@
     "prem": null,
     "pusu": "08-04-2026",
     "hf": 14.3,
-    "hfC": "▼ 0.1pp",
+    "hfC": "no change",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given. Discussions were ongoing and the board was seeking clarity around Alamadiyaf al-Masiyyah's funding arrangements."
   },
   {
@@ -219,8 +219,8 @@
     "v": 186,
     "prem": 27,
     "pusu": "30-06-2026",
-    "hf": 14.7,
-    "hfC": "▲ 2.3pp",
+    "hf": 16.3,
+    "hfC": "▲ 1.6pp",
     "com": "Scheme of arrangement requiring 75% of votes. Undertakings & letters of intent for just 9.22%. Completion expected Q2."
   },
   {
@@ -247,8 +247,8 @@
     "v": 150,
     "prem": 21,
     "pusu": "30-04-2026",
-    "hf": 47.2,
-    "hfC": "no change",
+    "hf": 47.3,
+    "hfC": "▲ 0.1pp",
     "com": "Offer seems to be proceeding as planned. Scheme meetings scheduled for 19 March 2026."
   },
   {
@@ -280,20 +280,6 @@
     "com": "Expected to complete at some point in H1 2026. Shareholders voted in favour on 12 March 2026."
   },
   {
-    "t": "INSPECS GROUP PLC",
-    "sec": "Household Goods",
-    "st": "Formal offer",
-    "b": "LUKE JOHNSON AND IAN LIVINGSTONE",
-    "start": "23-10-2025",
-    "offer": "84p",
-    "v": 85,
-    "prem": 107,
-    "pusu": "30-06-2026",
-    "hf": 1.1,
-    "hfC": "no change",
-    "com": "Switched from scheme to takeover offer on 20 Feb 2026, “in order to increase certainty”. Offer unconditional on 13 March 2026, with 50.1% acceptance."
-  },
-  {
     "t": "IQE PLC",
     "sec": "I.T.",
     "st": "Approach, no price",
@@ -318,7 +304,7 @@
     "prem": 20,
     "pusu": "29-03-2026",
     "hf": 12.9,
-    "hfC": "▲ 0.1pp",
+    "hfC": "no change",
     "com": "Approved by target shareholders. Completion still subject to FCA approvals, with a long stop date of 29 March 2026."
   },
   {
