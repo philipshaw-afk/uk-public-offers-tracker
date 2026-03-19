@@ -151,7 +151,7 @@
     "pusu": "",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Strategic review and formal sales process. On 11 Feb 2026, in response to media speculation interest from LondonMetric Property PLC confirmed. No PUSU deadline."
+    "com": "Strategic review and formal sales process. On 11 Feb 2026, in response to media speculation interest from LondonMetric Property PLC confirmed. No PUSU deadline. Company currently making a shortlist of bidders."
   },
   {
     "t": "IDOX PLC",
@@ -222,6 +222,20 @@
     "hf": 16.6,
     "hfC": "▲ 0.3pp",
     "com": "Scheme of arrangement requiring 75% of votes. Undertakings & letters of intent for just 9.22%. Completion expected Q2."
+  },
+  {
+    "t": "AFENTRA PLC",
+    "sec": "Oil & Gas",
+    "st": "Strategic review",
+    "b": "NO NAMED OFFEROR",
+    "start": "19-03-2026",
+    "offer": "n.a",
+    "v": 152,
+    "prem": null,
+    "pusu": "",
+    "hf": 0,
+    "hfC": "no change",
+    "com": "Strategic review. Company has engaged with a limited number of counterparties. No PUSU and potential offerors are not required to be named. Review taking place alongside consideration of alternative strategic options to finance growth."
   },
   {
     "t": "KORE POTASH PLC",
