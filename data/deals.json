@@ -9,8 +9,8 @@
     "v": 9503,
     "prem": 33,
     "pusu": "31-12-2026",
-    "hf": 5.3,
-    "hfC": "no change",
+    "hf": 5.5,
+    "hfC": "▲ 0.2pp",
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. “Hard” irrevocable undertakings of 42% place Nuveen well to reach 75% of votes needed."
   },
   {
@@ -23,8 +23,8 @@
     "v": 8054,
     "prem": 60,
     "pusu": "31-12-2026",
-    "hf": 22.9,
-    "hfC": "no change",
+    "hf": 23.1,
+    "hfC": "▲ 0.2pp",
     "com": "Scheme of arrangement made at same terms as indicative proposal. Expected to become effective during H2 2026."
   },
   {
@@ -37,8 +37,8 @@
     "v": 2356,
     "prem": 74,
     "pusu": "31-07-2026",
-    "hf": 35.7,
-    "hfC": "▲ 1.2pp",
+    "hf": 35.6,
+    "hfC": "▼ 0.1pp",
     "com": "Approved by target shareholders. Completion still subject to regulatory approvals, with a long stop date of 31 July 2026."
   },
   {
@@ -51,7 +51,7 @@
     "v": 2340,
     "prem": 37,
     "pusu": "30-09-2026",
-    "hf": 36.9,
+    "hf": 37.0,
     "hfC": "▲ 0.1pp",
     "com": "Shareholders have overwhelmingly approved the scheme, but still subject to regulatory approval. Completion expected some time in Q3."
   },
@@ -108,7 +108,7 @@
     "prem": 43,
     "pusu": "30-06-2026",
     "hf": 32.8,
-    "hfC": "▲ 1.3pp",
+    "hfC": "no change",
     "com": "Shareholders approved scheme on 11 March. Still subject to regulatory approval, with parties aiming to complete by end of Q2 2026."
   },
   {
@@ -192,7 +192,7 @@
     "prem": 33,
     "pusu": "30-09-2026",
     "hf": 18.3,
-    "hfC": "▲ 0.1pp",
+    "hfC": "no change",
     "com": "Offer, by scheme of arrangement, from Qatar-based bank, expected to complete Q3. Undertakings of 19.5%. Offer follows strategic review addressing \"persistent discount to its realisable asset value\"."
   },
   {
@@ -205,9 +205,9 @@
     "v": 188,
     "prem": null,
     "pusu": "08-04-2026",
-    "hf": 14.3,
-    "hfC": "no change",
-    "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given. Discussions were ongoing and the board was seeking clarity around Alamadiyaf al-Masiyyah's funding arrangements."
+    "hf": 33.1,
+    "hfC": "▲ 18.8pp",
+    "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given. Discussions were ongoing and the board was seeking clarity around Alamadiyaf al-Masiyyah's funding arrangements. Today's 18.8% change in HF% is because of opening positions declared today and not trades."
   },
   {
     "t": "AUGMENTUM FINTECH PLC",
@@ -219,8 +219,8 @@
     "v": 186,
     "prem": 27,
     "pusu": "30-06-2026",
-    "hf": 16.6,
-    "hfC": "▲ 0.3pp",
+    "hf": 17.7,
+    "hfC": "▲ 1.1pp",
     "com": "Scheme of arrangement requiring 75% of votes. Undertakings & letters of intent for just 9.22%. Completion expected Q2."
   },
   {
