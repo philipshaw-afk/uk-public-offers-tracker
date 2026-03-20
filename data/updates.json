@@ -1,5 +1,17 @@
 [
   {
+    "n": "CAB Payments Holdinsg Plc",
+    "s": "amber",
+    "text": "Board rejects StoneX's indicative offer of 95p - \"significantly undervalues\" company",
+    "date": "19 March 2026"
+  },
+  {
+    "n": "Augmentum Fintech Plc",
+    "s": "green",
+    "text": "Scheme document published - vote scheduled for 15 April 2026",
+    "date": "19 March 2026"
+  },
+  {
     "n": "Life Science REIT Plc",
     "s": "green",
     "text": "Shareholders approve scheme, with over 99% of votes. Effective date 20 April 2026.",
@@ -9,12 +21,6 @@
     "n": "Afentra Plc",
     "s": "red",
     "text": "New addition - strategic review, company has engaged with a limited number of counterparties.",
-    "date": "19 March 2026"
-  },
-  {
-    "n": "Picton Property Income Limited",
-    "s": "red",
-    "text": "Proposals received from wide \"range of parties\" in strategic review. Company is making a shortlist.",
     "date": "19 March 2026"
   }
 ]
