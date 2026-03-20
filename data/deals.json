@@ -9,8 +9,8 @@
     "v": 9503,
     "prem": 33,
     "pusu": "31-12-2026",
-    "hf": 5.5,
-    "hfC": "▲ 0.2pp",
+    "hf": 5.6,
+    "hfC": "▲ 0.1pp",
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. “Hard” irrevocable undertakings of 42% place Nuveen well to reach 75% of votes needed."
   },
   {
@@ -23,8 +23,8 @@
     "v": 8054,
     "prem": 60,
     "pusu": "31-12-2026",
-    "hf": 23.1,
-    "hfC": "▲ 0.2pp",
+    "hf": 24.5,
+    "hfC": "▲ 1.4pp",
     "com": "Scheme of arrangement made at same terms as indicative proposal. Expected to become effective during H2 2026."
   },
   {
@@ -37,8 +37,8 @@
     "v": 2356,
     "prem": 74,
     "pusu": "31-07-2026",
-    "hf": 35.6,
-    "hfC": "▼ 0.1pp",
+    "hf": 35.7,
+    "hfC": "▲ 0.1pp",
     "com": "Approved by target shareholders. Completion still subject to regulatory approvals, with a long stop date of 31 July 2026."
   },
   {
@@ -52,7 +52,7 @@
     "prem": 37,
     "pusu": "30-09-2026",
     "hf": 37.0,
-    "hfC": "▲ 0.1pp",
+    "hfC": "no change",
     "com": "Shareholders have overwhelmingly approved the scheme, but still subject to regulatory approval. Completion expected some time in Q3."
   },
   {
@@ -73,7 +73,7 @@
     "t": "SPIRE HEALTHCARE GROUP PLC",
     "sec": "Healthcare",
     "st": "Approach, no price",
-    "b": "BRIDGEPOINT/TRITON INVESTMENT ADVISERS",
+    "b": "TRITON INVESTMENT ADVISERS",
     "start": "18-09-2025",
     "offer": "n.a",
     "v": 874,
@@ -81,7 +81,7 @@
     "pusu": "21-03-2026",
     "hf": 24.4,
     "hfC": "no change",
-    "com": "Competing approaches from Bridgepoint and Triton, following a strategic review. PUSU Deadline extended on 18 Feb 2026 as discussions ongoing."
+    "com": "Competing approaches from Bridgepoint and Triton, following a strategic review. On 20 March 2026, Bridgepoint ruled out an offer."
   },
   {
     "t": "PPHE HOTEL GROUP LIMITED",
@@ -177,8 +177,8 @@
     "v": 250,
     "prem": 32,
     "pusu": "02-05-2027",
-    "hf": 8.1,
-    "hfC": "no change",
+    "hf": 8.2,
+    "hfC": "▲ 0.1pp",
     "com": "Helios consortium has gone hostile, with 85p formal offer. Board had rejected indicative offer, calling it highly opportunistic and fundamentally undervaluing company. StoneX now made an approach regarding a potential offer at 95p, but rejected by Board on 20 March 2026."
   },
   {
@@ -191,8 +191,8 @@
     "v": 190,
     "prem": 33,
     "pusu": "30-09-2026",
-    "hf": 18.3,
-    "hfC": "no change",
+    "hf": 22.4,
+    "hfC": "▲ 4.1pp",
     "com": "Offer, by scheme of arrangement, from Qatar-based bank, expected to complete Q3. Undertakings of 19.5%. Offer follows strategic review addressing \"persistent discount to its realisable asset value\"."
   },
   {
@@ -205,9 +205,9 @@
     "v": 188,
     "prem": null,
     "pusu": "08-04-2026",
-    "hf": 33.1,
-    "hfC": "▲ 18.8pp",
-    "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given. Discussions were ongoing and the board was seeking clarity around Alamadiyaf al-Masiyyah's funding arrangements. Today's 18.8% change in HF% is because of opening positions declared today and not trades."
+    "hf": 38.4,
+    "hfC": "▲ 5.3pp",
+    "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given. Discussions were ongoing and the board was seeking clarity around Alamadiyaf al-Masiyyah's funding arrangements."
   },
   {
     "t": "AUGMENTUM FINTECH PLC",
@@ -219,8 +219,8 @@
     "v": 186,
     "prem": 27,
     "pusu": "30-06-2026",
-    "hf": 17.7,
-    "hfC": "▲ 1.1pp",
+    "hf": 18.5,
+    "hfC": "▲ 0.7pp",
     "com": "Scheme of arrangement requiring 75% of votes. Undertakings & letters of intent for just 9.22%. Shareholder vote sheduled for 15 April 2026. Completion expected Q2."
   },
   {
@@ -233,7 +233,7 @@
     "v": 152,
     "prem": null,
     "pusu": "",
-    "hf": 0,
+    "hf": 0.0,
     "hfC": "no change",
     "com": "Strategic review. Company has engaged with a limited number of counterparties. No PUSU and potential offerors are not required to be named. Review taking place alongside consideration of alternative strategic options to finance growth."
   },
@@ -261,8 +261,8 @@
     "v": 150,
     "prem": 21,
     "pusu": "20-04-2026",
-    "hf": 47.6,
-    "hfC": "▲ 0.3pp",
+    "hf": 47.7,
+    "hfC": "▲ 0.1pp",
     "com": "Offer seems to be proceeding as planned. Shareholders approved scheme, with over 99% of votes. Effective date will be 20 April 2026."
   },
   {
