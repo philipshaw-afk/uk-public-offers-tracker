@@ -1,5 +1,11 @@
 [
   {
+    "n": "Just Group Plc",
+    "s": "green",
+    "text": "All regulatory approvals received. Scheme expected to become effective on 1 April 2026.",
+    "date": "23 March 2026"
+  },
+  {
     "n": "Spire Healthcare Group Plc",
     "s": "red",
     "text": "Bridgepoint confirms that it does not intend to make an offer for Spire Healthcare.",
@@ -22,17 +28,5 @@
     "s": "green",
     "text": "Scheme document published - vote scheduled for 15 April 2026",
     "date": "20 March 2026"
-  },
-  {
-    "n": "Life Science REIT Plc",
-    "s": "green",
-    "text": "Shareholders approve scheme, with over 99% of votes. Effective date 20 April 2026.",
-    "date": "19 March 2026"
-  },
-  {
-    "n": "Afentra Plc",
-    "s": "red",
-    "text": "New addition - strategic review, company has engaged with a limited number of counterparties.",
-    "date": "19 March 2026"
   }
 ]
