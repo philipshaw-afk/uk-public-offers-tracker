@@ -1,32 +1,20 @@
 [
   {
-    "n": "Just Group Plc",
+    "n": "Frenkel Topping Group Plc",
     "s": "green",
-    "text": "All regulatory approvals received. Scheme expected to become effective on 1 April 2026.",
+    "text": "Long Stop Date extended from 29 March to 29 May 2026 as FCA approval still not granted.",
     "date": "23 March 2026"
   },
   {
     "n": "Spire Healthcare Group Plc",
     "s": "red",
-    "text": "Bridgepoint confirms that it does not intend to make an offer for Spire Healthcare.",
-    "date": "20 March 2026"
+    "text": "Discussions with Bridgepoint and Triton have ended. Spire in discussions with other parties.",
+    "date": "23 March 2026"
   },
   {
-    "n": "Surface Transforms plc",
-    "s": "red",
-    "text": "New addition - strategic review & formal sale process, after going into administration.",
-    "date": "20 March 2026"
-  },
-  {
-    "n": "CAB Payments Holdings Plc",
-    "s": "amber",
-    "text": "Board rejects StoneX's indicative offer of 95p - \"significantly undervalues\" company",
-    "date": "20 March 2026"
-  },
-  {
-    "n": "Augmentum Fintech Plc",
+    "n": "Just Group Plc",
     "s": "green",
-    "text": "Scheme document published - vote scheduled for 15 April 2026",
-    "date": "20 March 2026"
+    "text": "All regulatory approvals received. Scheme expected to become effective on 1 April 2026.",
+    "date": "23 March 2026"
   }
 ]
