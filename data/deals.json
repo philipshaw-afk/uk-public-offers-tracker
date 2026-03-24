@@ -9,7 +9,7 @@
     "v": 9503,
     "prem": 33,
     "pusu": "31-12-2026",
-    "hf": 5.6,
+    "hf": 5.7,
     "hfC": "▲ 0.1pp",
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. “Hard” irrevocable undertakings of 42% place Nuveen well to reach 75% of votes needed."
   },
@@ -23,8 +23,8 @@
     "v": 8054,
     "prem": 60,
     "pusu": "31-12-2026",
-    "hf": 24.5,
-    "hfC": "▲ 1.4pp",
+    "hf": 24.9,
+    "hfC": "▲ 0.4pp",
     "com": "Scheme of arrangement made at same terms as indicative proposal. Expected to become effective during H2 2026."
   },
   {
@@ -37,8 +37,8 @@
     "v": 2356,
     "prem": 74,
     "pusu": "01-04-2026",
-    "hf": 35.7,
-    "hfC": "▲ 0.1pp",
+    "hf": 36.8,
+    "hfC": "▲ 1.1pp",
     "com": "Approved by target shareholders and all regulatory approvals received. Effective date will be 1 April 2026."
   },
   {
@@ -73,7 +73,7 @@
     "t": "SPIRE HEALTHCARE GROUP PLC",
     "sec": "Healthcare",
     "st": "Approach, no price",
-    "b": "TRITON INVESTMENT ADVISERS",
+    "b": "NO NAMED OFFEROR",
     "start": "18-09-2025",
     "offer": "n.a",
     "v": 874,
@@ -81,7 +81,7 @@
     "pusu": "21-03-2026",
     "hf": 24.4,
     "hfC": "no change",
-    "com": "Competing approaches from Bridgepoint and Triton, following a strategic review. On 20 March 2026, Bridgepoint ruled out an offer."
+    "com": "Competing approaches received from Bridgepoint and Triton, following a strategic review.  Discussions with Bridgepoint and Triton have now ended. Discussions ongoing with other parties."
   },
   {
     "t": "PPHE HOTEL GROUP LIMITED",
@@ -107,8 +107,8 @@
     "v": 577,
     "prem": 43,
     "pusu": "30-06-2026",
-    "hf": 32.8,
-    "hfC": "no change",
+    "hf": 32.7,
+    "hfC": "▼0.1pp",
     "com": "Shareholders approved scheme on 11 March. Still subject to regulatory approval, with parties aiming to complete by end of Q2 2026."
   },
   {
@@ -121,8 +121,8 @@
     "v": 446,
     "prem": null,
     "pusu": "",
-    "hf": 0.0,
-    "hfC": "no change",
+    "hf": 1.2,
+    "hfC": "▲ 1.2pp",
     "com": "Strategic review ongoing - NCC has not stated it has received an approach."
   },
   {
@@ -135,8 +135,8 @@
     "v": 414,
     "prem": null,
     "pusu": "",
-    "hf": 6.9,
-    "hfC": "no change",
+    "hf": 7.0,
+    "hfC": "▲ 0.1pp",
     "com": "Strategic review and formal sales process. No approaches mentioned."
   },
   {
@@ -191,8 +191,8 @@
     "v": 190,
     "prem": 33,
     "pusu": "30-09-2026",
-    "hf": 22.4,
-    "hfC": "▲ 4.1pp",
+    "hf": 22.7,
+    "hfC": "▲ 0.3pp",
     "com": "Offer, by scheme of arrangement, from Qatar-based bank, expected to complete Q3. Undertakings of 19.5%. Offer follows strategic review addressing \"persistent discount to its realisable asset value\"."
   },
   {
@@ -206,7 +206,7 @@
     "prem": null,
     "pusu": "08-04-2026",
     "hf": 38.4,
-    "hfC": "▲ 5.3pp",
+    "hfC": "no change",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given. Discussions were ongoing and the board was seeking clarity around Alamadiyaf al-Masiyyah's funding arrangements."
   },
   {
@@ -219,8 +219,8 @@
     "v": 186,
     "prem": 27,
     "pusu": "30-06-2026",
-    "hf": 18.5,
-    "hfC": "▲ 0.7pp",
+    "hf": 18.6,
+    "hfC": "▲ 0.1pp",
     "com": "Scheme of arrangement requiring 75% of votes. Undertakings & letters of intent for just 9.22%. Shareholder vote sheduled for 15 April 2026. Completion expected Q2."
   },
   {
@@ -261,8 +261,8 @@
     "v": 150,
     "prem": 21,
     "pusu": "20-04-2026",
-    "hf": 47.7,
-    "hfC": "▲ 0.1pp",
+    "hf": 48.5,
+    "hfC": "▲ 0.8pp",
     "com": "Offer seems to be proceeding as planned. Shareholders approved scheme, with over 99% of votes. Effective date will be 20 April 2026."
   },
   {
@@ -316,10 +316,10 @@
     "offer": "50p",
     "v": 64,
     "prem": 20,
-    "pusu": "29-03-2026",
+    "pusu": "29-05-2026",
     "hf": 12.9,
     "hfC": "no change",
-    "com": "Approved by target shareholders. Completion still subject to FCA approvals, with a long stop date of 29 March 2026."
+    "com": "Approved by target shareholders. Completion still subject to FCA approvals, with long stop date of 29 May 2026."
   },
   {
     "t": "CYANCONNODE HOLDINGS PLC",
