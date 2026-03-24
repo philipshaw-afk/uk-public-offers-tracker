@@ -1,5 +1,11 @@
 [
   {
+    "n": "Capricorn Energy Plc",
+    "s": "red",
+    "text": "Capricorn has rejected proposal from Dragon Oil to acquire its assets in the Western Desert.",
+    "date": "24 March 2026"
+  },
+  {
     "n": "WH Ireland Group Plc",
     "s": "green",
     "text": "Deleted - scheme becomes effective",
@@ -16,23 +22,5 @@
     "s": "red",
     "text": "Picton confirms consortium comprised of LondonMetric Property PLC and Schroder Real Estate Investment Trust Ltd is one of the interested parties.",
     "date": "24 March 2026"
-  },
-  {
-    "n": "Frenkel Topping Group Plc",
-    "s": "green",
-    "text": "Long Stop Date extended from 29 March to 29 May 2026 as FCA approval still not granted.",
-    "date": "23 March 2026"
-  },
-  {
-    "n": "Spire Healthcare Group Plc",
-    "s": "red",
-    "text": "Discussions with Bridgepoint and Triton have ended. Spire in discussions with other parties.",
-    "date": "23 March 2026"
-  },
-  {
-    "n": "Just Group Plc",
-    "s": "green",
-    "text": "All regulatory approvals received. Scheme expected to become effective on 1 April 2026.",
-    "date": "23 March 2026"
   }
 ]
