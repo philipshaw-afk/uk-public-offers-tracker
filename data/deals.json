@@ -143,7 +143,7 @@
     "t": "PICTON PROPERTY INCOME LIMITED",
     "sec": "Investment Trusts / Property",
     "st": "Strategic review",
-    "b": "LONDONMETRIC PROPERTY",
+    "b": "LONDONMETRIC PROPERTY & SCHRODER REAL ESTATE INVESTMENT TRUST",
     "start": "13-01-2026",
     "offer": "n.a",
     "v": 398,
@@ -320,6 +320,20 @@
     "hf": 12.9,
     "hfC": "no change",
     "com": "Approved by target shareholders. Completion still subject to FCA approvals, with long stop date of 29 May 2026."
+  },
+  {
+    "t": "ALRTERNATIVE INCOME REIT PLC",
+    "sec": "Investment Trusts",
+    "st": "Approach, no price",
+    "b": "AEW UK REIT PLC",
+    "start": "24-03-2026",
+    "offer": "n.a",
+    "v": 58,
+    "prem": null,
+    "pusu": "21-04-2026",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Proposal received from AEW UK REIT plc. The all share proposal would be based on respective net asset values,  adjusted for transaction costs and dividends, and incorporating a 3% discount to the net asset value of AIRE. No price given."
   },
   {
     "t": "CYANCONNODE HOLDINGS PLC",
