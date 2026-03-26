@@ -25,7 +25,7 @@
     "pusu": "31-12-2026",
     "hf": 24.1,
     "hfC": "▲ 0.1pp",
-    "com": "Scheme of arrangement made at same terms as indicative proposal. Expected to become effective during H2 2026."
+    "com": "Scheme of arrangement made at same terms as indicative proposal. Vote on 22 April 2026. Expected to become effective during H2 2026."
   },
   {
     "t": "JUST GROUP PLC",
@@ -348,6 +348,20 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "At “minded to recommend” stage. We expect a formal offer."
+  },
+  {
+    "t": "CHECKIT PLC",
+    "sec": "I.T.",
+    "st": "Sales process",
+    "b": "NO NAMED OFFEROR",
+    "start": "26-03-2026",
+    "offer": "n.a",
+    "v": 17,
+    "prem": null,
+    "pusu": "",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Formal sales process inviting expressions of interest. Not in discussions with any potential bidder and no price."
   },
   {
     "t": "MIND GYM PLC",
