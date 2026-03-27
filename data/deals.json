@@ -9,8 +9,8 @@
     "v": 9503,
     "prem": 33,
     "pusu": "31-12-2026",
-    "hf": 6.0,
-    "hfC": "no change",
+    "hf": 7.1,
+    "hfC": "▲ 1.1pp",
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. “Hard” irrevocable undertakings of 42% place Nuveen well to reach 75% of votes needed."
   },
   {
@@ -23,7 +23,7 @@
     "v": 8054,
     "prem": 60,
     "pusu": "31-12-2026",
-    "hf": 24.1,
+    "hf": 24.2,
     "hfC": "▲ 0.1pp",
     "com": "Scheme of arrangement made at same terms as indicative proposal. Vote on 22 April 2026. Expected to become effective during H2 2026."
   },
@@ -37,8 +37,8 @@
     "v": 2356,
     "prem": 74,
     "pusu": "01-04-2026",
-    "hf": 37.3,
-    "hfC": "▲ 0.1pp",
+    "hf": 37.0,
+    "hfC": "▼ 0.3pp",
     "com": "Approved by target shareholders and all regulatory approvals received. Effective date will be 1 April 2026."
   },
   {
@@ -51,8 +51,8 @@
     "v": 2340,
     "prem": 37,
     "pusu": "30-09-2026",
-    "hf": 36.9,
-    "hfC": "no change",
+    "hf": 38.0,
+    "hfC": "▲ 1.1pp",
     "com": "Shareholders have overwhelmingly approved the scheme, but still subject to regulatory approval. Completion expected some time in Q3."
   },
   {
@@ -64,7 +64,7 @@
     "offer": "270p",
     "v": 1132,
     "prem": 6,
-    "pusu": "27-03-2026",
+    "pusu": "17-04-2026",
     "hf": 20.5,
     "hfC": "no change",
     "com": "Talks ongoing with three parties: Advent International, Tinicum/Blackstone Consortium and Arcline Investment Management. On 5 March 2026, Advent announced a 270p proposal, plus 2p final dividend. As it's at a sizeable discount to current share price, will likely need to go higher."
@@ -107,8 +107,8 @@
     "v": 577,
     "prem": 43,
     "pusu": "30-06-2026",
-    "hf": 35.4,
-    "hfC": "▲ 0.8pp",
+    "hf": 35.5,
+    "hfC": "▲ 0.1pp",
     "com": "Shareholders approved scheme on 11 March. Still subject to regulatory approval, with parties aiming to complete by end of Q2 2026."
   },
   {
@@ -135,7 +135,7 @@
     "v": 414,
     "prem": null,
     "pusu": "",
-    "hf": 7.0,
+    "hf": 7.1,
     "hfC": "no change",
     "com": "Strategic review and formal sales process. No approaches mentioned."
   },
@@ -163,8 +163,8 @@
     "v": 340,
     "prem": 27,
     "pusu": "30-06-2026",
-    "hf": 46.5,
-    "hfC": "no change",
+    "hf": 46.4,
+    "hfC": "▼ 0.1pp",
     "com": "Bidder has switched from scheme to takeover offer to \"increase certainty of execution\". Bidder's support for offer in respect of 50.14% is above the minimum acceptance condition of 50%. On 20 Feb 2026, timetable suspended due to outstanding regulatory conditions. Completion expected in Q2."
   },
   {
@@ -205,8 +205,8 @@
     "v": 188,
     "prem": null,
     "pusu": "08-04-2026",
-    "hf": 59.2,
-    "hfC": "▲ 20.8pp",
+    "hf": 60.6,
+    "hfC": "▲ 1.4pp",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given. Discussions were ongoing and the board was seeking clarity around Alamadiyaf al-Masiyyah's funding arrangements.  On 24 March 2026, Capricorn rejected proposal from Dragon Oil to acquire its assets in the Western Desert. NOTE: increase in hedge fund % was caused by opening positions declared today, not trades."
   },
   {
@@ -219,8 +219,8 @@
     "v": 186,
     "prem": 27,
     "pusu": "30-06-2026",
-    "hf": 21.6,
-    "hfC": "▲ 2.3pp",
+    "hf": 21.8,
+    "hfC": "▲ 0.2pp",
     "com": "Scheme of arrangement requiring 75% of votes. Undertakings & letters of intent for just 9.22%. Shareholder vote sheduled for 15 April 2026. Completion expected Q2."
   },
   {
@@ -261,8 +261,8 @@
     "v": 150,
     "prem": 21,
     "pusu": "20-04-2026",
-    "hf": 48.6,
-    "hfC": "▲ 0.1pp",
+    "hf": 48.9,
+    "hfC": "▲ 0.3pp",
     "com": "Offer seems to be proceeding as planned. Shareholders approved scheme, with over 99% of votes. Effective date will be 20 April 2026."
   },
   {
@@ -356,7 +356,7 @@
     "b": "NO NAMED OFFEROR",
     "start": "26-03-2026",
     "offer": "n.a",
-    "v": 17,
+    "v": 16,
     "prem": null,
     "pusu": "",
     "hf": 0.0,
