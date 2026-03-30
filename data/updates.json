@@ -1,5 +1,17 @@
 [
   {
+    "n": "Frenkel Topping Group Plc",
+    "s": "green",
+    "text": "Long stop date extended to 29 May, pending FCA approval",
+    "date": "27 March 2026"
+  },
+  {
+    "n": "Just Group Plc",
+    "s": "green",
+    "text": "Court sanctions scheme - last day of trading will be 31 March",
+    "date": "27 March 2026"
+  },
+  {
     "n": "CAB Payments Holdings Plc",
     "s": "amber",
     "text": "Helios declined to give an irrevocable undertaking to StoneX's indicative offer, making it \"not deliverable\".",
@@ -14,7 +26,7 @@
   {
     "n": "Deltic Energy Plc",
     "s": "green",
-    "text": "Viaro (offeror) buys 3.19% on market, at 3.4822p (offer is 7.46p)",
+    "text": "Viaro (offeror) has acquired 3.19% on market, latest at 3.4822p (offer is 7.46p).",
     "date": "27 March 2026"
   }
 ]
