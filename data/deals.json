@@ -182,6 +182,20 @@
     "com": "Helios consortium has gone hostile, with 85p formal offer. Board had rejected indicative offer, calling it highly opportunistic and fundamentally undervaluing company. StoneX now made an approach regarding a potential offer at 95p, but rejected by Board on 20 March 2026. Helios has declined to give an irrevocable undertaking to StoneX's indicative offer."
   },
   {
+    "t": "BRCK GROUP PLC",
+    "sec": "Distributors",
+    "st": "Indicative offer",
+    "b": "ATLAS HOLDINGS LLC",
+    "start": "31-03-2026",
+    "offer": "65p",
+    "v": 209,
+    "prem": 59,
+    "pusu": "28-04-2026",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Atlas Holdings LLC makes indicative offer at 65p for the building materials distributor. Board has stated it fundamentally undervalues company. Talks ongoing."
+  },
+  {
     "t": "AMEDEO AIR FOUR PLUS LTD",
     "sec": "Financial Services",
     "st": "Formal offer",
