@@ -1,14 +1,32 @@
 [
   {
-    "n": "BRCK Group PLC",
-    "s": "amber",
-    "text": "New addition -  Atlas Holdings LLC makes indicative offer at 65p (59% premium), which Board stated fundamentally undervalued company. Talks ongoing.",
+    "n": "Just Group Plc",
+    "s": "green",
+    "text": "Deletion - scheme becomes effective.",
+    "date": "1 April 2026"
+  },
+  {
+    "n": "Amedeo Air Four Plus",
+    "s": "green",
+    "text": "Scheme document published - vote will be on 27 April 2026.",
+    "date": "1 April 2026"
+  },
+  {
+    "n": "Deltic Energy Plc",
+    "s": "green",
+    "text": "Deletion - scheme lapsed because of regulatory delays.",
     "date": "31 March 2026"
   },
   {
-    "n": "Senior Plc",
+    "n": "CyanConnode Holdings plc",
     "s": "amber",
-    "text": "Tinicum/Blackstone PUSU deadline extended to 9 April - talks ongoing.",
+    "text": "PUSU deadline extended to 28 April to allow due diligence.",
+    "date": "31 March 2026"
+  },
+  {
+    "n": "BRCK Group PLC",
+    "s": "amber",
+    "text": "New addition -  Atlas Holdings LLC makes indicative offer at 65p (59% premium), which Board stated fundamentally undervalued company. Talks ongoing.",
     "date": "31 March 2026"
   }
 ]
