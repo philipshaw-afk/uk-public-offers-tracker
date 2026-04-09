@@ -45,7 +45,7 @@
     "t": "SENIOR PLC",
     "sec": "Engineering",
     "st": "Formal offer",
-    "b": "ADVENT INTERNATIONAL/ TINICUM & BLACKSTONE/ ARCLINE",
+    "b": "TINICUM & BLACKSTONE",
     "start": "27-02-2026",
     "offer": "297.85p",
     "v": 1275,
@@ -376,6 +376,20 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "Proposal received from AEW UK REIT plc. The all share proposal would be based on respective net asset values,  adjusted for transaction costs and dividends, and incorporating a 3% discount to the net asset value of AIRE. No price given."
+  },
+  {
+    "t": "VAN ELLE HOLDINGS PLC",
+    "sec": "Building & Construction",
+    "st": "Formal offer",
+    "b": "STRABAG SE",
+    "start": "09-04-2026",
+    "offer": "52.3p",
+    "v": 58,
+    "prem": 58,
+    "pusu": "30-06-2026",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Rceommended cash offer, by means of a scheme of arrangement - 45% undertakings."
   },
   {
     "t": "CYANCONNODE HOLDINGS PLC",
