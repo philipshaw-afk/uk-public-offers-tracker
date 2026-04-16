@@ -1,5 +1,35 @@
 [
   {
+    "n": "Animalcare Group Plc",
+    "s": "green",
+    "text": "New addition - formal £235.2m offer by Charterhouse Capital, 41.7% undertakings.",
+    "date": "16 April 2026"
+  },
+  {
+    "n": "CAB PAyments Holdings Plc",
+    "s": "amber",
+    "text": "StoneX increases indicative offer to 110p (final offer). Board \"minded to recommend\".",
+    "date": "16 April 2026"
+  },
+  {
+    "n": "IDOX Plc",
+    "s": "green",
+    "text": "All regulatory conditions satisfied - unconditional date expected to be 14 May 2026.",
+    "date": "16 April 2026"
+  },
+  {
+    "n": "Schroders Plc",
+    "s": "green",
+    "text": "Q1 trading update - AUM fell slightly from £823.7bn to £814.4bn amid \"market turbulence\".",
+    "date": "16 April 2026"
+  },
+  {
+    "n": "Audioboom Group Plc",
+    "s": "red",
+    "text": "Discussions with a small number of parties who are considering making a cash offer.",
+    "date": "16 April 2026"
+  },
+  {
     "n": "1Spatial Plc",
     "s": "green",
     "text": "French regulatory approval given, satisfying all regulatory conditions. Effective date 29 April 2026.",
@@ -10,17 +40,5 @@
     "s": "green",
     "text": "Shareholders approve scheme, with over 94% of votes at Court and Scheme Meetings. Still subject to FCA approval.",
     "date": "15 April 2026"
-  },
-  {
-    "n": "Van Elle Holdings plc",
-    "s": "green",
-    "text": "Undertakings/letters of intent fall from 45.0% to 28.7% after Peter Gyllenhammar AB sells all shares",
-    "date": "14 April 2026"
-  },
-  {
-    "n": "essensys Plc",
-    "s": "green",
-    "text": "Day 35 acceptance update - 57.04% control",
-    "date": "14 April 2026"
   }
 ]
