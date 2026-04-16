@@ -176,10 +176,10 @@
     "offer": "71.5p",
     "v": 340,
     "prem": 27,
-    "pusu": "30-06-2026",
+    "pusu": "14-05-2026",
     "hf": 45.63,
     "hfC": "▲ 0.06pp",
-    "com": "Bidder has switched from scheme to takeover offer to \"increase certainty of execution\". Bidder's support for offer in respect of 50.14% is above the minimum acceptance condition of 50%. On 20 Feb 2026, timetable suspended due to outstanding regulatory conditions. Completion expected in Q2."
+    "com": "Bidder has switched from scheme to takeover offer to \"increase certainty of execution\". Bidder's support for offer in respect of 50.14% is above the minimum acceptance condition of 50%. All regulatory conditions satisfied - unconditional date expected to be 14 May 2026."
   },
   {
     "t": "CAB PAYMENTS HOLDINGS PLC",
@@ -187,13 +187,27 @@
     "st": "Formal offer",
     "b": "HELIOS INVESTMENT PARTNERS LLP / STONEX GROUP INC",
     "start": "02-02-2026",
-    "offer": "95p",
-    "v": 250,
+    "offer": "110p",
+    "v": 287,
     "prem": 32,
     "pusu": "02-05-2027",
     "hf": 8.33,
     "hfC": "no change",
-    "com": "Helios consortium has gone hostile, with 85p formal offer. Board had rejected indicative offer, calling it highly opportunistic and fundamentally undervaluing company. StoneX now made an approach regarding a potential offer at 95p, but rejected by Board on 20 March 2026. Helios has declined to give an irrevocable undertaking to StoneX's indicative offer."
+    "com": "Helios consortium (which already owns 45.11%) has gone hostile, with 85p formal offer. On 16 April StoneX increased its indicative offer to 110p, which is conditional on Helios Consortium giving undertakings. Board \"minded to recommend\" StoneX proposal."
+  },
+  {
+    "t": "ANIMALCARE GROUP PLC",
+    "sec": "Healthcare",
+    "st": "Formal offer",
+    "b": "CHARTERHOUSE CAPITAL PARTNERS",
+    "start": "16-04-2026",
+    "offer": "336p",
+    "v": 235,
+    "prem": 36,
+    "pusu": "30-09-2026",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Formal £235.2m offer by Charterhouse Capital, 41.7% undertakings. Scheme of arrangement in cash with a rollover alternative. Completion Q2 or Q3 2026"
   },
   {
     "t": "BRCK GROUP PLC",
@@ -319,7 +333,7 @@
     "pusu": "",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Strategic review, with a variety of strategic options being considered. No approaches mentioned."
+    "com": "Strategic review, with a variety of strategic options being considered.  On 16 April 2026, Audioboom disclosed discussions with a small number of parties who are considering making a cash offer.  The indicative pricing of preliminary proposals received to date were at a premium to the closing price on 2 October 2025. Strategic review expected to conclude Q2 2026."
   },
   {
     "t": "1SPATIAL PLC",
