@@ -42,7 +42,7 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 .updates{margin-bottom:24px}
 .updates-title{font-family:'Instrument Serif',Georgia,serif;font-size:20px;font-weight:400;font-style:italic;color:var(--t);margin-bottom:10px}
 .updates-list{display:flex;gap:12px;flex-wrap:wrap}
-.update-card{background:var(--s);border:1px solid var(--b);border-radius:8px;box-shadow:var(--ss);display:flex;overflow:hidden;flex:1;min-width:260px;transition:box-shadow .15s,transform .15s}
+.update-card{background:var(--s);border:1px solid var(--b);border-radius:8px;box-shadow:var(--ss);display:flex;overflow:hidden;flex:1 1 calc(33.333% - 8px);min-width:260px;max-width:calc(33.333% - 8px);transition:box-shadow .15s,transform .15s}
 .update-card:hover{box-shadow:var(--sm);transform:translateY(-1px)}
 .uc-status{width:6px;flex-shrink:0}
 .uc-status-green{background:#22C55E}
