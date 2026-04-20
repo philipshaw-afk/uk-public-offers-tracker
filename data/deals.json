@@ -140,6 +140,20 @@
     "com": "Shareholders approved scheme on 11 March. Still subject to regulatory approval, with parties aiming to complete by end of Q2 2026."
   },
   {
+    "t": "ADVANCED MEDICAL SOLUTIONS GROUP PLC",
+    "sec": "Healthcare",
+    "st": "Approach, no price",
+    "b": "TA ASSOCIATES",
+    "start": "20-04-2026",
+    "offer": "n.a",
+    "v": 488,
+    "prem": null,
+    "pusu": "16-05-2026",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "In discussions with TA Associates (UK), LLP regarding a possible offer, no price given."
+  },
+  {
     "t": "NCC GROUP PLC",
     "sec": "I.T.",
     "st": "Strategic review",
@@ -438,7 +452,7 @@
     "sec": "I.T.",
     "st": "Sale process",
     "b": "NO NAMED OFFEROR",
-    "start": "26-03-2026",
+    "start": "20-03-2026",
     "offer": "n.a",
     "v": 16,
     "prem": null,
@@ -480,7 +494,7 @@
     "sec": "Engineering",
     "st": "Strategic review",
     "b": "NO NAMED OFFEROR",
-    "start": "20-03-2025",
+    "start": "20-03-2026",
     "offer": "n.a",
     "v": 2,
     "prem": null,
