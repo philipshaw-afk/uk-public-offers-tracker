@@ -1,5 +1,23 @@
 [
   {
+    "n": "Green",
+    "s": "idox plc",
+    "text": "Long Path declares offer unconditional, 67.75% control.",
+    "date": "21 April 2026"
+  },
+  {
+    "n": "Red",
+    "s": "alternative income reit plc",
+    "text": "PUSU deadline for AEW UK REIT plc's approach is today.",
+    "date": "21 April 2026"
+  },
+  {
+    "n": "CAB Payments Holdings Plc",
+    "s": "amber",
+    "text": "Board \"deeply concerned\" at the Helios Consortium's rejection of StoneX's proposal, which was depriving minority shareholders of the opportunity to realise value.",
+    "date": "20 April 2026"
+  },
+  {
     "n": "Advanced Medical Solutions Group plc",
     "s": "red",
     "text": "New addition - approach from TA Associates, no price given.",
@@ -10,17 +28,5 @@
     "s": "green",
     "text": "Deletion - British Land scheme becomes effective.",
     "date": "20 April 2026"
-  },
-  {
-    "n": "Evoke plc",
-    "s": "amber",
-    "text": "NOTE: 50p proposal from Bally's Intralot. However not subject to UK Takeover Code as registered in Gibraltar.",
-    "date": "20 April 2026"
-  },
-  {
-    "n": "CAB Payments Holdings Plc",
-    "s": "amber",
-    "text": "Helios Consortium will not provide an irrevocable undertaking to StoneX's proposal (a condition of StoneX's offer)",
-    "date": "17 April 2026"
   }
 ]
