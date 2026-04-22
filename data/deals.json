@@ -14,20 +14,6 @@
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. 99.9% of votes were in favour at meetings on 16 April 2026."
   },
   {
-    "t": "BEAZLEY PLC",
-    "sec": "Insurance",
-    "st": "Formal offer",
-    "b": "ZURICH INSURANCE GROUP LTD",
-    "start": "19-01-2026",
-    "offer": "1310p",
-    "v": 8054,
-    "prem": 60,
-    "pusu": "31-12-2026",
-    "hf": 28.84,
-    "hfC": "▼ 0.17pp",
-    "com": "Scheme of arrangement made at same terms as indicative proposal. Vote on 22 April 2026. Expected to become effective during H2 2026."
-  },
-  {
     "t": "INTERTEK GROUP PLC",
     "sec": "Support Services",
     "st": "Indicative offer",
@@ -40,6 +26,20 @@
     "hf": 1.14,
     "hfC": "no change",
     "com": "Indicative proposal made by private equity firm EQT at £54 per share. Board considering its response after rejecting £51.50 per share."
+  },
+  {
+    "t": "BEAZLEY PLC",
+    "sec": "Insurance",
+    "st": "Formal offer",
+    "b": "ZURICH INSURANCE GROUP LTD",
+    "start": "19-01-2026",
+    "offer": "1310p",
+    "v": 8054,
+    "prem": 60,
+    "pusu": "31-12-2026",
+    "hf": 28.84,
+    "hfC": "▼ 0.17pp",
+    "com": "Scheme of arrangement made at same terms as indicative proposal. Beazley shareholder vote passed on 22 April 2026. Expected to become effective during H2 2026."
   },
   {
     "t": "JTC PLC",
@@ -446,5 +446,19 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "17p offer is less than 20p proposal, but strong undertakings in respect of 57%. Unconditional date 28 May 2026."
+  },
+  {
+    "t": "DELTIC ENERGY PLC",
+    "sec": "Oil & Gas",
+    "st": "Approach, no price",
+    "b": "CAPRICORN ENERGY PLC/PETROGAS/ BLUE CONCEPT",
+    "start": "22-04-2026",
+    "offer": "n.a",
+    "v": 7,
+    "prem": null,
+    "pusu": "20-05-2026",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "In discussions with three parties, being (i) Capricorn Energy PLC (\"Capricorn Energy\"); (ii) Petrogas International E&P Coöperatief U.A., a subsidiary of Mohammed Al Barwani LLC; and (iii) Blue Concept Hld AS, a private Norwegian company. No price given. Previous scheme by Viaro Energy had lapsed on 31 March 2026."
   }
 ]
