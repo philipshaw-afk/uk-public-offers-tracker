@@ -1,5 +1,11 @@
 [
   {
+    "n": "Senior Plc",
+    "s": "green",
+    "text": "Q1 trading update: 2026 performance anticipated to be above the Board's previous expectations.",
+    "date": "22 April 2026"
+  },
+  {
     "n": "Alternative Income REIT plc",
     "s": "red",
     "text": "Deletion: AEW UK REIT plc confirms it won't make an offer",
@@ -10,23 +16,5 @@
     "s": "green",
     "text": "Deletion: Long Path declares offer unconditional, 67.75% control.",
     "date": "21 April 2026"
-  },
-  {
-    "n": "CAB Payments Holdings Plc",
-    "s": "amber",
-    "text": "Board \"deeply concerned\" at the Helios Consortium's rejection of StoneX's proposal, which was depriving minority shareholders of the opportunity to realise value.",
-    "date": "20 April 2026"
-  },
-  {
-    "n": "Advanced Medical Solutions Group plc",
-    "s": "red",
-    "text": "New addition - approach from TA Associates, no price given.",
-    "date": "20 April 2026"
-  },
-  {
-    "n": "Life Science REIT plc",
-    "s": "green",
-    "text": "Deletion - British Land scheme becomes effective.",
-    "date": "20 April 2026"
   }
 ]
