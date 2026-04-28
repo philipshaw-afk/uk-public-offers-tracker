@@ -289,8 +289,8 @@
     "v": 150,
     "prem": null,
     "pusu": "",
-    "hf": 0.0,
-    "hfC": "▼ 1.27pp",
+    "hf": 1.27,
+    "hfC": "no change",
     "com": "Strategic review, has received approaches from two parties."
   },
   {
@@ -304,7 +304,7 @@
     "prem": null,
     "pusu": "",
     "hf": 0.0,
-    "hfC": "▼ 4.57pp",
+    "hfC": "no change",
     "com": "Strategic review & formal sale process. Has not received an indicative offer but has held preliminary discussions with a small number of counterparties."
   },
   {
@@ -372,10 +372,10 @@
     "offer": "10.44p",
     "v": 38,
     "prem": 44,
-    "pusu": "28-04-2026",
+    "pusu": "26-05-2026",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "At “minded to recommend” stage. We expect a formal offer."
+    "com": "At “minded to recommend” stage. Due diligence at an advanced stage. We expect a formal offer."
   },
   {
     "t": "CHECKIT PLC",
