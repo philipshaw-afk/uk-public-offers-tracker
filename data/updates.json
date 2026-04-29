@@ -1,26 +1,20 @@
 [
   {
+    "n": "Treatt Plc",
+    "s": "green",
+    "text": "New addition: £183m formal offer by Döhler (which owns 27.9%).",
+    "date": "29 April 2026"
+  },
+  {
+    "n": "1Spatial Plc",
+    "s": "green",
+    "text": "Deletion: VertiGIS scheme becomes effective",
+    "date": "29 April 2026"
+  },
+  {
     "n": "CyanConnode Holdings plc",
     "s": "amber",
-    "text": "PUSU deadline extended to 26 May 2026, due diligence at an advanced stage.",
+    "text": "PUSU deadline extended to 26 May 2026, due diligence at an advanced stage",
     "date": "28 April 2026"
-  },
-  {
-    "n": "IQE Plc",
-    "s": "red",
-    "text": "Deletion: strategic review concludes with £81m investment from MACOM and other shareholders",
-    "date": "27 April 2026"
-  },
-  {
-    "n": "Amedeo Airforce Plus Limited",
-    "s": "green",
-    "text": "Shareholders approve scheme, with over 98% of votes",
-    "date": "27 April 2026"
-  },
-  {
-    "n": "Intertek Group Plc",
-    "s": "amber",
-    "text": "Board rejects EQT's improved proposal of £54, which \"fundamentally undervalues\" company",
-    "date": "24 April 2026"
   }
 ]
