@@ -322,20 +322,6 @@
     "com": "Strategic review, with a variety of strategic options being considered.  On 16 April 2026, Audioboom disclosed discussions with a small number of parties who are considering making a cash offer.  The indicative pricing of preliminary proposals received to date were at a premium to the closing price on 2 October 2025. Strategic review expected to conclude Q2 2026."
   },
   {
-    "t": "1SPATIAL PLC",
-    "sec": "I.T.",
-    "st": "Formal offer",
-    "b": "BATTERY VENTURES",
-    "start": "12-12-2025",
-    "offer": "73p",
-    "v": 87,
-    "prem": 57,
-    "pusu": "29-04-2026",
-    "hf": 17.25,
-    "hfC": "no change",
-    "com": "Expected to complete on 29 April 2026 - all regulatory and shareholder approvals received."
-  },
-  {
     "t": "FRENKEL TOPPING GROUP PLC",
     "sec": "Financial Services",
     "st": "Formal offer",
@@ -432,5 +418,19 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "In discussions with three parties, being (i) Capricorn Energy PLC (\"Capricorn Energy\"); (ii) Petrogas International E&P Coöperatief U.A., a subsidiary of Mohammed Al Barwani LLC; and (iii) Blue Concept Hld AS, a private Norwegian company. No price given. Previous scheme by Viaro Energy had lapsed on 31 March 2026."
+  },
+  {
+    "t": "TREATT PLC",
+    "sec": "Food Manufacturers",
+    "st": "Formal offer",
+    "b": "DOHLER GROUP SE",
+    "start": "29-04-2026",
+    "offer": "305p",
+    "v": 183,
+    "prem": 48,
+    "pusu": "30-09-2026",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Recommended offer (scheme of arrangement) - expected to complete in Q3 2026. Already owns 27.9% and undertakings at 12%. Note an offer by Exponent at 260p failed in November 2025, after Döhler had considered making an offer before ruling it out."
   }
 ]
