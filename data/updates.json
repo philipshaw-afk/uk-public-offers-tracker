@@ -1,8 +1,32 @@
 [
   {
+    "n": "Senior Plc",
+    "s": "green",
+    "text": "Scheme document published - vote on 26 May",
+    "date": "30 April 2026"
+  },
+  {
+    "n": "International Personal Finance plc",
+    "s": "green",
+    "text": "Q1 2026 trading update - \"positive start to 2026\"",
+    "date": "30 April 2026"
+  },
+  {
+    "n": "NCC Group plc",
+    "s": "red",
+    "text": "H1 trading update - revenue up by 5.0%, adjusted EBITDA by 27.7%",
+    "date": "30 April 2026"
+  },
+  {
+    "n": "DCC Plc (Irish)",
+    "s": "amber",
+    "text": "On European tracker: Board rejects £5.80 per share proposal from Energy Capital Partners & KKR",
+    "date": "30 April 2026"
+  },
+  {
     "n": "Treatt Plc",
     "s": "green",
-    "text": "New addition: £183m formal offer by Döhler (which owns 27.9%).",
+    "text": "New addition: £183m formal offer by Döhler (which owns 27.9%)",
     "date": "29 April 2026"
   },
   {
