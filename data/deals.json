@@ -10,7 +10,7 @@
     "prem": 33,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 8.31,
+    "hf": 8.32,
     "hfC": "no change",
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. 99.9% of votes were in favour at meetings on 16 April 2026."
   },
@@ -26,7 +26,7 @@
     "pusu": "14-05-2026",
     "pusuExt": "0",
     "hf": 1.23,
-    "hfC": "▲ 0.07pp",
+    "hfC": "no change",
     "com": "Indicative proposal made by private equity firm EQT at £54 per share, after first proposal at £51.50 per share. Board has rejected both proposals."
   },
   {
@@ -40,8 +40,8 @@
     "prem": 60,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 31.32,
-    "hfC": "▲ 0.93pp",
+    "hf": 31.33,
+    "hfC": "▲ 0.01pp",
     "com": "Scheme of arrangement made at same terms as indicative proposal. Beazley shareholder vote passed on 22 April 2026. Expected to become effective during H2 2026."
   },
   {
@@ -55,8 +55,8 @@
     "prem": 37,
     "pusu": "30-09-2026",
     "pusuExt": "n/a",
-    "hf": 39.04,
-    "hfC": "▼ 0.02pp",
+    "hf": 39.05,
+    "hfC": "▲ 0.01pp",
     "com": "Shareholders have overwhelmingly approved the scheme, but still subject to regulatory approval. Completion expected some time in Q3."
   },
   {
@@ -70,8 +70,8 @@
     "prem": 16,
     "pusu": "10-07-2026",
     "pusuExt": "n/a",
-    "hf": 33.38,
-    "hfC": "no change",
+    "hf": 33.26,
+    "hfC": "▼ 0.13pp",
     "com": "Formal offer announced on 7 April 2026 by Tinicum and Blackstone at 297.85p in cash. Indicative offer of 270p from Advent was rejected. Advent withdrew on 8 April 2026. Arcline Investment Management had made an approach before withdrawing on 1 April 2026."
   },
   {
@@ -100,8 +100,8 @@
     "prem": null,
     "pusu": "",
     "pusuExt": "n/a",
-    "hf": 8.93,
-    "hfC": "▲ 0.99pp",
+    "hf": 8.91,
+    "hfC": "▼ 0.02pp",
     "com": "In preliminary discussions with a number of interested counterparties. Potential offerors not required to be identified."
   },
   {
@@ -145,8 +145,8 @@
     "prem": 43,
     "pusu": "30-06-2026",
     "pusuExt": "n/a",
-    "hf": 47.46,
-    "hfC": "▲ 0.19pp",
+    "hf": 47.62,
+    "hfC": "▲ 0.16pp",
     "com": "Shareholders approved scheme on 11 March. Still subject to regulatory approval, with parties aiming to complete by end of Q2 2026."
   },
   {
@@ -190,8 +190,8 @@
     "prem": null,
     "pusu": "",
     "pusuExt": "n/a",
-    "hf": 10.96,
-    "hfC": "no change",
+    "hf": 6.35,
+    "hfC": "▼ 4.61pp",
     "com": "Strategic review and formal sales process. No approaches mentioned."
   },
   {
@@ -235,8 +235,8 @@
     "prem": 36,
     "pusu": "30-09-2026",
     "pusuExt": "n/a",
-    "hf": 6.1,
-    "hfC": "▲ 0.33pp",
+    "hf": 6.53,
+    "hfC": "▲ 0.43pp",
     "com": "Formal £235.2m offer by Charterhouse Capital, 41.7% undertakings. Scheme of arrangement in cash with a rollover alternative. Completion Q2 or Q3 2026"
   },
   {
@@ -281,7 +281,7 @@
     "pusu": "30-06-2026",
     "pusuExt": "n/a",
     "hf": 29.74,
-    "hfC": "▲ 0.3pp",
+    "hfC": "no change",
     "com": "Scheme of arrangement, approved by over 94% of shareholders on 15 April 2026. Completion expected Q2, subject to FCA approval."
   },
   {
@@ -295,8 +295,8 @@
     "prem": 48,
     "pusu": "30-09-2026",
     "pusuExt": "n/a",
-    "hf": 1.71,
-    "hfC": "▲ 1.71pp",
+    "hf": 6.05,
+    "hfC": "▲ 4.34pp",
     "com": "Recommended offer (scheme of arrangement) - expected to complete in Q3 2026. Already owns 27.9% and undertakings at 12%. Note an offer by Exponent at 260p failed in November 2025."
   },
   {
@@ -371,7 +371,7 @@
     "pusu": "29-05-2026",
     "pusuExt": "n/a",
     "hf": 13.06,
-    "hfC": "▲ 0.05pp",
+    "hfC": "no change",
     "com": "Approved by target shareholders. Completion still subject to FCA approvals, with long stop date of 29 May 2026."
   },
   {
@@ -385,8 +385,8 @@
     "prem": 58,
     "pusu": "30-06-2026",
     "pusuExt": "n/a",
-    "hf": 14.72,
-    "hfC": "no change",
+    "hf": 15.75,
+    "hfC": "▲ 1.03pp",
     "com": "Recommended cash offer, by means of a scheme of arrangement - 28.7% undertakings."
   },
   {
