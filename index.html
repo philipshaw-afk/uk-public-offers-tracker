@@ -136,6 +136,53 @@ th.col-comments,td.col-comments{min-width:450px}
 .legend{display:flex;gap:20px;margin-bottom:28px;flex-wrap:wrap}
 .leg-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--t2)}
 
+.pusu-section{margin:4px 0 32px}
+.pusu-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:12px;flex-wrap:wrap}
+.pusu-sub{font-size:13px;color:var(--t2);line-height:1.5;max-width:720px}
+.pusu-chip{display:inline-flex;align-items:center;height:28px;padding:0 10px;border-radius:6px;background:var(--al);color:var(--a);border:1px solid #D4DFFF;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.pusu-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:14px}
+.pusu-kpi{background:var(--s);border:1px solid var(--b);border-radius:8px;padding:14px 16px;box-shadow:var(--ss)}
+.pusu-kpi-v{font-size:24px;font-weight:800;letter-spacing:-.035em;font-variant-numeric:tabular-nums;line-height:1}
+.pusu-kpi-l{font-size:10.5px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.045em;margin-top:6px}
+.pusu-chart-card{background:var(--s);border:1px solid var(--b);border-radius:10px;box-shadow:var(--ss);overflow:hidden}
+.pusu-card-hd{padding:13px 16px;border-bottom:1px solid var(--b);background:#F5F7FA;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.pusu-card-title{font-size:12.5px;font-weight:800;color:var(--t);letter-spacing:-.01em}
+.pusu-card-meta{font-size:11px;color:var(--t3);font-weight:600;white-space:nowrap}
+.pusu-stage-wrap{overflow-x:auto;overflow-y:hidden}
+.pusu-stage{position:relative;height:470px;padding:22px 22px 74px;background:#fff;min-width:880px}
+.pusu-stage:before{content:"";position:absolute;left:22px;right:22px;top:30px;bottom:74px;background:repeating-linear-gradient(to top,#F1F3F7 0,#F1F3F7 1px,transparent 1px,transparent 54px);pointer-events:none}
+.pusu-axis-line{position:absolute;left:42px;right:42px;bottom:58px;height:2px;background:#D9DEE8;border-radius:2px}
+.pusu-axis-label{position:absolute;left:42px;bottom:22px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--t3)}
+.pusu-tick{position:absolute;bottom:50px;width:1px;height:17px;background:#CBD2DF}
+.pusu-tick span{position:absolute;top:22px;left:50%;transform:translateX(-50%);font-size:10.5px;color:var(--t3);font-weight:700;white-space:nowrap}
+.pusu-today{position:absolute;top:30px;bottom:58px;width:5px;border-radius:999px;background:linear-gradient(180deg,rgba(23,81,208,.2),var(--a) 45%,rgba(23,81,208,.18));box-shadow:0 0 0 1px rgba(23,81,208,.14),0 0 18px rgba(23,81,208,.34);z-index:2;transform:translateX(-2px)}
+.pusu-today span{position:absolute;top:-23px;left:-12px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--a);background:#fff;padding:2px 6px;border-radius:4px;box-shadow:0 6px 18px rgba(23,81,208,.12);white-space:nowrap}
+.pusu-event{position:absolute;bottom:58px;width:1px;--stem:150px}
+.pusu-event:before{content:"";position:absolute;left:0;bottom:13px;width:2px;height:calc(var(--stem) + 26px);background:linear-gradient(to top,rgba(23,81,208,1),rgba(23,81,208,.2) 72%,rgba(23,81,208,0));border-radius:2px}
+.pusu-dot{position:absolute;left:50%;bottom:-12px;transform:translateX(-50%);display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--a);color:#fff;font-size:11px;font-weight:800;box-shadow:0 0 0 5px #fff,0 2px 10px rgba(19,27,44,.14)}
+.pusu-dot.hot{background:var(--r)}
+.pusu-dot.near{background:var(--am)}
+.pusu-box{--flag:#EDF2FF;position:absolute;left:0;bottom:calc(var(--stem) + 26px);width:176px;padding:8px 10px 9px;border:0;border-left:3px solid #AAB4C5;border-radius:0 7px 7px 0;background:var(--flag);box-shadow:0 12px 30px rgba(19,27,44,.11),0 2px 8px rgba(19,27,44,.06)}
+.pusu-box.flip{left:auto;right:0;border-left:0;border-right:3px solid #AAB4C5;border-radius:7px 0 0 7px}
+.pusu-box-date{font-size:8.5px;font-weight:800;letter-spacing:.035em;text-transform:uppercase;color:var(--t3);margin-bottom:4px;white-space:nowrap}
+.pusu-box-name{font-size:12px;font-weight:800;color:var(--t);line-height:1.2}
+.pusu-box-meta{font-size:10.5px;color:var(--t2);line-height:1.25;margin-top:3px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pusu-box.no-price{--flag:#FFF0ED;background:var(--flag);border-left-color:var(--r)}
+.pusu-box.no-price.flip{border-right-color:var(--r)}
+.pusu-box.indicative{--flag:#FFF7E6;background:var(--flag);border-left-color:var(--am)}
+.pusu-box.indicative.flip{border-right-color:var(--am)}
+.pusu-ext{display:inline-flex;margin-top:6px;padding:2px 6px;border-radius:4px;background:rgba(255,255,255,.62);color:var(--t2);font-size:9.5px;font-weight:800;letter-spacing:.02em}
+.pusu-ext.hot{color:var(--r)}
+.pusu-ext.high{color:var(--a)}
+.pusu-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 16px;border-top:1px solid var(--b);background:#F5F7FA}
+.pusu-key{display:flex;gap:14px;flex-wrap:wrap}
+.pusu-key span{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--t2);font-weight:600}
+.pusu-key i{width:9px;height:9px;border-radius:50%;display:inline-block;background:var(--a)}
+.pusu-key .hot i{background:var(--r)}
+.pusu-key .near i{background:var(--am)}
+.pusu-note{font-size:11.5px;color:var(--t3);font-weight:600}
+.pusu-empty{padding:80px 22px;text-align:center;color:var(--t3);font-size:13px}
+
 .eu-btn-wrap{display:flex;justify-content:flex-end;margin-bottom:18px}
 .eu-btn{
   display:inline-flex;align-items:center;justify-content:center;
@@ -181,8 +228,8 @@ th.col-comments,td.col-comments{min-width:450px}
 @keyframes ld{from{opacity:.3;transform:translateY(0)}to{opacity:1;transform:translateY(-6px)}}
 .error-msg{text-align:center;padding:30px;color:var(--r);font-size:13px;background:var(--rb);border-radius:8px;margin-bottom:20px}
 
-@media(max-width:1024px){.page,.hdr{padding-left:20px;padding-right:20px}.hero h1{font-size:26px}.kpi-row{gap:8px}}
-@media(max-width:768px){.ctrl{flex-direction:column;align-items:stretch}.kpi-row{flex-wrap:wrap}}
+@media(max-width:1024px){.page,.hdr{padding-left:20px;padding-right:20px}.hero h1{font-size:26px}.kpi-row{gap:8px}.pusu-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:768px){.ctrl{flex-direction:column;align-items:stretch}.kpi-row{flex-wrap:wrap}.pusu-head{align-items:flex-start}.pusu-kpis{grid-template-columns:1fr}.pusu-stage{height:450px}.pusu-box{width:160px}.pusu-card-hd,.pusu-footer{align-items:flex-start;flex-direction:column}}
 
 @keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .ai{animation:fu .4s ease-out both}
@@ -273,6 +320,36 @@ th.col-comments,td.col-comments{min-width:450px}
     <div class="leg-item"><span class="sd sd-amber"></span> Indicative offer announced with price</div>
     <div class="leg-item"><span class="sd sd-red"></span> In offer period, but no potential price published</div>
   </div>
+
+  <section class="pusu-section ai d4" id="pusu-section" aria-label="PUSU expiry timeline">
+    <div class="pusu-head">
+      <div>
+        <div class="updates-title">PUSU expiry timeline</div>
+        <p class="pusu-sub">Upcoming Rule 2.6 deadlines for offerors to either announce a firm intention to make an offer (Rule 2.7) or walk away. Includes the number of times each PUSU deadline has been extended.</p>
+      </div>
+      <span class="pusu-chip" id="pusu-window">Next 30 days</span>
+    </div>
+    <div class="pusu-kpis" id="pusu-kpis"></div>
+    <div class="pusu-chart-card">
+      <div class="pusu-card-hd">
+        <div class="pusu-card-title">Rule 2.6 deadline chart</div>
+        <div class="pusu-card-meta" id="pusu-meta"></div>
+      </div>
+      <div class="pusu-stage-wrap">
+        <div class="pusu-stage" id="pusu-stage">
+          <div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div>
+        </div>
+      </div>
+      <div class="pusu-footer">
+        <div class="pusu-key">
+          <span class="hot"><i></i>Due in 7 days</span>
+          <span class="near"><i></i>Due in 8&#x2013;14 days</span>
+          <span><i></i>Upcoming dated PUSU</span>
+        </div>
+        <div class="pusu-note">Flag labels show target company and identified offeror(s). Number badge shows days to deadline.</div>
+      </div>
+    </div>
+  </section>
 
   <div class="info-section ai d4">
     <h3>What's behind the tracker</h3>
@@ -397,6 +474,10 @@ async function loadFromSheets() {
       var idx = dealsHeader.findIndex(function(h) { return h.toLowerCase().includes(name.toLowerCase()); });
       return idx >= 0 ? (row[idx] || '') : '';
     };
+    var getMatch = function(predicate) {
+      var idx = dealsHeader.findIndex(predicate);
+      return idx >= 0 ? (row[idx] || '') : '';
+    };
 
     var hfStr = get('Held by Hedge').replace('%', '').trim();
     var hf = parseFloat(hfStr) || 0;
@@ -407,6 +488,15 @@ async function loadFromSheets() {
     var hfC = get('Daily change').trim();
     if (!hfC) hfC = 'no change';
 
+    // Get PUSU date (column with "PUSU" but not "extensions") and PUSU extensions (column with "extension")
+    var pusuDate = getMatch(function(h) {
+      var lh = h.toLowerCase();
+      return lh.indexOf('pusu') !== -1 && lh.indexOf('extension') === -1;
+    }).trim();
+    var pusuExt = getMatch(function(h) {
+      return h.toLowerCase().indexOf('extension') !== -1;
+    }).trim();
+
     return {
       t: get('Target').replace(/\s+/g, ' ').trim(),
       sec: get('Sector').replace(/\s+/g, ' ').trim().replace(/\u00a0/g, ' ').trim(),
@@ -416,7 +506,8 @@ async function loadFromSheets() {
       offer: get('Latest offer').trim() || 'n.a',
       v: v,
       prem: prem,
-      pusu: get('PUSU').trim(),
+      pusu: pusuDate,
+      pusuExt: pusuExt,
       hf: hf,
       hfC: hfC,
       com: get('Comments').replace(/\s+/g, ' ').trim()
@@ -461,12 +552,169 @@ async function loadData() {
 
     buildFilters();
     go();
+    renderPusu();
+    window.addEventListener('resize', debounce(renderPusu, 200));
 
   } catch (err) {
     console.error('Error loading data:', err);
     document.getElementById('updates-list').innerHTML = '<div class="error-msg">Unable to load updates. Check that the Google Sheet is published.</div>';
     document.getElementById('tb').innerHTML = '<tr><td colspan="11"><div class="error-msg">Unable to load deal data. Check that the Google Sheet is published and the Sheet ID is correct.</div></td></tr>';
+    var ps = document.getElementById('pusu-stage');
+    if (ps) ps.innerHTML = '<div class="pusu-empty">Unable to load PUSU data.</div>';
   }
+}
+
+function debounce(fn, wait) {
+  var t;
+  return function() { clearTimeout(t); t = setTimeout(fn, wait); };
+}
+
+// =====================================================================
+// PUSU TIMELINE
+// =====================================================================
+function renderPusu() {
+  var stage = document.getElementById('pusu-stage');
+  var kpis = document.getElementById('pusu-kpis');
+  var meta = document.getElementById('pusu-meta');
+  var chip = document.getElementById('pusu-window');
+  if (!stage || !kpis) return;
+
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+  var todayMs = today.getTime();
+  var DAY = 24 * 60 * 60 * 1000;
+
+  var todayMetaStr = today.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  if (meta) meta.textContent = 'As at ' + todayMetaStr;
+
+  // Filter to deals with valid PUSU deadlines (extensions column not n/a/empty)
+  var valid = [];
+  for (var i = 0; i < deals.length; i++) {
+    var d = deals[i];
+    var extRaw = (d.pusuExt == null ? '' : d.pusuExt + '').toLowerCase().trim();
+    // Skip if extensions is n/a, n.a, n.a., or empty -> not a PUSU
+    if (extRaw === '' || extRaw === 'n/a' || extRaw === 'n.a' || extRaw === 'n.a.' || extRaw === 'na') continue;
+    var pd = parseDate(d.pusu);
+    if (!pd) continue;
+    pd.setHours(0, 0, 0, 0);
+    var days = Math.round((pd.getTime() - todayMs) / DAY);
+    if (days < 0) continue; // skip past dates
+    valid.push({ d: d, date: pd, days: days, ext: parseInt(extRaw, 10) || 0 });
+  }
+  valid.sort(function(a, b) { return a.date - b.date; });
+
+  // KPIs
+  var due7 = 0, extended = 0;
+  for (var k = 0; k < valid.length; k++) {
+    if (valid[k].days <= 7) due7++;
+    if (valid[k].ext >= 2) extended++;
+  }
+  kpis.innerHTML = ''
+    + '<div class="pusu-kpi"><div class="pusu-kpi-v">' + valid.length + '</div><div class="pusu-kpi-l">Dated expiries</div></div>'
+    + '<div class="pusu-kpi"><div class="pusu-kpi-v" style="color:' + (due7 > 0 ? 'var(--r)' : 'inherit') + '">' + due7 + '</div><div class="pusu-kpi-l">Due in 7 days</div></div>'
+    + '<div class="pusu-kpi"><div class="pusu-kpi-v" style="color:' + (extended > 0 ? 'var(--a)' : 'inherit') + '">' + extended + '</div><div class="pusu-kpi-l">Extended 2+ times</div></div>';
+
+  if (valid.length === 0) {
+    if (chip) chip.textContent = 'No upcoming deadlines';
+    stage.innerHTML = '<div class="pusu-empty">No upcoming PUSU deadlines.</div>';
+    return;
+  }
+
+  // Window: at least 30 days, extend if needed for furthest event (+3 day buffer)
+  var maxDays = valid[valid.length - 1].days;
+  var windowDays = Math.max(30, maxDays + 3);
+  if (chip) chip.textContent = windowDays <= 30 ? 'Next 30 days' : ('Next ' + windowDays + ' days');
+
+  // Position helper: today at 5%, end of window at 95%
+  function pct(days) { return 5 + (days / windowDays) * 90; }
+
+  // Box width as % of stage (used for collision detection between stems)
+  var stageWidth = stage.clientWidth || 1200;
+  var BOX_WIDTH_PCT = (180 / stageWidth) * 100; // ~box + small margin
+  if (BOX_WIDTH_PCT < 8) BOX_WIDTH_PCT = 8;
+  if (BOX_WIDTH_PCT > 22) BOX_WIDTH_PCT = 22;
+
+  // Stem heights to stagger vertically when boxes would collide
+  var stemHeights = [96, 168, 240, 312];
+  var lastUsed = [-1000, -1000, -1000, -1000];
+
+  var FLIP_THRESHOLD = 100 - BOX_WIDTH_PCT - 1; // flip box to left if too far right
+
+  var eventsHtml = '';
+  for (var j = 0; j < valid.length; j++) {
+    var v = valid[j];
+    var p = pct(v.days);
+
+    // Pick best stem: the one whose previous event is furthest left (most cleared)
+    var bestIdx = 0;
+    var bestDist = lastUsed[0] === undefined ? Infinity : (p - lastUsed[0]);
+    for (var s = 1; s < stemHeights.length; s++) {
+      var dist = p - lastUsed[s];
+      // Prefer a stem with cleared distance > BOX_WIDTH_PCT, but if none cleared, pick the one with largest distance (oldest)
+      if (dist > bestDist) { bestDist = dist; bestIdx = s; }
+    }
+    lastUsed[bestIdx] = p;
+    var stem = stemHeights[bestIdx];
+
+    // Status -> box variant
+    var boxClass = 'pusu-box';
+    if (v.d.st === 'Indicative offer') boxClass += ' indicative';
+    else if (v.d.st !== 'Formal offer') boxClass += ' no-price';
+
+    // Days -> dot variant
+    var dotClass = 'pusu-dot';
+    if (v.days <= 7) dotClass += ' hot';
+    else if (v.days <= 14) dotClass += ' near';
+
+    // Extensions -> ext pill variant
+    var extClass = 'pusu-ext';
+    if (v.ext >= 3) extClass += ' hot';
+    else if (v.ext >= 1) extClass += ' high';
+
+    // Flip box to the left if too close to right edge
+    if (p > FLIP_THRESHOLD) boxClass += ' flip';
+
+    var dateStr = v.date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
+    var daysLabel = v.days === 0 ? 'today' : (v.days === 1 ? '1d' : v.days + 'd');
+    var extLabel = v.ext === 1 ? '1 extension' : (v.ext + ' extensions');
+    var bidder = (v.d.b || '').trim() || '\u00A0';
+    var safeName = escHtml(v.d.t);
+    var safeBidder = escHtml(bidder);
+
+    eventsHtml += '<div class="pusu-event" style="left:' + p.toFixed(2) + '%;--stem:' + stem + 'px">'
+      + '<div class="' + boxClass + '">'
+      + '<div class="pusu-box-date">' + dateStr + '</div>'
+      + '<div class="pusu-box-name">' + safeName + '</div>'
+      + '<div class="pusu-box-meta">' + safeBidder + '</div>'
+      + '<span class="' + extClass + '">' + extLabel + '</span>'
+      + '</div>'
+      + '<div class="' + dotClass + '">' + daysLabel + '</div>'
+      + '</div>';
+  }
+
+  // Auto-generated ticks: today, then every ~7 days through window
+  var tickInterval = windowDays <= 14 ? 3 : (windowDays <= 30 ? 7 : Math.ceil(windowDays / 5));
+  var tickHtml = '';
+  for (var t = tickInterval; t <= windowDays; t += tickInterval) {
+    var td = new Date(todayMs + t * DAY);
+    var lbl = td.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    tickHtml += '<div class="pusu-tick" style="left:' + pct(t).toFixed(2) + '%"><span>' + lbl + '</span></div>';
+  }
+
+  var todayLabel = today.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+
+  stage.innerHTML = ''
+    + '<div class="pusu-axis-line"></div>'
+    + '<div class="pusu-axis-label">Disclosure Table timeline</div>'
+    + '<div class="pusu-today" style="left:' + pct(0).toFixed(2) + '%"><span>Today ' + todayLabel + '</span></div>'
+    + tickHtml
+    + eventsHtml;
+}
+
+function escHtml(s) {
+  return (s == null ? '' : (s + '')).replace(/[&<>"']/g, function(c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+  });
 }
 
 function renderUpdates(updates) {
