@@ -149,7 +149,7 @@ th.col-comments,td.col-comments{min-width:450px}
 .pusu-card-title{font-size:12.5px;font-weight:800;color:var(--t);letter-spacing:-.01em}
 .pusu-card-meta{font-size:11px;color:var(--t3);font-weight:600;white-space:nowrap}
 .pusu-stage-wrap{overflow-x:auto;overflow-y:hidden}
-.pusu-stage{position:relative;height:470px;padding:22px 22px 74px;background:#fff;min-width:880px}
+.pusu-stage{position:relative;height:560px;padding:22px 22px 74px;background:#fff;min-width:880px}
 .pusu-stage:before{content:"";position:absolute;left:22px;right:22px;top:30px;bottom:74px;background:repeating-linear-gradient(to top,#F1F3F7 0,#F1F3F7 1px,transparent 1px,transparent 54px);pointer-events:none}
 .pusu-axis-line{position:absolute;left:42px;right:42px;bottom:58px;height:2px;background:#D9DEE8;border-radius:2px}
 .pusu-axis-label{position:absolute;left:42px;bottom:22px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--t3)}
@@ -229,7 +229,7 @@ th.col-comments,td.col-comments{min-width:450px}
 .error-msg{text-align:center;padding:30px;color:var(--r);font-size:13px;background:var(--rb);border-radius:8px;margin-bottom:20px}
 
 @media(max-width:1024px){.page,.hdr{padding-left:20px;padding-right:20px}.hero h1{font-size:26px}.kpi-row{gap:8px}.pusu-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:768px){.ctrl{flex-direction:column;align-items:stretch}.kpi-row{flex-wrap:wrap}.pusu-head{align-items:flex-start}.pusu-kpis{grid-template-columns:1fr}.pusu-stage{height:450px}.pusu-box{width:160px}.pusu-card-hd,.pusu-footer{align-items:flex-start;flex-direction:column}}
+@media(max-width:768px){.ctrl{flex-direction:column;align-items:stretch}.kpi-row{flex-wrap:wrap}.pusu-head{align-items:flex-start}.pusu-kpis{grid-template-columns:1fr}.pusu-stage{height:520px}.pusu-box{width:160px}.pusu-card-hd,.pusu-footer{align-items:flex-start;flex-direction:column}}
 
 @keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .ai{animation:fu .4s ease-out both}
@@ -630,13 +630,15 @@ function renderPusu() {
 
   // Box width as % of stage (used for collision detection between stems)
   var stageWidth = stage.clientWidth || 1200;
-  var BOX_WIDTH_PCT = (180 / stageWidth) * 100; // ~box + small margin
-  if (BOX_WIDTH_PCT < 8) BOX_WIDTH_PCT = 8;
+  var BOX_WIDTH_PCT = (188 / stageWidth) * 100; // ~box + small margin
+  if (BOX_WIDTH_PCT < 9) BOX_WIDTH_PCT = 9;
   if (BOX_WIDTH_PCT > 22) BOX_WIDTH_PCT = 22;
 
-  // Stem heights to stagger vertically when boxes would collide
-  var stemHeights = [96, 168, 240, 312];
-  var lastUsed = [-1000, -1000, -1000, -1000];
+  // Stem heights to stagger vertically when boxes would collide.
+  // Spacing must exceed box height (~95px) to prevent vertical overlap.
+  // Max stem must keep box top inside the stage (stage 560 -> max ~370).
+  var stemHeights = [104, 220, 336];
+  var lastUsed = [-1000, -1000, -1000];
 
   var FLIP_THRESHOLD = 100 - BOX_WIDTH_PCT - 1; // flip box to left if too far right
 
@@ -645,12 +647,12 @@ function renderPusu() {
     var v = valid[j];
     var p = pct(v.days);
 
-    // Pick best stem: the one whose previous event is furthest left (most cleared)
+    // Pick best stem: prefer one whose previous neighbour is far enough left
+    // to clear our box; otherwise fall back to whichever has the largest gap.
     var bestIdx = 0;
-    var bestDist = lastUsed[0] === undefined ? Infinity : (p - lastUsed[0]);
+    var bestDist = p - lastUsed[0];
     for (var s = 1; s < stemHeights.length; s++) {
       var dist = p - lastUsed[s];
-      // Prefer a stem with cleared distance > BOX_WIDTH_PCT, but if none cleared, pick the one with largest distance (oldest)
       if (dist > bestDist) { bestDist = dist; bestIdx = s; }
     }
     lastUsed[bestIdx] = p;
