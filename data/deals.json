@@ -452,16 +452,16 @@
   {
     "t": "DELTIC ENERGY PLC",
     "sec": "Oil & Gas",
-    "st": "Approach, no price",
-    "b": "CAPRICORN ENERGY PLC/PETROGAS/ BLUE CONCEPT",
+    "st": "Formal offer",
+    "b": "NEO NEXT+",
     "start": "22-04-2026",
-    "offer": "n.a",
+    "offer": "7.7p",
     "v": 7,
-    "prem": null,
-    "pusu": "20-05-2026",
-    "pusuExt": "0",
+    "prem": 156,
+    "pusu": "30-09-2026",
+    "pusuExt": "n/a",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "In discussions with three parties, being (i) Capricorn Energy PLC (\"Capricorn Energy\"); (ii) Petrogas International E&P Coöperatief U.A., a subsidiary of Mohammed Al Barwani LLC; and (iii) Blue Concept Hld AS, a private Norwegian company. No price given. Previous scheme by Viaro Energy had lapsed on 31 March 2026."
+    "com": "Formal offer by NEO NEXT+ (scheme). Follows discussions with three parties, being (i) Capricorn Energy PLC (\"Capricorn Energy\"); (ii) Petrogas International E&P Coöperatief U.A., a subsidiary of Mohammed Al Barwani LLC; and (iii) Blue Concept Hld AS, a private Norwegian company. Previous scheme by Viaro Energy had lapsed on 31 March 2026."
   }
 ]
