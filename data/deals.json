@@ -10,8 +10,8 @@
     "prem": 33,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 8.38,
-    "hfC": "no change",
+    "hf": 8.42,
+    "hfC": "▲ 0.04pp",
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. 99.9% of votes were in favour at meetings on 16 April 2026."
   },
   {
@@ -40,8 +40,8 @@
     "prem": 60,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 32.65,
-    "hfC": "▼ 0.02pp",
+    "hf": 32.48,
+    "hfC": "▼ 0.16pp",
     "com": "Scheme of arrangement made at same terms as indicative proposal. Beazley shareholder vote passed on 22 April 2026. Expected to become effective during H2 2026."
   },
   {
@@ -55,8 +55,8 @@
     "prem": 37,
     "pusu": "30-09-2026",
     "pusuExt": "n/a",
-    "hf": 43.09,
-    "hfC": "▲ 0.16pp",
+    "hf": 43.1,
+    "hfC": "▲ 0.01pp",
     "com": "Shareholders have overwhelmingly approved the scheme, but still subject to regulatory approval. Completion expected some time in Q3."
   },
   {
@@ -70,8 +70,8 @@
     "prem": 16,
     "pusu": "10-07-2026",
     "pusuExt": "n/a",
-    "hf": 38.88,
-    "hfC": "▲ 0.02pp",
+    "hf": 39.14,
+    "hfC": "▲ 0.26pp",
     "com": "Formal offer announced on 7 April 2026 by Tinicum and Blackstone at 297.85p in cash. Indicative offer of 270p from Advent was rejected. Advent withdrew on 8 April 2026. Arcline Investment Management had made an approach before withdrawing on 1 April 2026."
   },
   {
@@ -100,8 +100,8 @@
     "prem": null,
     "pusu": "10-06-2026",
     "pusuExt": "0",
-    "hf": 8.91,
-    "hfC": "▲ 0.02pp",
+    "hf": 10.14,
+    "hfC": "▲ 1.23pp",
     "com": "In preliminary discussions with a number of interested counterparties. Potential offerors not required to be identified, but Providence Equity Partners was named on 13 May 2026."
   },
   {
@@ -146,7 +146,7 @@
     "pusu": "30-06-2026",
     "pusuExt": "n/a",
     "hf": 48.92,
-    "hfC": "▲ 0.07pp",
+    "hfC": "no change",
     "com": "Shareholders approved scheme on 11 March. Still subject to regulatory approval, with parties aiming to complete by end of Q2 2026."
   },
   {
@@ -161,7 +161,7 @@
     "pusu": "16-05-2026",
     "pusuExt": "0",
     "hf": 2.92,
-    "hfC": "▲ 0.11pp",
+    "hfC": "no change",
     "com": "In discussions with TA Associates (UK), LLP regarding a possible offer, no price given."
   },
   {
@@ -205,7 +205,7 @@
     "prem": 0,
     "pusu": "",
     "pusuExt": "n/a",
-    "hf": 0.0,
+    "hf": 1.97,
     "hfC": "no change",
     "com": "LondonMetric Property PLC and Schroder REIT make indicative all share offer, after strategic review. 46% in LondonMetric shares and 54% in Schroder REIT shares. As proposal is part of formal sale process, no PUSU deadline."
   },
@@ -235,8 +235,8 @@
     "prem": 36,
     "pusu": "30-09-2026",
     "pusuExt": "n/a",
-    "hf": 10.67,
-    "hfC": "▲ 0.02pp",
+    "hf": 10.76,
+    "hfC": "▲ 0.09pp",
     "com": "Formal £235.2m offer by Charterhouse Capital, 41.7% undertakings. Scheme of arrangement in cash with a rollover alternative. Completion Q2 or Q3 2026"
   },
   {
@@ -250,8 +250,8 @@
     "prem": 33,
     "pusu": "30-09-2026",
     "pusuExt": "n/a",
-    "hf": 26.11,
-    "hfC": "▲ 0.41pp",
+    "hf": 26.23,
+    "hfC": "▲ 0.12pp",
     "com": "Offer, by scheme of arrangement, from Qatar-based bank, expected to complete Q3. Approved by shareholders on 27 April 2026, still subject to regulatory clearance. Offer follows strategic review addressing \"persistent discount to its realisable asset value\"."
   },
   {
@@ -265,8 +265,8 @@
     "prem": null,
     "pusu": "03-06-2026",
     "pusuExt": "2",
-    "hf": 60.81,
-    "hfC": "▼ 0.02pp",
+    "hf": 60.8,
+    "hfC": "▼ 0.01pp",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given. Discussions were ongoing and the board was seeking clarity around Alamadiyaf al-Masiyyah's funding arrangements.  On 24 March 2026, Capricorn rejected proposal from Dragon Oil to acquire its assets in the Western Desert."
   },
   {
@@ -341,7 +341,7 @@
     "pusu": "29-05-2026",
     "pusuExt": "n/a",
     "hf": 13.3,
-    "hfC": "▲ 0.12pp",
+    "hfC": "no change",
     "com": "Approved by target shareholders. Completion still subject to FCA approvals, with long stop date of 29 May 2026."
   },
   {
@@ -448,5 +448,20 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "Conditional cash proposal from US ingredients group Ingredion Inc, valuing each share at up to 615p - 595p in cash plus permitted final and interim dividends of up to 20p."
+  },
+  {
+    "t": "ZINNWALD LITHIUM PLC",
+    "sec": "Mining or Metals",
+    "st": "Formal offer",
+    "b": "AMG LITHIUM BV",
+    "start": "14-05-2026",
+    "offer": "10p",
+    "v": 57,
+    "prem": 63,
+    "pusu": "30-09-2026",
+    "pusuExt": "n/a",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Mixed cash and share offer, with support of 50.14% of shareholders. Expected to complete during the third quarter of 2026."
   }
 ]
