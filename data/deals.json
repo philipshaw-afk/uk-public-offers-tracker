@@ -463,5 +463,20 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "Mixed cash and share offer, with support of 50.14% of shareholders. Expected to complete during the third quarter of 2026."
+  },
+  {
+    "t": "ALTERNATIVE INCOME REIT PLC",
+    "sec": "Property",
+    "st": "Approach, no price",
+    "b": "GLENSTONE REIT PLC",
+    "start": "15-05-2026",
+    "offer": "n.a",
+    "v": 56,
+    "prem": null,
+    "pusu": "12-06-2026",
+    "pusuExt": "0",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Glenstone REIT (which already owns 24%) announced it's considering a cash offer for the remaining shares (no price). Any offer would have an acceptance condition of 50%."
   }
 ]
