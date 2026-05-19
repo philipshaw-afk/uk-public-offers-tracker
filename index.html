@@ -11,7 +11,7 @@
   gtag('js', new Date());
   gtag('config', 'G-C706K01NJD');
 </script>
-  
+
 <title>UK Takeover Code Tracker | M&amp;A Monitor</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -229,7 +229,7 @@ th.col-comments,td.col-comments{min-width:450px}
 .error-msg{text-align:center;padding:30px;color:var(--r);font-size:13px;background:var(--rb);border-radius:8px;margin-bottom:20px}
 
 @media(max-width:1024px){.page,.hdr{padding-left:20px;padding-right:20px}.hero h1{font-size:26px}.kpi-row{gap:8px}.pusu-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:768px){.ctrl{flex-direction:column;align-items:stretch}.kpi-row{flex-wrap:wrap}.pusu-head{align-items:flex-start}.pusu-kpis{grid-template-columns:1fr}.pusu-stage{height:520px}.pusu-box{width:160px}.pusu-card-hd,.pusu-footer{align-items:flex-start;flex-direction:column}}
+@media(max-width:768px){.ctrl{flex-direction:column;align-items:stretch}.kpi-row{flex-wrap:wrap}.pusu-head{align-items:flex-start}.pusu-kpis{grid-template-columns:1fr}.pusu-box{width:160px}.pusu-card-hd,.pusu-footer{align-items:flex-start;flex-direction:column}}
 
 @keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .ai{animation:fu .4s ease-out both}
@@ -389,7 +389,7 @@ th.col-comments,td.col-comments{min-width:450px}
     var y = cy + r * Math.sin(angle);
     var star = document.createElement('span');
     star.className = 'eu-btn-star';
-    star.innerHTML = '\u2605';
+    star.innerHTML = '★';
     star.style.left = (x - 3.5) + 'px';
     star.style.top = (y - 3.5) + 'px';
     container.appendChild(star);
@@ -499,7 +499,7 @@ async function loadFromSheets() {
 
     return {
       t: get('Target').replace(/\s+/g, ' ').trim(),
-      sec: get('Sector').replace(/\s+/g, ' ').trim().replace(/\u00a0/g, ' ').trim(),
+      sec: get('Sector').replace(/\s+/g, ' ').trim().replace(/ /g, ' ').trim(),
       st: get('Status').replace(/\s+/g, ' ').trim(),
       b: get('Bidder').replace(/\s+/g, ' ').trim(),
       start: get('Offer period start').trim(),
@@ -548,7 +548,7 @@ async function loadData() {
     document.getElementById('updates-title').textContent = 'Updates';
 
     var today = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-    document.getElementById('footer-date').textContent = 'Data as at ' + today + ' \u00B7 Source: M&A Monitor DataBase';
+    document.getElementById('footer-date').textContent = 'Data as at ' + today + ' · Source: M&A Monitor DataBase';
 
     buildFilters();
     go();
@@ -616,6 +616,7 @@ function renderPusu() {
 
   if (valid.length === 0) {
     if (chip) chip.textContent = 'No upcoming deadlines';
+    stage.style.height = '';
     stage.innerHTML = '<div class="pusu-empty">No upcoming PUSU deadlines.</div>';
     return;
   }
@@ -628,35 +629,61 @@ function renderPusu() {
   // Position helper: today at 5%, end of window at 95%
   function pct(days) { return 5 + (days / windowDays) * 90; }
 
-  // Box width as % of stage (used for collision detection between stems)
+  // Box width as % of stage (used for collision detection between flags)
   var stageWidth = stage.clientWidth || 1200;
   var BOX_WIDTH_PCT = (188 / stageWidth) * 100; // ~box + small margin
   if (BOX_WIDTH_PCT < 9) BOX_WIDTH_PCT = 9;
   if (BOX_WIDTH_PCT > 22) BOX_WIDTH_PCT = 22;
 
-  // Stem heights to stagger vertically when boxes would collide.
-  // Spacing must exceed box height (~95px) to prevent vertical overlap.
-  // Max stem must keep box top inside the stage (stage 560 -> max ~370).
-  var stemHeights = [104, 220, 336];
-  var lastUsed = [-1000, -1000, -1000];
-
   var FLIP_THRESHOLD = 100 - BOX_WIDTH_PCT - 1; // flip box to left if too far right
 
-  var eventsHtml = '';
-  for (var j = 0; j < valid.length; j++) {
-    var v = valid[j];
-    var p = pct(v.days);
+  // ── Tier assignment with proper collision detection ─────────────────
+  // Each event picks the lowest tier where its flag won't overlap any
+  // previously-placed flag on that tier. New tiers are added on demand,
+  // and the stage height grows to fit them.
+  var SAFE_MARGIN = 0.5; // small horizontal gap (% of stage) between adjacent flags
+  var tierLastRight = []; // last "right edge" used on each tier
+  var tierFor = [];
+  var flipFor = [];
 
-    // Pick best stem: prefer one whose previous neighbour is far enough left
-    // to clear our box; otherwise fall back to whichever has the largest gap.
-    var bestIdx = 0;
-    var bestDist = p - lastUsed[0];
-    for (var s = 1; s < stemHeights.length; s++) {
-      var dist = p - lastUsed[s];
-      if (dist > bestDist) { bestDist = dist; bestIdx = s; }
+  for (var j = 0; j < valid.length; j++) {
+    var pj = pct(valid[j].days);
+    var willFlip = (pj > FLIP_THRESHOLD);
+    var leftEdge = willFlip ? (pj - BOX_WIDTH_PCT) : pj;
+    var rightEdge = willFlip ? pj : (pj + BOX_WIDTH_PCT);
+
+    var tierIdx = -1;
+    for (var tt = 0; tt < tierLastRight.length; tt++) {
+      if (tierLastRight[tt] + SAFE_MARGIN <= leftEdge) {
+        tierIdx = tt;
+        break;
+      }
     }
-    lastUsed[bestIdx] = p;
-    var stem = stemHeights[bestIdx];
+    if (tierIdx === -1) {
+      tierIdx = tierLastRight.length;
+      tierLastRight.push(rightEdge);
+    } else {
+      tierLastRight[tierIdx] = rightEdge;
+    }
+    tierFor.push(tierIdx);
+    flipFor.push(willFlip);
+  }
+
+  // Compute stems and stage height. Spacing must exceed box height (~95px).
+  // Box top sits at stem + ~180px from stage bottom; need top padding clear.
+  var BASE_STEM = 90;
+  var TIER_SPACING = 108;
+  var tiersUsed = Math.max(1, tierLastRight.length);
+  var maxStem = BASE_STEM + (tiersUsed - 1) * TIER_SPACING;
+  var MIN_STAGE_HEIGHT = 480;
+  var newStageHeight = Math.max(MIN_STAGE_HEIGHT, maxStem + 222);
+  stage.style.height = newStageHeight + 'px';
+
+  var eventsHtml = '';
+  for (var j2 = 0; j2 < valid.length; j2++) {
+    var v = valid[j2];
+    var p = pct(v.days);
+    var stem = BASE_STEM + tierFor[j2] * TIER_SPACING;
 
     // Status -> box variant
     var boxClass = 'pusu-box';
@@ -674,12 +701,12 @@ function renderPusu() {
     else if (v.ext >= 1) extClass += ' high';
 
     // Flip box to the left if too close to right edge
-    if (p > FLIP_THRESHOLD) boxClass += ' flip';
+    if (flipFor[j2]) boxClass += ' flip';
 
     var dateStr = v.date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
     var daysLabel = v.days === 0 ? 'today' : (v.days === 1 ? '1d' : v.days + 'd');
     var extLabel = v.ext === 1 ? '1 extension' : (v.ext + ' extensions');
-    var bidder = (v.d.b || '').trim() || '\u00A0';
+    var bidder = (v.d.b || '').trim() || ' ';
     var safeName = escHtml(v.d.t);
     var safeBidder = escHtml(bidder);
 
@@ -749,11 +776,11 @@ function premHtml(p) {
   var c = p >= 40 ? 'prem-high' : p >= 15 ? 'prem-mid' : 'prem-low';
   return '<span class="prem-pill ' + c + '">' + p + '%</span>';
 }
-function fmtVal(v) { return v >= 1000 ? '\u00A3' + (v / 1000).toFixed(1) + 'bn' : '\u00A3' + v + 'm'; }
+function fmtVal(v) { return v >= 1000 ? '£' + (v / 1000).toFixed(1) + 'bn' : '£' + v + 'm'; }
 function hfHtml(hf, c) {
   var cls = 'hf-flat', txt = c;
-  if (c.includes('\u2191') || c.includes('up')) cls = 'hf-up';
-  if (c.includes('\u2193') || c.includes('down')) cls = 'hf-down';
+  if (c.includes('↑') || c.includes('up')) cls = 'hf-up';
+  if (c.includes('↓') || c.includes('down')) cls = 'hf-down';
   return '<span class="hf-cell">' + hf + '%<span class="hf-change ' + cls + '">' + txt + '</span></span>';
 }
 function parseDate(s) { if (!s) return null; var p = s.split(/[\/\-]/); return new Date(p[2], p[1] - 1, p[0]); }
@@ -819,7 +846,7 @@ function render(data) {
       + '<td class="offer-price">' + d.offer + '</td>'
       + '<td class="vc">' + fmtVal(d.v) + '</td>'
       + '<td>' + premHtml(d.prem) + '</td>'
-      + '<td class="dt">' + (d.pusu || '\u2014') + '</td>'
+      + '<td class="dt">' + (d.pusu || '—') + '</td>'
       + '<td class="comment-cell col-comments">' + d.com + '</td>'
       + '</tr>';
   }
@@ -841,7 +868,7 @@ function updateKpis(data) {
     + '<div class="kpi-card"><div class="kpi-v" style="color:var(--g)">' + formal + '</div><div class="kpi-l">Formal Offers</div></div>'
     + '<div class="kpi-card"><div class="kpi-v" style="color:var(--am)">' + indicative + '</div><div class="kpi-l">Indicative</div></div>'
     + '<div class="kpi-card"><div class="kpi-v" style="color:var(--r)">' + noprice + '</div><div class="kpi-l">No Price</div></div>'
-    + '<div class="kpi-card"><div class="kpi-v">\u00A3' + (tv / 1000).toFixed(1) + '<span class="u">bn</span></div><div class="kpi-l">Total Value</div></div>'
+    + '<div class="kpi-card"><div class="kpi-v">£' + (tv / 1000).toFixed(1) + '<span class="u">bn</span></div><div class="kpi-l">Total Value</div></div>'
     + '<div class="kpi-card"><div class="kpi-v">' + meanHf.toFixed(1) + '<span class="u">%</span></div><div class="kpi-l">Avg HF %</div></div>';
 }
 
@@ -850,7 +877,7 @@ function sort(col) {
   if (cs.col === col) cs.asc = !cs.asc;
   else { cs.col = col; cs.asc = (col === 'value' || col === 'premium' || col === 'hf') ? false : true; }
   var th = document.querySelector('th[data-c="' + col + '"]');
-  if (th) { th.classList.add('so'); th.querySelector('.ar').textContent = cs.asc ? '\u25B2' : '\u25BC'; }
+  if (th) { th.classList.add('so'); th.querySelector('.ar').textContent = cs.asc ? '▲' : '▼'; }
   go();
 }
 
