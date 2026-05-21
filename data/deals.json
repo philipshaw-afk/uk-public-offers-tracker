@@ -463,5 +463,20 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "Glenstone REIT (which already owns 24%) announced it's considering a cash offer for the remaining shares (no price). Any offer would have an acceptance condition of 50%."
+  },
+  {
+    "t": "ADVANCED MEDICAL SOLUTIONS GROUP PLC",
+    "sec": "Healthcare",
+    "st": "Approach, no price",
+    "b": "H.B. FULLER COMPANY",
+    "start": "21-05-2026",
+    "offer": "n.a",
+    "v": 466,
+    "prem": null,
+    "pusu": "",
+    "pusuExt": "0",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Unsolicited proposal from H.B. Fuller Company. Follows previous approach by TA Associates, which withdrew on 18 May 2026"
   }
 ]
