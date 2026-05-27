@@ -1,6 +1,6 @@
 [
   {
-    "n": "PPHE Hotel Group Limite",
+    "n": "PPHE Hotel Group Limited",
     "s": "amber",
     "text": "Indicative offer from Fattal Hotel Group at £22 per share. Follows strategic review and formal sale process.",
     "date": "27 May 2026"
@@ -22,17 +22,5 @@
     "s": "green",
     "text": "Shareholders overwhelmingly approve scheme. Completion expected by Q1 2027.",
     "date": "26 May 2026"
-  },
-  {
-    "n": "Bodycote Plc",
-    "s": "amber",
-    "text": "New addition: Apollo makes conditional proposal at 885p plus 16.1p dividend. Discussions are ongoing.",
-    "date": "22 May 2026"
-  },
-  {
-    "n": "Checkit Plc",
-    "s": "red",
-    "text": "Company announces it has received \"credible interest\" from potential acquirers, discussions ongoing.",
-    "date": "22 May 2026"
   }
 ]
