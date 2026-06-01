@@ -152,13 +152,13 @@
   {
     "t": "NCC GROUP PLC",
     "sec": "I.T.",
-    "st": "Strategic review",
+    "st": "Formal offer",
     "b": "NO NAMED OFFEROR",
     "start": "16-07-2025",
     "offer": "n.a",
     "v": 446,
-    "prem": null,
-    "pusu": "",
+    "prem": 28,
+    "pusu": "30-09-2026",
     "pusuExt": "n/a",
     "hf": 1.93,
     "hfC": "no change",
@@ -168,16 +168,16 @@
     "t": "BLUEFIELD SOLAR INCOME FUND LIMITED",
     "sec": "Financial Services",
     "st": "Strategic review",
-    "b": "NO NAMED OFFEROR",
+    "b": "DRAX GROUP PLC",
     "start": "05-11-2025",
-    "offer": "n.a",
-    "v": 414,
+    "offer": "92.574p",
+    "v": 548,
     "prem": null,
     "pusu": "",
     "pusuExt": "n/a",
     "hf": 10.97,
     "hfC": "no change",
-    "com": "Strategic review and formal sales process. No approaches mentioned."
+    "com": "Drax makes formal offer on 1 June 2026, by means of schemeOffer follows strategic review and formal sales process."
   },
   {
     "t": "PICTON PROPERTY INCOME LIMITED",
@@ -507,6 +507,6 @@
     "pusuExt": "0",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Castlelake confirms it's in the early stages of considering a possible offer for easyJet. No approach has been made to the Board and no price given."
+    "com": "Castlelake confirms it's in the early stages of considering a possible offer for easyJet. No approach has been made to the Board and no price given, but would need to be at least 403.23p. EasyJet Board notes \"opportunistic timing\" as share price temporarily depressed due to the current situation in the Middle East and its impact on customer confidence and jet fuel prices."
   }
 ]
