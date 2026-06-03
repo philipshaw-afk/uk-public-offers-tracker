@@ -2,13 +2,19 @@
   {
     "n": "Capricorn Energy plc",
     "s": "red",
-    "text": "PUSU deadline for Alamadiyaf al-Masiyyah due today",
+    "text": "PUSU deadline for Alamadiyaf al-Masiyyah extended to 1 July",
     "date": "3 June 2026"
   },
   {
     "n": "Intuitive Investments Group plc",
     "s": "amber",
-    "text": "PUSU deadline for Acceler8 Ventures plc due today",
+    "text": "PUSU deadline for Acceler8 Ventures plc extended to 1 July",
+    "date": "3 June 2026"
+  },
+  {
+    "n": "Frenkel Topping Group plc",
+    "s": "green",
+    "text": "FCA clears transaction",
     "date": "3 June 2026"
   }
 ]
