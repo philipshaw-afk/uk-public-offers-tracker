@@ -480,21 +480,6 @@
     "com": "Unsolicited proposal from H.B. Fuller Company. Follows previous approach by TA Associates, which withdrew on 18 May 2026"
   },
   {
-    "t": "BODYCOTE PLC",
-    "sec": "Engineering",
-    "st": "Indicative offer",
-    "b": "APOLLO GLOBAL MANAGEMENT INC",
-    "start": "22-05-2026",
-    "offer": "885p",
-    "v": 1575,
-    "prem": 26,
-    "pusu": "19-06-2026",
-    "pusuExt": "0",
-    "hf": 2.19,
-    "hfC": "no change",
-    "com": "Conditional proposal at 885p plus 16.1p dividend. Discussions are ongoing."
-  },
-  {
     "t": "EASYJET PLC",
     "sec": "Transport",
     "st": "Approach, no price",
