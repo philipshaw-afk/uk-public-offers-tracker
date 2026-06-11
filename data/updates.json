@@ -1,5 +1,11 @@
 [
   {
+    "n": "Animalcare Group Plc",
+    "s": "green",
+    "text": "Australian regulatory approval received - effective date expected to be 30 July 2026",
+    "date": "11 June 2026"
+  },
+  {
     "n": "Spire Healthcare Group plc",
     "s": "amber",
     "text": "PUSU deadline extended to 25 June",
@@ -8,7 +14,7 @@
   {
     "n": "NCC Group plc",
     "s": "red",
-    "text": "Deletion: The Board has concluded its strategic review of the Cyber business. NCC was not in receipt of any approaches.",
+    "text": "Deletion: The Board has concluded its strategic review of the Cyber business. NCC was not in receipt of any approaches",
     "date": "11 June 2026"
   },
   {
