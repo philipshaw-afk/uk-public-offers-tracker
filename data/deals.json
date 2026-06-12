@@ -98,7 +98,7 @@
     "offer": "n.a",
     "v": 666,
     "prem": null,
-    "pusu": "08-07-2026",
+    "pusu": "12-06-2026",
     "pusuExt": "1",
     "hf": 0.0,
     "hfC": "no change",
@@ -175,8 +175,8 @@
     "prem": 0,
     "pusu": "",
     "pusuExt": "n/a",
-    "hf": 0.0,
-    "hfC": "▼ 1.97pp",
+    "hf": 1.97,
+    "hfC": "no change",
     "com": "LondonMetric Property PLC and Schroder REIT make indicative all share offer, after strategic review. 46% in LondonMetric shares and 54% in Schroder REIT shares. As proposal is part of formal sale process, no PUSU deadline."
   },
   {
@@ -293,7 +293,7 @@
     "offer": "50p",
     "v": 64,
     "prem": 20,
-    "pusu": "29-07-2026",
+    "pusu": "08-07-2026",
     "pusuExt": "n/a",
     "hf": 13.3,
     "hfC": "no change",
