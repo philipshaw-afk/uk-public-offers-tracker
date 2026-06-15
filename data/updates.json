@@ -1,5 +1,11 @@
 [
   {
+    "n": "Union Jack Oil plc",
+    "s": "red",
+    "text": "Non-binding indicative offer, with no price. Due diligence and discussions ongoing.",
+    "date": "15 June 2026"
+  },
+  {
     "n": "Gamma Communications plc",
     "s": "red",
     "text": "Oakley Capital and Giacom consortium confirms it will not make an offer.",
@@ -10,23 +16,5 @@
     "s": "green",
     "text": "Timetable update: scheme effective date will be 8 July 2026",
     "date": "12 June 2026"
-  },
-  {
-    "n": "Alternative Income REIT plc",
-    "s": "green",
-    "text": "Glenstone REIT announces an unsolicited formal cash offer of 70p per share for the remaining 76%. Target Board advises shareholders take no action.",
-    "date": "12 June 2026"
-  },
-  {
-    "n": "Animalcare Group Plc",
-    "s": "green",
-    "text": "Australian regulatory approval received - effective date expected to be 30 July 2026",
-    "date": "11 June 2026"
-  },
-  {
-    "n": "Spire Healthcare Group plc",
-    "s": "amber",
-    "text": "PUSU deadline extended to 25 June",
-    "date": "11 June 2026"
   }
 ]
