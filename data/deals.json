@@ -463,5 +463,20 @@
     "hf": 4.32,
     "hfC": "▲ 2.14pp",
     "com": "Castlelake confirms it's in the early stages of considering a possible offer for easyJet. No approach has been made to the Board and no price given, but would need to be at least 403.23p. EasyJet Board notes \"opportunistic timing\" as share price temporarily depressed due to the current situation in the Middle East and its impact on customer confidence and jet fuel prices."
+  },
+  {
+    "t": "UNION JACK OIL PLC",
+    "sec": "Oil & Gas",
+    "st": "Approach, no price",
+    "b": "REABOLD RESOURCES PLC",
+    "start": "15-06-2026",
+    "offer": "n.a.",
+    "v": 5,
+    "prem": null,
+    "pusu": "13-07-2026",
+    "pusuExt": "0",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Non-binding indicative offer, with no price. Due diligence and discussions ongoing."
   }
 ]
