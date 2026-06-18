@@ -1,8 +1,26 @@
 [
   {
-    "n": "Frenkel Topping Group plc",
+    "n": "Intertek Group plc",
     "s": "green",
-    "text": "2025 results announced, revenue and adjusted EBITDA up 11% yoy.",
+    "text": "Recommended final cash offer by private equity firm EQT at £60 per share. The offer will be implemented by means of a scheme of arrangement.",
+    "date": "18 June 2026"
+  },
+  {
+    "n": "Advanced Medical Solutions Group PLC",
+    "s": "red",
+    "text": "PUSU deadline expires on 18 June 2026",
+    "date": "18 June 2026"
+  },
+  {
+    "n": "Intertek Group plc",
+    "s": "amber",
+    "text": "PUSU deadline expires on 18 June 2026 - FT reports formal offer imminent",
+    "date": "18 June 2026"
+  },
+  {
+    "n": "PPHE Hotel Group Limited",
+    "s": "amber",
+    "text": "PPHE acquires freehold interest in Park Plaza London Waterloo",
     "date": "17 June 2026"
   }
 ]
