@@ -1,20 +1,26 @@
 [
   {
+    "n": "PPHE Hotel Group Limited",
+    "s": "amber",
+    "text": "Deletion: Fattal Hotels states it will not make an offer after opposition from Euro Plaza Holdings (which holds 33%).",
+    "date": "19 June 2026"
+  },
+  {
+    "n": "PPHE Hotel Group Limited",
+    "s": "red",
+    "text": "On 31 May 2026 PPHE had received an indicative proposal from another interested party which is being assessed.",
+    "date": "19 June 2026"
+  },
+  {
+    "n": "Advanced Medical Solutions Group plc",
+    "s": "red",
+    "text": "Extension of PUSU deadline to 2 July 2026.",
+    "date": "18 June 2026"
+  },
+  {
     "n": "Intertek Group plc",
     "s": "green",
     "text": "Recommended final cash offer by EQT at £60 per share. The offer will be a scheme of arrangement.",
     "date": "18 June 2026"
-  },
-  {
-    "n": "Advanced Medical Solutions Group PLC",
-    "s": "red",
-    "text": "PUSU deadline expires on 18 June 2026",
-    "date": "18 June 2026"
-  },
-  {
-    "n": "PPHE Hotel Group Limited",
-    "s": "amber",
-    "text": "PPHE acquires freehold interest in Park Plaza London Waterloo",
-    "date": "17 June 2026"
   }
 ]
