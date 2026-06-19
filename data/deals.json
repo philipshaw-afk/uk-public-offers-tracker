@@ -11,7 +11,7 @@
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
     "hf": 9.1,
-    "hfC": "▲ 0.05pp",
+    "hfC": "no change",
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. 99.9% of votes were in favour at meetings on 16 April 2026."
   },
   {
@@ -25,9 +25,9 @@
     "prem": 41,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 11.97,
-    "hfC": "▲ 0.7pp",
-    "com": "Recommended final cash offer by private equity firm EQT at £60 per share. The offer will be implemented by means of a Court-sanctioned scheme of arrangement."
+    "hf": 12.42,
+    "hfC": "▲ 0.45pp",
+    "com": "Recommended final cash offer by private equity firm EQT at £60 per share. The offer will be implemented by means of a Court-sanctioned scheme of arrangement and is expected to become effective in Q4 2026 or Q1 2027."
   },
   {
     "t": "BEAZLEY PLC",
@@ -40,8 +40,8 @@
     "prem": 60,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 33.96,
-    "hfC": "▼ 0.2pp",
+    "hf": 33.94,
+    "hfC": "▼ 0.02pp",
     "com": "Scheme of arrangement made at same terms as indicative proposal. Beazley shareholder vote passed on 22 April 2026. Expected to become effective during H2 2026."
   },
   {
@@ -55,8 +55,8 @@
     "prem": 37,
     "pusu": "30-09-2026",
     "pusuExt": "n/a",
-    "hf": 45.49,
-    "hfC": "▲ 0.07pp",
+    "hf": 45.52,
+    "hfC": "▲ 0.03pp",
     "com": "Shareholders have overwhelmingly approved the scheme, but still subject to regulatory approval. Completion expected some time in Q3."
   },
   {
@@ -70,8 +70,8 @@
     "prem": 16,
     "pusu": "31-03-2027",
     "pusuExt": "n/a",
-    "hf": 40.85,
-    "hfC": "▼ 0.81pp",
+    "hf": 40.87,
+    "hfC": "▲ 0.03pp",
     "com": "Formal offer (scheme) announced on 7 April 2026 by Tinicum and Blackstone at 297.85p in cash. Overwhelmingly approved by shareholders on 26 May 2026. Indicative offer of 270p from Advent was rejected. Advent withdrew on 8 April 2026. Arcline Investment Management had made an approach before withdrawing on 1 April 2026."
   },
   {
@@ -107,17 +107,17 @@
   {
     "t": "PPHE HOTEL GROUP LIMITED",
     "sec": "Leisure & Hotels",
-    "st": "Indicative offer",
-    "b": "FATTAL HOTEL GROUP",
+    "st": "Strategic review",
+    "b": "UNNAMED OFFEROR",
     "start": "14-11-2025",
-    "offer": "2200p",
+    "offer": "n.a",
     "v": 930,
-    "prem": 46,
+    "prem": null,
     "pusu": "",
     "pusuExt": "n/a",
     "hf": 1.95,
     "hfC": "no change",
-    "com": "Pre-conditional proposal, subject to  customary pre-conditions, including due diligence. No PUSU deadline. Board states it represents \" fair value\". Follows strategic review after meetings with financial investors who wanted to maximise value."
+    "com": "Strategic review after meetings with financial investors who wanted to maximise value.  Fattal Hotels had made a pre-conditional proposal of £22 but withdrew on 19 June 2026. On 31 May 2026 PPHE received an indicative proposal from another interested party. No PUSU deadline."
   },
   {
     "t": "INTUITIVE INVESTMENTS GROUP PLC",
@@ -145,8 +145,8 @@
     "prem": 43,
     "pusu": "30-06-2026",
     "pusuExt": "n/a",
-    "hf": 49.24,
-    "hfC": "▼ 0.01pp",
+    "hf": 49.27,
+    "hfC": "▲ 0.03pp",
     "com": "Shareholders approved scheme on 11 March. Still subject to regulatory approval, with parties aiming to complete by end of Q2 2026."
   },
   {
@@ -160,8 +160,8 @@
     "prem": 28,
     "pusu": "30-09-2026",
     "pusuExt": "n/a",
-    "hf": 16.71,
-    "hfC": "▼ 0.14pp",
+    "hf": 16.97,
+    "hfC": "▲ 0.26pp",
     "com": "Drax makes formal offer on 1 June 2026, by means of scheme. Offer follows strategic review and formal sales process."
   },
   {
@@ -205,8 +205,8 @@
     "prem": 36,
     "pusu": "30-07-2026",
     "pusuExt": "n/a",
-    "hf": 18.23,
-    "hfC": "▲ 2.27pp",
+    "hf": 18.38,
+    "hfC": "▲ 0.15pp",
     "com": "Formal £235.2m offer by Charterhouse Capital, 41.7% undertakings. Scheme of arrangement in cash with a rollover alternative. Approved by shareholders on 8 June 2026. Effective date expected to be 30 July 2026."
   },
   {
@@ -235,8 +235,8 @@
     "prem": null,
     "pusu": "01-07-2026",
     "pusuExt": "3",
-    "hf": 59.89,
-    "hfC": "no change",
+    "hf": 59.88,
+    "hfC": "▼ 0.01pp",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given. Discussions were ongoing and the board was seeking clarity around Alamadiyaf al-Masiyyah's funding arrangements.  On 24 March 2026, Capricorn rejected proposal from Dragon Oil to acquire its assets in the Western Desert."
   },
   {
@@ -251,7 +251,7 @@
     "pusu": "02-07-2026",
     "pusuExt": "n/a",
     "hf": 17.63,
-    "hfC": "▲ 0.3pp",
+    "hfC": "no change",
     "com": "Recommended offer (scheme of arrangement) - expected to complete on 2 July 2026. Already owns 27.9% and undertakings at 12%. Note an offer by Exponent at 260p failed in November 2025."
   },
   {
@@ -280,8 +280,8 @@
     "prem": null,
     "pusu": "",
     "pusuExt": "n/a",
-    "hf": 0.0,
-    "hfC": "no change",
+    "hf": 4.57,
+    "hfC": "▲ 4.57pp",
     "com": "Strategic review & formal sale process. Has not received an indicative offer but has held preliminary discussions with a small number of counterparties."
   },
   {
@@ -295,8 +295,8 @@
     "prem": 20,
     "pusu": "08-07-2026",
     "pusuExt": "n/a",
-    "hf": 13.3,
-    "hfC": "no change",
+    "hf": 13.36,
+    "hfC": "▲ 0.06pp",
     "com": "Approved by target shareholders and FCA. Long stop date of 29 July 2026."
   },
   {
@@ -428,10 +428,10 @@
     "offer": "n.a",
     "v": 466,
     "prem": null,
-    "pusu": "18-06-2026",
-    "pusuExt": "0",
-    "hf": 4.6,
-    "hfC": "no change",
+    "pusu": "02-07-2026",
+    "pusuExt": "1",
+    "hf": 4.82,
+    "hfC": "▲ 0.22pp",
     "com": "Unsolicited proposal from H.B. Fuller Company. Follows previous approach by TA Associates, which withdrew on 18 May 2026"
   },
   {
@@ -445,8 +445,8 @@
     "prem": null,
     "pusu": "26-06-2026",
     "pusuExt": "0",
-    "hf": 3.17,
-    "hfC": "▲ 0.03pp",
+    "hf": 3.14,
+    "hfC": "▼ 0.03pp",
     "com": "Castlelake confirms it's in the early stages of considering a possible offer for easyJet. No approach has been made to the Board and no price given, but would need to be at least 403.23p. EasyJet Board notes \"opportunistic timing\" as share price temporarily depressed due to the current situation in the Middle East and its impact on customer confidence and jet fuel prices."
   },
   {
