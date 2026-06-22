@@ -218,11 +218,11 @@
     "offer": "73p",
     "v": 190,
     "prem": 33,
-    "pusu": "30-09-2026",
+    "pusu": "25-06-2026",
     "pusuExt": "n/a",
     "hf": 27.75,
     "hfC": "no change",
-    "com": "Offer, by scheme of arrangement, from Qatar-based bank, expected to complete Q3. Approved by shareholders on 27 April 2026, still subject to regulatory clearance. Offer follows strategic review addressing \"persistent discount to its realisable asset value\"."
+    "com": "Offer, by scheme of arrangement, from Qatar-based bank, expected to complete Q3. Approved by shareholders on 27 April 2026, subject to Court sanction following regulatory approval in UAE. Offer follows strategic review addressing \"persistent discount to its realisable asset value\"."
   },
   {
     "t": "CAPRICORN ENERGY PLC",
@@ -281,7 +281,7 @@
     "pusu": "",
     "pusuExt": "n/a",
     "hf": 0.0,
-    "hfC": "▼ 4.57pp",
+    "hfC": "no change",
     "com": "Strategic review & formal sale process. Has not received an indicative offer but has held preliminary discussions with a small number of counterparties."
   },
   {
@@ -437,17 +437,17 @@
   {
     "t": "EASYJET PLC",
     "sec": "Transport",
-    "st": "Approach, no price",
+    "st": "Indicative offer",
     "b": "CASTLELAKE LP",
     "start": "29-05-2026",
-    "offer": "n.a",
-    "v": 2988,
-    "prem": null,
+    "offer": "625p",
+    "v": 4737,
+    "prem": 59,
     "pusu": "26-06-2026",
     "pusuExt": "0",
     "hf": 3.2,
     "hfC": "▲ 0.06pp",
-    "com": "Castlelake confirms it's in the early stages of considering a possible offer for easyJet. No approach has been made to the Board and no price given, but would need to be at least 403.23p. EasyJet Board notes \"opportunistic timing\" as share price temporarily depressed due to the current situation in the Middle East and its impact on customer confidence and jet fuel prices."
+    "com": "Castlelake had made three unsolicited proposals to the Easyjet Board since 12 June 2026, the latest being 625p per share on 20 June 2026. All three proposals were rejected by the Easyjet Board which maintains its stance that the proposal is highly opportunistic, delivered against the backdrop of easyJet’s temporarily depressed share price, and still fundamentally undervaluing easyJet and its prospects."
   },
   {
     "t": "UNION JACK OIL PLC",
