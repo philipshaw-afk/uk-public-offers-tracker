@@ -463,5 +463,20 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "Non-binding indicative offer, with no price. Due diligence and discussions ongoing."
+  },
+  {
+    "t": "IP GROUP PLC",
+    "sec": "Financial Services",
+    "st": "Indicative offer",
+    "b": "RAILWAYS PENSION TRUSTEE COMPANY LIMITED",
+    "start": "22-06-2026",
+    "offer": "59p",
+    "v": 0,
+    "prem": null,
+    "pusu": "20-07-2026",
+    "pusuExt": "",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Unsolicited indicative offer from Railpen which already holds 18.4% of the shares in IP Group."
   }
 ]
