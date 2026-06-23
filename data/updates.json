@@ -1,20 +1,14 @@
 [
   {
+    "n": "Ramsdens Holdings plc",
+    "s": "green",
+    "text": "FirstCash makes recommended cash offer of 600p per share (scheme of arrangement).",
+    "date": "23 June 2026"
+  },
+  {
     "n": "IP Group plc",
     "s": "amber",
-    "text": "Unsolicited indicative offer from Railpen which already holds 18.4% of the shares in IP Group.",
+    "text": "Unsolicited indicative offer of 59p per share plus CVR from Railpen which already holds 18.4% of the shares in IP Group.",
     "date": "22 June 2026"
-  },
-  {
-    "n": "easyJet plc",
-    "s": "amber",
-    "text": "Castlelake announces latest 625p per share proposal (59% premium to unaffected share price), rejected by Board.",
-    "date": "22 June 2026"
-  },
-  {
-    "n": "Amedeo Air Four Plus Ltd",
-    "s": "green",
-    "text": "Satisfaction of UAE merger control condition. Effective date scheduled for 25 June 2026.",
-    "date": "19 June 2026"
   }
 ]
