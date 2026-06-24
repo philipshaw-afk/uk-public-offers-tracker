@@ -308,8 +308,8 @@
     "offer": "10.44p",
     "v": 38,
     "prem": 44,
-    "pusu": "23-06-2026",
-    "pusuExt": "4",
+    "pusu": "21-07-2026",
+    "pusuExt": "5",
     "hf": 0.0,
     "hfC": "no change",
     "com": "At “minded to recommend” stage. Due diligence at an advanced stage. We expect a formal offer."
@@ -500,7 +500,7 @@
     "st": "Formal offer",
     "b": "HENA HOLDINGS LIMITED",
     "start": "23-06-2026",
-    "offer": "38p",
+    "offer": "US$0.50",
     "v": 224,
     "prem": -11,
     "pusu": "30-09-2026",
@@ -508,5 +508,35 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "Mandatory final cash offer by Hena Holdings Ltd for the remaining 50.38% of the shares at US$0.50 per share."
+  },
+  {
+    "t": "PHAROS ENERGY PLC",
+    "sec": "Oil & Gas",
+    "st": "Formal offer",
+    "b": "RATIO PETROLEUM ENERGY LP",
+    "start": "24-06-2026",
+    "offer": "27.07p",
+    "v": 120,
+    "prem": 10,
+    "pusu": "30-06-2027",
+    "pusuExt": "n/a",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Recommended cash offer of 23.07p per share plus special dividends of 4p and ordinary dividend of 0.9317p per share, to be effected by scheme of arrangement"
+  },
+  {
+    "t": "SEGRO PLC",
+    "sec": "Property",
+    "st": "Indicative offer",
+    "b": "PROLOGIS INC",
+    "start": "24-06-2026",
+    "offer": "925p",
+    "v": 12600,
+    "prem": 24,
+    "pusu": "22-07-2026",
+    "pusuExt": "0",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Unsolicited indicative proposal of 0.084 new Prologis shares for every SEGRO share with an implied price of 925p per share based on the Prologis share price of US$145.3 and a GBP:USD exchange rate of 1.32. The offer has been rejected by the SEGRO Board."
   }
 ]
