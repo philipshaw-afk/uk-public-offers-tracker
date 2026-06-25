@@ -83,8 +83,8 @@
     "offer": "250p",
     "v": 1034,
     "prem": 20,
-    "pusu": "25-06-2026",
-    "pusuExt": "1",
+    "pusu": "09-07-2026",
+    "pusuExt": "2",
     "hf": 25.29,
     "hfC": "no change",
     "com": "Indicative offer by Toscafund (which already owns 24.36%) at 250p per share, with unlisted share alternative, which Board is \"minded to recommend\". Approaches had been previously received from Bridgepoint and Triton, following a strategic review but talks ended."
@@ -422,17 +422,17 @@
   {
     "t": "ADVANCED MEDICAL SOLUTIONS GROUP PLC",
     "sec": "Healthcare",
-    "st": "Approach, no price",
+    "st": "Formal offer",
     "b": "H.B. FULLER COMPANY",
     "start": "21-05-2026",
-    "offer": "n.a",
-    "v": 466,
-    "prem": null,
-    "pusu": "02-07-2026",
-    "pusuExt": "1",
+    "offer": "285p",
+    "v": 659,
+    "prem": 34,
+    "pusu": "31-12-2026",
+    "pusuExt": "n/a",
     "hf": 5.59,
     "hfC": "▲ 0.01pp",
-    "com": "Unsolicited proposal from H.B. Fuller Company. Follows previous approach by TA Associates, which withdrew on 18 May 2026"
+    "com": "Recommended cash offer (scheme), with undertakings in relation to 0.34% . Follows previous approach by TA Associates, which withdrew on 18 May 2026"
   },
   {
     "t": "EASYJET PLC",
@@ -440,14 +440,14 @@
     "st": "Indicative offer",
     "b": "CASTLELAKE LP",
     "start": "29-05-2026",
-    "offer": "625p",
-    "v": 4737,
-    "prem": 59,
-    "pusu": "26-06-2026",
-    "pusuExt": "0",
+    "offer": "650p",
+    "v": 4927,
+    "prem": 63,
+    "pusu": "05-07-2026",
+    "pusuExt": "1",
     "hf": 3.16,
     "hfC": "▼ 0.06pp",
-    "com": "Castlelake had made three unsolicited proposals to the Easyjet Board since 12 June 2026, the latest being 625p per share on 20 June 2026. All three proposals were rejected by the Easyjet Board which maintains its stance that the proposal is highly opportunistic, delivered against the backdrop of easyJet’s temporarily depressed share price, and still fundamentally undervaluing easyJet and its prospects."
+    "com": "Castlelake has made three unsolicited proposals to the Easyjet Board since 12 June 2026, the latest being 650p per share on 20 June 2026. All proposals have been rejected by the Easyjet Board which it considers fundamentally undervaluing easyJet and its prospects."
   },
   {
     "t": "UNION JACK OIL PLC",
