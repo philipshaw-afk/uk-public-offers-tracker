@@ -1,5 +1,11 @@
 [
   {
+    "n": "easyJet plc",
+    "s": "amber",
+    "text": "Castlelake states that it welcomes the easyJet Board's \"constructive\" engagement",
+    "date": "25 June 2026"
+  },
+  {
     "n": "Amedeo Airforce Plus Ltd",
     "s": "green",
     "text": "Deletion: scheme becomes effective",
@@ -22,29 +28,5 @@
     "s": "amber",
     "text": "Toscafund's PUSU deadline extended to 9 July 2026",
     "date": "25 June 2026"
-  },
-  {
-    "n": "Deltic Energy Plc",
-    "s": "green",
-    "text": "Shareholders overwhelmingly approve scheme, which is still subject to regulatory conditions.",
-    "date": "24 June 2026"
-  },
-  {
-    "n": "Gamma Communications plc",
-    "s": "red",
-    "text": "Providence Equity Partners confirms that it is no longer part of the Consortium and that it does not intend to make an offer for Gamma. Epiris is considering its options.",
-    "date": "24 June 2026"
-  },
-  {
-    "n": "SEGRO plc",
-    "s": "amber",
-    "text": "Unsolicited indicative proposal of 0.084 new Prologis shares for every SEGRO share with an implied price of 925p per share.",
-    "date": "24 June 2026"
-  },
-  {
-    "n": "Pharos Energy plc",
-    "s": "green",
-    "text": "Ratio Petroleum Energy LP makes recommended cash offer of 23.07p per share plus 4p special dividend (scheme of arrangement).",
-    "date": "24 June 2026"
   }
 ]
