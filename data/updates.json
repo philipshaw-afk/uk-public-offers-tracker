@@ -1,5 +1,17 @@
 [
   {
+    "n": "Union Jack Oil plc",
+    "s": "green",
+    "text": "Reabold Resources plc makes £6m all share offer",
+    "date": "1 July 2026"
+  },
+  {
+    "n": "Segro plc",
+    "s": "amber",
+    "text": "Segro will sell three major UK logistics parks to a new joint venture for £1bn",
+    "date": "1 July 2026"
+  },
+  {
     "n": "Capricorn Energy plc",
     "s": "red",
     "text": "Alamadiyaf al-Masiyyah's PUSU deadline extended to 29 July",
@@ -15,18 +27,6 @@
     "n": "Segro plc",
     "s": "amber",
     "text": "Prologis publishes presentation setting out strategic and financial rationale of proposal. Segro responds that Prologis is trying to acquire it \"on the cheap\".",
-    "date": "30 June 2026"
-  },
-  {
-    "n": "Intuitive Investments Group plc",
-    "s": "green",
-    "text": "Acceler8 Ventures Plc announces £600m formal all-share offer on same terms as indicative offer.",
-    "date": "30 June 2026"
-  },
-  {
-    "n": "Kore Potash Plc",
-    "s": "red",
-    "text": "New party approached company on 8 June 2026, such that discussions are now ongoing with two parties.",
     "date": "30 June 2026"
   }
 ]
