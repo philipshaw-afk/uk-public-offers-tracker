@@ -1,5 +1,11 @@
 [
   {
+    "n": "Capricorn Energy plc",
+    "s": "green",
+    "text": "New offeror: Genel Energy makes recommended offer, after apprach from Alamadiyaf al-Masiyyah",
+    "date": "2 July 2026"
+  },
+  {
     "n": "Union Jack Oil plc",
     "s": "green",
     "text": "Reabold Resources plc makes £6m all share offer",
@@ -16,17 +22,5 @@
     "s": "red",
     "text": "Alamadiyaf al-Masiyyah's PUSU deadline extended to 29 July",
     "date": "1 July 2026"
-  },
-  {
-    "n": "Cordel Group plc",
-    "s": "green",
-    "text": "Shareholders approve the scheme, with 99.68% of votes. Completion expected during Q3 2026.",
-    "date": "30 June 2026"
-  },
-  {
-    "n": "Segro plc",
-    "s": "amber",
-    "text": "Prologis publishes presentation setting out strategic and financial rationale of proposal. Segro responds that Prologis is trying to acquire it \"on the cheap\".",
-    "date": "30 June 2026"
   }
 ]
