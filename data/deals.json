@@ -212,17 +212,17 @@
   {
     "t": "CAPRICORN ENERGY PLC",
     "sec": "Oil & Gas",
-    "st": "Approach, no price",
+    "st": "Formal offer",
     "b": "ALAMADIYAF AL-MASIYYAH",
     "start": "11-03-2026",
-    "offer": "n.a",
-    "v": 188,
-    "prem": null,
+    "offer": "357p",
+    "v": 271,
+    "prem": 34,
     "pusu": "29-07-2026",
     "pusuExt": "4",
     "hf": 59.86,
     "hfC": "no change",
-    "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access. No price given. Discussions were ongoing and the board was seeking clarity around Alamadiyaf al-Masiyyah's funding arrangements.  On 24 March 2026, Capricorn rejected proposal from Dragon Oil to acquire its assets in the Western Desert."
+    "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access and a PUSU deadline of 29 July. Genel Energy plc made a recommended offer (scheme) on 2 July."
   },
   {
     "t": "TREATT PLC",
