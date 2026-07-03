@@ -1,5 +1,11 @@
 [
   {
+    "n": "Tate & Lyle plc",
+    "s": "green",
+    "text": "Scheme document published. Shareholder vote will be 28 July",
+    "date": "3 July 2026"
+  },
+  {
     "n": "PPHE Hotel Group Limited",
     "s": "red",
     "text": "Deletion: Fattal Hotel Group does not intend to make an offer for PPHE, which has concluded its formal sales process",
@@ -16,23 +22,5 @@
     "s": "green",
     "text": "Deletion: scheme becomes effective",
     "date": "2 July 2026"
-  },
-  {
-    "n": "Union Jack Oil plc",
-    "s": "green",
-    "text": "Reabold Resources plc makes £6m all share offer",
-    "date": "1 July 2026"
-  },
-  {
-    "n": "Segro plc",
-    "s": "amber",
-    "text": "Segro will sell three major UK logistics parks to a new joint venture for £1bn",
-    "date": "1 July 2026"
-  },
-  {
-    "n": "Capricorn Energy plc",
-    "s": "red",
-    "text": "Alamadiyaf al-Masiyyah's PUSU deadline extended to 29 July",
-    "date": "1 July 2026"
   }
 ]
