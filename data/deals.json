@@ -365,14 +365,14 @@
     "st": "Formal offer",
     "b": "GLENSTONE REIT PLC",
     "start": "15-05-2026",
-    "offer": "70p",
-    "v": 56,
-    "prem": 0,
-    "pusu": "30-09-2026",
+    "offer": "71.4p",
+    "v": 57,
+    "prem": 2,
+    "pusu": "04-09-2026",
     "pusuExt": "n/a",
     "hf": 1.86,
     "hfC": "no change",
-    "com": "Unsolicited offer from Glenstone REIT (which already owns 24%) at a price of 70p per share, rejected by target Board. The offer has an acceptance condition of 50%."
+    "com": "On 12 June 2026, Glenstone REIT (which already owns 24%) announced an unsolicited offer at a price of 70p per share, rejected by target Board. On 6 July 2026, Glenstone announced a final cash offer of 71.4p per share with an acceptance condition of 50%."
   },
   {
     "t": "ADVANCED MEDICAL SOLUTIONS GROUP PLC",
@@ -395,14 +395,14 @@
     "st": "Indicative offer",
     "b": "CASTLELAKE LP",
     "start": "29-05-2026",
-    "offer": "650p",
-    "v": 4927,
-    "prem": 63,
-    "pusu": "05-07-2026",
-    "pusuExt": "1",
+    "offer": "690p",
+    "v": 5230,
+    "prem": 75,
+    "pusu": "03-08-2026",
+    "pusuExt": "2",
     "hf": 2.68,
     "hfC": "▼ 0.02pp",
-    "com": "Castlelake has made three unsolicited proposals to the Easyjet Board since 12 June 2026, the latest being 650p per share. All proposals have been rejected by the Easyjet Board which it considers fundamentally undervaluing easyJet and its prospects."
+    "com": "Castlelake had made three unsolicited proposals to the Easyjet Board since 12 June 2026, all of which had been rejected by the Easyjet Board. On 6 July 2026, the parties announced agreement in principle on a recommended cash offer of 690p per share, including a partial unlisted share alternative."
   },
   {
     "t": "UNION JACK OIL PLC",
