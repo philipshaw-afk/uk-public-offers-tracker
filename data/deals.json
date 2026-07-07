@@ -10,7 +10,7 @@
     "prem": 33,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 9.26,
+    "hf": 9.17,
     "hfC": "▼ 0.08pp",
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. 99.9% of votes were in favour at meetings on 16 April 2026."
   },
@@ -25,8 +25,8 @@
     "prem": 41,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 17.05,
-    "hfC": "▲ 0.09pp",
+    "hf": 17.09,
+    "hfC": "▲ 0.04pp",
     "com": "Recommended final cash offer by private equity firm EQT at £60 per share. The offer will be implemented by means of a Court-sanctioned scheme of arrangement and is expected to become effective in Q4 2026 or Q1 2027."
   },
   {
@@ -40,8 +40,8 @@
     "prem": 60,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 34.43,
-    "hfC": "▲ 0.01pp",
+    "hf": 34.52,
+    "hfC": "▲ 0.08pp",
     "com": "Scheme of arrangement made at same terms as indicative proposal. Beazley shareholder vote passed on 22 April 2026. Expected to become effective during H2 2026."
   },
   {
@@ -55,12 +55,12 @@
     "prem": 37,
     "pusu": "30-09-2026",
     "pusuExt": "n/a",
-    "hf": 45.95,
-    "hfC": "▼ 0.08pp",
+    "hf": 46.16,
+    "hfC": "▲ 0.21pp",
     "com": "Shareholders have overwhelmingly approved the scheme, but still subject to regulatory approval. Completion expected some time in Q3."
   },
   {
-    "t": "SENIOR PLC",
+    "t": "JTC PLC",
     "sec": "Engineering",
     "st": "Formal offer",
     "b": "TINICUM & BLACKSTONE",
@@ -70,8 +70,8 @@
     "prem": 16,
     "pusu": "31-03-2027",
     "pusuExt": "n/a",
-    "hf": 41.23,
-    "hfC": "▲ 0.07pp",
+    "hf": 41.24,
+    "hfC": "▲ 0.01pp",
     "com": "Formal offer (scheme) announced on 7 April 2026 by Tinicum and Blackstone at 297.85p in cash. Overwhelmingly approved by shareholders on 26 May 2026. Indicative offer of 270p from Advent was rejected. Advent withdrew on 8 April 2026. Arcline Investment Management had made an approach before withdrawing on 1 April 2026."
   },
   {
@@ -85,8 +85,8 @@
     "prem": 20,
     "pusu": "09-07-2026",
     "pusuExt": "2",
-    "hf": 27.93,
-    "hfC": "▼ 0.08pp",
+    "hf": 27.92,
+    "hfC": "▼ 0.01pp",
     "com": "Indicative offer by Toscafund (which already owns 24.36%) at 250p per share, with unlisted share alternative, which Board is \"minded to recommend\". Approaches had been previously received from Bridgepoint and Triton, following a strategic review but talks ended."
   },
   {
@@ -130,8 +130,8 @@
     "prem": 43,
     "pusu": "04-08-2026",
     "pusuExt": "n/a",
-    "hf": 50.87,
-    "hfC": "▲ 0.01pp",
+    "hf": 50.82,
+    "hfC": "▼ 0.05pp",
     "com": "Shareholders approved scheme on 11 March and regulatory approval received. Will become effective on 4 August."
   },
   {
@@ -145,8 +145,8 @@
     "prem": 28,
     "pusu": "30-09-2026",
     "pusuExt": "n/a",
-    "hf": 23.8,
-    "hfC": "▲ 0.02pp",
+    "hf": 24.43,
+    "hfC": "▲ 0.59pp",
     "com": "Drax makes formal offer on 1 June 2026, by means of scheme. Offer follows strategic review and formal sales process."
   },
   {
@@ -248,7 +248,7 @@
     "offer": "50p",
     "v": 64,
     "prem": 20,
-    "pusu": "08-07-2026",
+    "pusu": "07-07-2026",
     "pusuExt": "n/a",
     "hf": 13.36,
     "hfC": "no change",
@@ -355,8 +355,8 @@
     "prem": 63,
     "pusu": "30-09-2026",
     "pusuExt": "n/a",
-    "hf": 1.18,
-    "hfC": "▲ 0.01pp",
+    "hf": 1.22,
+    "hfC": "▲ 0.04pp",
     "com": "Mixed cash and share offer, with support of 50.14% of shareholders. Expected to complete during the third quarter of 2026."
   },
   {
@@ -370,8 +370,8 @@
     "prem": 2,
     "pusu": "04-09-2026",
     "pusuExt": "n/a",
-    "hf": 1.86,
-    "hfC": "no change",
+    "hf": 2.25,
+    "hfC": "▲ 0.39pp",
     "com": "On 12 June 2026, Glenstone REIT (which already owns 24%) announced an unsolicited offer at a price of 70p per share, rejected by target Board. On 6 July 2026, Glenstone announced a final cash offer of 71.4p per share with an acceptance condition of 50%."
   },
   {
@@ -386,7 +386,7 @@
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
     "hf": 15.27,
-    "hfC": "▲ 0.32pp",
+    "hfC": "no change",
     "com": "Recommended cash offer (scheme), with undertakings in relation to 0.34% . Follows previous approach by TA Associates, which withdrew on 18 May 2026"
   },
   {
@@ -401,7 +401,7 @@
     "pusu": "03-08-2026",
     "pusuExt": "2",
     "hf": 2.68,
-    "hfC": "▼ 0.02pp",
+    "hfC": "no change",
     "com": "Castlelake had made three unsolicited proposals to the Easyjet Board since 12 June 2026, all of which had been rejected by the Easyjet Board. On 6 July 2026, the parties announced agreement in principle on a recommended cash offer of 690p per share, including a partial unlisted share alternative."
   },
   {
@@ -445,8 +445,8 @@
     "prem": 33,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 14.85,
-    "hfC": "▲ 1.23pp",
+    "hf": 14.99,
+    "hfC": "▲ 0.14pp",
     "com": "Recommended cash offer of 600p per share plus dividends of up to 9p per share, to be effected by scheme of arrangement"
   },
   {
@@ -460,8 +460,8 @@
     "prem": -11,
     "pusu": "30-09-2026",
     "pusuExt": "n/a",
-    "hf": 0.0,
-    "hfC": "no change",
+    "hf": 3.51,
+    "hfC": "▲ 3.51pp",
     "com": "Mandatory final cash offer by Hena Holdings Ltd for the remaining 50.38% of the shares at US$0.50 per share."
   },
   {
@@ -491,7 +491,7 @@
     "pusu": "22-07-2026",
     "pusuExt": "0",
     "hf": 1.94,
-    "hfC": "▼ 0.02pp",
+    "hfC": "no change",
     "com": "Unsolicited indicative proposal of 0.084 new Prologis shares for every SEGRO share with an implied price of 925p per share based on the Prologis share price of US$145.3 and a GBP:USD exchange rate of 1.32. The offer has been rejected by the SEGRO Board."
   }
 ]
