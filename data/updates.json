@@ -1,8 +1,20 @@
 [
   {
+    "n": "DCC plc (on European tracker)",
+    "s": "amber",
+    "text": "ECP and KKR's due diligence completed, ECP and KKR's PUSU deadline extended to 15 July 2026.",
+    "date": "8 July 2026"
+  },
+  {
     "n": "Gamma Communications plc",
     "s": "red",
     "text": "Epiris' PUSU deadline extended to 5 August",
+    "date": "8 July 2026"
+  },
+  {
+    "n": "Integrated Diagnostics Holdings plc",
+    "s": "green",
+    "text": "Offer document published. Unconditional date will be 29 July 2026",
     "date": "8 July 2026"
   },
   {
@@ -15,12 +27,6 @@
     "n": "Alternative Income REIT plc",
     "s": "green",
     "text": "Board states that Glenstone's revised 71.4p offer is at a \"negligible premium\" and recommends shareholders take no action",
-    "date": "8 July 2026"
-  },
-  {
-    "n": "DCC plc (on European tracker)",
-    "s": "amber",
-    "text": "ECP and KKR's PUSU deadline today",
     "date": "8 July 2026"
   }
 ]
