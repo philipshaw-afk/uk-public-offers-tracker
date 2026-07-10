@@ -493,5 +493,20 @@
     "hf": 1.55,
     "hfC": "▼ 0.02pp",
     "com": "Unsolicited indicative proposal of 0.084 new Prologis shares for every SEGRO share with an implied price of 925p per share based on the Prologis share price of US$145.3 and a GBP:USD exchange rate of 1.32. The offer has been rejected by the SEGRO Board."
+  },
+  {
+    "t": "SAFESTAY PLC",
+    "sec": "Leisure & Hotels",
+    "st": "Approach, no price",
+    "b": "INFILL CAPITAL PARTNERS",
+    "start": "10-07-2026",
+    "offer": "n.a",
+    "v": 41,
+    "prem": null,
+    "pusu": "07-08-2026",
+    "pusuExt": "0",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "ICP exporing a \"£40.9 million take-private transaction\", which may include a cash offer and an unlisted share alternative. Safestay has provided ICP with access to limited due diligence materials and discussions remain ongoing"
   }
 ]
