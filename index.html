@@ -771,6 +771,11 @@ function statusClass(s) {
   if (s === 'Indicative offer') return 'st-indicative';
   return 'st-approach';
 }
+function statusRank(s) {
+  if (s === 'Formal offer') return 2;
+  if (s === 'Indicative offer') return 1;
+  return 0;
+}
 function premHtml(p) {
   if (p === null) return '<span class="prem-pill prem-na">n.a</span>';
   var c = p >= 40 ? 'prem-high' : p >= 15 ? 'prem-mid' : 'prem-low';
@@ -857,14 +862,25 @@ function render(data) {
 }
 
 function updateKpis(data) {
-  var formal = data.filter(function(d) { return d.st === 'Formal offer'; }).length;
-  var indicative = data.filter(function(d) { return d.st === 'Indicative offer'; }).length;
-  var noprice = data.length - formal - indicative;
-  var tv = data.reduce(function(s, d) { return s + d.v; }, 0);
-  var avgHf = data;
-  var meanHf = avgHf.length ? (avgHf.reduce(function(s, d) { return s + d.hf; }, 0) / avgHf.length) : 0;
+  // De-duplicate by target so a company with multiple rows (e.g. two
+  // competing bidders, each with their own PUSU deadline) is only counted
+  // once for company-level stats like Equity Value and Offer Periods.
+  var byTarget = {};
+  var order = [];
+  data.forEach(function(d) {
+    var existing = byTarget[d.t];
+    if (!existing) { byTarget[d.t] = d; order.push(d.t); }
+    else if (statusRank(d.st) > statusRank(existing.st)) { byTarget[d.t] = d; }
+  });
+  var uniq = order.map(function(t) { return byTarget[t]; });
+
+  var formal = uniq.filter(function(d) { return d.st === 'Formal offer'; }).length;
+  var indicative = uniq.filter(function(d) { return d.st === 'Indicative offer'; }).length;
+  var noprice = uniq.length - formal - indicative;
+  var tv = uniq.reduce(function(s, d) { return s + d.v; }, 0);
+  var meanHf = uniq.length ? (uniq.reduce(function(s, d) { return s + d.hf; }, 0) / uniq.length) : 0;
   document.getElementById('kpis').innerHTML = ''
-    + '<div class="kpi-card"><div class="kpi-v">' + data.length + '</div><div class="kpi-l">Offer Periods</div></div>'
+    + '<div class="kpi-card"><div class="kpi-v">' + uniq.length + '</div><div class="kpi-l">Offer Periods</div></div>'
     + '<div class="kpi-card"><div class="kpi-v" style="color:var(--g)">' + formal + '</div><div class="kpi-l">Formal Offers</div></div>'
     + '<div class="kpi-card"><div class="kpi-v" style="color:var(--am)">' + indicative + '</div><div class="kpi-l">Indicative</div></div>'
     + '<div class="kpi-card"><div class="kpi-v" style="color:var(--r)">' + noprice + '</div><div class="kpi-l">No Price</div></div>'
