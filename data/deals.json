@@ -115,8 +115,8 @@
     "prem": 24,
     "pusu": "16-08-2026",
     "pusuExt": "n/a",
-    "hf": 0.0,
-    "hfC": "▼ 2.03pp",
+    "hf": 2.03,
+    "hfC": "no change",
     "com": "Recommended offer (scheme) on previous terms as indicative offer. Undertakings in respect of 45.58%. IIG shareholders would own approximately 99.01% of combined group. Completion expected mid August."
   },
   {
@@ -369,7 +369,7 @@
     "v": 62,
     "prem": 11,
     "pusu": "13-08-2026",
-    "pusuExt": "n/a",
+    "pusuExt": "0",
     "hf": 2.39,
     "hfC": "no change",
     "com": "AEWU considering an offer to acquire AIRE for 0.725 AEWU shares for each AIRE share. The offer follows discussions with AIRE Board earlier this year when an agreement could not be reached."
@@ -455,14 +455,14 @@
     "st": "Formal offer",
     "b": "FIRSTCASH HOLDINGS INC",
     "start": "23-06-2026",
-    "offer": "600p",
-    "v": 203,
-    "prem": 33,
+    "offer": "675p",
+    "v": 220,
+    "prem": 49,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
     "hf": 17.82,
     "hfC": "▲ 0.29pp",
-    "com": "On 23 June 2026, FirstCash announced a recommended cash offer of 600p per share plus dividends of up to 9p per share, to be effected by scheme of arrangement. On 16 July 2026,"
+    "com": "On 23 June 2026, FirstCash announced a recommended cash offer of 600p per share plus dividends of up to 9p per share, to be effected by scheme of arrangement. On 16 July 2026, FirstCash announced a final recommended cash offer (scheme) for Ramsdens of 675p per share plus dividend of up to 9p per share."
   },
   {
     "t": "INTEGRATED DIAGNOSTICS HOLDINGS PLC",
