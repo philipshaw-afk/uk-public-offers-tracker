@@ -360,6 +360,21 @@
     "com": "On 12 June 2026, Glenstone REIT (which already owns 24%) announced an unsolicited offer at a price of 70p per share, rejected by target Board. On 6 July 2026, Glenstone announced a final cash offer of 71.4p per share with an acceptance condition of 50%, once again rejected by the Board."
   },
   {
+    "t": "ALTERNATIVE INCOME REIT PLC",
+    "sec": "Property",
+    "st": "Indicative offer",
+    "b": "AEW UK REIT PLC",
+    "start": "15-05-2026",
+    "offer": "77.4p",
+    "v": 62,
+    "prem": 11,
+    "pusu": "13-08-2026",
+    "pusuExt": "n/a",
+    "hf": 2.39,
+    "hfC": "no change",
+    "com": "AEWU considering an offer to acquire AIRE for 0.725 AEWU shares for each AIRE share. The offer follows discussions with AIRE Board earlier this year when an agreement could not be reached."
+  },
+  {
     "t": "ADVANCED MEDICAL SOLUTIONS GROUP PLC",
     "sec": "Healthcare",
     "st": "Formal offer",
@@ -447,7 +462,7 @@
     "pusuExt": "n/a",
     "hf": 17.82,
     "hfC": "▲ 0.29pp",
-    "com": "Recommended cash offer of 600p per share plus dividends of up to 9p per share, to be effected by scheme of arrangement"
+    "com": "On 23 June 2026, FirstCash announced a recommended cash offer of 600p per share plus dividends of up to 9p per share, to be effected by scheme of arrangement. On 16 July 2026,"
   },
   {
     "t": "INTEGRATED DIAGNOSTICS HOLDINGS PLC",
@@ -523,5 +538,35 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "Formal sale process. The Board is not in any active discussions with any potential offeror"
+  },
+  {
+    "t": "GOOCH & HOUSEGO PLC",
+    "sec": "Electronic & Electrical Equipment",
+    "st": "Formal offer",
+    "b": "ARLINGTON CAPITAL PARTNERS VII LP",
+    "start": "16-07-2026",
+    "offer": "1230p",
+    "v": 337,
+    "prem": 40,
+    "pusu": "",
+    "pusuExt": "n/a",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Recommended cash offer (scheme) of £1,230p per share plus interim dividend of 4.9p per share for all shares G&H by  Greenlight Bidco Limited, an acquisition vehicle owned by Arlington Capital Partners VII, L.P."
+  },
+  {
+    "t": "ROTORK PLC",
+    "sec": "Electronic & Electrical Equipment",
+    "st": "Formal offer",
+    "b": "ABB LTD",
+    "start": "16-07-2026",
+    "offer": "503p",
+    "v": 4110,
+    "prem": 73,
+    "pusu": "",
+    "pusuExt": "n/a",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Recommended cash offer (scheme) of 506p per share plus dividend of up to 3p per share for all shares in Rotork by ABB Automation Holding UK Limited, a subsidiary of ABB Ltd."
   }
 ]
