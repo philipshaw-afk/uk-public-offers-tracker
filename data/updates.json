@@ -1,20 +1,32 @@
 [
   {
+    "n": "Rotork plc",
+    "s": "green",
+    "text": "Recommended cash offer (scheme) of 506p per share for all shares in Rotork by ABB Automation Holding UK Limited, a subsidiary of ABB Ltd",
+    "date": "16 July 2026"
+  },
+  {
+    "n": "Gooch & Housego plc",
+    "s": "green",
+    "text": "Recommended cash offer of £1,230p per share for G&H by  Greenlight Bidco Limited, an acquisition vehicle owned by Arlington Capital Partners VII, L.P.",
+    "date": "16 July 2026"
+  },
+  {
+    "n": "Alternative Income REIT plc",
+    "s": "amber",
+    "text": "AEW UK REIT plc is considering an offer to acquire AIRE for 0.725 AEWU shares for each AIRE share",
+    "date": "16 July 2026"
+  },
+  {
+    "n": "Ramsdens Holdings plc",
+    "s": "green",
+    "text": "Final recommended cash offer (scheme) for Ramsdens of 675p per share",
+    "date": "16 July 2026"
+  },
+  {
     "n": "DCC plc (on European Tracker)",
     "s": "amber",
-    "text": "ECP & KKR's PUSU deadline today",
+    "text": "Extension of PUSU deadline to 16 July 2026",
     "date": "15 July 2026"
-  },
-  {
-    "n": "NextEnergy Solar Fund Limited",
-    "s": "red",
-    "text": "Commencement of formal sale process. The Board is not in any active discussions with any potential offeror",
-    "date": "15 July 2026"
-  },
-  {
-    "n": "Safestay plc",
-    "s": "red",
-    "text": "Deletion: Infill Capital Partners confirms that it does not intend to make an offer for Safestay",
-    "date": "14 July 2026"
   }
 ]
