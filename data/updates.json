@@ -1,26 +1,38 @@
 [
   {
-    "n": "Advanced Medical Solutions Group Plc",
+    "n": "Mitie Group plc",
     "s": "green",
-    "text": "AMS publishes scheme document",
+    "text": "Recommended cash offer (scheme) for Mitie by OCS Group International Limited of 218.5p per share and A final dividend of 3.1p per share",
+    "date": "21 July 2026"
+  },
+  {
+    "n": "Segro plc",
+    "s": "amber",
+    "text": "Prologis believes that the Segro defence relies on unrealistic risk assessments and assumptions to arrive at the various NAV uplifts and earnings projections. Prologis remain ready to engage with the Segro Board",
+    "date": "21 July 2026"
+  },
+  {
+    "n": "Pharos Energy plc",
+    "s": "green",
+    "text": "Publication of the Scheme Document by Ratio Petroleum Energy LP. The Court and General meetings to be held on 17 August 2026",
+    "date": "21 July 2026"
+  },
+  {
+    "n": "Capricorn Energy plc",
+    "s": "green",
+    "text": "Publication of the Scheme Document by Genel Energy plc",
+    "date": "21 July 2026"
+  },
+  {
+    "n": "IP Group plc",
+    "s": "amber",
+    "text": "PUSU deadline extended to 27 July 2026",
     "date": "20 July 2026"
   },
   {
     "n": "Alternative Income REIT plc",
     "s": "green",
-    "text": "Alternative Income board indicates preference for AEW UK REIT plc's proposed bid over Glenstone's formal offer.",
+    "text": "In its Response Document the AIRE Board unanimously recommends the shareholders not to accept the Glenstone offer and to withdraw their acceptances as soon as possible",
     "date": "20 July 2026"
-  },
-  {
-    "n": "Segro Plc",
-    "s": "amber",
-    "text": "Prologis discloses third indicative offer - which has been rejected by Segro",
-    "date": "20 July 2026"
-  },
-  {
-    "n": "IP Group Plc",
-    "s": "amber",
-    "text": "Railways Pension Trustee Company increases indicative offer from 69.7p to 71.6p plus CVR",
-    "date": "17 July 2026"
   }
 ]
