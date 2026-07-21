@@ -357,7 +357,7 @@
     "pusuExt": "n/a",
     "hf": 2.7,
     "hfC": "▲ 0.12pp",
-    "com": "On 12 June 2026, Glenstone REIT (which already owns 24%) announced an unsolicited offer at a price of 70p per share, rejected by target Board. On 6 July 2026, Glenstone announced a final cash offer of 71.4p per share with an acceptance condition of 50%, once again rejected by the Board."
+    "com": "On 12 June 2026, Glenstone REIT (which already owns 24%) announced an unsolicited offer at a price of 70p per share, rejected by target Board. On 6 July 2026, Glenstone announced a final cash offer of 71.4p per share with an acceptance condition of 50%, once again rejected by the Board. On 20 July 2026, the AIRE Board unanimously recommended the shareholders not to accept the Glenstone offer and to withdraw their acceptances as soon as possible."
   },
   {
     "t": "ALTERNATIVE INCOME REIT PLC",
@@ -443,11 +443,11 @@
     "offer": "71.6p",
     "v": 649,
     "prem": 10,
-    "pusu": "20-07-2026",
-    "pusuExt": "0",
+    "pusu": "27-07-2026",
+    "pusuExt": "1",
     "hf": 13.96,
     "hfC": "▲ 0.05pp",
-    "com": "Unsolicited indicative offer from Railpen which already holds 18.4% of the shares in IP Group. Comprises 61p in cash, a mechanism to enable IP Group shareholders to realise the value of IP's shareholding in Oxford Nanopore Technologies plc (valued at approximately 10.6 pence per IP Group share), and a contingent value right of up to 11.3p per share."
+    "com": "Unsolicited indicative offer from Railpen which already holds 18.4% of the shares in IP Group. Comprises 61p in cash, a mechanism to enable IP Group shareholders to realise the value of IP's shareholding in Oxford Nanopore Technologies plc (valued at approximately 10.6 pence per IP Group share), and a contingent value right of up to 11.3p per share. The offer has been rejected by the IP Group Board."
   },
   {
     "t": "RAMSDENS HOLDINGS PLC",
@@ -488,7 +488,7 @@
     "offer": "27.07p",
     "v": 120,
     "prem": 10,
-    "pusu": "30-06-2027",
+    "pusu": "17-08-2026",
     "pusuExt": "n/a",
     "hf": 0.0,
     "hfC": "no change",
@@ -568,5 +568,20 @@
     "hf": 9.68,
     "hfC": "▲ 3.6pp",
     "com": "Recommended cash offer (scheme) of 506p per share plus dividend of up to 3p per share for all shares in Rotork by ABB Automation Holding UK Limited, a subsidiary of ABB Ltd."
+  },
+  {
+    "t": "MITIE GROUP PLC",
+    "sec": "Support Services",
+    "st": "Formal offer",
+    "b": "OCS GROUP TOPCO LIMITED",
+    "start": "21-07-2026",
+    "offer": "218.5p",
+    "v": 2483,
+    "prem": 44,
+    "pusu": "31-Mar-27",
+    "pusuExt": "n/a",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Recommended cash offer (scheme) for Mitie by OCS Group International Limited, an indirect wholly-owned subsidiary of OCS Group Topco Limited, of 218.5p per share and A final dividend of 3.1p per share."
   }
 ]
