@@ -1,44 +1,20 @@
 [
   {
+    "n": "Segro plc",
+    "s": "amber",
+    "text": "PUSU deadline expiring on 22 July 2026",
+    "date": "22 July 2026"
+  },
+  {
     "n": "CyanConnode Holdings plc",
     "s": "amber",
     "text": "Extension of PUSU Deadline to 28 July 2026",
     "date": "21 July 2026"
   },
   {
-    "n": "Mitie Group plc",
+    "n": "Evoke plc (on European tracker)",
     "s": "green",
-    "text": "Recommended cash offer (scheme) for Mitie by OCS Group International Limited of 218.5p per share and A final dividend of 3.1p per share",
+    "text": "Publication of offer document by Bally's Intralot SA. The scheme is being implemented under the Gibraltar Companies Act",
     "date": "21 July 2026"
-  },
-  {
-    "n": "Segro plc",
-    "s": "amber",
-    "text": "Prologis believes that the Segro defence relies on unrealistic risk assessments and assumptions to arrive at the various NAV uplifts and earnings projections. Prologis remain ready to engage with the Segro Board",
-    "date": "21 July 2026"
-  },
-  {
-    "n": "Pharos Energy plc",
-    "s": "green",
-    "text": "Publication of the Scheme Document by Ratio Petroleum Energy LP. The Court and General meetings to be held on 17 August 2026",
-    "date": "21 July 2026"
-  },
-  {
-    "n": "Capricorn Energy plc",
-    "s": "green",
-    "text": "Publication of the Scheme Document by Genel Energy plc",
-    "date": "21 July 2026"
-  },
-  {
-    "n": "IP Group plc",
-    "s": "amber",
-    "text": "PUSU deadline extended to 27 July 2026",
-    "date": "20 July 2026"
-  },
-  {
-    "n": "Alternative Income REIT plc",
-    "s": "green",
-    "text": "In its Response Document the AIRE Board unanimously recommends the shareholders not to accept the Glenstone offer and to withdraw their acceptances as soon as possible",
-    "date": "20 July 2026"
   }
 ]
