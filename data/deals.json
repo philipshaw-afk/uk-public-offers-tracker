@@ -465,21 +465,6 @@
     "com": "Recommended all share takeover offer"
   },
   {
-    "t": "IP GROUP PLC",
-    "sec": "Financial Services",
-    "st": "Indicative offer",
-    "b": "RAILWAYS PENSION TRUSTEE COMPANY LIMITED",
-    "start": "22-06-2026",
-    "offer": "71.6p",
-    "v": 649,
-    "prem": 10,
-    "pusu": "27-07-2026",
-    "pusuExt": "1",
-    "hf": 14.23,
-    "hfC": "▲ 0.22pp",
-    "com": "Unsolicited indicative offer from Railpen which already holds 18.4% of the shares in IP Group. Comprises 61p in cash, a mechanism to enable IP Group shareholders to realise the value of IP's shareholding in Oxford Nanopore Technologies plc (valued at approximately 10.6 pence per IP Group share), and a contingent value right of up to 11.3p per share. The offer has been rejected by the IP Group Board."
-  },
-  {
     "t": "RAMSDENS HOLDINGS PLC",
     "sec": "Financial Services",
     "st": "Formal offer",
@@ -522,7 +507,7 @@
     "pusuExt": "n/a",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Recommended cash offer of 23.07p per share plus special dividends of 4p and ordinary dividend of 0.9317p per share, to be effected by scheme of arrangement"
+    "com": "Recommended cash offer of 23.07p per share plus special dividends of 4p and ordinary dividend of 0.9317p per share, to be effected by scheme of arrangement. Competing bid announced by Serica Energy on 26 July 2026 -Board's recommendation withdrawn"
   },
   {
     "t": "SEGRO PLC",
@@ -593,7 +578,7 @@
     "offer": "503p",
     "v": 4110,
     "prem": 73,
-    "pusu": "30-Jun-26",
+    "pusu": "30-Jun-27",
     "pusuExt": "n/a",
     "hf": 13.68,
     "hfC": "▲ 0.92pp",
@@ -613,5 +598,35 @@
     "hf": 1.81,
     "hfC": "▲ 1.81pp",
     "com": "Recommended cash offer (scheme) for Mitie by OCS Group International Limited, an indirect wholly-owned subsidiary of OCS Group Topco Limited, of 218.5p per share and A final dividend of 3.1p per share."
+  },
+  {
+    "t": "PINEWOOD TECHNOLOGIES GROUP PLC",
+    "sec": "I.T.",
+    "st": "Indicative offer",
+    "b": "RIDGEVIEW PARTNERS LLC",
+    "start": "27-07-2026",
+    "offer": "448p",
+    "v": 545,
+    "prem": 43,
+    "pusu": "21-Aug-26",
+    "pusuExt": "0",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Ridgeview Partners makes £545m indicative offer, with rollover alternative. 48.71% shareholders support and Boartd is minded to recommend the offer."
+  },
+  {
+    "t": "PHAROS ENERGY PLC",
+    "sec": "Oil & Gas",
+    "st": "Formal offer",
+    "b": "SERICA ENERGY PLC",
+    "start": "24-06-2026",
+    "offer": "27.07p",
+    "v": 146,
+    "prem": 28,
+    "pusu": "30-Jun-27",
+    "pusuExt": "n/a",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Competing bid: Serica Energy plc makes 32.6683p per share recommended offer, 20.7% higher than Ratio Petroleum bid. 14.26% undertakings."
   }
 ]
