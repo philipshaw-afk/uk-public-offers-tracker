@@ -1,26 +1,44 @@
 [
   {
+    "n": "Pharos Energy plc",
+    "s": "green",
+    "text": "Competing bid: Serica Energy plc makes 32.6683p per share recommended offer, 20.7% higher than Ratio Petroleum bid",
+    "date": "27 July 2026"
+  },
+  {
+    "n": "DCC Energy plc (on European tracker)",
+    "s": "green",
+    "text": "ECP & KKR's indicative offer now a £5.75bn formal offer",
+    "date": "27 July 2026"
+  },
+  {
+    "n": "IP Group plc",
+    "s": "amber",
+    "text": "Deletion: Railpen announces it will not make an offer",
+    "date": "27 July 2026"
+  },
+  {
+    "n": "Pinewood Technologies Group Plc",
+    "s": "amber",
+    "text": "New addition: Ridgeview Partners makes £545m indicative offer. Board minded to recommend.",
+    "date": "24 July 2026"
+  },
+  {
+    "n": "Irish Continental Group plc (on European tracker)",
+    "s": "green",
+    "text": "MBO team makes recommended €1.2 billion offer",
+    "date": "24 July 2026"
+  },
+  {
     "n": "Bluefield Solar Income Fund Limited",
     "s": "green",
-    "text": "The Scheme is approved by the Court and General meetings and is expected to become effective on 31 July 2026",
+    "text": "The scheme is approved by shareholders and is expected to become effective on 31 July 2026",
     "date": "24 July 2026"
   },
   {
     "n": "Capricorn Energy plc",
     "s": "green",
     "text": "PUSU Deadline set for 11 August 2026 for Alamadiyaf al-Masiyyah and Samos",
-    "date": "24 July 2026"
-  },
-  {
-    "n": "IP Group plc",
-    "s": "amber",
-    "text": "PUSU Deadline expiring on 27 July 2026",
-    "date": "24 July 2026"
-  },
-  {
-    "n": "Deltic Energy plc",
-    "s": "green",
-    "text": "Receipt of approval by the North Sea Transition Authority (NSTA). Scheme expected to become effective on 14 August 2026",
     "date": "24 July 2026"
   }
 ]
