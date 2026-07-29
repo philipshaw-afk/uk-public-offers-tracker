@@ -1,5 +1,29 @@
 [
   {
+    "n": "Union Jack Oil plc",
+    "s": "green",
+    "text": "Publication of the offer document. The acceptance period will run from 19 August 2026 to 25 September 2026",
+    "date": "29 July 2026"
+  },
+  {
+    "n": "Integrated Diagnostics Holdings plc",
+    "s": "green",
+    "text": "Offer declared unconditional and will close on 12 August 2026",
+    "date": "29 July 2026"
+  },
+  {
+    "n": "Alternative Income REIT plc",
+    "s": "green",
+    "text": "In response to Glenstone having received acceptances of less than 0.0025% of AIRE's shares, the Board reiterates its recommendation to reject the offer",
+    "date": "29 July 2026"
+  },
+  {
+    "n": "CyanConnode Holdings plc",
+    "s": "amber",
+    "text": "Extension of PUSU Deadline to 4 August 2026",
+    "date": "28 July 2026"
+  },
+  {
     "n": "Tate & Lyle plc",
     "s": "green",
     "text": "The Scheme is approved by the Court and General meetings and is expected to become effective during the second half of 2027",
@@ -10,11 +34,5 @@
     "s": "green",
     "text": "The Scheme is sanctioned by the Court and is expected to become effective on 30 July 2026",
     "date": "28 July 2026"
-  },
-  {
-    "n": "Zinnwald Lithium plc",
-    "s": "green",
-    "text": "Deletion: scheme becomes effective",
-    "date": "27 July 2026"
   }
 ]
