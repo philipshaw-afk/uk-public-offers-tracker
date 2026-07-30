@@ -465,21 +465,6 @@
     "com": "On 23 June 2026, FirstCash announced a recommended cash offer of 600p per share plus dividends of up to 9p per share, to be effected by scheme of arrangement. On 16 July 2026, FirstCash announced a final recommended cash offer (scheme) for Ramsdens of 675p per share plus dividend of up to 9p per share."
   },
   {
-    "t": "INTEGRATED DIAGNOSTICS HOLDINGS PLC",
-    "sec": "Healthcare",
-    "st": "Formal offer",
-    "b": "HENA HOLDINGS LIMITED",
-    "start": "23-06-2026",
-    "offer": "US$0.50",
-    "v": 224,
-    "prem": -11,
-    "pusu": "12-08-2026",
-    "pusuExt": "n/a",
-    "hf": 6.59,
-    "hfC": "no change",
-    "com": "Mandatory final cash offer by Hena Holdings Ltd for the remaining 50.38% of the shares at US$0.50 per share. IDH's Independent Directors state that the price of US$0.50 per share does not reflect the underlying inherent value of the company and recommend the shareholders not to accept the offer. On 29 July 2026, the offer was declared unconditional. Hena Holdings had received acceptances representing 6.98% of IDH's shares, increasing its shareholding to 56.60%."
-  },
-  {
     "t": "PHAROS ENERGY PLC",
     "sec": "Oil & Gas",
     "st": "Formal offer",
@@ -512,7 +497,7 @@
   {
     "t": "SYSTEM1 GROUP PLC",
     "sec": "Support Services",
-    "st": "Indicative offer",
+    "st": "Formal offer",
     "b": "BRAVE BISON GROUP PLC",
     "start": "10-07-2026",
     "offer": "327p",
@@ -522,7 +507,7 @@
     "pusuExt": "0",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Unsolicited indicative proposal by Brave Bison Group plc for the acquisition of the remaining 72% of System1 for 68p per share in cash and 2.7553 new Brave Bison shares. The System1 Board believes that it materially undervalues System1"
+    "com": "On 10 July 2026, Brave Bison Group plc announced an unsolicited indicative proposal by for the acquisition of the remaining 72% of System1 for 68p per share in cash and 2.7553 new Brave Bison shares. The System1 Board believed that it materially undervalued System1. On 30 July 2026, Brave Bison announced a formal offer of 135p per share in cash and 2.04 Brave Bison shares (with the total value per share (327p) remaining unchanged), and an alternative offer of 3.36 new Brave Bison shares for each System1 share (total value 307p per share). Acceptance threshold set at 50%."
   },
   {
     "t": "NEXTENERGY SOLAR FUND LIMITED",
