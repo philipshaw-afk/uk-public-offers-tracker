@@ -431,7 +431,7 @@
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
     "hf": 20.61,
-    "hfC": "▲ 0.43pp",
+    "hfC": "no change",
     "com": "On 23 June 2026, FirstCash announced a recommended cash offer of 600p per share plus dividends of up to 9p per share, to be effected by scheme of arrangement. On 16 July 2026, FirstCash announced a final recommended cash offer (scheme) for Ramsdens of 675p per share plus dividend of up to 9p per share."
   },
   {
@@ -446,7 +446,7 @@
     "pusu": "30-06-2027",
     "pusuExt": "n/a",
     "hf": 1.69,
-    "hfC": "▲ 0.01pp",
+    "hfC": "no change",
     "com": "Recommended cash offer of 23.07p per share plus special dividends of 4p and ordinary dividend of 0.9317p per share, to be effected by scheme of arrangement. Competing bid announced by Serica Energy on 26 July 2026 -Board's recommendation withdrawn"
   },
   {
@@ -461,7 +461,7 @@
     "pusu": "12-08-2026",
     "pusuExt": "1",
     "hf": 3.17,
-    "hfC": "▲ 0.71pp",
+    "hfC": "▼0.1pp",
     "com": "Four share proposals made, the latest being at 1,031.7p per share (with a 25% partial cash alternative). The SEGRO Board would be \"minded to recommend\" the latest proposal."
   },
   {
@@ -506,7 +506,7 @@
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
     "hf": 6.85,
-    "hfC": "▲ 2.86pp",
+    "hfC": "no change",
     "com": "Recommended cash offer (scheme) of £1,230p per share plus interim dividend of 4.9p per share for all shares G&H by  Greenlight Bidco Limited, an acquisition vehicle owned by Arlington Capital Partners VII, L.P."
   },
   {
@@ -521,7 +521,7 @@
     "pusu": "30-06-2027",
     "pusuExt": "n/a",
     "hf": 17.22,
-    "hfC": "▲ 2.33pp",
+    "hfC": "no change",
     "com": "Recommended cash offer (scheme) of 506p per share plus dividend of up to 3p per share for all shares in Rotork by ABB Automation Holding UK Limited, a subsidiary of ABB Ltd."
   },
   {
@@ -535,8 +535,8 @@
     "prem": 44,
     "pusu": "31-03-2027",
     "pusuExt": "n/a",
-    "hf": 0.0,
-    "hfC": "▼ 1.87pp",
+    "hf": 3.054,
+    "hfC": "no change",
     "com": "Recommended cash offer (scheme) for Mitie by OCS Group International Limited, an indirect wholly-owned subsidiary of OCS Group Topco Limited, of 218.5p per share and A final dividend of 3.1p per share."
   },
   {
@@ -551,7 +551,7 @@
     "pusu": "21-08-2026",
     "pusuExt": "0",
     "hf": 14.44,
-    "hfC": "▲ 6.03pp",
+    "hfC": "no change",
     "com": "Ridgeview Partners makes £545m indicative offer, with rollover alternative. 48.71% shareholders support and Board is minded to recommend the offer."
   },
   {
@@ -566,7 +566,7 @@
     "pusu": "30-06-2027",
     "pusuExt": "n/a",
     "hf": 1.69,
-    "hfC": "▲ 0.01pp",
+    "hfC": "no change",
     "com": "Competing bid: Serica Energy plc makes 32.6683p per share recommended offer, 20.7% higher than Ratio Petroleum bid. 14.26% undertakings."
   }
 ]
