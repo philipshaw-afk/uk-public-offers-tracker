@@ -1,5 +1,17 @@
 [
   {
+    "n": "Union Jack Oil plc",
+    "s": "green",
+    "text": "Shareholders representing approx. 18.13% of Union Jack's share capital confirm that they will not accept the offer (up from 14.09% as of 31 July 2026)",
+    "date": "5 August 2026"
+  },
+  {
+    "n": "Gamma Communications plc",
+    "s": "red",
+    "text": "PUSU deadline expiring on 5 August 2026",
+    "date": "5 August 2026"
+  },
+  {
     "n": "International Personal Finance plc",
     "s": "green",
     "text": "Deletion: Scheme becomes effective",
@@ -10,11 +22,5 @@
     "s": "green",
     "text": "Scheme is approved by the Court and General meetings. Completion is expected on 13 August 2026",
     "date": "3 August 2026"
-  },
-  {
-    "n": "Segro plc",
-    "s": "green",
-    "text": "Recommended offer (scheme) of  0.0920 new Prologis shares for each Segro share (valued at 1,031.7p per share with a 25% partial cash alternative). Completion expected in the first half of 2027",
-    "date": "4 August 2026"
   }
 ]
