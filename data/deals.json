@@ -98,8 +98,8 @@
     "offer": "n.a",
     "v": 666,
     "prem": null,
-    "pusu": "05-08-2026",
-    "pusuExt": "2",
+    "pusu": "02-09-2026",
+    "pusuExt": "3",
     "hf": 13.67,
     "hfC": "no change",
     "com": "In preliminary discussions with a number of interested counterparties. Potential offerors not required to be identified, but Providence Equity Partners was named on 13 May 2026 (PUSU deadline 10 June). Epiris and separate Oakley Capital/Giacom consortium named on 15 May 2026 but Oakley Capital/Giacom withdrew on 12 June 2026. On 10 June 2026, Providence & Epiris formed a consortium with a PUSU deadline of 8 July 2026. On 24 June 2026, Providence announced that it was no longer part of the Consortium and Epiris was considering its options."
@@ -553,5 +553,35 @@
     "hf": 1.75,
     "hfC": "no change",
     "com": "Competing bid: Serica Energy plc makes 32.6683p per share recommended offer, 20.7% higher than Ratio Petroleum bid. 14.26% undertakings."
+  },
+  {
+    "t": "BODYCOTE PLC",
+    "sec": "Engineering",
+    "st": "Indicative offer",
+    "b": "CVC ADVISERS LIMITED",
+    "start": "05-08-2026",
+    "offer": "907.8p",
+    "v": 1545,
+    "prem": 21,
+    "pusu": "02-09-2026",
+    "pusuExt": "0",
+    "hf": 0,
+    "hfC": "no change",
+    "com": "Indicative offer by CVC of 907.8p per share in cash plus an interim dividend of 7.2p per share. The Board would be minded to unanimously recommend the proposal, which follows earlier approaches from CVC, to Bodycote shareholders."
+  },
+  {
+    "t": "BODYCOTE PLC",
+    "sec": "Engineering",
+    "st": "Indicative offer",
+    "b": "VERITAS CAPITAL FUND IX LP",
+    "start": "05-08-2026",
+    "offer": "906.8p",
+    "v": 1544,
+    "prem": 20,
+    "pusu": "02-09-2026",
+    "pusuExt": "0",
+    "hf": 0,
+    "hfC": "no change",
+    "com": "Indicative offer by Veritas of 906.8p per share in cash plus an interin dividend of 7.2p per share. The Board would be minded to unanimously recommend the proposal, which follows earlier approaches from Veritas, to Bodycote shareholders."
   }
 ]
