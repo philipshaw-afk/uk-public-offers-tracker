@@ -1,5 +1,23 @@
 [
   {
+    "n": "Spire Healthcare Group plc",
+    "s": "amber",
+    "text": "PUSU deadline expiring on 6 August 2026",
+    "date": "6 August 2026"
+  },
+  {
+    "n": "Harworth Group plc",
+    "s": "green",
+    "text": "Cash offer of 172.5p per share for the remaining 70.04% of the shares in Harworth not held by Peel Holdings",
+    "date": "6 August 2026"
+  },
+  {
+    "n": "Rotork plc",
+    "s": "green",
+    "text": "The Court and General meetings to be held on 3 September 2026. Scheme expected to become effective in the first half of 2027",
+    "date": "6 August 2026"
+  },
+  {
     "n": "Bodycote plc",
     "s": "amber",
     "text": "The Board confirms that it had received two separate proposals from CVC Advisers Limited and Veritas Capital Fund IX, L.P. PUSU deadline is 2 September 2026",
@@ -16,29 +34,5 @@
     "s": "green",
     "text": "Receipt of regulatory approvals. The scheme remains subject to Court Sanction and is expected to become effective on 20 August 2026",
     "date": "5 August 2026"
-  },
-  {
-    "n": "Union Jack Oil plc",
-    "s": "green",
-    "text": "Shareholders representing approx. 18.13% of Union Jack's share capital confirm that they will not accept the offer (up from 14.09% as of 31 July 2026)",
-    "date": "5 August 2026"
-  },
-  {
-    "n": "Gamma Communications plc",
-    "s": "red",
-    "text": "PUSU deadline expiring on 5 August 2026",
-    "date": "5 August 2026"
-  },
-  {
-    "n": "International Personal Finance plc",
-    "s": "green",
-    "text": "Deletion: Scheme becomes effective",
-    "date": "4 August 2026"
-  },
-  {
-    "n": "Intuitive Investments Group plc",
-    "s": "green",
-    "text": "Scheme is approved by the Court and General meetings. Completion is expected on 13 August 2026",
-    "date": "3 August 2026"
   }
 ]
