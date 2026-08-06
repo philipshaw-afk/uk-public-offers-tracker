@@ -131,7 +131,7 @@
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
     "hf": 2.05,
-    "hfC": "▲ 1.05pp",
+    "hfC": "no change",
     "com": "On 13 January 2026, LondonMetric and Schroder REIT made indicative all share offer, after strategic review. On 31 July 2026, LondonMetric and Schroder REIT announced a recommended all share offer (scheme) of 0.190 LondonMetric shares and 0.894 Schroder shares."
   },
   {
@@ -160,8 +160,8 @@
     "prem": 34,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 0.0,
-    "hfC": "▼ 63.21pp",
+    "hf": 63.213,
+    "hfC": "no change",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access and a PUSU deadline of 29 July. Genel Energy plc made a recommended offer (scheme) on 2 July. Samos Energy made a higher indicative offer on 22 July 2026."
   },
   {
@@ -175,8 +175,8 @@
     "prem": null,
     "pusu": "11-08-2026",
     "pusuExt": "5",
-    "hf": 0.0,
-    "hfC": "▼ 63.21pp",
+    "hf": 63.213,
+    "hfC": "no change",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access and a PUSU deadline of 29 July. Genel Energy plc made a recommended offer (scheme) on 2 July. Samos Energy made a higher indicative offer on 22 July 2026."
   },
   {
@@ -190,8 +190,8 @@
     "prem": 43,
     "pusu": "11-08-2026",
     "pusuExt": "1",
-    "hf": 0.0,
-    "hfC": "▼ 63.21pp",
+    "hf": 63.213,
+    "hfC": "no change",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access and a PUSU deadline of 29 July. Genel Energy plc made a recommended offer (scheme) on 2 July. Samos Energy made a higher indicative offer on 22 July 2026."
   },
   {
@@ -236,7 +236,7 @@
     "pusu": "31-10-2026",
     "pusuExt": "n/a",
     "hf": 1.56,
-    "hfC": "▲ 1.56pp",
+    "hfC": "no change",
     "com": "Recommended cash offer (scheme) of 10.17p per share. The offer follows a proposal of 10.44p per share announced on 3 February 2026"
   },
   {
@@ -506,7 +506,7 @@
     "pusu": "30-06-2027",
     "pusuExt": "n/a",
     "hf": 20.39,
-    "hfC": "▲ 2.49pp",
+    "hfC": "no change",
     "com": "Recommended cash offer (scheme) of 506p per share plus dividend of up to 3p per share for all shares in Rotork by ABB Automation Holding UK Limited, a subsidiary of ABB Ltd."
   },
   {
@@ -583,5 +583,20 @@
     "hf": 0,
     "hfC": "no change",
     "com": "Indicative offer by Veritas of 906.8p per share in cash plus an interin dividend of 7.2p per share. The Board would be minded to unanimously recommend the proposal, which follows earlier approaches from Veritas, to Bodycote shareholders."
+  },
+  {
+    "t": "HARWORTH GROUP PLC",
+    "sec": "Property",
+    "st": "Formal offer",
+    "b": "PEEL HOLDINGS GROUP LIMITED",
+    "start": "06-08-2026",
+    "offer": "172.5p",
+    "v": 564,
+    "prem": 20,
+    "pusu": "31-12-2026",
+    "pusuExt": "n/a",
+    "hf": 0,
+    "hfC": "no change",
+    "com": "Cash offer of 172.5p per share for the remaining 70.04% of the shares in Harworth not held by Peel Holdings, subject to a minmum acceptance threshold of 50%."
   }
 ]
