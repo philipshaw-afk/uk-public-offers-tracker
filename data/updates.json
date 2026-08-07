@@ -1,6 +1,18 @@
 [
   {
-    "n": "Spire Healthcare plc",
+    "n": "Genel Energy plc",
+    "s": "amber",
+    "text": "Indicative cash offer of 69p per share by DNO ASA with a mixed cash and new DNO shares alternative",
+    "date": "7 August 2026"
+  },
+  {
+    "n": "Pharos Energy plc",
+    "s": "green",
+    "text": "Increased recommended cash offer (scheme) by Ratio of 28.82p per share plus special dividend of 4p per share and ordinary dividend of 0.9317p per share. 41.76% undertakings.",
+    "date": "7 August 2026"
+  },
+  {
+    "n": "Spire Healthcare Group plc",
     "s": "amber",
     "text": "Extension of PUSU deadline to 21 August 2026",
     "date": "6 August 2026"
@@ -22,41 +34,5 @@
     "s": "green",
     "text": "Scheme sanctioned by the Court. It is expected to become effective on 13 August 2026",
     "date": "6 August 2026"
-  },
-  {
-    "n": "Spire Healthcare Group plc",
-    "s": "amber",
-    "text": "PUSU deadline expiring on 6 August 2026",
-    "date": "6 August 2026"
-  },
-  {
-    "n": "Harworth Group plc",
-    "s": "green",
-    "text": "Cash offer of 172.5p per share for the remaining 70.04% of the shares in Harworth not held by Peel Holdings",
-    "date": "6 August 2026"
-  },
-  {
-    "n": "Rotork plc",
-    "s": "green",
-    "text": "The Court and General meetings to be held on 3 September 2026. Scheme expected to become effective in the first half of 2027",
-    "date": "6 August 2026"
-  },
-  {
-    "n": "Bodycote plc",
-    "s": "amber",
-    "text": "The Board confirms that it had received two separate proposals from CVC Advisers Limited and Veritas Capital Fund IX, L.P. PUSU deadline is 2 September 2026",
-    "date": "5 August 2026"
-  },
-  {
-    "n": "Gamma Communications plc",
-    "s": "red",
-    "text": "Extension of PUSU deadline to 2 September 2026",
-    "date": "5 August 2026"
-  },
-  {
-    "n": "JTC plc",
-    "s": "green",
-    "text": "Receipt of regulatory approvals. The scheme remains subject to Court Sanction and is expected to become effective on 20 August 2026",
-    "date": "5 August 2026"
   }
 ]
