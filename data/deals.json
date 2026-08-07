@@ -131,7 +131,7 @@
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
     "hf": 2.32,
-    "hfC": "▲ 0.27pp",
+    "hfC": "no change",
     "com": "On 13 January 2026, LondonMetric and Schroder REIT made indicative all share offer, after strategic review. On 31 July 2026, LondonMetric and Schroder REIT announced a recommended all share offer (scheme) of 0.190 LondonMetric shares and 0.894 Schroder shares."
   },
   {
@@ -161,7 +161,7 @@
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
     "hf": 63.21,
-    "hfC": "▲ 63.21pp",
+    "hfC": "no change",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access and a PUSU deadline of 29 July. Genel Energy plc made a recommended offer (scheme) on 2 July. Samos Energy made a higher indicative offer on 22 July 2026."
   },
   {
@@ -176,7 +176,7 @@
     "pusu": "11-08-2026",
     "pusuExt": "5",
     "hf": 63.21,
-    "hfC": "▲ 63.21pp",
+    "hfC": "no change",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access and a PUSU deadline of 29 July. Genel Energy plc made a recommended offer (scheme) on 2 July. Samos Energy made a higher indicative offer on 22 July 2026."
   },
   {
@@ -191,7 +191,7 @@
     "pusu": "11-08-2026",
     "pusuExt": "1",
     "hf": 63.21,
-    "hfC": "▲ 63.21pp",
+    "hfC": "no change",
     "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access and a PUSU deadline of 29 July. Genel Energy plc made a recommended offer (scheme) on 2 July. Samos Energy made a higher indicative offer on 22 July 2026."
   },
   {
@@ -410,14 +410,14 @@
     "st": "Formal offer",
     "b": "RATIO PETROLEUM ENERGY LP",
     "start": "24-06-2026",
-    "offer": "27.07p",
-    "v": 120,
-    "prem": 10,
-    "pusu": "30-06-2027",
+    "offer": "32.82",
+    "v": 136,
+    "prem": 29,
+    "pusu": "15-07-2027",
     "pusuExt": "n/a",
     "hf": 1.75,
     "hfC": "no change",
-    "com": "Recommended cash offer of 23.07p per share plus special dividends of 4p and ordinary dividend of 0.9317p per share, to be effected by scheme of arrangement. Competing bid announced by Serica Energy on 26 July 2026 -Board's recommendation withdrawn"
+    "com": "Recommended cash offer (scheme) of 23.07p per share plus special dividend of 4p and ordinary dividend of 0.9317p per share. Following a competing bid announced by Serica Energy on 26 July 2026, the Board's recommendation was withdrawn. On 7 August 2026, Ratio announced an increased recommended cash offer (scheme) of 28.82p per share plus special dividend of 4p per share and ordinary dividend of 0.9317p per share. 41.76% undertakings."
   },
   {
     "t": "SEGRO PLC",
@@ -430,8 +430,8 @@
     "prem": 39,
     "pusu": "30-06-2027",
     "pusuExt": "n/a",
-    "hf": 3.71,
-    "hfC": "▲ 0.62pp",
+    "hf": 3.8,
+    "hfC": "no change",
     "com": "Following four proposals, the latest being at 1,031.7p per share (with a 25% partial cash alternative), Prologic launches a recommended offer to be effected by way of a scheme of arrangement."
   },
   {
@@ -550,8 +550,8 @@
     "prem": 21,
     "pusu": "02-09-2026",
     "pusuExt": "0",
-    "hf": 1.29,
-    "hfC": "▲ 1.29pp",
+    "hf": 5.58,
+    "hfC": "no change",
     "com": "Indicative offer by CVC of 907.8p per share in cash plus an interim dividend of 7.2p per share. The Board would be minded to unanimously recommend the proposal, which follows earlier approaches from CVC, to Bodycote shareholders."
   },
   {
@@ -565,8 +565,8 @@
     "prem": 20,
     "pusu": "02-09-2026",
     "pusuExt": "0",
-    "hf": 1.29,
-    "hfC": "▲ 1.29pp",
+    "hf": 5.58,
+    "hfC": "no change",
     "com": "Indicative offer by Veritas of 906.8p per share in cash plus an interin dividend of 7.2p per share. The Board would be minded to unanimously recommend the proposal, which follows earlier approaches from Veritas, to Bodycote shareholders."
   },
   {
@@ -583,5 +583,20 @@
     "hf": 0,
     "hfC": "no change",
     "com": "Cash offer of 172.5p per share for the remaining 70.04% of the shares in Harworth not held by Peel Holdings, subject to a minmum acceptance threshold of 50%."
+  },
+  {
+    "t": "GENEL ENERGY PLC",
+    "sec": "Oil & Gas",
+    "st": "Indicative offer",
+    "b": "DNO ASA",
+    "start": "07-08-2026",
+    "offer": "69p",
+    "v": 190,
+    "prem": 37,
+    "pusu": "04-09-2026",
+    "pusuExt": "0",
+    "hf": 0,
+    "hfC": "no change",
+    "com": "Indicative cash offer of 69p per share with a mixed cash and new DNO shares alternative."
   }
 ]
