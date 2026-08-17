@@ -508,5 +508,20 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "Indicative cash offer of 69p per share with a mixed cash and new DNO shares alternative."
+  },
+  {
+    "t": "TIME FINANCE PLC",
+    "sec": "Financial Services",
+    "st": "Formal offer",
+    "b": "BENTLEY PARK (UK) LIMITED",
+    "start": "17-08-2026",
+    "offer": "59.1p",
+    "v": 54,
+    "prem": 12,
+    "pusu": "28-02-2027",
+    "pusuExt": "n/a",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Recommended cash offer (scheme) of 59.1p per share by Bentley Park (UK) Limited, the parent company of Ultimate Finance Group Limited. Bentley Park had received irrevocable undertakings in respect of approximately 47.36% of Time Finance's share capital."
   }
 ]
