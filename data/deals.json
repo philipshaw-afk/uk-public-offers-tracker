@@ -10,8 +10,8 @@
     "prem": 33,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 9.81,
-    "hfC": "▲ 0.07pp",
+    "hf": 9.74,
+    "hfC": "▼ 0.07pp",
     "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. 99.9% of votes were in favour at meetings on 16 April 2026."
   },
   {
@@ -25,8 +25,8 @@
     "prem": 41,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 21.03,
-    "hfC": "▼ 0.2pp",
+    "hf": 20.99,
+    "hfC": "▼ 0.04pp",
     "com": "Recommended final cash offer by private equity firm EQT at £60 per share. The offer will be implemented by means of a Court-sanctioned scheme of arrangement and is expected to become effective in Q4 2026 or Q1 2027."
   },
   {
@@ -40,24 +40,9 @@
     "prem": 60,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 35.68,
-    "hfC": "▲ 0.09pp",
+    "hf": 35.91,
+    "hfC": "▲ 0.23pp",
     "com": "Scheme of arrangement made at same terms as indicative proposal. Beazley shareholder vote passed on 22 April 2026. Expected to become effective during H2 2026."
-  },
-  {
-    "t": "JTC PLC",
-    "sec": "Financial Services",
-    "st": "Formal offer",
-    "b": "PERMIRA ADVISERS LLP",
-    "start": "29-08-2025",
-    "offer": "1340p",
-    "v": 2340,
-    "prem": 37,
-    "pusu": "20-08-2026",
-    "pusuExt": "n/a",
-    "hf": 45.97,
-    "hfC": "▼ 0.24pp",
-    "com": "Shareholders have overwhelmingly approved the scheme. Completion expected on 20 August 2026 following the Court Sanction hearing on 19 August 2026."
   },
   {
     "t": "SENIOR PLC",
@@ -70,8 +55,8 @@
     "prem": 16,
     "pusu": "31-03-2027",
     "pusuExt": "n/a",
-    "hf": 47.7,
-    "hfC": "▼ 0.01pp",
+    "hf": 47.81,
+    "hfC": "▲ 0.11pp",
     "com": "Formal offer (scheme) announced on 7 April 2026 by Tinicum and Blackstone at 297.85p in cash. Overwhelmingly approved by shareholders on 26 May 2026. Indicative offer of 270p from Advent was rejected. Advent withdrew on 8 April 2026. Arcline Investment Management had made an approach before withdrawing on 1 April 2026."
   },
   {
@@ -101,7 +86,7 @@
     "pusu": "02-09-2026",
     "pusuExt": "3",
     "hf": 13.58,
-    "hfC": "▼ 0.04pp",
+    "hfC": "no change",
     "com": "In preliminary discussions with a number of interested counterparties. Potential offerors not required to be identified, but Providence Equity Partners was named on 13 May 2026 (PUSU deadline 10 June). Epiris and separate Oakley Capital/Giacom consortium named on 15 May 2026 but Oakley Capital/Giacom withdrew on 12 June 2026. On 10 June 2026, Providence & Epiris formed a consortium with a PUSU deadline of 8 July 2026. On 24 June 2026, Providence announced that it was no longer part of the Consortium and Epiris was considering its options."
   },
   {
@@ -130,8 +115,8 @@
     "prem": 16,
     "pusu": "02-05-2027",
     "pusuExt": "n/a",
-    "hf": 10.18,
-    "hfC": "no change",
+    "hf": 10.22,
+    "hfC": "▲ 0.04pp",
     "com": "Helios consortium (which already owns 45.11%) has gone hostile, with 85p formal offer. StoneX had made an indicative offer of 110p, before withdrawing on 5 May, given the Helios Consortium's lack of support."
   },
   {
@@ -176,7 +161,7 @@
     "pusu": "",
     "pusuExt": "n/a",
     "hf": 3.07,
-    "hfC": "▼ 0.09pp",
+    "hfC": "no change",
     "com": "Strategic review & formal sale process. Has not received an indicative offer but has held preliminary discussions with a small number of counterparties."
   },
   {
@@ -235,8 +220,8 @@
     "prem": 67,
     "pusu": "30-09-2027",
     "pusuExt": "n/a",
-    "hf": 13.29,
-    "hfC": "▼ 0.26pp",
+    "hf": 13.04,
+    "hfC": "▼ 0.25pp",
     "com": "Formal cash offer (scheme) from US ingredients group Ingredion Inc, valuing each share at up to 615p - 595p in cash plus permitted final and interim dividends of up to 20p. Follows proposal at same price."
   },
   {
@@ -280,8 +265,8 @@
     "prem": 34,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 32.47,
-    "hfC": "▲ 0.36pp",
+    "hf": 32.72,
+    "hfC": "▲ 0.25pp",
     "com": "Recommended cash offer (scheme), with undertakings in relation to 0.34%. Follows previous approach by TA Associates, which withdrew on 18 May 2026"
   },
   {
@@ -295,8 +280,8 @@
     "prem": 81,
     "pusu": "31-03-2027",
     "pusuExt": "n/a",
-    "hf": 16.68,
-    "hfC": "▲ 0.14pp",
+    "hf": 17.0,
+    "hfC": "▲ 0.33pp",
     "com": "Apollo had emerged with a higher 715p/share cash possible offer vs Castlelake’s 690p. On 6 August 2026, Castlelake confirmed that it did not intend to make an offer for easyJet. On the same day, Apollo announced a recommended offer to be implemented by way of a scheme of arrangement together with an alternative offer of 1 rollover share for each easyJet share. Completion expected by the end of Q1 2027."
   },
   {
@@ -355,8 +340,8 @@
     "prem": 39,
     "pusu": "30-06-2027",
     "pusuExt": "n/a",
-    "hf": 4.54,
-    "hfC": "▲ 0.04pp",
+    "hf": 4.6,
+    "hfC": "▲ 0.06pp",
     "com": "Following four proposals, the latest being at 1,031.7p per share (with a 25% partial cash alternative), Prologis launches a recommended offer to be effected by way of a scheme of arrangement."
   },
   {
@@ -400,8 +385,8 @@
     "prem": 40,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 12.23,
-    "hfC": "no change",
+    "hf": 12.29,
+    "hfC": "▲ 0.06pp",
     "com": "Recommended cash offer (scheme) of 1,230p per share plus interim dividend of 4.9p per share for all shares G&H by  Greenlight Bidco Limited, an acquisition vehicle owned by Arlington Capital Partners VII, L.P."
   },
   {
@@ -415,8 +400,8 @@
     "prem": 73,
     "pusu": "30-06-2027",
     "pusuExt": "n/a",
-    "hf": 25.85,
-    "hfC": "▲ 0.38pp",
+    "hf": 25.9,
+    "hfC": "▲ 0.05pp",
     "com": "Recommended cash offer (scheme) of 503p per share plus dividend of up to 3p per share for all shares in Rotork by ABB Automation Holding UK Limited, a subsidiary of ABB Ltd."
   },
   {
@@ -430,24 +415,24 @@
     "prem": 44,
     "pusu": "31-03-2027",
     "pusuExt": "n/a",
-    "hf": 18.59,
-    "hfC": "▲ 0.02pp",
+    "hf": 19.95,
+    "hfC": "▲ 1.35pp",
     "com": "Recommended cash offer (scheme) for Mitie by OCS Group International Limited, an indirect wholly-owned subsidiary of OCS Group Topco Limited, of 218.5p per share and a final dividend of 3.1p per share."
   },
   {
     "t": "PINEWOOD TECHNOLOGIES GROUP PLC",
     "sec": "I.T.",
-    "st": "Indicative offer",
+    "st": "Formal offer",
     "b": "RIDGEVIEW PARTNERS LLC",
     "start": "24-07-2026",
     "offer": "448p",
     "v": 545,
     "prem": 43,
-    "pusu": "21-08-2026",
-    "pusuExt": "0",
-    "hf": 15.6,
-    "hfC": "▲ 0.12pp",
-    "com": "Ridgeview Partners makes £545m indicative offer, with rollover alternative. 48.71% shareholders support and Board is minded to recommend the offer."
+    "pusu": "31-12-2026",
+    "pusuExt": "n/a",
+    "hf": 15.59,
+    "hfC": "▼ 0.01pp",
+    "com": "Ridgeview Partners makes £545m indicative offer, with rollover alternative. 48.71% shareholders support and Board is minded to recommend the offer. On 19 August 2026, Pinewood Partners announced a recommended offer (scheme) at the same terms."
   },
   {
     "t": "BODYCOTE PLC",
@@ -460,8 +445,8 @@
     "prem": 21,
     "pusu": "02-09-2026",
     "pusuExt": "0",
-    "hf": 9.4,
-    "hfC": "▲ 1.1pp",
+    "hf": 9.68,
+    "hfC": "▲ 0.28pp",
     "com": "Indicative offer by CVC of 907.8p per share in cash plus an interim dividend of 7.2p per share. The Board would be minded to unanimously recommend the proposal, which follows earlier approaches from CVC, to Bodycote shareholders."
   },
   {
@@ -475,8 +460,8 @@
     "prem": 20,
     "pusu": "02-09-2026",
     "pusuExt": "0",
-    "hf": 9.4,
-    "hfC": "▲ 1.1pp",
+    "hf": 9.68,
+    "hfC": "▲ 0.28pp",
     "com": "Indicative offer by Veritas of 906.8p per share in cash plus an interim dividend of 7.2p per share. The Board would be minded to unanimously recommend the proposal, which follows earlier approaches from Veritas, to Bodycote shareholders."
   },
   {
