@@ -87,7 +87,7 @@
     "pusuExt": "3",
     "hf": 13.58,
     "hfC": "no change",
-    "com": "In preliminary discussions with a number of interested counterparties. Potential offerors not required to be identified, but Providence Equity Partners was named on 13 May 2026 (PUSU deadline 10 June). Epiris and separate Oakley Capital/Giacom consortium named on 15 May 2026 but Oakley Capital/Giacom withdrew on 12 June 2026. On 10 June 2026, Providence & Epiris formed a consortium with a PUSU deadline of 8 July 2026. On 24 June 2026, Providence announced that it was no longer part of the Consortium and Epiris was considering its options."
+    "com": "In preliminary discussions with a number of interested counterparties. Potential offerors not required to be identified, but Providence Equity Partners was named on 13 May 2026 (PUSU deadline 10 June). Epiris and separate Oakley Capital/Giacom consortium named on 15 May 2026 but Oakley Capital/Giacom withdrew on 12 June 2026. On 10 June 2026, Providence & Epiris formed a consortium with a PUSU deadline of 8 July 2026. On 24 June 2026, Providence announced that it was no longer part of the Consortium and Epiris was considering its options. On 21 August 2026, Gamma entered into preliminary discussions with Waterland Private Equity Investments BV."
   },
   {
     "t": "PICTON PROPERTY INCOME LIMITED",
@@ -385,8 +385,8 @@
     "prem": 40,
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
-    "hf": 14.2,
-    "hfC": "▲ 1.91pp",
+    "hf": 14.62,
+    "hfC": "▲ 0.42pp",
     "com": "Recommended cash offer (scheme) of 1,230p per share plus interim dividend of 4.9p per share for all shares G&H by  Greenlight Bidco Limited, an acquisition vehicle owned by Arlington Capital Partners VII, L.P."
   },
   {
@@ -401,7 +401,7 @@
     "pusu": "30-06-2027",
     "pusuExt": "n/a",
     "hf": 27.09,
-    "hfC": "▲ 1.19pp",
+    "hfC": "▲ 0.03pp",
     "com": "Recommended cash offer (scheme) of 503p per share plus dividend of up to 3p per share for all shares in Rotork by ABB Automation Holding UK Limited, a subsidiary of ABB Ltd."
   },
   {
@@ -416,7 +416,7 @@
     "pusu": "31-03-2027",
     "pusuExt": "n/a",
     "hf": 21.25,
-    "hfC": "▲ 1.31pp",
+    "hfC": "▲ 1.02pp",
     "com": "Recommended cash offer (scheme) for Mitie by OCS Group International Limited, an indirect wholly-owned subsidiary of OCS Group Topco Limited, of 218.5p per share and a final dividend of 3.1p per share."
   },
   {
@@ -431,7 +431,7 @@
     "pusu": "31-12-2026",
     "pusuExt": "n/a",
     "hf": 17.81,
-    "hfC": "▲ 2.22pp",
+    "hfC": "▼ 0.89pp",
     "com": "Ridgeview Partners makes £545m indicative offer, with rollover alternative. 48.71% shareholders support and Board is minded to recommend the offer. On 19 August 2026, Pinewood Partners announced a recommended offer (scheme) at the same terms."
   },
   {
@@ -508,5 +508,20 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "Recommended cash offer (scheme) of 59.1p per share by Bentley Park (UK) Limited, the parent company of Ultimate Finance Group Limited. Bentley Park had received irrevocable undertakings in respect of approximately 47.36% of Time Finance's share capital."
+  },
+  {
+    "t": "GAMMA COMMUNICATIONS PLC",
+    "sec": "Telecommunications",
+    "st": "Approach, no price",
+    "b": "WATERLAND PRIVATE EQUITY INVESTMENTS BV",
+    "start": "21-08-2026",
+    "offer": "n.a",
+    "v": 864,
+    "prem": null,
+    "pusu": "18-09-2026",
+    "pusuExt": "0",
+    "hf": 13.58,
+    "hfC": "no change",
+    "com": "Gamma has entered into preliminary discussions with Waterland, which is acting in concert with the Giacom Group. Discussions between Gamma and other potential offerors (.e. Epiris LLP) remain ongoing."
   }
 ]
