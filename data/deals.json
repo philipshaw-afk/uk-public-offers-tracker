@@ -77,17 +77,17 @@
   {
     "t": "GAMMA COMMUNICATIONS PLC",
     "sec": "Telecommunications",
-    "st": "Approach, no price",
+    "st": "Formal offer",
     "b": "EPIRIS LLP",
     "start": "07-04-2026",
-    "offer": "n.a",
-    "v": 666,
-    "prem": null,
-    "pusu": "02-09-2026",
-    "pusuExt": "3",
+    "offer": "1120p",
+    "v": 1015,
+    "prem": 53,
+    "pusu": "30-06-2027",
+    "pusuExt": "n/a",
     "hf": 13.68,
     "hfC": "▼ 0.09pp",
-    "com": "In preliminary discussions with a number of interested counterparties. Potential offerors not required to be identified, but Providence Equity Partners was named on 13 May 2026 (PUSU deadline 10 June). Epiris and separate Oakley Capital/Giacom consortium named on 15 May 2026 but Oakley Capital/Giacom withdrew on 12 June 2026. On 10 June 2026, Providence & Epiris formed a consortium with a PUSU deadline of 8 July 2026. On 24 June 2026, Providence announced that it was no longer part of the Consortium and Epiris was considering its options. On 21 August 2026, Gamma entered into preliminary discussions with Waterland Private Equity Investments BV."
+    "com": "Recommended £1,015m offer (scheme) announced on 1 September 2026. 0.13% undertakings. Completion expected H1 2027."
   },
   {
     "t": "PICTON PROPERTY INCOME LIMITED",
@@ -132,7 +132,7 @@
     "pusuExt": "n/a",
     "hf": 64.41,
     "hfC": "▲ 0.01pp",
-    "com": "Multiple unsolicited proposals from Saudi Arabia's Alamadiyaf al-Masiyyah, which has due diligence access and a PUSU deadline of 29 July. Genel Energy plc made a recommended offer (scheme) on 2 July. Samos Energy made a higher indicative offer on 22 July 2026. Alamadiyaf al-Masiyyah and Samos Energy withdrew on 11 August 2026."
+    "com": "Genel Energy plc made a recommended offer (scheme) on 2 July. DNO made a recommended higher competing bid on 1 September."
   },
   {
     "t": "KORE POTASH PLC",
@@ -372,7 +372,7 @@
     "pusuExt": "n/a",
     "hf": 18.33,
     "hfC": "no change",
-    "com": "Recommended cash offer (scheme) of 1,230p per share plus interim dividend of 4.9p per share for all shares G&H by  Greenlight Bidco Limited, an acquisition vehicle owned by Arlington Capital Partners VII, L.P."
+    "com": "Recommended cash offer (scheme) of 1,230p per share plus interim dividend of 4.9p per share for all shares in G&H by Greenlight Bidco Limited, an acquisition vehicle owned by Arlington Capital Partners VII, L.P."
   },
   {
     "t": "ROTORK PLC",
@@ -417,7 +417,7 @@
     "pusuExt": "n/a",
     "hf": 19.67,
     "hfC": "▼ 0.23pp",
-    "com": "Ridgeview Partners makes £545m indicative offer, with rollover alternative. 48.71% shareholders support and Board is minded to recommend the offer. On 19 August 2026, Pinewood Partners announced a recommended offer (scheme) at the same terms."
+    "com": "Ridgeview Partners makes £545m indicative offer, with rollover alternative. 48.71% shareholders support and Board was minded to recommend the offer. On 19 August 2026, Ridgeview Partners announced a recommended offer (scheme) at the same terms."
   },
   {
     "t": "BODYCOTE PLC",
@@ -432,22 +432,22 @@
     "pusuExt": "0",
     "hf": 9.98,
     "hfC": "▲ 0.03pp",
-    "com": "Indicative offer by CVC of 907.8p per share in cash plus an interim dividend of 7.2p per share. The Board would be minded to unanimously recommend the proposal, which follows earlier approaches from CVC, to Bodycote shareholders."
+    "com": "Indicative offer by CVC of 907.8p per share in cash plus an interim dividend of 7.2p per share. The Board would be minded to unanimously recommend the proposal, which follows earlier approaches from CVC, to Bodycote shareholders. On 1 September 2026, Veritas Capital made a formal recommended offer at 932.8p per share in cash plus an interim dividend of 7.2p per share."
   },
   {
     "t": "BODYCOTE PLC",
     "sec": "Engineering",
-    "st": "Indicative offer",
+    "st": "Formal offer",
     "b": "VERITAS CAPITAL FUND IX LP",
     "start": "05-08-2026",
-    "offer": "906.8p",
-    "v": 1544,
-    "prem": 20,
-    "pusu": "02-09-2026",
-    "pusuExt": "0",
+    "offer": "932.8p",
+    "v": 1640,
+    "prem": 24,
+    "pusu": "31-03-2027",
+    "pusuExt": "n/a",
     "hf": 9.98,
     "hfC": "▲ 0.03pp",
-    "com": "Indicative offer by Veritas of 906.8p per share in cash plus an interim dividend of 7.2p per share. The Board would be minded to unanimously recommend the proposal, which follows earlier approaches from Veritas, to Bodycote shareholders."
+    "com": "On 1 September 2026, Veritas Capital made a formal recommended offer at 932.8p per share in cash plus an interim dividend of 7.2p per share. Followed indicative offer by Veritas of 906.8p per share in cash plus an interim dividend of 7.2p per share. Offer expected to complete Q1 2027."
   },
   {
     "t": "HARWORTH GROUP PLC",
@@ -499,7 +499,7 @@
     "sec": "Telecommunications",
     "st": "Approach, no price",
     "b": "WATERLAND PRIVATE EQUITY INVESTMENTS BV",
-    "start": "21-08-2026",
+    "start": "07-04-2026",
     "offer": "n.a",
     "v": 864,
     "prem": null,
@@ -508,5 +508,20 @@
     "hf": 13.68,
     "hfC": "▼ 0.09pp",
     "com": "Gamma had entered into preliminary discussions with Waterland, which is acting in concert with the Giacom Group. On 1 September 2026, Epiris made a recommended formal offer"
+  },
+  {
+    "t": "CAPRICORN ENERGY PLC",
+    "sec": "Oil & Gas",
+    "st": "Formal offer",
+    "b": "DNO ASA",
+    "start": "11-03-2026",
+    "offer": "384p",
+    "v": 292,
+    "prem": 45,
+    "pusu": "31-03-2027",
+    "pusuExt": "n/a",
+    "hf": 64.41,
+    "hfC": "▲ 0.01pp",
+    "com": "Genel Energy plc made a recommended offer (scheme) on 2 July. DNO made a recommended higher competing bid (scheme) on 1 September, at US$ 5.214 per share in cash, including a US$ 0.99 special dividend. Completion expected Q4 2026 or Q1 2027. Note DNO has separately made an approach for Genel."
   }
 ]
