@@ -183,6 +183,21 @@ th.col-comments,td.col-comments{min-width:450px}
 .pusu-note{font-size:11.5px;color:var(--t3);font-weight:600}
 .pusu-empty{padding:80px 22px;text-align:center;color:var(--t3);font-size:13px}
 
+/* ── "Deadline to be determined" bay (Rule 2.6 deadline not yet set by the Panel) ── */
+.pusu-tbd-bay{position:absolute;top:30px;bottom:58px;border-left:2px dashed #C3CAD8;background:repeating-linear-gradient(135deg,transparent 0 9px,rgba(137,146,168,.09) 9px 10px);border-radius:0 8px 0 0;pointer-events:none}
+.pusu-tbd-bay span{position:absolute;top:-23px;left:10px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);background:#fff;padding:2px 6px;border-radius:4px;white-space:nowrap}
+.pusu-axis-tbd{position:absolute;bottom:58px;height:0;border-top:2px dashed #CBD2DF}
+.pusu-tick.tbd{background:transparent;border-left:1px dashed #CBD2DF}
+.pusu-tick.tbd span{color:var(--t3);font-weight:700;font-style:italic}
+.pusu-event.tbd:before{background:repeating-linear-gradient(to top,#AAB4C5 0 4px,transparent 4px 8px)}
+.pusu-dot.today{width:auto;padding:0 7px;border-radius:13px;font-size:9.5px}
+.pusu-dot.tbd{width:auto;min-width:26px;padding:0 7px;border-radius:13px;background:var(--t3);font-size:9px;letter-spacing:.04em}
+.pusu-box.tbd{outline:1.5px dashed #AAB4C5;outline-offset:-1.5px}
+.pusu-box.tbd .pusu-box-date{color:var(--t2);white-space:normal}
+.pusu-box-why{font-size:9.5px;color:var(--t3);line-height:1.25;margin-top:3px;font-style:italic}
+.pusu-key .tbd i{background:transparent;border:1.5px dashed var(--t3);width:8px;height:8px}
+.pusu-kpis{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+
 .eu-btn-wrap{display:flex;justify-content:flex-end;margin-bottom:18px}
 .eu-btn{
   display:inline-flex;align-items:center;justify-content:center;
@@ -345,8 +360,9 @@ th.col-comments,td.col-comments{min-width:450px}
           <span class="hot"><i></i>Due in 7 days</span>
           <span class="near"><i></i>Due in 8&#x2013;14 days</span>
           <span><i></i>Upcoming dated PUSU</span>
+          <span class="tbd"><i></i>Deadline to be determined by the Panel</span>
         </div>
-        <div class="pusu-note">Flag labels show target company and identified offeror(s). Number badge shows days to deadline.</div>
+        <div class="pusu-note">Flag labels show target company and identified offeror(s). Number badge shows days to deadline; "TBD" marks deadlines the Panel has yet to set.</div>
       </div>
     </div>
   </section>
@@ -587,21 +603,33 @@ function renderPusu() {
   var todayMetaStr = today.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
   if (meta) meta.textContent = 'As at ' + todayMetaStr;
 
-  // Filter to deals with valid PUSU deadlines (extensions column not n/a/empty)
+  // Filter to deals with PUSU deadlines (extensions column not n/a/empty).
+  // Split into:
+  //   valid - deadlines with a date
+  //   tbd   - deadlines the Panel has yet to set (Disclosure Table shows
+  //           "Rule 2.6 deadline: to be determined", typically under Rule 2.6(e)
+  //           after a rival firm offer has been announced)
   var valid = [];
+  var tbd = [];
   for (var i = 0; i < deals.length; i++) {
     var d = deals[i];
     var extRaw = (d.pusuExt == null ? '' : d.pusuExt + '').toLowerCase().trim();
     // Skip if extensions is n/a, n.a, n.a., or empty -> not a PUSU
     if (extRaw === '' || extRaw === 'n/a' || extRaw === 'n.a' || extRaw === 'n.a.' || extRaw === 'na') continue;
+    var extN = parseInt(extRaw, 10) || 0;
     var pd = parseDate(d.pusu);
-    if (!pd) continue;
+    if (!pd) {
+      // Any non-date text in the PUSU column ("to be determined", "TBD", "TBC"...)
+      if (isTbd(d.pusu)) tbd.push({ d: d, date: null, days: null, ext: extN, tbd: true });
+      continue;
+    }
     pd.setHours(0, 0, 0, 0);
     var days = Math.round((pd.getTime() - todayMs) / DAY);
     if (days < 0) continue; // skip past dates
-    valid.push({ d: d, date: pd, days: days, ext: parseInt(extRaw, 10) || 0 });
+    valid.push({ d: d, date: pd, days: days, ext: extN, tbd: false });
   }
   valid.sort(function(a, b) { return a.date - b.date; });
+  tbd.sort(function(a, b) { return a.d.t.localeCompare(b.d.t); });
 
   // KPIs
   var due7 = 0, extended = 0;
@@ -609,12 +637,16 @@ function renderPusu() {
     if (valid[k].days <= 7) due7++;
     if (valid[k].ext >= 2) extended++;
   }
+  for (var k2 = 0; k2 < tbd.length; k2++) { if (tbd[k2].ext >= 2) extended++; }
   kpis.innerHTML = ''
     + '<div class="pusu-kpi"><div class="pusu-kpi-v">' + valid.length + '</div><div class="pusu-kpi-l">Dated expiries</div></div>'
     + '<div class="pusu-kpi"><div class="pusu-kpi-v" style="color:' + (due7 > 0 ? 'var(--r)' : 'inherit') + '">' + due7 + '</div><div class="pusu-kpi-l">Due in 7 days</div></div>'
-    + '<div class="pusu-kpi"><div class="pusu-kpi-v" style="color:' + (extended > 0 ? 'var(--a)' : 'inherit') + '">' + extended + '</div><div class="pusu-kpi-l">Extended 2+ times</div></div>';
+    + '<div class="pusu-kpi"><div class="pusu-kpi-v" style="color:' + (extended > 0 ? 'var(--a)' : 'inherit') + '">' + extended + '</div><div class="pusu-kpi-l">Extended 2+ times</div></div>'
+    + (tbd.length > 0
+        ? '<div class="pusu-kpi"><div class="pusu-kpi-v" style="color:var(--t3)">' + tbd.length + '</div><div class="pusu-kpi-l">Panel to determine</div></div>'
+        : '');
 
-  if (valid.length === 0) {
+  if (valid.length === 0 && tbd.length === 0) {
     if (chip) chip.textContent = 'No upcoming deadlines';
     stage.style.height = '';
     stage.innerHTML = '<div class="pusu-empty">No upcoming PUSU deadlines.</div>';
@@ -622,12 +654,9 @@ function renderPusu() {
   }
 
   // Window: at least 30 days, extend if needed for furthest event (+3 day buffer)
-  var maxDays = valid[valid.length - 1].days;
+  var maxDays = valid.length ? valid[valid.length - 1].days : 0;
   var windowDays = Math.max(30, maxDays + 3);
-  if (chip) chip.textContent = windowDays <= 30 ? 'Next 30 days' : ('Next ' + windowDays + ' days');
-
-  // Position helper: today at 5%, end of window at 95%
-  function pct(days) { return 5 + (days / windowDays) * 90; }
+  if (chip) chip.textContent = (windowDays <= 30 ? 'Next 30 days' : ('Next ' + windowDays + ' days')) + (tbd.length ? ' + ' + tbd.length + ' TBD' : '');
 
   // Box width as % of stage (used for collision detection between flags)
   var stageWidth = stage.clientWidth || 1200;
@@ -635,7 +664,17 @@ function renderPusu() {
   if (BOX_WIDTH_PCT < 9) BOX_WIDTH_PCT = 9;
   if (BOX_WIDTH_PCT > 22) BOX_WIDTH_PCT = 22;
 
-  var FLIP_THRESHOLD = 100 - BOX_WIDTH_PCT - 1; // flip box to left if too far right
+  // If any deadlines are "to be determined", reserve a hatched bay at the
+  // right-hand end of the stage for them, and shorten the dated axis to suit.
+  var BAY_PCT = tbd.length ? (BOX_WIDTH_PCT + 4) : 0;
+  var BAY_LEFT = 97 - BAY_PCT;                    // bay runs BAY_LEFT% -> 97%
+  var AXIS_END = tbd.length ? (BAY_LEFT - 2.5) : 95; // dated axis runs 5% -> AXIS_END%
+  var TBD_X = BAY_LEFT + 2;                       // where TBD flags are pinned
+
+  // Position helper: today at 5%, end of window at AXIS_END
+  function pct(days) { return 5 + (days / windowDays) * (AXIS_END - 5); }
+
+  var FLIP_THRESHOLD = AXIS_END - BOX_WIDTH_PCT - 1; // flip box to left if too far right
 
   // ── Tier assignment with proper collision detection ─────────────────
   // Each event picks the lowest tier where its flag won't overlap any
@@ -646,9 +685,11 @@ function renderPusu() {
   var tierFor = [];
   var flipFor = [];
 
-  for (var j = 0; j < valid.length; j++) {
-    var pj = pct(valid[j].days);
-    var willFlip = (pj > FLIP_THRESHOLD);
+  // Dated events first (left to right), then TBD events pinned in the bay.
+  var all = valid.concat(tbd);
+  for (var j = 0; j < all.length; j++) {
+    var pj = all[j].tbd ? TBD_X : pct(all[j].days);
+    var willFlip = all[j].tbd ? false : (pj > FLIP_THRESHOLD);
     var leftEdge = willFlip ? (pj - BOX_WIDTH_PCT) : pj;
     var rightEdge = willFlip ? pj : (pj + BOX_WIDTH_PCT);
 
@@ -680,9 +721,9 @@ function renderPusu() {
   stage.style.height = newStageHeight + 'px';
 
   var eventsHtml = '';
-  for (var j2 = 0; j2 < valid.length; j2++) {
-    var v = valid[j2];
-    var p = pct(v.days);
+  for (var j2 = 0; j2 < all.length; j2++) {
+    var v = all[j2];
+    var p = v.tbd ? TBD_X : pct(v.days);
     var stem = BASE_STEM + tierFor[j2] * TIER_SPACING;
 
     // Status -> box variant
@@ -690,9 +731,11 @@ function renderPusu() {
     if (v.d.st === 'Indicative offer') boxClass += ' indicative';
     else if (v.d.st !== 'Formal offer') boxClass += ' no-price';
 
-    // Days -> dot variant
+    // Days -> dot variant (TBD deadlines get their own grey/dashed treatment)
     var dotClass = 'pusu-dot';
-    if (v.days <= 7) dotClass += ' hot';
+    var eventClass = 'pusu-event';
+    if (v.tbd) { dotClass += ' tbd'; boxClass += ' tbd'; eventClass += ' tbd'; }
+    else if (v.days <= 7) dotClass += ' hot';
     else if (v.days <= 14) dotClass += ' near';
 
     // Extensions -> ext pill variant
@@ -703,18 +746,27 @@ function renderPusu() {
     // Flip box to the left if too close to right edge
     if (flipFor[j2]) boxClass += ' flip';
 
-    var dateStr = v.date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
-    var daysLabel = v.days === 0 ? 'today' : (v.days === 1 ? '1d' : v.days + 'd');
+    var dateStr, daysLabel, whyHtml = '';
+    if (v.tbd) {
+      dateStr = 'Deadline to be determined';
+      daysLabel = 'TBD';
+      whyHtml = '<div class="pusu-box-why">Panel yet to set Rule 2.6 deadline</div>';
+    } else {
+      dateStr = v.date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
+      daysLabel = v.days === 0 ? 'today' : (v.days === 1 ? '1d' : v.days + 'd');
+      if (v.days === 0) dotClass += ' today';
+    }
     var extLabel = v.ext === 1 ? '1 extension' : (v.ext + ' extensions');
-    var bidder = (v.d.b || '').trim() || ' ';
+    var bidder = (v.d.b || '').trim() || ' ';
     var safeName = escHtml(v.d.t);
     var safeBidder = escHtml(bidder);
 
-    eventsHtml += '<div class="pusu-event" style="left:' + p.toFixed(2) + '%;--stem:' + stem + 'px">'
+    eventsHtml += '<div class="' + eventClass + '" style="left:' + p.toFixed(2) + '%;--stem:' + stem + 'px">'
       + '<div class="' + boxClass + '">'
       + '<div class="pusu-box-date">' + dateStr + '</div>'
       + '<div class="pusu-box-name">' + safeName + '</div>'
       + '<div class="pusu-box-meta">' + safeBidder + '</div>'
+      + whyHtml
       + '<span class="' + extClass + '">' + extLabel + '</span>'
       + '</div>'
       + '<div class="' + dotClass + '">' + daysLabel + '</div>'
@@ -732,12 +784,31 @@ function renderPusu() {
 
   var todayLabel = today.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
 
+  // "To be determined" bay: hatched zone to the right of the dated axis,
+  // with its own dashed axis segment and an italic tick label.
+  var bayHtml = '';
+  var axisStyle = '';
+  if (tbd.length) {
+    axisStyle = ' style="right:' + (100 - AXIS_END).toFixed(2) + '%"';
+    bayHtml = '<div class="pusu-tbd-bay" style="left:' + BAY_LEFT.toFixed(2) + '%;width:' + BAY_PCT.toFixed(2) + '%"><span>Deadline to be determined</span></div>'
+      + '<div class="pusu-axis-tbd" style="left:' + BAY_LEFT.toFixed(2) + '%;width:' + BAY_PCT.toFixed(2) + '%"></div>'
+      + '<div class="pusu-tick tbd" style="left:' + (BAY_LEFT + BAY_PCT / 2).toFixed(2) + '%"><span>Panel to determine</span></div>';
+  }
+
   stage.innerHTML = ''
-    + '<div class="pusu-axis-line"></div>'
+    + '<div class="pusu-axis-line"' + axisStyle + '></div>'
     + '<div class="pusu-axis-label">Disclosure Table timeline</div>'
     + '<div class="pusu-today" style="left:' + pct(0).toFixed(2) + '%"><span>Today ' + todayLabel + '</span></div>'
     + tickHtml
+    + bayHtml
     + eventsHtml;
+}
+
+// Non-date text in the PUSU column that means the Panel has yet to set a deadline
+function isTbd(s) {
+  var v = (s == null ? '' : s + '').toLowerCase().trim();
+  if (!v) return false;
+  return /determin|tbd|tbc|to be (set|confirmed|fixed|announced)|panel|pending|awaiting/.test(v);
 }
 
 function escHtml(s) {
@@ -788,7 +859,15 @@ function hfHtml(hf, c) {
   if (c.includes('↓') || c.includes('down')) cls = 'hf-down';
   return '<span class="hf-cell">' + hf + '%<span class="hf-change ' + cls + '">' + txt + '</span></span>';
 }
-function parseDate(s) { if (!s) return null; var p = s.split(/[\/\-]/); return new Date(p[2], p[1] - 1, p[0]); }
+// dd/mm/yyyy or dd-mm-yyyy -> Date; returns null for anything that isn't a date
+// (e.g. "to be determined"), so callers can treat it as undated.
+function parseDate(s) {
+  if (!s) return null;
+  var p = (s + '').trim().split(/[\/\-]/);
+  if (p.length !== 3 || !/^\d{1,2}$/.test(p[0]) || !/^\d{1,2}$/.test(p[1]) || !/^\d{2,4}$/.test(p[2])) return null;
+  var d = new Date(+p[2], p[1] - 1, +p[0]);
+  return isNaN(d.getTime()) ? null : d;
+}
 
 var cs = { col: 'value', asc: false };
 
@@ -851,7 +930,7 @@ function render(data) {
       + '<td class="offer-price">' + d.offer + '</td>'
       + '<td class="vc">' + fmtVal(d.v) + '</td>'
       + '<td>' + premHtml(d.prem) + '</td>'
-      + '<td class="dt">' + (d.pusu || '—') + '</td>'
+      + '<td class="dt">' + (!d.pusu ? '—' : (parseDate(d.pusu) ? d.pusu : '<span class="prem-pill prem-na" title="Rule 2.6 deadline yet to be set by the Takeover Panel">' + escHtml(d.pusu) + '</span>')) + '</td>'
       + '<td class="comment-cell col-comments">' + d.com + '</td>'
       + '</tr>';
   }
