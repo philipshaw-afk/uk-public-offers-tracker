@@ -619,8 +619,11 @@ function renderPusu() {
     var extN = parseInt(extRaw, 10) || 0;
     var pd = parseDate(d.pusu);
     if (!pd) {
-      // Any non-date text in the PUSU column ("to be determined", "TBD", "TBC"...)
-      if (isTbd(d.pusu)) tbd.push({ d: d, date: null, days: null, ext: extN, tbd: true });
+      // A numeric extensions count means this IS a PUSU situation, so a blank or
+      // non-date PUSU cell ("", "to be determined", "TBD"...) means the Panel has
+      // yet to set the deadline. (The JSON export blanks non-date cells, so we
+      // cannot rely on the text surviving.)
+      tbd.push({ d: d, date: null, days: null, ext: extN, tbd: true });
       continue;
     }
     pd.setHours(0, 0, 0, 0);
@@ -804,6 +807,18 @@ function renderPusu() {
     + eventsHtml;
 }
 
+// Table cell for the PUSU column: date as-is; a PUSU row (numeric extensions)
+// with no date shows a "to be determined" pill; anything else shows a dash.
+function pusuCellHtml(d) {
+  if (parseDate(d.pusu)) return d.pusu;
+  var extRaw = (d.pusuExt == null ? '' : d.pusuExt + '').toLowerCase().trim();
+  var isPusu = extRaw !== '' && ['n/a', 'n.a', 'n.a.', 'na'].indexOf(extRaw) === -1;
+  if (isPusu || isTbd(d.pusu)) {
+    return '<span class="prem-pill prem-na" title="Rule 2.6 deadline yet to be set by the Takeover Panel">' + (d.pusu ? escHtml(d.pusu) : 'To be determined') + '</span>';
+  }
+  return d.pusu ? escHtml(d.pusu) : '\u2014';
+}
+
 // Non-date text in the PUSU column that means the Panel has yet to set a deadline
 function isTbd(s) {
   var v = (s == null ? '' : s + '').toLowerCase().trim();
@@ -930,7 +945,7 @@ function render(data) {
       + '<td class="offer-price">' + d.offer + '</td>'
       + '<td class="vc">' + fmtVal(d.v) + '</td>'
       + '<td>' + premHtml(d.prem) + '</td>'
-      + '<td class="dt">' + (!d.pusu ? '—' : (parseDate(d.pusu) ? d.pusu : '<span class="prem-pill prem-na" title="Rule 2.6 deadline yet to be set by the Takeover Panel">' + escHtml(d.pusu) + '</span>')) + '</td>'
+      + '<td class="dt">' + pusuCellHtml(d) + '</td>'
       + '<td class="comment-cell col-comments">' + d.com + '</td>'
       + '</tr>';
   }
