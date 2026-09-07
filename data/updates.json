@@ -1,20 +1,26 @@
 [
   {
-    "n": "CyanConnode Holdings plc",
+    "n": "Spire Healthcare Group plc",
     "s": "green",
-    "text": "The Scheme is approved by the General and Court meetings and is expected to become effective on 14 September 2026",
-    "date": "3 September 2026"
+    "text": "Recommended cash offer (scheme) of 250p per share with an unlisted share alternative",
+    "date": "7 September 2026"
+  },
+  {
+    "n": "Alternative Income REIT plc",
+    "s": "green",
+    "text": "Acceptance period extended to 11 September 2026",
+    "date": "4 September 2026"
   },
   {
     "n": "Spire Healthcare Group plc",
     "s": "amber",
-    "text": "PUSU deadline extended to 4 September 2026",
-    "date": "3 September 2026"
+    "text": "PUSU deadline extended to 5 September 2026",
+    "date": "4 September 2026"
   },
   {
-    "n": "Rotork plc",
-    "s": "green",
-    "text": "The Scheme is approved by the General and Court meetings and is expected to become effective during the first half of 2027",
-    "date": "3 September 2026"
+    "n": "Deletion: DNO ASA confirms that it does not intend to make an offer to acquire Genel",
+    "s": "amber",
+    "text": "Deletion: DNO ASA",
+    "date": "4 September 2026"
   }
 ]
