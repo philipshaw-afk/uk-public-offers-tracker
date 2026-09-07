@@ -62,17 +62,17 @@
   {
     "t": "SPIRE HEALTHCARE GROUP PLC",
     "sec": "Healthcare",
-    "st": "Indicative offer",
+    "st": "Formal offer",
     "b": "TOSCAFUND ASSET MANAGEMENT",
     "start": "18-09-2025",
     "offer": "250p",
     "v": 1034,
     "prem": 20,
-    "pusu": "04-09-2026",
-    "pusuExt": "6",
+    "pusu": "",
+    "pusuExt": "n/a",
     "hf": 29.6,
     "hfC": "▲ 0.23pp",
-    "com": "Indicative offer by Toscafund (which already owns 24.36%) at 250p per share, with unlisted share alternative, which Board is \"minded to recommend\". Approaches had been previously received from Bridgepoint and Triton, following a strategic review but talks ended."
+    "com": "Recommended cash offer (scheme) by Toscafund (which already owns 24.36%) of 250p per share with an unlisted share alternative. Approaches had been previously received from Bridgepoint and Triton, following a strategic review but talks ended."
   },
   {
     "t": "GAMMA COMMUNICATIONS PLC",
@@ -233,7 +233,7 @@
     "offer": "71.4p",
     "v": 57,
     "prem": 2,
-    "pusu": "04-09-2026",
+    "pusu": "11-09-2026",
     "pusuExt": "n/a",
     "hf": 2.0,
     "hfC": "no change",
@@ -463,21 +463,6 @@
     "hf": 28.14,
     "hfC": "no change",
     "com": "Unsolicited cash offer of 172.5p per share for the remaining 70.04% of the shares in Harworth not held by Peel Holdings, subject to a minimum acceptance threshold of 50%. The Harworth Board rejects the offer and believes it fundamentally undervalues Harworth and its near and longer-term prospects."
-  },
-  {
-    "t": "GENEL ENERGY PLC",
-    "sec": "Oil & Gas",
-    "st": "Indicative offer",
-    "b": "DNO ASA",
-    "start": "07-08-2026",
-    "offer": "69p",
-    "v": 190,
-    "prem": 37,
-    "pusu": "04-09-2026",
-    "pusuExt": "0",
-    "hf": 0.0,
-    "hfC": "no change",
-    "com": "Indicative cash offer of 69p per share with a mixed cash and new DNO shares alternative."
   },
   {
     "t": "TIME FINANCE PLC",
