@@ -1,26 +1,14 @@
 [
   {
-    "n": "Spire Healthcare Group plc",
-    "s": "green",
-    "text": "Recommended cash offer (scheme) of 250p per share with an unlisted share alternative",
-    "date": "7 September 2026"
-  },
-  {
-    "n": "Alternative Income REIT plc",
-    "s": "green",
-    "text": "Acceptance period extended to 11 September 2026",
-    "date": "4 September 2026"
-  },
-  {
-    "n": "Spire Healthcare Group plc",
+    "n": "80 Mile plc",
     "s": "amber",
-    "text": "PUSU deadline extended to 5 September 2026",
-    "date": "4 September 2026"
+    "text": "New addition: Indicative all-share offer of 0.01108 new Greenland Energy share for each 80 Mile share. PUSU deadline is 6 October 2026",
+    "date": "8 September 2026"
   },
   {
-    "n": "Genel Energy plc",
-    "s": "amber",
-    "text": "Deletion: DNO ASA confirms that it does not intend to make an offer to acquire Genel",
-    "date": "4 September 2026"
+    "n": "Checkit plc",
+    "s": "red",
+    "text": "Checkit has received several non-binding indicative proposals and the Board  is seeking to bring the FSP to a conclusion over the coming weeks",
+    "date": "8 September 2026"
   }
 ]
