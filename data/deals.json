@@ -523,5 +523,20 @@
     "hf": 0.0,
     "hfC": "no change",
     "com": "Strategic review & formal sale process. The company is not in discussions with, and has not received an approach from, any potential offeror."
+  },
+  {
+    "t": "80 MILE PLC",
+    "sec": "Mining or Metals",
+    "st": "Indicative offer",
+    "b": "GREENLAND ENERGY COMPANY",
+    "start": "08-09-2026",
+    "offer": "1.1p",
+    "v": 61,
+    "prem": 46,
+    "pusu": "06-10-2026",
+    "pusuExt": "n/a",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Indicative all-share offer of 0.01108 new Greenland Energy share for each 80 Mile share."
   }
 ]
