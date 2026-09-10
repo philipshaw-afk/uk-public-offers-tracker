@@ -68,10 +68,10 @@
     "offer": "250p",
     "v": 1034,
     "prem": 20,
-    "pusu": "",
+    "pusu": "31-03-2027",
     "pusuExt": "n/a",
-    "hf": 17.52,
-    "hfC": "▼ 13.16pp",
+    "hf": 36.31,
+    "hfC": "no change",
     "com": "Recommended cash offer (scheme) by Toscafund (which already owns 24.36%) of 250p per share with an unlisted share alternative. Approaches had been previously received from Bridgepoint and Triton, following a strategic review but talks ended."
   },
   {
@@ -531,12 +531,27 @@
     "b": "CIRCLE8 GROUP INC",
     "start": "09-09-2026",
     "offer": "n.a",
-    "v": 333,
+    "v": 336,
     "prem": null,
     "pusu": "07-10-2026",
     "pusuExt": "0",
     "hf": 0.0,
     "hfC": "no change",
     "com": "Unsolicited preliminary approach regarding a possible offer all shares in SThree."
+  },
+  {
+    "t": "ELECO PLC",
+    "sec": "I.T.",
+    "st": "Formal offer",
+    "b": "ACCEL-KKR CAPITAL PARTNERS",
+    "start": "10-09-2026",
+    "offer": "235p",
+    "v": 198,
+    "prem": 74,
+    "pusu": "10-03-2027",
+    "pusuExt": "n/a",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Recommended all cash offer (scheme) of 235p per share by Avocet Bidco Limited, which is owned by Accel-KKR Capital Partners."
   }
 ]
