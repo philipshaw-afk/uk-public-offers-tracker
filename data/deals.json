@@ -38,7 +38,7 @@
     "offer": "1310p",
     "v": 8054,
     "prem": 60,
-    "pusu": "31-12-2026",
+    "pusu": "01-10-2026",
     "pusuExt": "n/a",
     "hf": 37.41,
     "hfC": "▲ 0.1pp",
@@ -162,7 +162,7 @@
     "pusuExt": "n/a",
     "hf": 2.46,
     "hfC": "no change",
-    "com": "Recommended cash offer (scheme) of 10.17p per share. The offer follows a proposal of 10.44p per share announced on 3 February 2026"
+    "com": "Recommended cash offer (scheme) of 10.17p per share. The offer follows a proposal of 10.44p per share announced on 3 February 2026."
   },
   {
     "t": "CHECKIT PLC",
@@ -252,7 +252,7 @@
     "pusuExt": "n/a",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Recommended all share takeover offer. On 29 July 2026, Reabold announced that the acceptance period will run from 19 August 2026 to 25 September 2026."
+    "com": "Recommended all share takeover offer (subsequently rejected on 11 September 2026). On 29 July 2026, Reabold announced that the acceptance period will run from 19 August 2026 to 25 September 2026. On 24 August 2026, at the Requisitioned General Meeting, a new Board of Directors was appointed and on 11 September 2026, the new Board rejected the offer on the grounds that it was opportunistic and significantly undervalued Union Jack’s existing project portfolio."
   },
   {
     "t": "RAMSDENS HOLDINGS PLC",
@@ -305,14 +305,14 @@
     "st": "Formal offer",
     "b": "BRAVE BISON GROUP PLC",
     "start": "10-07-2026",
-    "offer": "321.7p",
-    "v": 40,
-    "prem": -6,
+    "offer": "340.9p",
+    "v": 43,
+    "prem": 11,
     "pusu": "26-10-2026",
     "pusuExt": "n/a",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "On 10 July 2026, Brave Bison Group plc announced an unsolicited indicative proposal for the acquisition of the remaining 72% of System1 for 68p per share in cash and 2.7553 new Brave Bison shares. On 30 July 2026, Brave Bison announced a formal offer of 135p per share in cash and 2.04 Brave Bison shares and an alternative offer of 3.36 new Brave Bison shares for each System1 share. Acceptance threshold set at 50%. Both offers were rejected by the System1 Board."
+    "com": "On 10 July 2026, Brave Bison Group plc announced an unsolicited indicative proposal for the acquisition of the remaining 72% of System1 for 68p per share in cash and 2.7553 new Brave Bison shares. On 30 July 2026, Brave Bison announced a formal offer of 135p per share in cash and 2.04 Brave Bison shares and an alternative offer of 3.36 new Brave Bison shares for each System1 share. Acceptance threshold set at 50%. Both offers were rejected by the System1 Board. On 14 September 2026, Brave Bison filed an increased offer of 135 pence in cash and 2.394 new Brave Bison shares."
   },
   {
     "t": "NEXTENERGY SOLAR FUND LIMITED",
@@ -538,5 +538,20 @@
     "hf": 1.14,
     "hfC": "▲ 1.14pp",
     "com": "Recommended all cash offer (scheme) of 235p per share by Avocet Bidco Limited, which is owned by Accel-KKR Capital Partners."
+  },
+  {
+    "t": "TRIBAL GROUP PLC",
+    "sec": "",
+    "st": "",
+    "b": "SILVERTREE EQUITY PARTNERS LLP",
+    "start": "",
+    "offer": "n.a",
+    "v": 0,
+    "prem": null,
+    "pusu": "",
+    "pusuExt": "",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Unsolicited indicative offer of ,which was unanimously and unequivocally rejected by the Tribal Board."
   }
 ]
