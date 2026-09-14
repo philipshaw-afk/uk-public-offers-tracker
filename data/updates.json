@@ -1,5 +1,29 @@
 [
   {
+    "n": "Cyanconnode Holdings plc",
+    "s": "green",
+    "text": "Completion expected on 14 September 2026",
+    "date": "14 September 2026"
+  },
+  {
+    "n": "System1 Group plc",
+    "s": "green",
+    "text": "Increased offer by Brave Bison of 135 pence in cash and 2.394 new Brave Bison shares",
+    "date": "14 September 2026"
+  },
+  {
+    "n": "Beazley plc",
+    "s": "green",
+    "text": "The Court Hearing to be held on 22 September 2026 with an expected effective date of 1 October 2026",
+    "date": "14 September 2026"
+  },
+  {
+    "n": "Union Jack Oil plc",
+    "s": "green",
+    "text": "Publication of rejection circular by the newly appointed Board of Union Jack",
+    "date": "11 September 2026"
+  },
+  {
     "n": "Gamma Communications plc",
     "s": "red",
     "text": "Waterland confirms that it is no longer acting in concert with the Giacom Group and is considering its options",
@@ -16,17 +40,5 @@
     "s": "red",
     "text": "The SThree Board unanimously and unequivocally rejects Circle8's proposal",
     "date": "11 September 2026"
-  },
-  {
-    "n": "Irish Continental Group plc (on European tracker)",
-    "s": "green",
-    "text": "The scheme is approved by ICG's shareholders",
-    "date": "10 September 2026"
-  },
-  {
-    "n": "Picton Property Income Limited",
-    "s": "green",
-    "text": "Deletion: Scheme of arrangement becomes effective",
-    "date": "10 September 2026"
   }
 ]
