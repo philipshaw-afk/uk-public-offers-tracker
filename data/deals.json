@@ -541,17 +541,17 @@
   },
   {
     "t": "TRIBAL GROUP PLC",
-    "sec": "",
-    "st": "",
+    "sec": "I.T.",
+    "st": "Indicative offer",
     "b": "SILVERTREE EQUITY PARTNERS LLP",
-    "start": "",
-    "offer": "n.a",
-    "v": 0,
-    "prem": null,
-    "pusu": "",
-    "pusuExt": "",
+    "start": "11-09-2026",
+    "offer": "95p",
+    "v": 203,
+    "prem": 50,
+    "pusu": "09-10-2026",
+    "pusuExt": "0",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Unsolicited indicative offer of ,which was unanimously and unequivocally rejected by the Tribal Board."
+    "com": "Unsolicited indicative cash offer of 95p per share by SilverTree Equity Partners LLP received on 31 August 2026, which was unanimously and unequivocally rejected by the Tribal Board."
   }
 ]
