@@ -836,20 +836,22 @@ function escHtml(s) {
   });
 }
 
-// Update timestamp -> 24-hour 'HH:MM' (UK style, e.g. '7:00 AM' -> '07:00').
+// Update timestamp -> 12-hour 'H:MM AM/PM' (as in the sheet, e.g. '7:00 AM').
 // Accepts '7:00 AM', '07:00', '07:00:00', '14:30', or an Excel day fraction (0.2917).
 function formatTime(s) {
   if (s == null || s === '') return '';
   var v = (s + '').trim();
+  var h, mi;
   if (/^0?\.\d+$/.test(v)) {
     var mins = Math.round(parseFloat(v) * 1440);
-    return ('0' + Math.floor(mins / 60) % 24).slice(-2) + ':' + ('0' + mins % 60).slice(-2);
+    h = Math.floor(mins / 60) % 24; mi = ('0' + mins % 60).slice(-2);
+  } else {
+    var m = v.match(/(\d{1,2})[:.](\d{2})(?::\d{2})?\s*([ap])?\.?\s*m?\.?/i);
+    if (!m) return v;
+    h = parseInt(m[1], 10); mi = m[2];
+    if (m[3]) { var ap = m[3].toLowerCase(); if (ap === 'p' && h < 12) h += 12; if (ap === 'a' && h === 12) h = 0; }
   }
-  var m = v.match(/(\d{1,2})[:.](\d{2})(?::\d{2})?\s*([ap])?\.?\s*m?\.?/i);
-  if (!m) return v;
-  var h = parseInt(m[1], 10), mi = m[2];
-  if (m[3]) { var ap = m[3].toLowerCase(); if (ap === 'p' && h < 12) h += 12; if (ap === 'a' && h === 12) h = 0; }
-  return ('0' + h).slice(-2) + ':' + mi;
+  return ((h % 12) || 12) + ':' + mi + ' ' + (h < 12 ? 'AM' : 'PM');
 }
 
 function renderUpdates(updates) {
