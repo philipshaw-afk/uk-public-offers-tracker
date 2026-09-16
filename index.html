@@ -534,14 +534,18 @@ async function loadFromSheets() {
   var updatesHeader = updatesRows[0];
   var parsedUpdates = updatesRows.slice(1).map(function(row) {
     var get = function(name) {
-      var idx = updatesHeader.findIndex(function(h) { return h.toLowerCase().includes(name.toLowerCase()); });
+      // Exact header match first (so 'Date' can't hit 'Update text'), then partial
+      var n = name.toLowerCase();
+      var idx = updatesHeader.findIndex(function(h) { return h.toLowerCase().trim() === n; });
+      if (idx < 0) idx = updatesHeader.findIndex(function(h) { return h.toLowerCase().includes(n); });
       return idx >= 0 ? (row[idx] || '') : '';
     };
     return {
       n: get('Target').trim(),
       s: get('Colour').trim().toLowerCase() || 'red',
       text: get('Update').trim(),
-      date: get('Date').trim()
+      date: get('Date').trim(),
+      time: get('Time').trim()
     };
   }).filter(function(u) { return u.n !== '' && u.text !== ''; });
 
@@ -832,6 +836,22 @@ function escHtml(s) {
   });
 }
 
+// Update timestamp -> 24-hour 'HH:MM' (UK style, e.g. '7:00 AM' -> '07:00').
+// Accepts '7:00 AM', '07:00', '07:00:00', '14:30', or an Excel day fraction (0.2917).
+function formatTime(s) {
+  if (s == null || s === '') return '';
+  var v = (s + '').trim();
+  if (/^0?\.\d+$/.test(v)) {
+    var mins = Math.round(parseFloat(v) * 1440);
+    return ('0' + Math.floor(mins / 60) % 24).slice(-2) + ':' + ('0' + mins % 60).slice(-2);
+  }
+  var m = v.match(/(\d{1,2})[:.](\d{2})(?::\d{2})?\s*([ap])?\.?\s*m?\.?/i);
+  if (!m) return v;
+  var h = parseInt(m[1], 10), mi = m[2];
+  if (m[3]) { var ap = m[3].toLowerCase(); if (ap === 'p' && h < 12) h += 12; if (ap === 'a' && h === 12) h = 0; }
+  return ('0' + h).slice(-2) + ':' + mi;
+}
+
 function renderUpdates(updates) {
   var el = document.getElementById('updates-list');
   if (updates.length === 0) {
@@ -839,7 +859,9 @@ function renderUpdates(updates) {
     return;
   }
   el.innerHTML = updates.map(function(u) {
-    var dateHtml = u.date ? '<span class="uc-date">' + u.date + '</span>' : '';
+    var t = formatTime(u.time);
+    var stamp = [u.date || '', t].filter(Boolean).join(' \u00B7 ');
+    var dateHtml = stamp ? '<span class="uc-date">' + escHtml(stamp) + '</span>' : '';
     return '<div class="update-card"><div class="uc-status uc-status-' + u.s + '"></div><div class="uc-body">' + dateHtml + '<span class="uc-name">' + u.n + '</span><span class="uc-text">' + u.text + '</span></div></div>';
   }).join('');
 }
