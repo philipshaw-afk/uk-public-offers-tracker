@@ -538,5 +538,20 @@
     "hf": 1.03,
     "hfC": "▲ 1.03pp",
     "com": "Unsolicited indicative cash offer of 95p per share by SilverTree Equity Partners LLP received on 31 August 2026, which was unanimously and unequivocally rejected by the Tribal Board."
+  },
+  {
+    "t": "DIANOMI PLC",
+    "sec": "Support Services",
+    "st": "Formal offer",
+    "b": "TABOOLA.COM LTD",
+    "start": "18-09-2026",
+    "offer": "64p",
+    "v": 19,
+    "prem": 68,
+    "pusu": "31-12-2026",
+    "pusuExt": "n/a",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Recommended cash offer (scheme) of up to 88p per share, including a contingent consideration unit of 24p per share in the form of a loan note. Taboola.com had received irrevocable undertakings corresponding to 75.3% of Dianomi's shares. Completion expected before the end of 2026."
   }
 ]
