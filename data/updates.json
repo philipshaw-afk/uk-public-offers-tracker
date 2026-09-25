@@ -1,23 +1,30 @@
 [
   {
+    "n": "Harworth Group plc",
+    "s": "green",
+    "text": "Peel Holdings makes a recommended increased best and final cash offer of 187p per share",
+    "date": "25 September 2026",
+    "time": "7:00 AM"
+  },
+  {
+    "n": "Gamma Communications plc",
+    "s": "green",
+    "text": "Publication of Scheme Document by Epiris. Court and General meetings will be held on 20 October 2026",
+    "date": "25 September 2026",
+    "time": "7:00 AM"
+  },
+  {
+    "n": "Capricorn Energy plc",
+    "s": "green",
+    "text": "Genel makes an increased recommended offer of US$4.75 in cash plus a special dividend of US$0.99 per share (in aggregate 434p per share). The scheme remains subject to approval by the Egyptian Government",
+    "date": "25 September 2026",
+    "time": "7:00 AM"
+  },
+  {
     "n": "Gamma Communications plc",
     "s": "green",
     "text": "New HF Entrant: Berry Street Capital crosses 1% (1.16%, all derivatives)",
     "date": "24 September 2026",
     "time": "2:57 PM"
-  },
-  {
-    "n": "Ashtead Technology Holdings plc",
-    "s": "amber",
-    "text": "New addition: Unsolicited non-binding indicative proposal of 615p per share from Ember Infrastructure Management LP. The Ashtead Board is considering the proposal with its advisers and is providing Ember with preliminary due diligence information",
-    "date": "23 September 2026",
-    "time": "4:07 PM"
-  },
-  {
-    "n": "Pollen Street Group Limited",
-    "s": "red",
-    "text": "New addition: The Board confirms it has commenced an assessment of the strategic options. Preliminary discussions with a limited number of third parties",
-    "date": "23 September 2026",
-    "time": "9:39 AM"
   }
 ]
