@@ -240,6 +240,9 @@ th.col-comments,td.col-comments{min-width:450px}
 .kd-sub{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px;padding:10px 14px;background:var(--s);border:1px solid var(--b);border-radius:8px;box-shadow:var(--ss)}
 .kd-sub p{font-size:12.5px;color:var(--t2);flex:1;min-width:220px}
 .kd-sub .sub-btn{display:inline-flex;align-items:center;height:30px}
+.kd-link{height:30px;min-width:250px;flex:0 1 290px;padding:0 10px;border:1.5px solid var(--b);border-radius:6px;background:var(--bg);color:var(--t);font:inherit;font-size:12px;font-weight:600}
+.kd-link:focus{outline:2px solid var(--a);outline-offset:1px}
+.kd-sub .sub-btn{border:0;font-family:inherit}
 .kd-copied{font-size:11.5px;color:var(--g);font-weight:700}
 @media(max-width:768px){.kd-grid{display:none}.kd-list{display:block}.kd-card-hd,.kd-footer{align-items:flex-start;flex-direction:column}}
 
@@ -421,10 +424,10 @@ th.col-comments,td.col-comments{min-width:450px}
       <span class="pusu-chip" id="kd-window">Next 30 days</span>
     </div>
     <div class="kd-sub">
-      <p>Add these dates to your own calendar. Subscribing keeps them up to date as dates are announced or moved.</p>
-      <a class="sub-btn" id="kd-sub-desktop" href="#">Subscribe in Outlook</a>
-      <a class="kd-btn" id="kd-sub-web" href="#" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;text-decoration:none">Outlook on the web</a>
-      <button type="button" class="kd-btn" id="kd-sub-copy">Copy calendar link</button>
+      <p>Add these dates to your own calendar. In Outlook, go to <b>Add calendar &#x2192; Subscribe from web</b> and paste this link. Subscribed dates stay up to date as they are announced or moved.</p>
+      <input type="text" class="kd-link" id="kd-link" readonly aria-label="Calendar subscription link">
+      <button type="button" class="sub-btn" id="kd-sub-copy">Copy link</button>
+      <a class="kd-btn" id="kd-sub-web" href="#" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;text-decoration:none">Open in Outlook on the web</a>
       <span class="kd-copied" id="kd-copied" hidden>Link copied</span>
     </div>
     <div class="kd-card">
@@ -1235,20 +1238,23 @@ function renderKeyDates() {
   body.innerHTML = html;
 }
 
-// Subscription links for the calendar.ics feed published next to this page
+// Subscription link for the calendar.ics feed
+var CAL_FEED_URL = 'https://arbinsight.co.uk/calendar.ics';
 (function() {
-  var feed;
-  try { feed = new URL('calendar.ics', location.href).href; } catch (e) { return; }
   var name = 'UK Takeovers - Key Dates (M&A Monitor)';
-  var desk = document.getElementById('kd-sub-desktop');
+  var box = document.getElementById('kd-link');
   var web = document.getElementById('kd-sub-web');
   var copy = document.getElementById('kd-sub-copy');
-  if (desk) desk.href = feed.replace(/^https?:/, 'webcal:');
-  if (web) web.href = 'https://outlook.office.com/calendar/0/addfromweb?url=' + encodeURIComponent(feed) + '&name=' + encodeURIComponent(name);
+  if (box) {
+    box.value = CAL_FEED_URL;
+    box.addEventListener('focus', function() { box.select(); });
+  }
+  if (web) web.href = 'https://outlook.office.com/calendar/0/addfromweb?url=' + encodeURIComponent(CAL_FEED_URL) + '&name=' + encodeURIComponent(name);
   if (copy) copy.addEventListener('click', function() {
     var done = function() { var c = document.getElementById('kd-copied'); c.hidden = false; setTimeout(function() { c.hidden = true; }, 2500); };
-    if (navigator.clipboard) navigator.clipboard.writeText(feed).then(done, function() { prompt('Copy this calendar link:', feed); });
-    else prompt('Copy this calendar link:', feed);
+    var fallback = function() { box.focus(); box.select(); try { document.execCommand('copy'); done(); } catch (e) {} };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(CAL_FEED_URL).then(done, fallback);
+    else fallback();
   });
 })();
 
