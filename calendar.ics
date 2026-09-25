@@ -1,0 +1,313 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//M&A Monitor//UK Tracker Key Dates//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UK Takeovers - Key Dates (M&A Monitor)
+X-WR-TIMEZONE:Europe/London
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:sanc-schroders-plc-nuveen-llc@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:Sanction hearing: Schroders
+DESCRIPTION:Sanction hearing - SCHRODERS PLC / NUVEEN LLC\nSource: M&A Moni
+ tor UK Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Sanction hearing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eff-schroders-plc-nuveen-llc@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Effective date (expected): Schroders
+DESCRIPTION:Effective date (expected) - SCHRODERS PLC / NUVEEN LLC\nSource:
+  M&A Monitor UK Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Effective date
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-intertek-group-plc-eqt@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260806
+DTEND;VALUE=DATE:20260807
+SUMMARY:Shareholder meetings: Intertek Group
+DESCRIPTION:Shareholder meetings - INTERTEK GROUP PLC / EQT\nSource: M&A Mo
+ nitor UK Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sanc-beazley-plc-zurich-insurance-group-ltd@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:Sanction hearing: Beazley
+DESCRIPTION:Sanction hearing - BEAZLEY PLC / ZURICH INSURANCE GROUP LTD\nSo
+ urce: M&A Monitor UK Tracker. Dates can change\; check the latest announce
+ ment.
+CATEGORIES:Sanction hearing
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eff-beazley-plc-zurich-insurance-group-ltd@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Effective date: Beazley
+DESCRIPTION:Effective date - BEAZLEY PLC / ZURICH INSURANCE GROUP LTD\nSour
+ ce: M&A Monitor UK Tracker. Dates can change\; check the latest announceme
+ nt.
+CATEGORIES:Effective date
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-capricorn-energy-plc-genel-energy-plc@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260819
+SUMMARY:Shareholder meetings: Capricorn Energy
+DESCRIPTION:Shareholder meetings - CAPRICORN ENERGY PLC / GENEL ENERGY PLC\
+ nSource: M&A Monitor UK Tracker. Dates can change\; check the latest annou
+ ncement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-tate-lyle-plc-ingredion-inc@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260728
+DTEND;VALUE=DATE:20260729
+SUMMARY:Shareholder meetings: Tate & Lyle
+DESCRIPTION:Shareholder meetings - TATE & LYLE PLC / INGREDION INC\nSource:
+  M&A Monitor UK Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-advanced-medical-solutions-group-plc-h-b-fuller-company@uk-tracker
+ .ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260812
+DTEND;VALUE=DATE:20260813
+SUMMARY:Shareholder meetings: Advanced Medical Solutions Group
+DESCRIPTION:Shareholder meetings - ADVANCED MEDICAL SOLUTIONS GROUP PLC / H
+ .B. FULLER COMPANY\nSource: M&A Monitor UK Tracker. Dates can change\; che
+ ck the latest announcement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:unc-union-jack-oil-plc-reabold-resources-plc@uk-tracker.ma-monitor.co.u
+ k
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Unconditional / Day 60: Union Jack Oil
+DESCRIPTION:Unconditional / Day 60 - UNION JACK OIL PLC / REABOLD RESOURCES
+  PLC\nSource: M&A Monitor UK Tracker. Dates can change\; check the latest 
+ announcement.
+CATEGORIES:Unconditional / Day 60
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-ramsdens-holdings-plc-firstcash-holdings-inc@uk-tracker.ma-monitor
+ .co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
+SUMMARY:Shareholder meetings: Ramsdens Holdings
+DESCRIPTION:Shareholder meetings - RAMSDENS HOLDINGS PLC / FIRSTCASH HOLDIN
+ GS INC\nSource: M&A Monitor UK Tracker. Dates can change\; check the lates
+ t announcement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-pharos-energy-plc-ratio-petroleum-energy-lp@uk-tracker.ma-monitor.
+ co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+SUMMARY:Shareholder meetings: Pharos Energy
+DESCRIPTION:Shareholder meetings - PHAROS ENERGY PLC / RATIO PETROLEUM ENER
+ GY LP\nSource: M&A Monitor UK Tracker. Dates can change\; check the latest
+  announcement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-segro-plc-prologis-inc@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:Shareholder meetings: SEGRO
+DESCRIPTION:Shareholder meetings - SEGRO PLC / PROLOGIS INC\nSource: M&A Mo
+ nitor UK Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:unc-system1-group-plc-brave-bison-group-plc@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Unconditional / Day 60: System1 Group
+DESCRIPTION:Unconditional / Day 60 - SYSTEM1 GROUP PLC / BRAVE BISON GROUP 
+ PLC\nSource: M&A Monitor UK Tracker. Dates can change\; check the latest a
+ nnouncement.
+CATEGORIES:Unconditional / Day 60
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-gooch-housego-plc-arlington-capital-partners-vii-lp@uk-tracker.ma-
+ monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260827
+SUMMARY:Shareholder meetings: Gooch & Housego
+DESCRIPTION:Shareholder meetings - GOOCH & HOUSEGO PLC / ARLINGTON CAPITAL 
+ PARTNERS VII LP\nSource: M&A Monitor UK Tracker. Dates can change\; check 
+ the latest announcement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-rotork-plc-abb-ltd@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260904
+SUMMARY:Shareholder meetings: Rotork
+DESCRIPTION:Shareholder meetings - ROTORK PLC / ABB LTD\nSource: M&A Monito
+ r UK Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-mitie-group-plc-clayton-dubilier-rice-llc@uk-tracker.ma-monitor.co
+ .uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:Shareholder meetings: Mitie Group
+DESCRIPTION:Shareholder meetings - MITIE GROUP PLC / CLAYTON\, DUBILIER & R
+ ICE LLC\nSource: M&A Monitor UK Tracker. Dates can change\; check the late
+ st announcement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-pinewood-technologies-group-plc-ridgeview-partners-llc@uk-tracker.
+ ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Shareholder meetings: Pinewood Technologies Group
+DESCRIPTION:Shareholder meetings - PINEWOOD TECHNOLOGIES GROUP PLC / RIDGEV
+ IEW PARTNERS LLC\nSource: M&A Monitor UK Tracker. Dates can change\; check
+  the latest announcement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eff-pinewood-technologies-group-plc-ridgeview-partners-llc@uk-tracker.m
+ a-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Effective date (expected): Pinewood Technologies Group
+DESCRIPTION:Effective date (expected) - PINEWOOD TECHNOLOGIES GROUP PLC / R
+ IDGEVIEW PARTNERS LLC\nSource: M&A Monitor UK Tracker. Dates can change\; 
+ check the latest announcement.
+CATEGORIES:Effective date
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:unc-harworth-group-plc-peel-holdings-group-limited@uk-tracker.ma-monito
+ r.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Unconditional / Day 60: Harworth Group
+DESCRIPTION:Unconditional / Day 60 - HARWORTH GROUP PLC / PEEL HOLDINGS GRO
+ UP LIMITED\nSource: M&A Monitor UK Tracker. Dates can change\; check the l
+ atest announcement.
+CATEGORIES:Unconditional / Day 60
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-time-finance-plc-bentley-park-uk-limited@uk-tracker.ma-monitor.co.
+ uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Shareholder meetings: Time Finance
+DESCRIPTION:Shareholder meetings - TIME FINANCE PLC / BENTLEY PARK (UK) LIM
+ ITED\nSource: M&A Monitor UK Tracker. Dates can change\; check the latest 
+ announcement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:meet-capricorn-energy-plc-dno-asa@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Shareholder meetings: Capricorn Energy
+DESCRIPTION:Shareholder meetings - CAPRICORN ENERGY PLC / DNO ASA\nSource: 
+ M&A Monitor UK Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Shareholder meetings
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pusu-80-mile-plc-greenland-energy-company@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:PUSU deadline: 80 Mile
+DESCRIPTION:PUSU deadline - 80 MILE PLC / GREENLAND ENERGY COMPANY\nSource:
+  M&A Monitor UK Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:PUSU deadline
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pusu-sthree-plc-circle8-group-inc@uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:PUSU deadline: SThree
+DESCRIPTION:PUSU deadline - STHREE PLC / CIRCLE8 GROUP INC\nSource: M&A Mon
+ itor UK Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:PUSU deadline
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pusu-tribal-group-plc-silvertree-equity-partners-llp@uk-tracker.ma-moni
+ tor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:PUSU deadline: Tribal Group
+DESCRIPTION:PUSU deadline - TRIBAL GROUP PLC / SILVERTREE EQUITY PARTNERS L
+ LP\nSource: M&A Monitor UK Tracker. Dates can change\; check the latest an
+ nouncement.
+CATEGORIES:PUSU deadline
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pusu-ashtead-technology-holdings-plc-ember-infrastructure-management-lp
+ @uk-tracker.ma-monitor.co.uk
+DTSTAMP:20260925T134109Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:PUSU deadline: Ashtead Technology Holdings
+DESCRIPTION:PUSU deadline - ASHTEAD TECHNOLOGY HOLDINGS PLC / EMBER INFRAST
+ RUCTURE MANAGEMENT LP\nSource: M&A Monitor UK Tracker. Dates can change\; 
+ check the latest announcement.
+CATEGORIES:PUSU deadline
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
