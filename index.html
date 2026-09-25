@@ -237,6 +237,10 @@ th.col-comments,td.col-comments{min-width:450px}
 .kd-key span{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--t2);font-weight:600}
 .kd-key i{width:9px;height:9px;border-radius:2px;display:inline-block;background:var(--c)}
 .kd-note{font-size:11.5px;color:var(--t3);font-weight:600;max-width:520px}
+.kd-sub{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px;padding:10px 14px;background:var(--s);border:1px solid var(--b);border-radius:8px;box-shadow:var(--ss)}
+.kd-sub p{font-size:12.5px;color:var(--t2);flex:1;min-width:220px}
+.kd-sub .sub-btn{display:inline-flex;align-items:center;height:30px}
+.kd-copied{font-size:11.5px;color:var(--g);font-weight:700}
 @media(max-width:768px){.kd-grid{display:none}.kd-list{display:block}.kd-card-hd,.kd-footer{align-items:flex-start;flex-direction:column}}
 
 .eu-btn-wrap{display:flex;justify-content:flex-end;margin-bottom:18px}
@@ -415,6 +419,13 @@ th.col-comments,td.col-comments{min-width:450px}
         <p class="pusu-sub">Announced shareholder meetings, court sanction hearings, effective dates, Day 60 deadlines and PUSU deadlines. Expected completion windows (e.g. &#x201C;Q1 2027&#x201D;) are not shown until a specific date is announced.</p>
       </div>
       <span class="pusu-chip" id="kd-window">Next 30 days</span>
+    </div>
+    <div class="kd-sub">
+      <p>Add these dates to your own calendar. Subscribing keeps them up to date as dates are announced or moved.</p>
+      <a class="sub-btn" id="kd-sub-desktop" href="#">Subscribe in Outlook</a>
+      <a class="kd-btn" id="kd-sub-web" href="#" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;text-decoration:none">Outlook on the web</a>
+      <button type="button" class="kd-btn" id="kd-sub-copy">Copy calendar link</button>
+      <span class="kd-copied" id="kd-copied" hidden>Link copied</span>
     </div>
     <div class="kd-card">
       <div class="kd-card-hd">
@@ -1223,6 +1234,23 @@ function renderKeyDates() {
     : '<li class="kd-empty">No key dates this month.</li>') + '</ul>';
   body.innerHTML = html;
 }
+
+// Subscription links for the calendar.ics feed published next to this page
+(function() {
+  var feed;
+  try { feed = new URL('calendar.ics', location.href).href; } catch (e) { return; }
+  var name = 'UK Takeovers - Key Dates (M&A Monitor)';
+  var desk = document.getElementById('kd-sub-desktop');
+  var web = document.getElementById('kd-sub-web');
+  var copy = document.getElementById('kd-sub-copy');
+  if (desk) desk.href = feed.replace(/^https?:/, 'webcal:');
+  if (web) web.href = 'https://outlook.office.com/calendar/0/addfromweb?url=' + encodeURIComponent(feed) + '&name=' + encodeURIComponent(name);
+  if (copy) copy.addEventListener('click', function() {
+    var done = function() { var c = document.getElementById('kd-copied'); c.hidden = false; setTimeout(function() { c.hidden = true; }, 2500); };
+    if (navigator.clipboard) navigator.clipboard.writeText(feed).then(done, function() { prompt('Copy this calendar link:', feed); });
+    else prompt('Copy this calendar link:', feed);
+  });
+})();
 
 loadData();
 </script>
