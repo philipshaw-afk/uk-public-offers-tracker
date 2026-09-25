@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:sanc-schroders-plc-nuveen-llc@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20260930
 SUMMARY:Sanction hearing: Schroders
@@ -20,7 +20,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:eff-schroders-plc-nuveen-llc@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:Effective date (expected): Schroders
@@ -31,7 +31,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:meet-intertek-group-plc-eqt@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260806
 DTEND;VALUE=DATE:20260807
 SUMMARY:Shareholder meetings: Intertek Group
@@ -42,7 +42,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:sanc-beazley-plc-zurich-insurance-group-ltd@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:Sanction hearing: Beazley
@@ -54,7 +54,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:eff-beazley-plc-zurich-insurance-group-ltd@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:Effective date: Beazley
@@ -66,7 +66,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:meet-capricorn-energy-plc-genel-energy-plc@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260818
 DTEND;VALUE=DATE:20260819
 SUMMARY:Shareholder meetings: Capricorn Energy
@@ -78,7 +78,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:meet-tate-lyle-plc-ingredion-inc@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260728
 DTEND;VALUE=DATE:20260729
 SUMMARY:Shareholder meetings: Tate & Lyle
@@ -90,7 +90,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meet-advanced-medical-solutions-group-plc-h-b-fuller-company@uk-tracker
  .ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260812
 DTEND;VALUE=DATE:20260813
 SUMMARY:Shareholder meetings: Advanced Medical Solutions Group
@@ -103,7 +103,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:unc-union-jack-oil-plc-reabold-resources-plc@uk-tracker.ma-monitor.co.u
  k
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Unconditional / Day 60: Union Jack Oil
@@ -116,7 +116,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meet-ramsdens-holdings-plc-firstcash-holdings-inc@uk-tracker.ma-monitor
  .co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260810
 DTEND;VALUE=DATE:20260811
 SUMMARY:Shareholder meetings: Ramsdens Holdings
@@ -129,7 +129,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meet-pharos-energy-plc-ratio-petroleum-energy-lp@uk-tracker.ma-monitor.
  co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:Shareholder meetings: Pharos Energy
@@ -141,7 +141,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:meet-segro-plc-prologis-inc@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
 SUMMARY:Shareholder meetings: SEGRO
@@ -152,7 +152,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:unc-system1-group-plc-brave-bison-group-plc@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:Unconditional / Day 60: System1 Group
@@ -165,7 +165,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meet-gooch-housego-plc-arlington-capital-partners-vii-lp@uk-tracker.ma-
  monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260826
 DTEND;VALUE=DATE:20260827
 SUMMARY:Shareholder meetings: Gooch & Housego
@@ -177,7 +177,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:meet-rotork-plc-abb-ltd@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260903
 DTEND;VALUE=DATE:20260904
 SUMMARY:Shareholder meetings: Rotork
@@ -189,7 +189,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meet-mitie-group-plc-clayton-dubilier-rice-llc@uk-tracker.ma-monitor.co
  .uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260916
 DTEND;VALUE=DATE:20260917
 SUMMARY:Shareholder meetings: Mitie Group
@@ -202,7 +202,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meet-pinewood-technologies-group-plc-ridgeview-partners-llc@uk-tracker.
  ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Shareholder meetings: Pinewood Technologies Group
@@ -215,7 +215,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:eff-pinewood-technologies-group-plc-ridgeview-partners-llc@uk-tracker.m
  a-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:Effective date (expected): Pinewood Technologies Group
@@ -228,7 +228,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:unc-harworth-group-plc-peel-holdings-group-limited@uk-tracker.ma-monito
  r.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:Unconditional / Day 60: Harworth Group
@@ -241,7 +241,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meet-time-finance-plc-bentley-park-uk-limited@uk-tracker.ma-monitor.co.
  uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:Shareholder meetings: Time Finance
@@ -253,7 +253,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:meet-capricorn-energy-plc-dno-asa@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Shareholder meetings: Capricorn Energy
@@ -264,7 +264,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pusu-80-mile-plc-greenland-energy-company@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:PUSU deadline: 80 Mile
@@ -275,7 +275,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pusu-sthree-plc-circle8-group-inc@uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:PUSU deadline: SThree
@@ -287,7 +287,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pusu-tribal-group-plc-silvertree-equity-partners-llp@uk-tracker.ma-moni
  tor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:PUSU deadline: Tribal Group
@@ -300,7 +300,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:pusu-ashtead-technology-holdings-plc-ember-infrastructure-management-lp
  @uk-tracker.ma-monitor.co.uk
-DTSTAMP:20260925T134109Z
+DTSTAMP:20260925T135008Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:PUSU deadline: Ashtead Technology Holdings
