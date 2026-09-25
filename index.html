@@ -243,6 +243,16 @@ th.col-comments,td.col-comments{min-width:450px}
 .kd-link{height:30px;min-width:250px;flex:0 1 290px;padding:0 10px;border:1.5px solid var(--b);border-radius:6px;background:var(--bg);color:var(--t);font:inherit;font-size:12px;font-weight:600}
 .kd-link:focus{outline:2px solid var(--a);outline-offset:1px}
 .kd-sub .sub-btn{border:0;font-family:inherit}
+.kd-menu{position:relative}
+.kd-menu summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;height:30px;user-select:none}
+.kd-menu summary::-webkit-details-marker{display:none}
+.kd-menu summary:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+.kd-menu-list{position:absolute;right:0;top:36px;z-index:20;width:270px;background:var(--s);border:1px solid var(--b);border-radius:8px;box-shadow:var(--sm);padding:6px}
+.kd-menu-list a{display:block;padding:8px 10px;border-radius:6px;text-decoration:none;color:var(--t)}
+.kd-menu-list a:hover,.kd-menu-list a:focus-visible{background:var(--al);outline:0}
+.kd-menu-list b{display:block;font-size:12.5px;font-weight:700}
+.kd-menu-list span{display:block;font-size:11px;color:var(--t3);margin-top:1px}
+@media(max-width:768px){.kd-menu-list{left:0;right:auto}}
 .kd-copied{font-size:11.5px;color:var(--g);font-weight:700}
 @media(max-width:768px){.kd-grid{display:none}.kd-list{display:block}.kd-card-hd,.kd-footer{align-items:flex-start;flex-direction:column}}
 
@@ -424,10 +434,17 @@ th.col-comments,td.col-comments{min-width:450px}
       <span class="pusu-chip" id="kd-window">Next 30 days</span>
     </div>
     <div class="kd-sub">
-      <p>Add these dates to your own calendar. In Outlook, go to <b>Add calendar &#x2192; Subscribe from web</b> and paste this link. Subscribed dates stay up to date as they are announced or moved.</p>
+      <p>Add these dates to your own calendar. In Outlook, go to <b>Add calendar &#x2192; Subscribe from web</b> and paste this link, or use the Subscribe button. Subscribed dates stay up to date as they are announced or moved.</p>
       <input type="text" class="kd-link" id="kd-link" readonly aria-label="Calendar subscription link">
-      <button type="button" class="sub-btn" id="kd-sub-copy">Copy link</button>
-      <a class="kd-btn" id="kd-sub-web" href="#" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;text-decoration:none">Open in Outlook on the web</a>
+      <details class="kd-menu">
+        <summary class="sub-btn">Subscribe in Outlook &#x25BE;</summary>
+        <div class="kd-menu-list" role="menu">
+          <a role="menuitem" id="kd-sub-work" href="#" target="_blank" rel="noopener"><b>Work or school account</b><span>Outlook with Microsoft 365, e.g. at a bank</span></a>
+          <a role="menuitem" id="kd-sub-personal" href="#" target="_blank" rel="noopener"><b>Personal account</b><span>Outlook.com, Hotmail or Live</span></a>
+          <a role="menuitem" id="kd-sub-desktop" href="#"><b>Classic Outlook desktop app</b><span>Opens Outlook and asks to subscribe</span></a>
+        </div>
+      </details>
+      <button type="button" class="kd-btn" id="kd-sub-copy">Copy link</button>
       <span class="kd-copied" id="kd-copied" hidden>Link copied</span>
     </div>
     <div class="kd-card">
@@ -1243,13 +1260,28 @@ var CAL_FEED_URL = 'https://arbinsight.co.uk/calendar.ics';
 (function() {
   var name = 'UK Takeovers - Key Dates (M&A Monitor)';
   var box = document.getElementById('kd-link');
-  var web = document.getElementById('kd-sub-web');
   var copy = document.getElementById('kd-sub-copy');
   if (box) {
     box.value = CAL_FEED_URL;
     box.addEventListener('focus', function() { box.select(); });
   }
-  if (web) web.href = 'https://outlook.office.com/calendar/0/addfromweb?url=' + encodeURIComponent(CAL_FEED_URL) + '&name=' + encodeURIComponent(name);
+  // Outlook's own "Subscribe from web" page, with the address and name filled in
+  var q = '?url=' + encodeURIComponent(CAL_FEED_URL) + '&name=' + encodeURIComponent(name);
+  var links = {
+    'kd-sub-work': 'https://outlook.office.com/calendar/0/addfromweb' + q,
+    'kd-sub-personal': 'https://outlook.live.com/calendar/0/addfromweb' + q,
+    'kd-sub-desktop': CAL_FEED_URL.replace(/^https?:/, 'webcal:')
+  };
+  Object.keys(links).forEach(function(id) {
+    var a = document.getElementById(id);
+    if (a) a.href = links[id];
+  });
+  // Close the menu after a choice or a click elsewhere
+  var menu = document.querySelector('.kd-menu');
+  if (menu) {
+    menu.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', function() { menu.open = false; }); });
+    document.addEventListener('click', function(e) { if (!menu.contains(e.target)) menu.open = false; });
+  }
   if (copy) copy.addEventListener('click', function() {
     var done = function() { var c = document.getElementById('kd-copied'); c.hidden = false; setTimeout(function() { c.hidden = true; }, 2500); };
     var fallback = function() { box.focus(); box.select(); try { document.execCommand('copy'); done(); } catch (e) {} };
