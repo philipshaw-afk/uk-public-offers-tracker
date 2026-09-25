@@ -198,6 +198,47 @@ th.col-comments,td.col-comments{min-width:450px}
 .pusu-key .tbd i{background:transparent;border:1.5px dashed var(--t3);width:8px;height:8px}
 .pusu-kpis{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
 
+/* ── Key dates calendar ── */
+.kd-section{margin:4px 0 32px}
+.kd-card{background:var(--s);border:1px solid var(--b);border-radius:10px;box-shadow:var(--ss);overflow:hidden}
+.kd-card-hd{padding:10px 16px;border-bottom:1px solid var(--b);background:#F5F7FA;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.kd-month{font-size:14px;font-weight:800;letter-spacing:-.01em;min-width:140px}
+.kd-nav{display:flex;align-items:center;gap:6px}
+.kd-btn{height:30px;padding:0 11px;border:1.5px solid var(--b);border-radius:6px;background:var(--s);color:var(--t);font:inherit;font-size:12px;font-weight:600;cursor:pointer;transition:border-color .15s,color .15s}
+.kd-btn:hover{border-color:var(--a);color:var(--a)}
+.kd-btn:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+.kd-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr))}
+.kd-dow{padding:8px 10px;font-size:10.5px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.045em;border-bottom:1px solid var(--b);background:var(--s)}
+.kd-day{min-height:112px;padding:7px 7px 9px;border-right:1px solid var(--bl);border-bottom:1px solid var(--bl);min-width:0}
+.kd-day:nth-child(7n){border-right:0}
+.kd-day.kd-wkend{background:#FAFBFC}
+.kd-day.kd-out .kd-num{color:#C3CAD8}
+.kd-day.kd-out .kd-ev{opacity:.45}
+.kd-num{font-size:11.5px;font-weight:700;color:var(--t3);margin-bottom:5px;font-variant-numeric:tabular-nums}
+.kd-day.kd-today{background:var(--al)}
+.kd-day.kd-today .kd-num{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 6px;border-radius:11px;background:var(--a);color:#fff}
+.kd-ev{display:block;margin-top:4px;padding:4px 6px 5px 7px;border-left:3px solid var(--c);border-radius:0 5px 5px 0;background:var(--cb);font-size:11px;line-height:1.25;color:var(--t)}
+.kd-ev b{display:block;font-size:9px;font-weight:800;letter-spacing:.035em;text-transform:uppercase;color:var(--c);margin-bottom:1px}
+.kd-ev .kd-exp{font-size:9.5px;font-weight:700;color:var(--t3);font-style:italic}
+.kd-ev.kd-past{opacity:.5}
+.kd-t-meeting{--c:var(--a);--cb:var(--al)}
+.kd-t-sanction{--c:var(--p);--cb:var(--pb)}
+.kd-t-effective{--c:var(--g);--cb:var(--gb)}
+.kd-t-uncond{--c:var(--am);--cb:var(--ab)}
+.kd-t-pusu{--c:var(--r);--cb:var(--rb)}
+.kd-list{display:none;list-style:none}
+.kd-list li{display:flex;gap:12px;align-items:flex-start;padding:10px 16px;border-bottom:1px solid var(--bl)}
+.kd-list li:last-child{border-bottom:0}
+.kd-ldate{flex:0 0 58px;font-size:11px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.03em;padding-top:5px}
+.kd-list .kd-ev{flex:1;margin-top:0;font-size:12.5px}
+.kd-empty{padding:40px 16px;text-align:center;color:var(--t3);font-size:13px}
+.kd-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 16px;border-top:1px solid var(--b);background:#F5F7FA}
+.kd-key{display:flex;gap:14px;flex-wrap:wrap}
+.kd-key span{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--t2);font-weight:600}
+.kd-key i{width:9px;height:9px;border-radius:2px;display:inline-block;background:var(--c)}
+.kd-note{font-size:11.5px;color:var(--t3);font-weight:600;max-width:520px}
+@media(max-width:768px){.kd-grid{display:none}.kd-list{display:block}.kd-card-hd,.kd-footer{align-items:flex-start;flex-direction:column}}
+
 .eu-btn-wrap{display:flex;justify-content:flex-end;margin-bottom:18px}
 .eu-btn{
   display:inline-flex;align-items:center;justify-content:center;
@@ -367,6 +408,37 @@ th.col-comments,td.col-comments{min-width:450px}
     </div>
   </section>
 
+  <section class="kd-section ai d4" id="kd-section" aria-label="Key dates calendar">
+    <div class="pusu-head">
+      <div>
+        <div class="updates-title">Key dates calendar</div>
+        <p class="pusu-sub">Announced shareholder meetings, court sanction hearings, effective dates, Day 60 deadlines and PUSU deadlines. Expected completion windows (e.g. &#x201C;Q1 2027&#x201D;) are not shown until a specific date is announced.</p>
+      </div>
+      <span class="pusu-chip" id="kd-window">Next 30 days</span>
+    </div>
+    <div class="kd-card">
+      <div class="kd-card-hd">
+        <div class="kd-month" id="kd-month" aria-live="polite"></div>
+        <div class="kd-nav">
+          <button type="button" class="kd-btn" data-kd-step="-1">Previous</button>
+          <button type="button" class="kd-btn" data-kd-step="0">Today</button>
+          <button type="button" class="kd-btn" data-kd-step="1">Next</button>
+        </div>
+      </div>
+      <div id="kd-body"><div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div></div>
+      <div class="kd-footer">
+        <div class="kd-key">
+          <span class="kd-t-meeting"><i></i>Shareholder meetings</span>
+          <span class="kd-t-sanction"><i></i>Sanction hearing</span>
+          <span class="kd-t-effective"><i></i>Effective date</span>
+          <span class="kd-t-uncond"><i></i>Unconditional / Day 60</span>
+          <span class="kd-t-pusu"><i></i>PUSU deadline</span>
+        </div>
+        <div class="kd-note">&#x201C;Exp.&#x201D; marks a date in a published timetable that is still subject to court sanction or conditions. Dates can change; check the latest announcement.</div>
+      </div>
+    </div>
+  </section>
+
   <div class="info-section ai d4">
     <h3>What's behind the tracker</h3>
     <p>For each company in an offer period, M&amp;A Monitor maintains a full transaction record designed to support valuation and precedent analysis, including a comprehensive narrative and background to the development and progression of each deal. The database also tracks all Rule 8.3 disclosures for each offer period, allowing detailed analysis of shareholder behaviour and trading activity.</p>
@@ -490,6 +562,12 @@ async function loadFromSheets() {
       var idx = dealsHeader.findIndex(function(h) { return h.toLowerCase().includes(name.toLowerCase()); });
       return idx >= 0 ? (row[idx] || '') : '';
     };
+    // Exact header match for the key-date columns (so 'Effective date' can't hit 'Effective date status')
+    var getExact = function(name) {
+      var n = name.toLowerCase();
+      var idx = dealsHeader.findIndex(function(h) { return h.toLowerCase().trim() === n; });
+      return idx >= 0 ? (row[idx] || '').trim() : '';
+    };
     var getMatch = function(predicate) {
       var idx = dealsHeader.findIndex(predicate);
       return idx >= 0 ? (row[idx] || '') : '';
@@ -526,7 +604,12 @@ async function loadFromSheets() {
       pusuExt: pusuExt,
       hf: hf,
       hfC: hfC,
-      com: get('Comments').replace(/\s+/g, ' ').trim()
+      com: get('Comments').replace(/\s+/g, ' ').trim(),
+      meet: getExact('Shareholder meetings'),
+      sanc: getExact('Sanction hearing'),
+      unc: getExact('Unconditional / Day 60'),
+      eff: getExact('Effective date'),
+      effSt: getExact('Effective date status')
     };
   }).filter(function(d) { return d.t !== ''; });
 
@@ -574,6 +657,7 @@ async function loadData() {
     go();
     renderPusu();
     window.addEventListener('resize', debounce(renderPusu, 200));
+    initKeyDates();
 
   } catch (err) {
     console.error('Error loading data:', err);
@@ -581,6 +665,8 @@ async function loadData() {
     document.getElementById('tb').innerHTML = '<tr><td colspan="11"><div class="error-msg">Unable to load deal data. Check that the Google Sheet is published and the Sheet ID is correct.</div></td></tr>';
     var ps = document.getElementById('pusu-stage');
     if (ps) ps.innerHTML = '<div class="pusu-empty">Unable to load PUSU data.</div>';
+    var kb = document.getElementById('kd-body');
+    if (kb) kb.innerHTML = '<div class="kd-empty">Unable to load key dates.</div>';
   }
 }
 
@@ -1016,6 +1102,127 @@ function sort(col) {
 }
 
 function go() { render(doSort(getData())); }
+
+// =====================================================================
+// KEY DATES CALENDAR
+// =====================================================================
+var KD_TYPES = {
+  meeting:   'Meetings',
+  sanction:  'Sanction hearing',
+  effective: 'Effective',
+  uncond:    'Day 60',
+  pusu:      'PUSU'
+};
+var kdEvents = [];
+var kdView = null;
+var KD_MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+function kdHasColumns(list) {
+  return list.some(function(d) { return 'meet' in d || 'eff' in d || 'sanc' in d; });
+}
+
+async function initKeyDates() {
+  var src = deals;
+  // The static JSON may not carry the key-date columns yet; if so, read them from the sheet directly.
+  if (!kdHasColumns(src)) {
+    try { src = (await loadFromSheets()).deals; } catch (e) { src = deals; }
+  }
+  kdEvents = buildKeyDates(src);
+  var t = new Date();
+  kdView = new Date(t.getFullYear(), t.getMonth(), 1);
+  document.querySelectorAll('[data-kd-step]').forEach(function(b) {
+    b.addEventListener('click', function() {
+      var step = +b.getAttribute('data-kd-step');
+      if (step === 0) { var n = new Date(); kdView = new Date(n.getFullYear(), n.getMonth(), 1); }
+      else kdView = new Date(kdView.getFullYear(), kdView.getMonth() + step, 1);
+      renderKeyDates();
+    });
+  });
+  renderKeyDates();
+}
+
+function kdName(t) {
+  var fix = { 'SEGRO': 'SEGRO', 'EASYJET': 'easyJet', 'STHREE': 'SThree', 'CAB PAYMENTS HOLDINGS': 'CAB Payments', '80 MILE': '80 Mile' };
+  var n = (t || '').replace(/\s+(PLC|LIMITED|LTD)\.?$/i, '').trim();
+  if (fix[n.toUpperCase()]) return fix[n.toUpperCase()];
+  return n.toLowerCase().replace(/(^|[\s&(\/-])([a-z])/g, function(_, p, c) { return p + c.toUpperCase(); });
+}
+
+function buildKeyDates(list) {
+  var out = [];
+  list.forEach(function(d) {
+    var base = { name: kdName(d.t), bidder: d.b || '' };
+    function add(type, raw, extra) {
+      var dt = parseDate(raw);
+      if (!dt) return;
+      dt.setHours(0, 0, 0, 0);
+      var e = { type: type, date: dt, name: base.name, bidder: base.bidder };
+      for (var k in (extra || {})) e[k] = extra[k];
+      out.push(e);
+    }
+    add('meeting', d.meet);
+    add('sanction', d.sanc);
+    add('uncond', d.unc);
+    add('effective', d.eff, { expected: !/confirm/i.test(d.effSt || '') });
+    // Same rule as the PUSU timeline: only rows with a PUSU extensions count are PUSU situations
+    var extRaw = (d.pusuExt == null ? '' : d.pusuExt + '').toLowerCase().trim();
+    if (extRaw !== '' && ['n/a', 'n.a', 'n.a.', 'na'].indexOf(extRaw) === -1) add('pusu', d.pusu);
+  });
+  // A target with two bidder rows can repeat the same date; keep one of each
+  var seen = {};
+  out = out.filter(function(e) {
+    var k = e.type + '|' + e.name + '|' + e.date.getTime();
+    if (seen[k]) return false;
+    seen[k] = 1; return true;
+  });
+  return out.sort(function(a, b) { return a.date - b.date || a.name.localeCompare(b.name); });
+}
+
+function kdEvHtml(e, today) {
+  var what = KD_TYPES[e.type];
+  var title = e.name + (e.bidder ? ' / ' + e.bidder : '') + ' \u2013 ' + what;
+  return '<span class="kd-ev kd-t-' + e.type + (e.date < today ? ' kd-past' : '') + '" title="' + escHtml(title) + '">'
+    + '<b>' + escHtml(what) + '</b>' + escHtml(e.name)
+    + (e.expected ? ' <span class="kd-exp">exp.</span>' : '') + '</span>';
+}
+
+function renderKeyDates() {
+  var body = document.getElementById('kd-body');
+  if (!body || !kdView) return;
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  var DAY = 864e5;
+  document.getElementById('kd-month').textContent = KD_MONTHS[kdView.getMonth()] + ' ' + kdView.getFullYear();
+
+  var next30 = kdEvents.filter(function(e) { var n = (e.date - today) / DAY; return n >= 0 && n <= 30; }).length;
+  var chip = document.getElementById('kd-window');
+  if (chip) chip.textContent = next30 + (next30 === 1 ? ' date' : ' dates') + ' in next 30 days';
+
+  var byDay = {};
+  kdEvents.forEach(function(e) { var k = e.date.getTime(); (byDay[k] = byDay[k] || []).push(e); });
+
+  var start = new Date(kdView); start.setDate(1 - ((kdView.getDay() + 6) % 7)); // weeks start Monday
+  var html = '<div class="kd-grid" role="grid">';
+  ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].forEach(function(d) { html += '<div class="kd-dow" role="columnheader">' + d + '</div>'; });
+  for (var i = 0; i < 42; i++) {
+    var d = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
+    if (i >= 35 && d.getMonth() !== kdView.getMonth()) break;
+    var cls = 'kd-day';
+    if (d.getMonth() !== kdView.getMonth()) cls += ' kd-out';
+    if (d.getDay() === 0 || d.getDay() === 6) cls += ' kd-wkend';
+    if (d.getTime() === today.getTime()) cls += ' kd-today';
+    html += '<div class="' + cls + '" role="gridcell"><div class="kd-num">' + d.getDate() + '</div>'
+      + (byDay[d.getTime()] || []).map(function(e) { return kdEvHtml(e, today); }).join('') + '</div>';
+  }
+  html += '</div>';
+
+  var inMonth = kdEvents.filter(function(e) { return e.date.getMonth() === kdView.getMonth() && e.date.getFullYear() === kdView.getFullYear(); });
+  html += '<ul class="kd-list">' + (inMonth.length
+    ? inMonth.map(function(e) {
+        return '<li><span class="kd-ldate">' + e.date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric' }) + '</span>' + kdEvHtml(e, today) + '</li>';
+      }).join('')
+    : '<li class="kd-empty">No key dates this month.</li>') + '</ul>';
+  body.innerHTML = html;
+}
 
 loadData();
 </script>
