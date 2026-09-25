@@ -12,7 +12,12 @@
     "pusuExt": "n/a",
     "hf": 10.17,
     "hfC": "▲ 0.01pp",
-    "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. 99.9% of votes were in favour at meetings on 16 April 2026."
+    "com": "Formal offer by means of scheme of arrangement announced at 590p per share plus 22 pence dividend. 99.9% of votes were in favour at meetings on 16 April 2026.",
+    "meet": "16-04-2026",
+    "sanc": "29-09-2026",
+    "unc": "",
+    "eff": "01-10-2026",
+    "effSt": "Indicative"
   },
   {
     "t": "INTERTEK GROUP PLC",
@@ -27,7 +32,12 @@
     "pusuExt": "n/a",
     "hf": 25.53,
     "hfC": "▲ 0.34pp",
-    "com": "Recommended final cash offer by private equity firm EQT at £60 per share. The offer will be implemented by means of a Court-sanctioned scheme of arrangement and is expected to become effective in Q4 2026 or Q1 2027."
+    "com": "Recommended final cash offer by private equity firm EQT at £60 per share. The offer will be implemented by means of a Court-sanctioned scheme of arrangement and is expected to become effective in Q4 2026 or Q1 2027.",
+    "meet": "06-08-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "BEAZLEY PLC",
@@ -42,7 +52,12 @@
     "pusuExt": "n/a",
     "hf": 37.49,
     "hfC": "▼ 0.34pp",
-    "com": "Scheme of arrangement made at same terms as indicative proposal. Beazley shareholder vote passed on 22 April 2026. Expected to become effective on 1 October 2026."
+    "com": "Scheme of arrangement made at same terms as indicative proposal. Beazley shareholder vote passed on 22 April 2026. Expected to become effective on 1 October 2026.",
+    "meet": "22-04-2026",
+    "sanc": "22-09-2026",
+    "unc": "",
+    "eff": "01-10-2026",
+    "effSt": "Confirmed"
   },
   {
     "t": "SENIOR PLC",
@@ -57,7 +72,12 @@
     "pusuExt": "n/a",
     "hf": 51.57,
     "hfC": "▼ 0.01pp",
-    "com": "Formal offer (scheme) announced on 7 April 2026 by Tinicum and Blackstone at 297.85p in cash. Overwhelmingly approved by shareholders on 26 May 2026. Indicative offer of 270p from Advent was rejected. Advent withdrew on 8 April 2026. Arcline Investment Management had made an approach before withdrawing on 1 April 2026."
+    "com": "Formal offer (scheme) announced on 7 April 2026 by Tinicum and Blackstone at 297.85p in cash. Overwhelmingly approved by shareholders on 26 May 2026. Indicative offer of 270p from Advent was rejected. Advent withdrew on 8 April 2026. Arcline Investment Management had made an approach before withdrawing on 1 April 2026.",
+    "meet": "26-05-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "SPIRE HEALTHCARE GROUP PLC",
@@ -72,7 +92,12 @@
     "pusuExt": "n/a",
     "hf": 38.16,
     "hfC": "▲ 0.05pp",
-    "com": "Recommended cash offer (scheme) by Toscafund (which already owns 24.36%) of 250p per share with an unlisted share alternative. Approaches had been previously received from Bridgepoint and Triton, following a strategic review but talks ended."
+    "com": "Recommended cash offer (scheme) by Toscafund (which already owns 24.36%) of 250p per share with an unlisted share alternative. Approaches had been previously received from Bridgepoint and Triton, following a strategic review but talks ended.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "GAMMA COMMUNICATIONS PLC",
@@ -87,7 +112,12 @@
     "pusuExt": "n/a",
     "hf": 28.11,
     "hfC": "▲ 1.65pp",
-    "com": "Recommended £1,015m offer (scheme) announced on 1 September 2026. 0.13% undertakings. Completion expected H1 2027."
+    "com": "Recommended £1,015m offer (scheme) announced on 1 September 2026. 0.13% undertakings. Completion expected H1 2027.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "CAB PAYMENTS HOLDINGS PLC",
@@ -102,7 +132,12 @@
     "pusuExt": "n/a",
     "hf": 10.38,
     "hfC": "no change",
-    "com": "Helios consortium (which already owns 45.11%) has gone hostile, with 85p formal offer. StoneX had made an indicative offer of 110p, before withdrawing on 5 May, given the Helios Consortium's lack of support."
+    "com": "Helios consortium (which already owns 45.11%) has gone hostile, with 85p formal offer. StoneX had made an indicative offer of 110p, before withdrawing on 5 May, given the Helios Consortium's lack of support.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "CAPRICORN ENERGY PLC",
@@ -117,7 +152,12 @@
     "pusuExt": "n/a",
     "hf": 67.07,
     "hfC": "▲ 0.29pp",
-    "com": "Genel made a recommended offer (scheme) of 357p per share on 2 July. DNO made a recommended higher competing bid on 1 September. On 25 September, Genel made an increased recommended offer of US$4.75 in cash plus a special dividend of US$0.99 per share (in aggregate 434p per share)."
+    "com": "Genel made a recommended offer (scheme) of 357p per share on 2 July. DNO made a recommended higher competing bid on 1 September. On 25 September, Genel made an increased recommended offer of US$4.75 in cash plus a special dividend of US$0.99 per share (in aggregate 434p per share).",
+    "meet": "18-08-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "KORE POTASH PLC",
@@ -132,7 +172,12 @@
     "pusuExt": "n/a",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Strategic review - in discussions with two parties."
+    "com": "Strategic review - in discussions with two parties.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "APTITUDE SOFTWARE GROUP PLC",
@@ -147,7 +192,12 @@
     "pusuExt": "n/a",
     "hf": 2.7,
     "hfC": "no change",
-    "com": "Strategic review & formal sale process. Has not received an indicative offer but has held preliminary discussions with a small number of counterparties."
+    "com": "Strategic review & formal sale process. Has not received an indicative offer but has held preliminary discussions with a small number of counterparties.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "CHECKIT PLC",
@@ -162,7 +212,12 @@
     "pusuExt": "n/a",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Formal sale process. Discussions with potential bidders ongoing."
+    "com": "Formal sale process. Discussions with potential bidders ongoing.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "MIND GYM PLC",
@@ -177,7 +232,12 @@
     "pusuExt": "n/a",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Discussions are with selected third parties as part of a private strategic review process."
+    "com": "Discussions are with selected third parties as part of a private strategic review process.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "TATE & LYLE PLC",
@@ -192,7 +252,12 @@
     "pusuExt": "n/a",
     "hf": 18.13,
     "hfC": "▲ 0.09pp",
-    "com": "Formal cash offer (scheme) from US ingredients group Ingredion Inc, valuing each share at up to 615p - 595p in cash plus permitted final and interim dividends of up to 20p. Follows proposal at same price."
+    "com": "Formal cash offer (scheme) from US ingredients group Ingredion Inc, valuing each share at up to 615p - 595p in cash plus permitted final and interim dividends of up to 20p. Follows proposal at same price.",
+    "meet": "28-07-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "ADVANCED MEDICAL SOLUTIONS GROUP PLC",
@@ -207,7 +272,12 @@
     "pusuExt": "n/a",
     "hf": 36.84,
     "hfC": "▲ 0.39pp",
-    "com": "Recommended cash offer (scheme), with undertakings in relation to 0.34%. Follows previous approach by TA Associates, which withdrew on 18 May 2026"
+    "com": "Recommended cash offer (scheme), with undertakings in relation to 0.34%. Follows previous approach by TA Associates, which withdrew on 18 May 2026",
+    "meet": "12-08-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "EASYJET PLC",
@@ -222,7 +292,12 @@
     "pusuExt": "n/a",
     "hf": 23.24,
     "hfC": "▲ 0.33pp",
-    "com": "Apollo had emerged with a higher 715p/share cash possible offer vs Castlelake’s 690p. On 6 August 2026, Castlelake confirmed that it did not intend to make an offer for easyJet. On the same day, Apollo announced a recommended offer to be implemented by way of a scheme of arrangement together with an alternative offer of 1 rollover share for each easyJet share. Completion expected by the end of Q1 2027."
+    "com": "Apollo had emerged with a higher 715p/share cash possible offer vs Castlelake’s 690p. On 6 August 2026, Castlelake confirmed that it did not intend to make an offer for easyJet. On the same day, Apollo announced a recommended offer to be implemented by way of a scheme of arrangement together with an alternative offer of 1 rollover share for each easyJet share. Completion expected by the end of Q1 2027.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "UNION JACK OIL PLC",
@@ -237,7 +312,12 @@
     "pusuExt": "n/a",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Initially recommended all share takeover offer (subsequently rejected on 11 September 2026). On 29 July 2026, Reabold announced that the acceptance period will run from 19 August 2026 to 25 September 2026 (later extended to 2 October 2026). On 24 August 2026, at the Requisitioned General Meeting, a new Board of Directors was appointed and on 11 September 2026, the new Board rejected the offer on the grounds that it was opportunistic and significantly undervalued Union Jack’s existing project portfolio."
+    "com": "Initially recommended all share takeover offer (subsequently rejected on 11 September 2026). On 29 July 2026, Reabold announced that the acceptance period will run from 19 August 2026 to 25 September 2026 (later extended to 2 October 2026). On 24 August 2026, at the Requisitioned General Meeting, a new Board of Directors was appointed and on 11 September 2026, the new Board rejected the offer on the grounds that it was opportunistic and significantly undervalued Union Jack’s existing project portfolio.",
+    "meet": "",
+    "sanc": "",
+    "unc": "02-10-2026",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "RAMSDENS HOLDINGS PLC",
@@ -252,7 +332,12 @@
     "pusuExt": "n/a",
     "hf": 21.21,
     "hfC": "no change",
-    "com": "On 23 June 2026, FirstCash announced a recommended cash offer of 600p per share plus dividends of up to 9p per share, to be effected by scheme of arrangement. On 16 July 2026, FirstCash announced a final recommended cash offer (scheme) for Ramsdens of 675p per share plus dividend of up to 9p per share. Scheme approved by shareholders on 10 August 2026."
+    "com": "On 23 June 2026, FirstCash announced a recommended cash offer of 600p per share plus dividends of up to 9p per share, to be effected by scheme of arrangement. On 16 July 2026, FirstCash announced a final recommended cash offer (scheme) for Ramsdens of 675p per share plus dividend of up to 9p per share. Scheme approved by shareholders on 10 August 2026.",
+    "meet": "10-08-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "PHAROS ENERGY PLC",
@@ -267,7 +352,12 @@
     "pusuExt": "n/a",
     "hf": 2.05,
     "hfC": "no change",
-    "com": "Recommended cash offer (scheme) of 23.07p per share plus special dividend of 4p and ordinary dividend of 0.9317p per share. Following a competing bid announced by Serica Energy on 26 July 2026, the Board's recommendation was withdrawn. On 7 August 2026, Ratio announced an increased recommended cash offer (scheme) of 28.82p per share plus special dividend of 4p per share and ordinary dividend of 0.9317p per share. 41.76% undertakings. On 13 August 2026, Serica Energy withdrew its offer."
+    "com": "Recommended cash offer (scheme) of 23.07p per share plus special dividend of 4p and ordinary dividend of 0.9317p per share. Following a competing bid announced by Serica Energy on 26 July 2026, the Board's recommendation was withdrawn. On 7 August 2026, Ratio announced an increased recommended cash offer (scheme) of 28.82p per share plus special dividend of 4p per share and ordinary dividend of 0.9317p per share. 41.76% undertakings. On 13 August 2026, Serica Energy withdrew its offer.",
+    "meet": "28-08-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "SEGRO PLC",
@@ -282,7 +372,12 @@
     "pusuExt": "n/a",
     "hf": 6.66,
     "hfC": "▲ 0.05pp",
-    "com": "Following four proposals, the latest being at 1,031.7p per share (with a 25% partial cash alternative), Prologis launches a recommended offer to be effected by way of a scheme of arrangement."
+    "com": "Following four proposals, the latest being at 1,031.7p per share (with a 25% partial cash alternative), Prologis launches a recommended offer to be effected by way of a scheme of arrangement.",
+    "meet": "28-09-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "SYSTEM1 GROUP PLC",
@@ -297,7 +392,12 @@
     "pusuExt": "n/a",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "On 10 July 2026, Brave Bison Group plc announced an unsolicited indicative proposal for the acquisition of the remaining 72% of System1 for 68p per share in cash and 2.7553 new Brave Bison shares. On 30 July 2026, Brave Bison announced a formal offer of 135p per share in cash and 2.04 Brave Bison shares and an alternative offer of 3.36 new Brave Bison shares for each System1 share. Acceptance threshold set at 50%. On 14 September 2026, Brave Bison filed an increased offer of 135 pence in cash and 2.394 new Brave Bison shares, with the alternative offer remaining unchanged. All offers were rejected by the System1 Board."
+    "com": "On 10 July 2026, Brave Bison Group plc announced an unsolicited indicative proposal for the acquisition of the remaining 72% of System1 for 68p per share in cash and 2.7553 new Brave Bison shares. On 30 July 2026, Brave Bison announced a formal offer of 135p per share in cash and 2.04 Brave Bison shares and an alternative offer of 3.36 new Brave Bison shares for each System1 share. Acceptance threshold set at 50%. On 14 September 2026, Brave Bison filed an increased offer of 135 pence in cash and 2.394 new Brave Bison shares, with the alternative offer remaining unchanged. All offers were rejected by the System1 Board.",
+    "meet": "",
+    "sanc": "",
+    "unc": "26-10-2026",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "NEXTENERGY SOLAR FUND LIMITED",
@@ -312,7 +412,12 @@
     "pusuExt": "n/a",
     "hf": 3.6,
     "hfC": "no change",
-    "com": "Formal sale process. The Board is not in any active discussions with any potential offeror"
+    "com": "Formal sale process. The Board is not in any active discussions with any potential offeror",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "GOOCH & HOUSEGO PLC",
@@ -327,7 +432,12 @@
     "pusuExt": "n/a",
     "hf": 35.76,
     "hfC": "▲ 0.5pp",
-    "com": "Recommended cash offer (scheme) of 1,230p per share plus interim dividend of 4.9p per share for all shares in G&H by Greenlight Bidco Limited, an acquisition vehicle owned by Arlington Capital Partners VII, L.P."
+    "com": "Recommended cash offer (scheme) of 1,230p per share plus interim dividend of 4.9p per share for all shares in G&H by Greenlight Bidco Limited, an acquisition vehicle owned by Arlington Capital Partners VII, L.P.",
+    "meet": "26-08-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "ROTORK PLC",
@@ -342,7 +452,12 @@
     "pusuExt": "n/a",
     "hf": 32.18,
     "hfC": "▼ 0.08pp",
-    "com": "Recommended cash offer (scheme) of 503p per share plus dividend of up to 3p per share for all shares in Rotork by ABB Automation Holding UK Limited, a subsidiary of ABB Ltd."
+    "com": "Recommended cash offer (scheme) of 503p per share plus dividend of up to 3p per share for all shares in Rotork by ABB Automation Holding UK Limited, a subsidiary of ABB Ltd.",
+    "meet": "03-09-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "MITIE GROUP PLC",
@@ -357,7 +472,12 @@
     "pusuExt": "n/a",
     "hf": 29.17,
     "hfC": "▲ 0.14pp",
-    "com": "Recommended cash offer (scheme) for Mitie by OCS Group International Limited, an indirect wholly-owned subsidiary of OCS Group Topco Limited, of 218.5p per share and a final dividend of 3.1p per share."
+    "com": "Recommended cash offer (scheme) for Mitie by OCS Group International Limited, an indirect wholly-owned subsidiary of OCS Group Topco Limited, of 218.5p per share and a final dividend of 3.1p per share.",
+    "meet": "16-09-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "PINEWOOD TECHNOLOGIES GROUP PLC",
@@ -372,7 +492,12 @@
     "pusuExt": "n/a",
     "hf": 20.35,
     "hfC": "no change",
-    "com": "Ridgeview Partners makes £545m indicative offer, with rollover alternative. 48.71% shareholders support and Board was minded to recommend the offer. On 19 August 2026, Ridgeview Partners announced a recommended offer (scheme) at the same terms."
+    "com": "Ridgeview Partners makes £545m indicative offer, with rollover alternative. 48.71% shareholders support and Board was minded to recommend the offer. On 19 August 2026, Ridgeview Partners announced a recommended offer (scheme) at the same terms.",
+    "meet": "25-09-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "09-10-2026",
+    "effSt": "Indicative"
   },
   {
     "t": "BODYCOTE PLC",
@@ -387,7 +512,12 @@
     "pusuExt": "1",
     "hf": 19.58,
     "hfC": "▲ 0.2pp",
-    "com": "Indicative offer by CVC of 907.8p per share in cash plus an interim dividend of 7.2p per share. The Board would be minded to unanimously recommend the proposal, which follows earlier approaches from CVC, to Bodycote shareholders. On 1 September 2026, Veritas Capital made a formal recommended offer at 932.8p per share in cash plus an interim dividend of 7.2p per share."
+    "com": "Indicative offer by CVC of 907.8p per share in cash plus an interim dividend of 7.2p per share. The Board would be minded to unanimously recommend the proposal, which follows earlier approaches from CVC, to Bodycote shareholders. On 1 September 2026, Veritas Capital made a formal recommended offer at 932.8p per share in cash plus an interim dividend of 7.2p per share.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "BODYCOTE PLC",
@@ -402,7 +532,12 @@
     "pusuExt": "n/a",
     "hf": 19.58,
     "hfC": "▲ 0.2pp",
-    "com": "On 1 September 2026, Veritas Capital made a formal recommended offer at 932.8p per share in cash plus an interim dividend of 7.2p per share. Followed indicative offer by Veritas of 906.8p per share in cash plus an interim dividend of 7.2p per share. Offer expected to complete Q1 2027."
+    "com": "On 1 September 2026, Veritas Capital made a formal recommended offer at 932.8p per share in cash plus an interim dividend of 7.2p per share. Followed indicative offer by Veritas of 906.8p per share in cash plus an interim dividend of 7.2p per share. Offer expected to complete Q1 2027.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "HARWORTH GROUP PLC",
@@ -417,7 +552,12 @@
     "pusuExt": "n/a",
     "hf": 28.14,
     "hfC": "no change",
-    "com": "Unsolicited initial cash offer of 172.5p per share for the remaining 70.04% of the shares in Harworth not held by Peel Holdings, subject to a minimum acceptance threshold of 50%. The Harworth Board rejected the offer. On 16 September 2026, Peel Holdings announced an increased cash offer of 177.5p per share. On 25 September, Peel Holdings announced a recommended increased best and final cash offer of 187p per share."
+    "com": "Unsolicited initial cash offer of 172.5p per share for the remaining 70.04% of the shares in Harworth not held by Peel Holdings, subject to a minimum acceptance threshold of 50%. The Harworth Board rejected the offer. On 16 September 2026, Peel Holdings announced an increased cash offer of 177.5p per share. On 25 September, Peel Holdings announced a recommended increased best and final cash offer of 187p per share.",
+    "meet": "",
+    "sanc": "",
+    "unc": "25-10-2026",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "TIME FINANCE PLC",
@@ -432,7 +572,12 @@
     "pusuExt": "n/a",
     "hf": 2.39,
     "hfC": "no change",
-    "com": "Recommended cash offer (scheme) of 59.1p per share by Bentley Park (UK) Limited, the parent company of Ultimate Finance Group Limited. Bentley Park had received irrevocable undertakings in respect of approximately 47.36% of Time Finance's share capital."
+    "com": "Recommended cash offer (scheme) of 59.1p per share by Bentley Park (UK) Limited, the parent company of Ultimate Finance Group Limited. Bentley Park had received irrevocable undertakings in respect of approximately 47.36% of Time Finance's share capital.",
+    "meet": "01-10-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "GAMMA COMMUNICATIONS PLC",
@@ -447,7 +592,12 @@
     "pusuExt": "1",
     "hf": 28.11,
     "hfC": "▲ 1.65pp",
-    "com": "Gamma had entered into preliminary discussions with Waterland, which is acting in concert with the Giacom Group. On 1 September 2026, Epiris made a recommended formal offer. On 11 September 2026, Waterland confirmed that it was no longer acting in concert with the Giacom Group and was considering its options."
+    "com": "Gamma had entered into preliminary discussions with Waterland, which is acting in concert with the Giacom Group. On 1 September 2026, Epiris made a recommended formal offer. On 11 September 2026, Waterland confirmed that it was no longer acting in concert with the Giacom Group and was considering its options.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "CAPRICORN ENERGY PLC",
@@ -462,7 +612,12 @@
     "pusuExt": "n/a",
     "hf": 67.07,
     "hfC": "▲ 0.29pp",
-    "com": "Genel Energy plc made a recommended offer (scheme) on 2 July. DNO made a recommended higher competing bid (scheme) on 1 September, at US$ 5.214 per share in cash, including a US$ 0.99 special dividend. Completion expected Q4 2026 or Q1 2027. On 17 September 2026, DNO announced a revised cash offer of US$5.214 per share without the special dividend component. Note DNO had separately made an approach for Genel. Following Genel's increased offer on 25 September, the Board's recommendation of the DNO offer has accordingly been withdrawn."
+    "com": "Genel Energy plc made a recommended offer (scheme) on 2 July. DNO made a recommended higher competing bid (scheme) on 1 September, at US$ 5.214 per share in cash, including a US$ 0.99 special dividend. Completion expected Q4 2026 or Q1 2027. On 17 September 2026, DNO announced a revised cash offer of US$5.214 per share without the special dividend component. Note DNO had separately made an approach for Genel. Following Genel's increased offer on 25 September, the Board's recommendation of the DNO offer has accordingly been withdrawn.",
+    "meet": "16-10-2026",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "FUTURA MEDICAL PLC",
@@ -477,7 +632,12 @@
     "pusuExt": "n/a",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Strategic review & formal sale process. The company is not in discussions with, and has not received an approach from, any potential offeror."
+    "com": "Strategic review & formal sale process. The company is not in discussions with, and has not received an approach from, any potential offeror.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "80 MILE PLC",
@@ -492,7 +652,12 @@
     "pusuExt": "0",
     "hf": 1.43,
     "hfC": "no change",
-    "com": "Indicative all-share offer of 0.01108 new Greenland Energy share for each 80 Mile share."
+    "com": "Indicative all-share offer of 0.01108 new Greenland Energy share for each 80 Mile share.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "STHREE PLC",
@@ -507,7 +672,12 @@
     "pusuExt": "0",
     "hf": 8.91,
     "hfC": "no change",
-    "com": "Unsolicited preliminary approach regarding a possible offer all shares in SThree. The SThree Board rejects the offer believes it significantly undervalues SThree and its future prospects."
+    "com": "Unsolicited preliminary approach regarding a possible offer all shares in SThree. The SThree Board rejects the offer believes it significantly undervalues SThree and its future prospects.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "ELECO PLC",
@@ -522,7 +692,12 @@
     "pusuExt": "n/a",
     "hf": 4.33,
     "hfC": "no change",
-    "com": "Recommended all cash offer (scheme) of 235p per share by Avocet Bidco Limited, which is owned by Accel-KKR Capital Partners."
+    "com": "Recommended all cash offer (scheme) of 235p per share by Avocet Bidco Limited, which is owned by Accel-KKR Capital Partners.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "TRIBAL GROUP PLC",
@@ -537,7 +712,12 @@
     "pusuExt": "0",
     "hf": 1.09,
     "hfC": "no change",
-    "com": "Unsolicited indicative cash offer of 95p per share by SilverTree Equity Partners LLP received on 31 August 2026, which was unanimously and unequivocally rejected by the Tribal Board."
+    "com": "Unsolicited indicative cash offer of 95p per share by SilverTree Equity Partners LLP received on 31 August 2026, which was unanimously and unequivocally rejected by the Tribal Board.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "DIANOMI PLC",
@@ -552,7 +732,12 @@
     "pusuExt": "n/a",
     "hf": 0.0,
     "hfC": "no change",
-    "com": "Recommended cash offer (scheme) of up to 88p per share, including a contingent consideration unit of 24p per share in the form of a loan note. Taboola.com had received irrevocable undertakings corresponding to 75.3% of Dianomi's shares. Completion expected before the end of 2026."
+    "com": "Recommended cash offer (scheme) of up to 88p per share, including a contingent consideration unit of 24p per share in the form of a loan note. Taboola.com had received irrevocable undertakings corresponding to 75.3% of Dianomi's shares. Completion expected before the end of 2026.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "POLLEN STREET GROUP LIMITED",
@@ -567,7 +752,12 @@
     "pusuExt": "n/a",
     "hf": 5.35,
     "hfC": "▲ 5.35pp",
-    "com": "Assessment of strategic options. Pollen Street has initiated preliminary discussions with a limited number of third parties."
+    "com": "Assessment of strategic options. Pollen Street has initiated preliminary discussions with a limited number of third parties.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   },
   {
     "t": "ASHTEAD TECHNOLOGY HOLDINGS PLC",
@@ -582,6 +772,11 @@
     "pusuExt": "0",
     "hf": 1.29,
     "hfC": "▲ 1.29pp",
-    "com": "Unsolicited non-binding indicative proposal of 615p per share from Ember. The Ashtead Board is considering the proposal with its advisers and is providing Ember with preliminary due diligence information. The proposal follows three previous proposals from Ember, the first two of which were unequivocally rejected by the Board."
+    "com": "Unsolicited non-binding indicative proposal of 615p per share from Ember. The Ashtead Board is considering the proposal with its advisers and is providing Ember with preliminary due diligence information. The proposal follows three previous proposals from Ember, the first two of which were unequivocally rejected by the Board.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": ""
   }
 ]
