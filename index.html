@@ -455,6 +455,7 @@ th.col-comments,td.col-comments{min-width:450px}
         </div>
       </details>
       <button type="button" class="kd-btn" id="kd-sub-copy">Copy link</button>
+      <a class="kd-btn" id="kd-history" href="history.ics" download="UK Takeovers - Past Events.ics" title="A one-off file of past events to upload into Outlook (Add calendar &#x2192; Upload from file)" style="display:inline-flex;align-items:center;text-decoration:none">Past events (.ics)</a>
       <span class="kd-copied" id="kd-copied" hidden>Link copied</span>
     </div>
     <div class="kd-card">
@@ -475,7 +476,8 @@ th.col-comments,td.col-comments{min-width:450px}
           <span class="kd-t-uncond"><i></i>Unconditional / Day 60</span>
           <span class="kd-t-pusu"><i></i>PUSU deadline</span>
           <span class="kd-t-other"><i></i>Other key dates</span>
-          <span class="kd-t-news"><i></i>New offer periods, offerors &amp; offers:</span>
+          <span class="kd-t-news"><i></i>New offer periods, offerors &amp; offers</span>
+          <span class="kd-key-sep"></span>
           <span><span class="kd-dot kd-dot-green"></span>Formal offer</span>
           <span><span class="kd-dot kd-dot-amber"></span>Indicative offer</span>
           <span><span class="kd-dot kd-dot-red"></span>No price yet</span>
@@ -1213,13 +1215,14 @@ function buildKeyDates(list) {
       for (var k in (extra || {})) e[k] = extra[k];
       out.push(e);
     }
-    add('meeting', d.meet);
-    add('sanction', d.sanc);
-    add('uncond', d.unc);
-    add('effective', d.eff, { expected: !/confirm/i.test(d.effSt || '') });
+    // Green: dates that follow a formal offer. PUSU: amber with an indicative offer, otherwise red.
+    add('meeting', d.meet, { colour: 'green' });
+    add('sanction', d.sanc, { colour: 'green' });
+    add('uncond', d.unc, { colour: 'green' });
+    add('effective', d.eff, { expected: !/confirm/i.test(d.effSt || ''), colour: 'green' });
     // Same rule as the PUSU timeline: only rows with a PUSU extensions count are PUSU situations
     var extRaw = (d.pusuExt == null ? '' : d.pusuExt + '').toLowerCase().trim();
-    if (extRaw !== '' && ['n/a', 'n.a', 'n.a.', 'na'].indexOf(extRaw) === -1) add('pusu', d.pusu);
+    if (extRaw !== '' && ['n/a', 'n.a', 'n.a.', 'na'].indexOf(extRaw) === -1) add('pusu', d.pusu, { colour: /indicative|formal/i.test(d.st || '') ? 'amber' : 'red' });
   });
   // A target with two bidder rows can repeat the same date; keep one of each
   var seen = {};
@@ -1284,7 +1287,7 @@ function kdEvHtml(e, today) {
   var priceNote = { green: 'formal offer', amber: 'indicative offer', red: 'no price yet' }[e.colour] || '';
   var title = e.name + (e.bidder ? ' / ' + e.bidder : '') + ' \u2013 ' + (e.type === 'news' ? what + (e.label ? ', ' + e.label : '') + (priceNote && priceNote !== what.toLowerCase() ? ' (' + priceNote + ')' : '') : e.type === 'other' ? e.label : what) + (e.time ? ', ' + e.time : '');
   return '<span class="kd-ev kd-t-' + e.type + (e.date < today && e.type !== 'news' ? ' kd-past' : '') + '" title="' + escHtml(title) + '">'
-    + '<b>' + (e.type === 'news' && e.colour ? '<span class="kd-dot kd-dot-' + e.colour + '"></span>' : '') + escHtml(what) + '</b>' + escHtml(e.name)
+    + '<b>' + (e.colour ? '<span class="kd-dot kd-dot-' + e.colour + '"></span>' : '') + escHtml(what) + '</b>' + escHtml(e.name)
     + (e.expected ? ' <span class="kd-exp">exp.</span>' : '')
     + ((e.type === 'other' || e.type === 'news') && e.label ? '<span class="kd-lbl">' + escHtml(e.label) + '</span>' : '') + '</span>';
 }
@@ -1359,6 +1362,8 @@ var CAL_FEED_URL = 'https://arbinsight.co.uk/calendar.ics';
     if (a) a.addEventListener('click', function() { track(methods[id]); });
   });
   if (copy) copy.addEventListener('click', function() { track('copy_link'); });
+  var hist = document.getElementById('kd-history');
+  if (hist) hist.addEventListener('click', function() { track('history_download'); });
   if (box) box.addEventListener('copy', function() { track('copy_link_manual'); });
   var menuToggle = document.querySelector('.kd-menu summary');
   if (menuToggle) menuToggle.addEventListener('click', function() {
