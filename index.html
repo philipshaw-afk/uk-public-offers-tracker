@@ -231,6 +231,10 @@ th.col-comments,td.col-comments{min-width:450px}
 .kd-t-pusu{--c:var(--r);--cb:var(--rb)}
 .kd-t-other{--c:var(--tl);--cb:var(--tb)}
 .kd-t-news{--c:var(--t);--cb:var(--h)}
+.kd-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.kd-dot-green{background:#16A34A}.kd-dot-amber{background:#F2B10F}.kd-dot-red{background:#DC2626}
+.kd-key .kd-dot{margin-right:0}
+.kd-key-sep{width:1px;align-self:stretch;background:var(--b)}
 .kd-list{display:none;list-style:none}
 .kd-list li{display:flex;gap:12px;align-items:flex-start;padding:10px 16px;border-bottom:1px solid var(--bl)}
 .kd-list li:last-child{border-bottom:0}
@@ -471,7 +475,10 @@ th.col-comments,td.col-comments{min-width:450px}
           <span class="kd-t-uncond"><i></i>Unconditional / Day 60</span>
           <span class="kd-t-pusu"><i></i>PUSU deadline</span>
           <span class="kd-t-other"><i></i>Other key dates</span>
-          <span class="kd-t-news"><i></i>New offer periods, offerors &amp; offers</span>
+          <span class="kd-t-news"><i></i>New offer periods, offerors &amp; offers:</span>
+          <span><span class="kd-dot kd-dot-green"></span>Formal offer</span>
+          <span><span class="kd-dot kd-dot-amber"></span>Indicative offer</span>
+          <span><span class="kd-dot kd-dot-red"></span>No price yet</span>
         </div>
         <div class="kd-note">&#x201C;Exp.&#x201D; marks a date in a published timetable that is still subject to court sanction or conditions. Dates can change; check the latest announcement.</div>
       </div>
@@ -1267,16 +1274,17 @@ async function loadDealEvents() {
       if (!dt) return null;
       dt.setHours(0, 0, 0, 0);
       if (!k.k || k.o === undefined) return null;   // skip old-style entries
-      return { type: 'news', date: dt, name: kdName(k.t), bidder: '', label: k.o ? 'Offeror: ' + k.o : '', kind: k.k, time: k.time || '' };
+      return { type: 'news', date: dt, name: kdName(k.t), bidder: '', label: k.o ? 'Offeror: ' + k.o : '', kind: k.k, time: k.time || '', colour: k.c || '' };
     }).filter(Boolean);
   } catch (e) { return []; }
 }
 
 function kdEvHtml(e, today) {
   var what = e.type === 'news' ? e.kind : KD_TYPES[e.type];
-  var title = e.name + (e.bidder ? ' / ' + e.bidder : '') + ' \u2013 ' + (e.type === 'other' || e.type === 'news' ? e.label : what) + (e.time ? ' (' + e.time + ')' : '');
+  var priceNote = { green: 'formal offer', amber: 'indicative offer', red: 'no price yet' }[e.colour] || '';
+  var title = e.name + (e.bidder ? ' / ' + e.bidder : '') + ' \u2013 ' + (e.type === 'news' ? what + (e.label ? ', ' + e.label : '') + (priceNote && priceNote !== what.toLowerCase() ? ' (' + priceNote + ')' : '') : e.type === 'other' ? e.label : what) + (e.time ? ', ' + e.time : '');
   return '<span class="kd-ev kd-t-' + e.type + (e.date < today && e.type !== 'news' ? ' kd-past' : '') + '" title="' + escHtml(title) + '">'
-    + '<b>' + escHtml(what) + '</b>' + escHtml(e.name)
+    + '<b>' + (e.type === 'news' && e.colour ? '<span class="kd-dot kd-dot-' + e.colour + '"></span>' : '') + escHtml(what) + '</b>' + escHtml(e.name)
     + (e.expected ? ' <span class="kd-exp">exp.</span>' : '')
     + ((e.type === 'other' || e.type === 'news') && e.label ? '<span class="kd-lbl">' + escHtml(e.label) + '</span>' : '') + '</span>';
 }
