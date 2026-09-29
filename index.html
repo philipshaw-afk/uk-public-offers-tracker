@@ -228,6 +228,7 @@ th.col-comments,td.col-comments{min-width:450px}
 .kd-t-uncond{--c:var(--am);--cb:var(--ab)}
 .kd-t-pusu{--c:var(--r);--cb:var(--rb)}
 .kd-t-other{--c:var(--tl);--cb:var(--tb)}
+.kd-t-news{--c:var(--t);--cb:var(--h)}
 .kd-list{display:none;list-style:none}
 .kd-list li{display:flex;gap:12px;align-items:flex-start;padding:10px 16px;border-bottom:1px solid var(--bl)}
 .kd-list li:last-child{border-bottom:0}
@@ -431,7 +432,7 @@ th.col-comments,td.col-comments{min-width:450px}
     <div class="pusu-head">
       <div>
         <div class="updates-title">Key dates calendar</div>
-        <p class="pusu-sub">Announced shareholder meetings, court sanction hearings, effective dates, Day 60 deadlines and PUSU deadlines. Expected completion windows (e.g. &#x201C;Q1 2027&#x201D;) are not shown until a specific date is announced.</p>
+        <p class="pusu-sub">New offers and offer periods, plus announced shareholder meetings, court sanction hearings, effective dates, Day 60 deadlines and PUSU deadlines. Expected completion windows (e.g. &#x201C;Q1 2027&#x201D;) are not shown until a specific date is announced.</p>
       </div>
       <span class="pusu-chip" id="kd-window">Next 30 days</span>
     </div>
@@ -468,6 +469,7 @@ th.col-comments,td.col-comments{min-width:450px}
           <span class="kd-t-uncond"><i></i>Unconditional / Day 60</span>
           <span class="kd-t-pusu"><i></i>PUSU deadline</span>
           <span class="kd-t-other"><i></i>Other key dates</span>
+          <span class="kd-t-news"><i></i>Offers &amp; new offer periods</span>
         </div>
         <div class="kd-note">&#x201C;Exp.&#x201D; marks a date in a published timetable that is still subject to court sanction or conditions. Dates can change; check the latest announcement.</div>
       </div>
@@ -535,6 +537,7 @@ var STATIC_DEALS_URL = 'data/deals.json' + _cb;
 var STATIC_UPDATES_URL = 'data/updates.json' + _cb;
 var KEYDATES_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=' + encodeURIComponent('Key dates');
 var STATIC_KEYDATES_URL = 'data/keydates.json' + _cb;
+var STATIC_EVENTS_URL = 'data/events.json' + _cb;
 
 // =====================================================================
 // CSV PARSER
@@ -1149,7 +1152,8 @@ var KD_TYPES = {
   effective: 'Effective',
   uncond:    'Day 60',
   pusu:      'PUSU',
-  other:     'Key date'
+  other:     'Key date',
+  news:      'Offer news'
 };
 var kdEvents = [];
 var kdView = null;
@@ -1165,7 +1169,7 @@ async function initKeyDates() {
   if (!kdHasColumns(src)) {
     try { src = (await loadFromSheets()).deals; } catch (e) { src = deals; }
   }
-  kdEvents = buildKeyDates(src).concat(buildOneOffDates(await loadOneOffDates()));
+  kdEvents = buildKeyDates(src).concat(buildOneOffDates(await loadOneOffDates()), await loadDealEvents());
   kdEvents.sort(function(a, b) { return a.date - b.date || a.name.localeCompare(b.name); });
   var t = new Date();
   kdView = new Date(t.getFullYear(), t.getMonth(), 1);
@@ -1249,13 +1253,28 @@ function buildOneOffDates(list) {
   return out;
 }
 
+// Things that have happened (offers, new offer periods) - kept by the export script in data/events.json
+async function loadDealEvents() {
+  try {
+    var r = await fetch(STATIC_EVENTS_URL);
+    if (!r.ok) return [];
+    var list = await r.json();
+    return (Array.isArray(list) ? list : []).map(function(k) {
+      var dt = parseDate(k.d);
+      if (!dt) return null;
+      dt.setHours(0, 0, 0, 0);
+      return { type: 'news', date: dt, name: kdName(k.t), bidder: '', label: k.e, kind: k.k || 'Offer news', time: k.time || '' };
+    }).filter(Boolean);
+  } catch (e) { return []; }
+}
+
 function kdEvHtml(e, today) {
-  var what = KD_TYPES[e.type];
-  var title = e.name + (e.bidder ? ' / ' + e.bidder : '') + ' \u2013 ' + (e.type === 'other' ? e.label : what);
-  return '<span class="kd-ev kd-t-' + e.type + (e.date < today ? ' kd-past' : '') + '" title="' + escHtml(title) + '">'
+  var what = e.type === 'news' ? e.kind : KD_TYPES[e.type];
+  var title = e.name + (e.bidder ? ' / ' + e.bidder : '') + ' \u2013 ' + (e.type === 'other' || e.type === 'news' ? e.label : what) + (e.time ? ' (' + e.time + ')' : '');
+  return '<span class="kd-ev kd-t-' + e.type + (e.date < today && e.type !== 'news' ? ' kd-past' : '') + '" title="' + escHtml(title) + '">'
     + '<b>' + escHtml(what) + '</b>' + escHtml(e.name)
     + (e.expected ? ' <span class="kd-exp">exp.</span>' : '')
-    + (e.type === 'other' ? '<span class="kd-lbl">' + escHtml(e.label) + '</span>' : '') + '</span>';
+    + (e.type === 'other' || e.type === 'news' ? '<span class="kd-lbl">' + escHtml(e.label.length > 90 ? e.label.slice(0, 87).replace(/\s+\S*$/, '') + '\u2026' : e.label) + '</span>' : '') + '</span>';
 }
 
 function renderKeyDates() {
@@ -1265,7 +1284,7 @@ function renderKeyDates() {
   var DAY = 864e5;
   document.getElementById('kd-month').textContent = KD_MONTHS[kdView.getMonth()] + ' ' + kdView.getFullYear();
 
-  var next30 = kdEvents.filter(function(e) { var n = (e.date - today) / DAY; return n >= 0 && n <= 30; }).length;
+  var next30 = kdEvents.filter(function(e) { var n = (e.date - today) / DAY; return e.type !== 'news' && n >= 0 && n <= 30; }).length;
   var chip = document.getElementById('kd-window');
   if (chip) chip.textContent = next30 + (next30 === 1 ? ' date' : ' dates') + ' in next 30 days';
 
