@@ -1318,6 +1318,22 @@ var CAL_FEED_URL = 'https://arbinsight.co.uk/calendar.ics';
     var a = document.getElementById(id);
     if (a) a.href = links[id];
   });
+  // Google Analytics: record which subscribe option is used (Reports > Engagement > Events)
+  var track = function(method) {
+    try { if (typeof gtag === 'function') gtag('event', 'calendar_subscribe', { method: method }); } catch (e) {}
+  };
+  var methods = { 'kd-sub-work': 'outlook_work', 'kd-sub-personal': 'outlook_personal', 'kd-sub-desktop': 'outlook_desktop', 'kd-sub-google': 'google' };
+  Object.keys(methods).forEach(function(id) {
+    var a = document.getElementById(id);
+    if (a) a.addEventListener('click', function() { track(methods[id]); });
+  });
+  if (copy) copy.addEventListener('click', function() { track('copy_link'); });
+  if (box) box.addEventListener('copy', function() { track('copy_link_manual'); });
+  var menuToggle = document.querySelector('.kd-menu summary');
+  if (menuToggle) menuToggle.addEventListener('click', function() {
+    if (!menuToggle.parentNode.open) track('menu_opened');
+  });
+
   // Close the menu after a choice or a click elsewhere
   var menu = document.querySelector('.kd-menu');
   if (menu) {
