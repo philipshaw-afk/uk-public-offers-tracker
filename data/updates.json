@@ -1,5 +1,19 @@
 [
   {
+    "n": "Gamma Communications plc",
+    "s": "amber",
+    "text": "Waterland's PUSU deadline set at 13 October 2026",
+    "date": "29 September 2026",
+    "time": "7:00 AM"
+  },
+  {
+    "n": "Senior plc",
+    "s": "green",
+    "text": "All regulatory approved received - effective date 8 October 2026",
+    "date": "29 September 2026",
+    "time": "7:00 AM"
+  },
+  {
     "n": "SEGRO plc",
     "s": "green",
     "text": "Shareholders approve Prologis scheme (98% of votes). Expected to become effective H1 2027",
@@ -12,54 +26,5 @@
     "text": "New HF entrant: PSquared Asset Management acquires 2.12% (all derivatives)",
     "date": "28 September 2026",
     "time": "2:19 PM"
-  },
-  {
-    "n": "Tribal Group plc",
-    "s": "amber",
-    "text": "Price for the sale of Tribal Group businesses to Main Capital Partners increased from approximately £189.3 million to approximately £231.2 million. Irrevocable undertakings to vote in favour of the sale amount to 52.7%",
-    "date": "28 September 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "Capricorn Energy plc",
-    "s": "green",
-    "text": "DNO confirms that its cash offer of US$5.214 per share is final and it will not be increased",
-    "date": "28 September 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "Bodycote plc",
-    "s": "green",
-    "text": "Publication of Scheme Document by Veritas. The Court and General Meetings will be held on 21 October 2026",
-    "date": "28 September 2026",
-    "time": "7:30 AM"
-  },
-  {
-    "n": "Bodycote plc",
-    "s": "amber",
-    "text": "Deletion: CVC Advisers Limited confirms it does not intend to make an offer for Bodycote",
-    "date": "28 September 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "Checkit plc",
-    "s": "red",
-    "text": "Deletion: Termination of Formal Sale Process. Checkit had received non-binding offers from three potential acquirers. However, none materialised.",
-    "date": "28 September 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "Pinewood Technologies Group plc",
-    "s": "green",
-    "text": "Shareholders overwhelmingly approve the scheme. The effective date is scheduled for 9 October 2026.",
-    "date": "25 September 2026",
-    "time": "4:39 PM"
-  },
-  {
-    "n": "Advanced Medical Solutions Group plc",
-    "s": "green",
-    "text": "New HF entrant: Carmignac crosses 1% (1.07%, all derivatives).",
-    "date": "25 September 2026",
-    "time": "1:30 PM"
   }
 ]
