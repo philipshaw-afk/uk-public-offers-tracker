@@ -17,7 +17,9 @@
     "sanc": "29-09-2026",
     "unc": "",
     "eff": "01-10-2026",
-    "effSt": "Indicative"
+    "effSt": "Indicative",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "INTERTEK GROUP PLC",
@@ -37,7 +39,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "BEAZLEY PLC",
@@ -57,7 +61,9 @@
     "sanc": "22-09-2026",
     "unc": "",
     "eff": "01-10-2026",
-    "effSt": "Confirmed"
+    "effSt": "Confirmed",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "SENIOR PLC",
@@ -77,7 +83,9 @@
     "sanc": "06-10-2026",
     "unc": "",
     "eff": "08-10-2026",
-    "effSt": "Indicative"
+    "effSt": "Indicative",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "SPIRE HEALTHCARE GROUP PLC",
@@ -97,7 +105,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "GAMMA COMMUNICATIONS PLC",
@@ -117,7 +127,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "CAB PAYMENTS HOLDINGS PLC",
@@ -137,7 +149,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "CAPRICORN ENERGY PLC",
@@ -157,7 +171,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "KORE POTASH PLC",
@@ -177,7 +193,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "APTITUDE SOFTWARE GROUP PLC",
@@ -197,7 +215,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "MIND GYM PLC",
@@ -217,7 +237,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "TATE & LYLE PLC",
@@ -237,7 +259,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "ADVANCED MEDICAL SOLUTIONS GROUP PLC",
@@ -257,7 +281,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "EASYJET PLC",
@@ -277,7 +303,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "UNION JACK OIL PLC",
@@ -297,7 +325,9 @@
     "sanc": "",
     "unc": "02-10-2026",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "RAMSDENS HOLDINGS PLC",
@@ -317,7 +347,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "PHAROS ENERGY PLC",
@@ -337,7 +369,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "SEGRO PLC",
@@ -357,7 +391,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "SYSTEM1 GROUP PLC",
@@ -377,7 +413,9 @@
     "sanc": "",
     "unc": "26-10-2026",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "NEXTENERGY SOLAR FUND LIMITED",
@@ -397,7 +435,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "GOOCH & HOUSEGO PLC",
@@ -417,7 +457,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "ROTORK PLC",
@@ -437,7 +479,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "MITIE GROUP PLC",
@@ -457,7 +501,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "PINEWOOD TECHNOLOGIES GROUP PLC",
@@ -477,7 +523,9 @@
     "sanc": "07-10-2026",
     "unc": "",
     "eff": "09-10-2026",
-    "effSt": "Indicative"
+    "effSt": "Indicative",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "BODYCOTE PLC",
@@ -497,7 +545,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "HARWORTH GROUP PLC",
@@ -517,7 +567,9 @@
     "sanc": "",
     "unc": "25-10-2026",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "TIME FINANCE PLC",
@@ -537,7 +589,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "GAMMA COMMUNICATIONS PLC",
@@ -557,7 +611,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "CAPRICORN ENERGY PLC",
@@ -577,7 +633,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "FUTURA MEDICAL PLC",
@@ -597,7 +655,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "80 MILE PLC",
@@ -617,7 +677,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "STHREE PLC",
@@ -637,7 +699,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "ELECO PLC",
@@ -657,7 +721,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "TRIBAL GROUP PLC",
@@ -677,7 +743,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "DIANOMI PLC",
@@ -697,7 +765,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "POLLEN STREET GROUP LIMITED",
@@ -717,7 +787,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "ASHTEAD TECHNOLOGY HOLDINGS PLC",
@@ -737,7 +809,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "TRIBAL GROUP PLC",
@@ -757,7 +831,9 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   },
   {
     "t": "VESUVIUS PLC",
@@ -777,6 +853,8 @@
     "sanc": "",
     "unc": "",
     "eff": "",
-    "effSt": ""
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   }
 ]
