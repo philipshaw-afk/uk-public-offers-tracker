@@ -222,6 +222,8 @@ th.col-comments,td.col-comments{min-width:450px}
 .kd-ev .kd-exp{font-size:9.5px;font-weight:700;color:var(--t3);font-style:italic}
 .kd-ev.kd-past{opacity:.5}
 .kd-lbl{display:block;font-size:10px;color:var(--t2);margin-top:2px}
+.kd-grid .kd-lbl{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.kd-ev{cursor:default}
 .kd-t-meeting{--c:var(--a);--cb:var(--al)}
 .kd-t-sanction{--c:var(--p);--cb:var(--pb)}
 .kd-t-effective{--c:var(--g);--cb:var(--gb)}
@@ -469,7 +471,7 @@ th.col-comments,td.col-comments{min-width:450px}
           <span class="kd-t-uncond"><i></i>Unconditional / Day 60</span>
           <span class="kd-t-pusu"><i></i>PUSU deadline</span>
           <span class="kd-t-other"><i></i>Other key dates</span>
-          <span class="kd-t-news"><i></i>Offers &amp; new offer periods</span>
+          <span class="kd-t-news"><i></i>New offer periods, offerors &amp; offers</span>
         </div>
         <div class="kd-note">&#x201C;Exp.&#x201D; marks a date in a published timetable that is still subject to court sanction or conditions. Dates can change; check the latest announcement.</div>
       </div>
@@ -1188,6 +1190,7 @@ function kdName(t) {
   var fix = { 'SEGRO': 'SEGRO', 'EASYJET': 'easyJet', 'STHREE': 'SThree', 'CAB PAYMENTS HOLDINGS': 'CAB Payments', '80 MILE': '80 Mile' };
   var n = (t || '').replace(/\s+(PLC|LIMITED|LTD)\.?$/i, '').trim();
   if (fix[n.toUpperCase()]) return fix[n.toUpperCase()];
+  if (n !== n.toUpperCase()) return n;   // already mixed case
   return n.toLowerCase().replace(/(^|[\s&(\/-])([a-z])/g, function(_, p, c) { return p + c.toUpperCase(); });
 }
 
@@ -1263,7 +1266,8 @@ async function loadDealEvents() {
       var dt = parseDate(k.d);
       if (!dt) return null;
       dt.setHours(0, 0, 0, 0);
-      return { type: 'news', date: dt, name: kdName(k.t), bidder: '', label: k.e, kind: k.k || 'Offer news', time: k.time || '' };
+      if (!k.k || k.o === undefined) return null;   // skip old-style entries
+      return { type: 'news', date: dt, name: kdName(k.t), bidder: '', label: k.o ? 'Offeror: ' + k.o : '', kind: k.k, time: k.time || '' };
     }).filter(Boolean);
   } catch (e) { return []; }
 }
@@ -1274,7 +1278,7 @@ function kdEvHtml(e, today) {
   return '<span class="kd-ev kd-t-' + e.type + (e.date < today && e.type !== 'news' ? ' kd-past' : '') + '" title="' + escHtml(title) + '">'
     + '<b>' + escHtml(what) + '</b>' + escHtml(e.name)
     + (e.expected ? ' <span class="kd-exp">exp.</span>' : '')
-    + (e.type === 'other' || e.type === 'news' ? '<span class="kd-lbl">' + escHtml(e.label.length > 90 ? e.label.slice(0, 87).replace(/\s+\S*$/, '') + '\u2026' : e.label) + '</span>' : '') + '</span>';
+    + ((e.type === 'other' || e.type === 'news') && e.label ? '<span class="kd-lbl">' + escHtml(e.label) + '</span>' : '') + '</span>';
 }
 
 function renderKeyDates() {
@@ -1361,13 +1365,4 @@ var CAL_FEED_URL = 'https://arbinsight.co.uk/calendar.ics';
   }
   if (copy) copy.addEventListener('click', function() {
     var done = function() { var c = document.getElementById('kd-copied'); c.hidden = false; setTimeout(function() { c.hidden = true; }, 2500); };
-    var fallback = function() { box.focus(); box.select(); try { document.execCommand('copy'); done(); } catch (e) {} };
-    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(CAL_FEED_URL).then(done, fallback);
-    else fallback();
-  });
-})();
-
-loadData();
-</script>
-</body>
-</html>
+    var fallback = function() { box.focus(); box.select(); try { document.execCommand('copy');
