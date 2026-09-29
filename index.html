@@ -1365,4 +1365,13 @@ var CAL_FEED_URL = 'https://arbinsight.co.uk/calendar.ics';
   }
   if (copy) copy.addEventListener('click', function() {
     var done = function() { var c = document.getElementById('kd-copied'); c.hidden = false; setTimeout(function() { c.hidden = true; }, 2500); };
-    var fallback = function() { box.focus(); box.select(); try { document.execCommand('copy');
+    var fallback = function() { box.focus(); box.select(); try { document.execCommand('copy'); done(); } catch (e) {} };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(CAL_FEED_URL).then(done, fallback);
+    else fallback();
+  });
+})();
+
+loadData();
+</script>
+</body>
+</html>
