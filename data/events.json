@@ -4,370 +4,664 @@
     "d": "29-09-2026",
     "time": "8:30 AM",
     "k": "New offer period",
-    "e": "Indicative £1.4bn mixed cash and share offer by RHI Magnesita"
+    "o": "RHI Magnesita"
   },
   {
     "t": "Tribal Group plc",
     "d": "29-09-2026",
     "time": "7:00 AM",
     "k": "Offeror identified",
-    "e": "Indicative cash offer of 111p per share for the remaining 73.81% of the shares by Jenzabar, Inc. PUSU deadline set for 27 October 2026"
+    "o": "Jenzabar"
   },
   {
-    "t": "Harworth Group plc",
+    "t": "HARWORTH GROUP PLC",
     "d": "25-09-2026",
     "time": "",
-    "k": "Offer news",
-    "e": "Peel Holdings makes a recommended increased best and final cash offer of 187p per share"
+    "k": "Formal offer",
+    "o": "Peel Holdings Group"
   },
   {
-    "t": "Capricorn Energy plc",
+    "t": "CAPRICORN ENERGY PLC",
     "d": "25-09-2026",
     "time": "",
-    "k": "Offer news",
-    "e": "Genel makes an increased recommended offer of US$4.75 in cash plus a special dividend of US$0.99 per share (in aggregate 434p per share). The scheme remains subject to approval by the Egyptian Government"
+    "k": "Formal offer",
+    "o": "Genel Energy"
   },
   {
     "t": "Pollen Street Group Limited",
     "d": "23-09-2026",
-    "time": "",
+    "time": "09:39",
     "k": "New offer period",
-    "e": "The Board confirms it has commenced an assessment of the strategic options. Preliminary discussions with a limited number of third parties"
+    "o": ""
   },
   {
     "t": "Ashtead Technology Holdings plc",
     "d": "23-09-2026",
-    "time": "",
+    "time": "16:07",
     "k": "New offer period",
-    "e": "Unsolicited non-binding indicative proposal of 615p per share from Ember Infrastructure Management LP. The Ashtead Board is considering the proposal with its advisers and is providing Ember with preliminary due diligence information"
+    "o": "Ember Infrastructure Management"
   },
   {
     "t": "Dianomi plc",
     "d": "18-09-2026",
-    "time": "",
+    "time": "07:00",
     "k": "New offer period",
-    "e": "Recommended cash offer (scheme) of up to 88p per share, including a contingent consideration unit of 24p per share in the form of a loan note. Taboola.com had received irrevocable undertakings corresponding to 75.3% of Dianomi's shares. Completion expected before the end of 2026."
+    "o": "Taboola.com"
   },
   {
-    "t": "Harworth Group plc",
-    "d": "17-09-2026",
+    "t": "DIANOMI PLC",
+    "d": "18-09-2026",
     "time": "",
-    "k": "Offer news",
-    "e": "Peel Holdings acquires, through market purchases, shares representing 0.04% of Harworth's shares. As a result, Peel Holdings's shareholding increases from 29.96% to 30.00% and the revised offer converts into a mandatory offer"
+    "k": "Formal offer",
+    "o": "Taboola.com"
   },
   {
-    "t": "Capricorn Energy plc",
-    "d": "17-09-2026",
-    "time": "",
-    "k": "Offer news",
-    "e": "Revised all cash offer of US$5.214 per share (equal to the previous terms without the special dividend component)"
-  },
-  {
-    "t": "Harworth Group plc",
+    "t": "HARWORTH GROUP PLC",
     "d": "16-09-2026",
     "time": "",
-    "k": "Offer news",
-    "e": "Increased cash offer of 177.5p per share"
+    "k": "Formal offer",
+    "o": "Peel Holdings Group"
   },
   {
-    "t": "System1 Group plc",
+    "t": "SYSTEM1 GROUP PLC",
     "d": "14-09-2026",
     "time": "",
-    "k": "Offer news",
-    "e": "Increased offer by Brave Bison of 135 pence in cash and 2.394 new Brave Bison shares"
+    "k": "Formal offer",
+    "o": "Brave Bison Group"
   },
   {
     "t": "Tribal Group plc",
     "d": "11-09-2026",
-    "time": "",
+    "time": "17:54",
     "k": "New offer period",
-    "e": "Unsolicited indicative cash offer of 95p per share by SilverTree Equity Partners LLP. The offer was unanimously and unequivocally rejected by the Tribal Board"
+    "o": "Silvertree Equity Partners"
   },
   {
     "t": "Eleco plc",
     "d": "10-09-2026",
+    "time": "07:00",
+    "k": "New offer period",
+    "o": "Accel-KKR"
+  },
+  {
+    "t": "ELECO PLC",
+    "d": "10-09-2026",
     "time": "",
-    "k": "Offer news",
-    "e": "Recommended all cash offer (scheme) of 235p per share by Avocet Bidco Limited, which is owned by Accel-KKR Capital Partners"
+    "k": "Formal offer",
+    "o": "Accel-KKR"
   },
   {
     "t": "SThree plc",
     "d": "09-09-2026",
-    "time": "",
-    "k": "Offer news",
-    "e": "SThree confirms that it has received an unsolicited preliminary approach from Circle8 Group Inc. PUSU deadline is 7 October 2026"
-  },
-  {
-    "t": "Checkit plc",
-    "d": "08-09-2026",
-    "time": "",
-    "k": "Offer news",
-    "e": "Checkit has received several non-binding indicative proposals and the Board  is seeking to bring the FSP to a conclusion over the coming weeks"
+    "time": "15:19",
+    "k": "New offer period",
+    "o": "Circle8 Group"
   },
   {
     "t": "80 Mile plc",
     "d": "08-09-2026",
-    "time": "",
+    "time": "07:00",
     "k": "New offer period",
-    "e": "Indicative all-share offer of 0.01108 new Greenland Energy share for each 80 Mile share. PUSU deadline is 6 October 2026"
+    "o": "Greenland Energy"
   },
   {
-    "t": "Spire Healthcare Group plc",
-    "d": "07-09-2026",
+    "t": "SPIRE HEALTHCARE GROUP PLC",
+    "d": "05-09-2026",
     "time": "",
-    "k": "Offer news",
-    "e": "Recommended cash offer (scheme) of 250p per share with an unlisted share alternative"
+    "k": "Formal offer",
+    "o": "Toscafund Asset Management"
   },
   {
     "t": "Futura Medical plc",
     "d": "03-09-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins"
+    "o": ""
+  },
+  {
+    "t": "GAMMA COMMUNICATIONS PLC",
+    "d": "01-09-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Epiris"
   },
   {
     "t": "Capricorn Energy plc",
     "d": "01-09-2026",
     "time": "07:00",
     "k": "Offeror identified",
-    "e": "Offeror identified: DNO ASA (DNO Bidco AS)"
+    "o": "DNO"
+  },
+  {
+    "t": "CAPRICORN ENERGY PLC",
+    "d": "01-09-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "DNO"
+  },
+  {
+    "t": "BODYCOTE PLC",
+    "d": "01-09-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Veritas Capital Fund Management"
   },
   {
     "t": "Gamma Communications plc",
     "d": "21-08-2026",
     "time": "11:00",
     "k": "Offeror identified",
-    "e": "Offeror identified: Waterland Private Equity Investments B.V. PUSU deadline 13 October 2026"
+    "o": "Waterland Private Equity Investments"
+  },
+  {
+    "t": "PINEWOOD TECHNOLOGIES GROUP PLC",
+    "d": "19-08-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Ridgeview Partners"
   },
   {
     "t": "Time Finance plc",
     "d": "17-08-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Bentley Park (UK) Limited"
+    "o": "Bentley Park"
+  },
+  {
+    "t": "TIME FINANCE PLC",
+    "d": "17-08-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Bentley Park"
+  },
+  {
+    "t": "PHAROS ENERGY PLC",
+    "d": "07-08-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Ratio Petroleum Energy"
   },
   {
     "t": "Harworth Group plc",
     "d": "06-08-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Peel Holdings Group Limited (Peel Pepper (UK) Limited)"
+    "o": "Peel Holdings Group"
+  },
+  {
+    "t": "HARWORTH GROUP PLC",
+    "d": "06-08-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Peel Holdings Group"
+  },
+  {
+    "t": "EASYJET PLC",
+    "d": "06-08-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Apollo Global Management"
   },
   {
     "t": "Bodycote plc",
     "d": "05-08-2026",
     "time": "16:12",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Veritas Capital Management (Vulcan Alpha Bidco Limited)"
+    "o": "Veritas Capital Management"
+  },
+  {
+    "t": "BODYCOTE PLC",
+    "d": "05-08-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "CVC Capital Partners"
+  },
+  {
+    "t": "SEGRO PLC",
+    "d": "04-08-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Prologis"
+  },
+  {
+    "t": "SYSTEM1 GROUP PLC",
+    "d": "30-07-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Brave Bison Group"
   },
   {
     "t": "Pinewood Technologies Group plc",
     "d": "24-07-2026",
     "time": "18:48",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Ridgeview Partners LLC (U.K. Piston Bidco Limited)"
+    "o": "Ridgeview Partners"
+  },
+  {
+    "t": "SEGRO PLC",
+    "d": "22-07-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Prologis"
+  },
+  {
+    "t": "CAPRICORN ENERGY PLC",
+    "d": "22-07-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Samos Energy"
   },
   {
     "t": "Mitie Group plc",
     "d": "21-07-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: OCS Group Topco Limited (OCS Group International Limited)"
+    "o": "Clayton, Dubilier & Rice"
+  },
+  {
+    "t": "MITIE GROUP PLC",
+    "d": "21-07-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Clayton, Dubilier & Rice"
+  },
+  {
+    "t": "SEGRO PLC",
+    "d": "20-07-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Prologis"
   },
   {
     "t": "Rotork plc",
     "d": "16-07-2026",
     "time": "06:00",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: ABB Ltd (ABB Automation Holding UK Limited)"
+    "o": "ABB"
+  },
+  {
+    "t": "ROTORK PLC",
+    "d": "16-07-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "ABB"
+  },
+  {
+    "t": "RAMSDENS HOLDINGS PLC",
+    "d": "16-07-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Firstcash Holdings"
   },
   {
     "t": "Gooch & Housego plc",
     "d": "16-07-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Arlington Capital Partners (Greenlight Bidco Limited)"
+    "o": "Arlington Capital Partners"
+  },
+  {
+    "t": "GOOCH & HOUSEGO PLC",
+    "d": "16-07-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Arlington Capital Partners"
   },
   {
     "t": "NextEnergy Solar Fund Limited",
     "d": "15-07-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins"
+    "o": ""
+  },
+  {
+    "t": "SYSTEM1 GROUP PLC",
+    "d": "13-07-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Brave Bison Group"
   },
   {
     "t": "easyJet plc",
     "d": "10-07-2026",
     "time": "07:00",
     "k": "Offeror identified",
-    "e": "Offeror identified: Apollo Capital Management (Eagle Bidco Ltd)"
+    "o": "Apollo Global Management"
   },
   {
     "t": "System1 Group plc",
     "d": "10-07-2026",
     "time": "21:03",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Brave Bison Group plc"
+    "o": "Brave Bison Group"
+  },
+  {
+    "t": "SEGRO PLC",
+    "d": "10-07-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Prologis"
+  },
+  {
+    "t": "EASYJET PLC",
+    "d": "05-07-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Castlelake & Co-Investors"
   },
   {
     "t": "Capricorn Energy plc",
     "d": "02-07-2026",
     "time": "07:00",
     "k": "Offeror identified",
-    "e": "Offeror identified: Genel Energy plc (Genel Energy No.9 Limited)"
+    "o": "Genel Energy"
+  },
+  {
+    "t": "CAPRICORN ENERGY PLC",
+    "d": "02-07-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Genel Energy"
+  },
+  {
+    "t": "UNION JACK OIL PLC",
+    "d": "01-07-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Reabold Resources"
+  },
+  {
+    "t": "EASYJET PLC",
+    "d": "25-06-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Castlelake & Co-Investors"
   },
   {
     "t": "SEGRO plc",
     "d": "24-06-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Prologis, Inc."
+    "o": "Prologis"
   },
   {
     "t": "Pharos Energy plc",
     "d": "24-06-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Ratio Petroleum Energy LP"
+    "o": "Ratio Petroleum Energy"
+  },
+  {
+    "t": "PHAROS ENERGY PLC",
+    "d": "24-06-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Ratio Petroleum Energy"
   },
   {
     "t": "Ramsdens Holdings plc",
     "d": "23-06-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: FirstCash Holdings (Chess Bidco Limited)"
+    "o": "Firstcash Holdings"
+  },
+  {
+    "t": "RAMSDENS HOLDINGS PLC",
+    "d": "23-06-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Firstcash Holdings"
+  },
+  {
+    "t": "EASYJET PLC",
+    "d": "22-06-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Castlelake & Co-Investors"
+  },
+  {
+    "t": "INTERTEK GROUP PLC",
+    "d": "18-06-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "EQT"
   },
   {
     "t": "Union Jack Oil plc",
     "d": "15-06-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Reabold Resources plc"
+    "o": "Reabold Resources"
+  },
+  {
+    "t": "TATE & LYLE PLC",
+    "d": "08-06-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Ingredion"
+  },
+  {
+    "t": "SYSTEM1 GROUP PLC",
+    "d": "08-06-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Brave Bison Group"
   },
   {
     "t": "easyJet plc",
     "d": "29-05-2026",
     "time": "19:03",
     "k": "New offer period",
-    "e": "Offer period begins"
+    "o": ""
   },
   {
     "t": "Advanced Medical Solutions Group plc",
     "d": "21-05-2026",
     "time": "12:00",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: H.B. Fuller Company (H.B. Fuller Medical Adhesive Technologies Inc)"
+    "o": "H.B. Fuller"
   },
   {
     "t": "Tate & Lyle plc",
     "d": "14-05-2026",
     "time": "13:07",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Ingredion Incorporated"
+    "o": "Ingredion"
   },
   {
     "t": "Spire Healthcare Group plc",
     "d": "14-05-2026",
     "time": "07:00",
     "k": "Offeror identified",
-    "e": "Offeror identified: Toscafund Asset Management LLP (Tulip UK Bidco Limited)"
+    "o": "Toscafund Asset Management"
   },
   {
     "t": "Gamma Communications plc",
     "d": "13-05-2026",
     "time": "07:15",
     "k": "Offeror identified",
-    "e": "Offeror identified: Epiris GP III Limited (Bradbury Bidco Limited)"
+    "o": "Epiris"
+  },
+  {
+    "t": "INTERTEK GROUP PLC",
+    "d": "12-05-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "EQT"
+  },
+  {
+    "t": "INTERTEK GROUP PLC",
+    "d": "05-05-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "EQT"
+  },
+  {
+    "t": "INTERTEK GROUP PLC",
+    "d": "22-04-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "EQT"
   },
   {
     "t": "Intertek Group plc",
     "d": "16-04-2026",
     "time": "11:31",
     "k": "New offer period",
-    "e": "Offer period begins"
+    "o": ""
   },
   {
     "t": "Intertek Group plc",
     "d": "16-04-2026",
     "time": "11:37",
     "k": "Offeror identified",
-    "e": "Offeror identified: EQT X EUR SCSp (Isotope Bidco Limited)"
+    "o": "EQT"
+  },
+  {
+    "t": "CAB PAYMENTS HOLDINGS PLC",
+    "d": "16-04-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Stonex Group"
   },
   {
     "t": "Aptitude Software Group plc",
     "d": "08-04-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins"
+    "o": ""
+  },
+  {
+    "t": "SENIOR PLC",
+    "d": "07-04-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Tinicum & Blackstone"
   },
   {
     "t": "Gamma Communications plc",
     "d": "07-04-2026",
     "time": "18:02",
     "k": "New offer period",
-    "e": "Offer period begins"
+    "o": ""
+  },
+  {
+    "t": "CAB PAYMENTS HOLDINGS PLC",
+    "d": "16-03-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Stonex Group"
   },
   {
     "t": "Capricorn Energy plc",
     "d": "11-03-2026",
     "time": "16:23",
     "k": "New offer period",
-    "e": "Offer period begins"
+    "o": ""
+  },
+  {
+    "t": "SENIOR PLC",
+    "d": "05-03-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Advent International"
   },
   {
     "t": "Senior plc",
     "d": "03-03-2026",
     "time": "10:00",
     "k": "Offeror identified",
-    "e": "Offeror identified: Tinicum Incorporated (Zeus UK Bidco Limited)"
+    "o": "Tinicum"
+  },
+  {
+    "t": "CAB PAYMENTS HOLDINGS PLC",
+    "d": "02-03-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Helios Investment Partners"
+  },
+  {
+    "t": "BEAZLEY PLC",
+    "d": "02-03-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Zurich Insurance Group"
   },
   {
     "t": "Senior plc",
     "d": "27-02-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins"
+    "o": ""
   },
   {
     "t": "Schroders plc",
     "d": "12-02-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Nuveen (Pantheon, LLC)"
+    "o": "Nuveen"
+  },
+  {
+    "t": "SCHRODERS PLC",
+    "d": "12-02-2026",
+    "time": "",
+    "k": "Formal offer",
+    "o": "Nuveen"
+  },
+  {
+    "t": "BEAZLEY PLC",
+    "d": "04-02-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Zurich Insurance Group"
   },
   {
     "t": "CAB Payments Holdings plc",
     "d": "02-02-2026",
     "time": "07:00",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Helios Investors V (Mara BidCo Ltd.)"
+    "o": "Helios Investment Partners"
   },
   {
     "t": "Mind Gym plc",
     "d": "27-01-2026",
     "time": "18:17",
     "k": "New offer period",
-    "e": "Offer period begins"
+    "o": ""
   },
   {
     "t": "Beazley plc",
     "d": "19-01-2026",
     "time": "12:55",
     "k": "New offer period",
-    "e": "Offer period begins - offeror identified: Zurich Insurance Group Ltd"
+    "o": "Zurich Insurance Group"
+  },
+  {
+    "t": "CAB PAYMENTS HOLDINGS PLC",
+    "d": "17-01-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Helios Investment Partners"
+  },
+  {
+    "t": "BEAZLEY PLC",
+    "d": "04-01-2026",
+    "time": "",
+    "k": "Indicative offer",
+    "o": "Zurich Insurance Group"
   },
   {
     "t": "Kore Potash plc",
     "d": "04-11-2025",
     "time": "07:30",
     "k": "New offer period",
-    "e": "Offer period begins"
+    "o": ""
   },
   {
     "t": "Spire Healthcare Group plc",
     "d": "18-09-2025",
     "time": "19:36",
     "k": "New offer period",
-    "e": "Offer period begins"
+    "o": ""
   }
 ]
