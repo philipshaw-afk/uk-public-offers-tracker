@@ -221,11 +221,13 @@ th.col-comments,td.col-comments{min-width:450px}
 .kd-ev b{display:block;font-size:9px;font-weight:800;letter-spacing:.035em;text-transform:uppercase;color:var(--c);margin-bottom:1px}
 .kd-ev .kd-exp{font-size:9.5px;font-weight:700;color:var(--t3);font-style:italic}
 .kd-ev.kd-past{opacity:.5}
+.kd-lbl{display:block;font-size:10px;color:var(--t2);margin-top:2px}
 .kd-t-meeting{--c:var(--a);--cb:var(--al)}
 .kd-t-sanction{--c:var(--p);--cb:var(--pb)}
 .kd-t-effective{--c:var(--g);--cb:var(--gb)}
 .kd-t-uncond{--c:var(--am);--cb:var(--ab)}
 .kd-t-pusu{--c:var(--r);--cb:var(--rb)}
+.kd-t-other{--c:var(--tl);--cb:var(--tb)}
 .kd-list{display:none;list-style:none}
 .kd-list li{display:flex;gap:12px;align-items:flex-start;padding:10px 16px;border-bottom:1px solid var(--bl)}
 .kd-list li:last-child{border-bottom:0}
@@ -434,14 +436,15 @@ th.col-comments,td.col-comments{min-width:450px}
       <span class="pusu-chip" id="kd-window">Next 30 days</span>
     </div>
     <div class="kd-sub">
-      <p>Add these dates to your own calendar. In Outlook, go to <b>Add calendar &#x2192; Subscribe from web</b> and paste this link, or use the Subscribe button. Subscribed dates stay up to date as they are announced or moved.</p>
+      <p>Add these dates to your own calendar. Use the Subscribe button for Outlook or Google Calendar, or in Outlook go to <b>Add calendar &#x2192; Subscribe from web</b> and paste this link. Subscribed dates stay up to date as they are announced or moved.</p>
       <input type="text" class="kd-link" id="kd-link" readonly aria-label="Calendar subscription link">
       <details class="kd-menu">
-        <summary class="sub-btn">Subscribe in Outlook &#x25BE;</summary>
+        <summary class="sub-btn">Subscribe &#x25BE;</summary>
         <div class="kd-menu-list" role="menu">
           <a role="menuitem" id="kd-sub-work" href="#" target="_blank" rel="noopener"><b>Work or school account</b><span>Outlook with Microsoft 365, e.g. at a bank</span></a>
           <a role="menuitem" id="kd-sub-personal" href="#" target="_blank" rel="noopener"><b>Personal account</b><span>Outlook.com, Hotmail or Live</span></a>
           <a role="menuitem" id="kd-sub-desktop" href="#"><b>Classic Outlook desktop app</b><span>Opens Outlook and asks to subscribe</span></a>
+          <a role="menuitem" id="kd-sub-google" href="#" target="_blank" rel="noopener"><b>Google Calendar</b><span>Updates less often than Outlook (up to a day)</span></a>
         </div>
       </details>
       <button type="button" class="kd-btn" id="kd-sub-copy">Copy link</button>
@@ -464,6 +467,7 @@ th.col-comments,td.col-comments{min-width:450px}
           <span class="kd-t-effective"><i></i>Effective date</span>
           <span class="kd-t-uncond"><i></i>Unconditional / Day 60</span>
           <span class="kd-t-pusu"><i></i>PUSU deadline</span>
+          <span class="kd-t-other"><i></i>Other key dates</span>
         </div>
         <div class="kd-note">&#x201C;Exp.&#x201D; marks a date in a published timetable that is still subject to court sanction or conditions. Dates can change; check the latest announcement.</div>
       </div>
@@ -529,6 +533,8 @@ var UPDATES_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/
 var _cb = '?_t=' + new Date().getTime();
 var STATIC_DEALS_URL = 'data/deals.json' + _cb;
 var STATIC_UPDATES_URL = 'data/updates.json' + _cb;
+var KEYDATES_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=' + encodeURIComponent('Key dates');
+var STATIC_KEYDATES_URL = 'data/keydates.json' + _cb;
 
 // =====================================================================
 // CSV PARSER
@@ -1142,7 +1148,8 @@ var KD_TYPES = {
   sanction:  'Sanction hearing',
   effective: 'Effective',
   uncond:    'Day 60',
-  pusu:      'PUSU'
+  pusu:      'PUSU',
+  other:     'Key date'
 };
 var kdEvents = [];
 var kdView = null;
@@ -1158,7 +1165,8 @@ async function initKeyDates() {
   if (!kdHasColumns(src)) {
     try { src = (await loadFromSheets()).deals; } catch (e) { src = deals; }
   }
-  kdEvents = buildKeyDates(src);
+  kdEvents = buildKeyDates(src).concat(buildOneOffDates(await loadOneOffDates()));
+  kdEvents.sort(function(a, b) { return a.date - b.date || a.name.localeCompare(b.name); });
   var t = new Date();
   kdView = new Date(t.getFullYear(), t.getMonth(), 1);
   document.querySelectorAll('[data-kd-step]').forEach(function(b) {
@@ -1209,12 +1217,45 @@ function buildKeyDates(list) {
   return out.sort(function(a, b) { return a.date - b.date || a.name.localeCompare(b.name); });
 }
 
+// One-off dates from the sheet's 'Key dates' tab (Target company | Date | Event | Status)
+async function loadOneOffDates() {
+  try {
+    var r = await fetch(STATIC_KEYDATES_URL);
+    if (r.ok) { var j = await r.json(); if (Array.isArray(j)) return j; }
+  } catch (e) {}
+  try {
+    var r2 = await fetch(KEYDATES_URL);
+    if (!r2.ok) return [];
+    var rows = parseCSV(await r2.text());
+    if (!rows.length) return [];
+    var head = rows[0].map(function(h) { return h.trim().toLowerCase(); });
+    var iT = head.indexOf('target company'), iD = head.indexOf('date'), iE = head.indexOf('event'), iS = head.indexOf('status');
+    // If the tab doesn't exist Google returns the first tab instead - these headers won't be there
+    if (iD < 0 || iE < 0 || iT < 0) return [];
+    return rows.slice(1).map(function(r) {
+      return { t: (r[iT] || '').trim(), d: (r[iD] || '').trim(), e: (r[iE] || '').trim(), st: iS > -1 ? (r[iS] || '').trim() : '' };
+    });
+  } catch (e) { return []; }
+}
+
+function buildOneOffDates(list) {
+  var out = [];
+  (list || []).forEach(function(k) {
+    var dt = parseDate(k.d);
+    if (!dt || !k.t || !k.e) return;
+    dt.setHours(0, 0, 0, 0);
+    out.push({ type: 'other', date: dt, name: kdName(k.t), bidder: '', label: k.e, expected: /expect/i.test(k.st || '') });
+  });
+  return out;
+}
+
 function kdEvHtml(e, today) {
   var what = KD_TYPES[e.type];
-  var title = e.name + (e.bidder ? ' / ' + e.bidder : '') + ' \u2013 ' + what;
+  var title = e.name + (e.bidder ? ' / ' + e.bidder : '') + ' \u2013 ' + (e.type === 'other' ? e.label : what);
   return '<span class="kd-ev kd-t-' + e.type + (e.date < today ? ' kd-past' : '') + '" title="' + escHtml(title) + '">'
     + '<b>' + escHtml(what) + '</b>' + escHtml(e.name)
-    + (e.expected ? ' <span class="kd-exp">exp.</span>' : '') + '</span>';
+    + (e.expected ? ' <span class="kd-exp">exp.</span>' : '')
+    + (e.type === 'other' ? '<span class="kd-lbl">' + escHtml(e.label) + '</span>' : '') + '</span>';
 }
 
 function renderKeyDates() {
@@ -1270,7 +1311,8 @@ var CAL_FEED_URL = 'https://arbinsight.co.uk/calendar.ics';
   var links = {
     'kd-sub-work': 'https://outlook.office.com/calendar/0/addfromweb' + q,
     'kd-sub-personal': 'https://outlook.live.com/calendar/0/addfromweb' + q,
-    'kd-sub-desktop': CAL_FEED_URL.replace(/^https?:/, 'webcal:')
+    'kd-sub-desktop': CAL_FEED_URL.replace(/^https?:/, 'webcal:'),
+    'kd-sub-google': 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(CAL_FEED_URL.replace(/^https?:/, 'webcal:'))
   };
   Object.keys(links).forEach(function(id) {
     var a = document.getElementById(id);
