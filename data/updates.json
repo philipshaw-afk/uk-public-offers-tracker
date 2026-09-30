@@ -1,8 +1,15 @@
 [
   {
+    "n": "Harworth Group plc",
+    "s": "green",
+    "text": "Deletion: Offer declared unconditional with acceptances received for approximately 0.61% of Harworth's shares. Peel's shareholding is expected to be 67.11% following additional share acquisitions",
+    "date": "29 September 2026",
+    "time": "6:22 PM"
+  },
+  {
     "n": "Bodycote plc",
     "s": "green",
-    "text": "New HF entrant: Governers Lane declares 1.19% (all derivatives)",
+    "text": "New HF entrant: Governors Lane declares 1.19% (all derivatives)",
     "date": "29 September 2026",
     "time": "2:05 PM"
   },
@@ -26,47 +33,5 @@
     "text": "Scheme is sanctioned by the Court. Completion expected on 1 October 2026",
     "date": "29 September 2026",
     "time": "11:18 AM"
-  },
-  {
-    "n": "Vesuvius plc",
-    "s": "amber",
-    "text": "New addition: Indicative £1.4bn mixed cash and share offer by RHI Magnesita",
-    "date": "29 September 2026",
-    "time": "8:30 AM"
-  },
-  {
-    "n": "Tribal Group plc",
-    "s": "amber",
-    "text": "New offeror: Indicative cash offer of 111p per share for the remaining 73.81% of the shares by Jenzabar, Inc. PUSU deadline set for 27 October 2026",
-    "date": "29 September 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "Gamma Communications plc",
-    "s": "amber",
-    "text": "Waterland's PUSU deadline set at 13 October 2026",
-    "date": "29 September 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "Senior plc",
-    "s": "green",
-    "text": "All regulatory approvals received - effective date 8 October 2026",
-    "date": "29 September 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "SEGRO plc",
-    "s": "green",
-    "text": "Shareholders approve Prologis scheme (98% of votes). Expected to become effective H1 2027",
-    "date": "28 September 2026",
-    "time": "12:50 PM"
-  },
-  {
-    "n": "Ashtead Technology Holdings plc",
-    "s": "amber",
-    "text": "New HF entrant: PSquared Asset Management acquires 2.12% (all derivatives)",
-    "date": "28 September 2026",
-    "time": "2:19 PM"
   }
 ]
