@@ -1,51 +1,30 @@
 [
   {
+    "n": "Time Finance plc",
+    "s": "green",
+    "text": "Shareholders approve the scheme (90% of votes)",
+    "date": "1 October 2026",
+    "time": "12:51 PM"
+  },
+  {
+    "n": "Gamma Communications plc",
+    "s": "red",
+    "text": "Deletion: Waterland Private Equity Investment BV  confirms that it does not intend to make an offer for Gamma",
+    "date": "1 October 2026",
+    "time": "7:00 AM"
+  },
+  {
     "n": "Schroders plc",
     "s": "green",
-    "text": "Scheme expected to become effective today",
+    "text": "Deletion: Scheme becomes effective",
     "date": "1 October 2026",
-    "time": ""
+    "time": "7:00 AM"
   },
   {
     "n": "Beazley plc",
     "s": "green",
-    "text": "Scheme expected to become effective today",
+    "text": "Deletion: Scheme becomes effective",
     "date": "1 October 2026",
-    "time": ""
-  },
-  {
-    "n": "Harworth Group plc",
-    "s": "green",
-    "text": "Deletion: Offer declared unconditional with acceptances received for approximately 0.61% of Harworth's shares. Peel's shareholding is expected to be 67.11% following additional share acquisitions",
-    "date": "29 September 2026",
-    "time": "6:22 PM"
-  },
-  {
-    "n": "Bodycote plc",
-    "s": "green",
-    "text": "New HF entrant: Governors Lane declares 1.19% (all derivatives)",
-    "date": "29 September 2026",
-    "time": "2:05 PM"
-  },
-  {
-    "n": "Spire Healthcare Group plc",
-    "s": "green",
-    "text": "Scheme document published. Meetings scheduled for 30 October",
-    "date": "29 September 2026",
-    "time": "1:48 PM"
-  },
-  {
-    "n": "Tribal Group plc",
-    "s": "amber",
-    "text": "The Tribal Board advises shareholders to take no action in relation to the possible offer from Jenzabar",
-    "date": "29 September 2026",
-    "time": "12:08 PM"
-  },
-  {
-    "n": "Schroders plc",
-    "s": "green",
-    "text": "Scheme is sanctioned by the Court. Completion expected on 1 October 2026",
-    "date": "29 September 2026",
-    "time": "11:18 AM"
+    "time": "6:00 AM"
   }
 ]
