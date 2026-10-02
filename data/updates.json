@@ -1,5 +1,19 @@
 [
   {
+    "n": "Tribal Group plc",
+    "s": "amber",
+    "text": "Proposed adjournment of General Meeting seeking approval for the sale of the Tribal Group businesses to Main Capital Partners",
+    "date": "2 October 2026",
+    "time": "7:00 AM"
+  },
+  {
+    "n": "Union Jack plc",
+    "s": "green",
+    "text": "Completion expected on 2 October 2026",
+    "date": "2 October 2026",
+    "time": "7:00 AM"
+  },
+  {
     "n": "DCC Energy plc (on European tracker)",
     "s": "green",
     "text": "New HF entrant: Balyasny Asset Management declares 1.01% (all derivatives)",
@@ -12,26 +26,5 @@
     "text": "Shareholders approve the scheme (90% of votes)",
     "date": "1 October 2026",
     "time": "12:51 PM"
-  },
-  {
-    "n": "Gamma Communications plc",
-    "s": "red",
-    "text": "Deletion: Waterland Private Equity Investment BV  confirms that it does not intend to make an offer for Gamma",
-    "date": "1 October 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "Schroders plc",
-    "s": "green",
-    "text": "Deletion: Scheme becomes effective",
-    "date": "1 October 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "Beazley plc",
-    "s": "green",
-    "text": "Deletion: Scheme becomes effective",
-    "date": "1 October 2026",
-    "time": "6:00 AM"
   }
 ]
