@@ -1,5 +1,26 @@
 [
   {
+    "n": "Permanent TSB Group Holdings plc (on European Tracker)",
+    "s": "amber",
+    "text": "Indicative competing cash offer of €3.20 per share by Axis Capital Limited",
+    "date": "2 October 2026",
+    "time": "5:20 PM"
+  },
+  {
+    "n": "Union Jack Oil plc",
+    "s": "green",
+    "text": "Deletion: Reabold receives acceptances representing approximately 13.02% of Union Jack's shares. The acceptance condition (75%) is not satisfied and the offer has lapsed",
+    "date": "2 October 2026",
+    "time": "5:00 PM"
+  },
+  {
+    "n": "Tribal Group plc",
+    "s": "amber",
+    "text": "General Meeting seeking approval for the sale of the Tribal Group businesses to Main Capital Partners to be held on 26 October 2026",
+    "date": "2 October 2026",
+    "time": "4:53 PM"
+  },
+  {
     "n": "Gamma Communications plc",
     "s": "green",
     "text": "New HF entrant: Squant Capital declares 1.28% (all derivatives)",
@@ -19,33 +40,5 @@
     "text": "Scheme document published - vote scheduled for 27 October",
     "date": "2 October 2026",
     "time": "11:30 AM"
-  },
-  {
-    "n": "Tribal Group plc",
-    "s": "amber",
-    "text": "Proposed adjournment of General Meeting seeking approval for the sale of the Tribal Group businesses to Main Capital Partners",
-    "date": "2 October 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "Union Jack Oil plc",
-    "s": "green",
-    "text": "Completion expected on 2 October 2026",
-    "date": "2 October 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "DCC Energy plc (on European tracker)",
-    "s": "green",
-    "text": "New HF entrant: Balyasny Asset Management declares 1.01% (all derivatives)",
-    "date": "1 October 2026",
-    "time": "2:45 PM"
-  },
-  {
-    "n": "Time Finance plc",
-    "s": "green",
-    "text": "Shareholders approve the scheme (90% of votes)",
-    "date": "1 October 2026",
-    "time": "12:51 PM"
   }
 ]
