@@ -1,5 +1,19 @@
 [
   {
+    "n": "Kenmare Resources plc (on European Tracker)",
+    "s": "red",
+    "text": "Indicative cash offer from International Resources Holdings RSC Ltd. PUSU deadline is 17 November 2026",
+    "date": "6 October 2026",
+    "time": "7:00 AM"
+  },
+  {
+    "n": "80 Mile plc",
+    "s": "amber",
+    "text": "Extension of PUSU deadline to 3 November 2026",
+    "date": "6 October 2026",
+    "time": "7:00 AM"
+  },
+  {
     "n": "Tate & Lyle plc",
     "s": "green",
     "text": "New HF entrant: Balyasny declares 1.07% (all derivatives)",
@@ -12,47 +26,5 @@
     "text": "New HF entrant: Squarepoint Ops acquires 1.06% (all derivatives)",
     "date": "5 October 2026",
     "time": "1:00 PM"
-  },
-  {
-    "n": "Permanent TSB Group Holdings plc (on European Tracker)",
-    "s": "amber",
-    "text": "Indicative competing cash offer of €3.20 per share by Axis Capital Limited",
-    "date": "2 October 2026",
-    "time": "5:20 PM"
-  },
-  {
-    "n": "Union Jack Oil plc",
-    "s": "green",
-    "text": "Deletion: Reabold receives acceptances representing approximately 13.02% of Union Jack's shares. The acceptance condition (75%) is not satisfied and the offer has lapsed",
-    "date": "2 October 2026",
-    "time": "5:00 PM"
-  },
-  {
-    "n": "Tribal Group plc",
-    "s": "amber",
-    "text": "General Meeting seeking approval for the sale of the Tribal Group businesses to Main Capital Partners to be held on 26 October 2026",
-    "date": "2 October 2026",
-    "time": "4:53 PM"
-  },
-  {
-    "n": "Gamma Communications plc",
-    "s": "green",
-    "text": "New HF entrant: Syquant Capital declares 1.28% (all derivatives)",
-    "date": "2 October 2026",
-    "time": "3:35 PM"
-  },
-  {
-    "n": "Gamma Communications plc",
-    "s": "green",
-    "text": "New HF entrant: Capula Investment Management declares 1.02% (all derivatives)",
-    "date": "2 October 2026",
-    "time": "2:51 PM"
-  },
-  {
-    "n": "Eleco plc",
-    "s": "green",
-    "text": "Scheme document published - vote scheduled for 27 October",
-    "date": "2 October 2026",
-    "time": "11:30 AM"
   }
 ]
