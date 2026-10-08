@@ -746,5 +746,27 @@
     "effSt": "",
     "ind": "",
     "firm": ""
+  },
+  {
+    "t": "LOGISTICS DEVELOPMENT GROUP PLC",
+    "sec": "Transport",
+    "st": "Indicative offer",
+    "b": "DBAY ADVISROS LIMITED",
+    "start": "08-10-2026",
+    "offer": "20p",
+    "v": 83,
+    "prem": 5,
+    "pusu": "05-11-2026",
+    "pusuExt": "0",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "DBAY and Colin Kingsnorth two proposals (at 19p and 20p per share), which have been rejected",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   }
 ]
