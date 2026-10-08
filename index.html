@@ -549,6 +549,7 @@ var STATIC_UPDATES_URL = 'data/updates.json' + _cb;
 var KEYDATES_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=' + encodeURIComponent('Key dates');
 var STATIC_KEYDATES_URL = 'data/keydates.json' + _cb;
 var STATIC_EVENTS_URL = 'data/events.json' + _cb;
+var STATIC_CLOSED_URL = 'data/closed_deals.json' + _cb;
 
 // =====================================================================
 // CSV PARSER
@@ -1180,7 +1181,7 @@ async function initKeyDates() {
   if (!kdHasColumns(src)) {
     try { src = (await loadFromSheets()).deals; } catch (e) { src = deals; }
   }
-  kdEvents = buildKeyDates(src).concat(buildOneOffDates(await loadOneOffDates()), await loadDealEvents());
+  kdEvents = buildKeyDates(src.concat(await loadClosedDeals())).concat(buildOneOffDates(await loadOneOffDates()), await loadDealEvents());
   kdEvents.sort(function(a, b) { return a.date - b.date || a.name.localeCompare(b.name); });
   var t = new Date();
   kdView = new Date(t.getFullYear(), t.getMonth(), 1);
@@ -1232,6 +1233,16 @@ function buildKeyDates(list) {
     seen[k] = 1; return true;
   });
   return out.sort(function(a, b) { return a.date - b.date || a.name.localeCompare(b.name); });
+}
+
+// Deals deleted from the tracker - their past key dates are kept by the export script in data/closed_deals.json
+async function loadClosedDeals() {
+  try {
+    var r = await fetch(STATIC_CLOSED_URL);
+    if (!r.ok) return [];
+    var j = await r.json();
+    return Array.isArray(j) ? j : [];
+  } catch (e) { return []; }
 }
 
 // One-off dates from the sheet's 'Key dates' tab (Target company | Date | Event | Status)
