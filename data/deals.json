@@ -724,5 +724,27 @@
     "effSt": "",
     "ind": "",
     "firm": ""
+  },
+  {
+    "t": "FIRST TIN PLC",
+    "sec": "Mining or Metals",
+    "st": "Indicative offer",
+    "b": "METALS X LIMITED",
+    "start": "09-10-2026",
+    "offer": "15p",
+    "v": 81,
+    "prem": 30,
+    "pusu": "06-11-2026",
+    "pusuExt": "0",
+    "hf": 0.0,
+    "hfC": "no change",
+    "com": "Indicative cash offer of 15p per share. The First Tin board is considering the proposal.",
+    "meet": "",
+    "sanc": "",
+    "unc": "",
+    "eff": "",
+    "effSt": "",
+    "ind": "",
+    "firm": ""
   }
 ]
