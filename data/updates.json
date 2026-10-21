@@ -1,5 +1,33 @@
 [
   {
+    "n": "SThree plc",
+    "s": "red",
+    "text": "Extension of PUSU deadline to 18 November 2026",
+    "date": "21 October 2026",
+    "time": "3:51 PM"
+  },
+  {
+    "n": "Mobico Group plc",
+    "s": "amber",
+    "text": "New addition: Non-binding cash proposal of 46p per share by Autobuses de Leon, S.L. Mobico's independent directors are \"minded\" to recommend the proposal to Mobico's shareholders. PUSU deadline is 18 November 2026",
+    "date": "21 October 2026",
+    "time": "9:47 AM"
+  },
+  {
+    "n": "easyJet plc",
+    "s": "green",
+    "text": "New HF entrant: Verition declares 1.03% (net)",
+    "date": "21 October 2026",
+    "time": "3:00 PM"
+  },
+  {
+    "n": "Vesuvius plc",
+    "s": "green",
+    "text": "New HF entrant: Sand Grove declares 1.16%",
+    "date": "21 October 2026",
+    "time": "3:00 PM"
+  },
+  {
     "n": "Mitie Group plc",
     "s": "green",
     "text": "Receipt of merger control clearance from the European Commission. Completion remains subject to the remaining conditions, including the CMA Condition and the UK National Security Condition",
