@@ -1,23 +1,23 @@
 [
   {
+    "n": "Mitie Group plc",
+    "s": "green",
+    "text": "Receipt of merger control clearance from the European Commission. Completion remains subject to the remaining conditions, including the CMA Condition and the UK National Security Condition",
+    "date": "21 October 2026",
+    "time": "8:00 AM"
+  },
+  {
+    "n": "Ashtead Technology Holdings plc",
+    "s": "green",
+    "text": "Recommended cash offer (scheme) of 615p per share. Completion is expected by early in the first quarter of 2027",
+    "date": "21 October 2026",
+    "time": "7:00 AM"
+  },
+  {
     "n": "Vesuvius plc",
     "s": "green",
     "text": "New HF entrant: Pentwater declares 1.5%",
     "date": "20 October 2026",
     "time": "3:25 PM"
-  },
-  {
-    "n": "SThree plc",
-    "s": "red",
-    "text": "PUSU deadline expiring on 21 October 2026",
-    "date": "20 October 2026",
-    "time": "9:00 AM"
-  },
-  {
-    "n": "Advanced Medical Solutions Group plc",
-    "s": "green",
-    "text": "New HF entrant: Tudor Investment declares 1.01% long & 0.12% short",
-    "date": "19 October 2026",
-    "time": "12:50 PM"
   }
 ]
