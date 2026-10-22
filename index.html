@@ -455,7 +455,7 @@ th.col-comments,td.col-comments{min-width:450px}
         </div>
       </details>
       <button type="button" class="kd-btn" id="kd-sub-copy">Copy link</button>
-      <a class="kd-btn" id="kd-history" href="history.ics" download="UK Takeovers - Past Events.ics" title="A one-off file of past events to upload into Outlook (Add calendar &#x2192; Upload from file)" style="display:inline-flex;align-items:center;text-decoration:none">Past events (.ics)</a>
+      <a class="kd-btn" id="kd-history" href="history.ics" download="Past Events.ics" title="A one-off file of past events to upload into Outlook (Add calendar &#x2192; Upload from file)" style="display:inline-flex;align-items:center;text-decoration:none">Past events (.ics)</a>
       <span class="kd-copied" id="kd-copied" hidden>Link copied</span>
     </div>
     <div class="kd-card">
@@ -1344,7 +1344,7 @@ function renderKeyDates() {
 // Subscription link for the calendar.ics feed
 var CAL_FEED_URL = 'https://arbinsight.co.uk/calendar.ics';
 (function() {
-  var name = 'UK Takeovers - Key Dates (M&A Monitor)';
+  var name = 'Key Dates';
   var box = document.getElementById('kd-link');
   var copy = document.getElementById('kd-sub-copy');
   if (box) {
