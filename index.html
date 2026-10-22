@@ -265,6 +265,29 @@ th.col-comments,td.col-comments{min-width:450px}
 .kd-copied{font-size:11.5px;color:var(--g);font-weight:700}
 @media(max-width:768px){.kd-grid{display:none}.kd-list{display:block}.kd-card-hd,.kd-footer{align-items:flex-start;flex-direction:column}}
 
+/* ── Coming up strip (top of page) ── */
+.cu{display:flex;align-items:stretch;gap:14px;margin-bottom:20px;padding:10px 12px 10px 16px;background:var(--s);border:1px solid var(--b);border-radius:8px;box-shadow:var(--ss)}
+.cu-hd{flex:0 0 auto;display:flex;flex-direction:column;justify-content:center;padding-right:14px;border-right:1px solid var(--b)}
+.cu-title{font-family:'Instrument Serif',Georgia,serif;font-size:20px;font-style:italic;line-height:1.05;color:var(--t)}
+.cu-meta{font-size:10px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.045em;margin-top:4px;white-space:nowrap}
+.cu-list{flex:1;min-width:0;display:flex;gap:8px;overflow-x:auto;scrollbar-width:thin;align-items:stretch;padding:2px 0}
+.cu-list .loading{padding:10px 0;text-align:left}
+.cu-ev{flex:1 1 0;display:flex;flex-direction:column;justify-content:center;min-width:112px;max-width:220px;padding:6px 11px 7px 9px;border-left:3px solid var(--c);border-radius:0 6px 6px 0;background:var(--cb);text-decoration:none;color:var(--t);transition:box-shadow .15s}
+.cu-ev:hover{box-shadow:0 2px 10px rgba(19,27,44,.1)}
+.cu-ev:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+.cu-when{font-size:9.5px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--t3);white-space:nowrap}
+.cu-when.cu-today{color:var(--a)}
+.cu-what{font-size:9.5px;font-weight:800;letter-spacing:.035em;text-transform:uppercase;color:var(--c);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cu-name{font-size:12.5px;font-weight:700;line-height:1.25;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cu-more{flex:0 0 auto;display:flex;align-items:center;padding:0 12px;border-radius:6px;background:var(--h);color:var(--a);font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap}
+.cu-more:hover{background:var(--al)}
+.cu-links{flex:0 0 auto;display:flex;flex-direction:column;justify-content:center;gap:5px;padding-left:14px;border-left:1px solid var(--b)}
+.cu-links a{font-size:12px;font-weight:600;color:var(--a);text-decoration:none;white-space:nowrap}
+.cu-links a:hover{text-decoration:underline}
+.cu-empty{display:flex;align-items:center;font-size:12.5px;color:var(--t3)}
+#pusu-section,#kd-section{scroll-margin-top:72px}
+@media(max-width:768px){.cu{flex-wrap:wrap;padding:10px 12px;gap:10px}.cu-hd{flex-direction:row;align-items:baseline;gap:8px;border-right:0;padding-right:0}.cu-links{flex-direction:row;align-items:center;gap:12px;border-left:0;padding-left:0;margin-left:auto}.cu-list{order:3;flex-basis:100%}.cu-ev{flex:0 0 auto;max-width:200px}}
+
 .eu-btn-wrap{display:flex;justify-content:flex-end;margin-bottom:18px}
 .eu-btn{
   display:inline-flex;align-items:center;justify-content:center;
@@ -355,6 +378,12 @@ th.col-comments,td.col-comments{min-width:450px}
     <div class="updates-list" id="updates-list">
       <div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div>
     </div>
+  </div>
+
+  <div class="cu ai d1" id="cu" role="region" aria-label="Key dates coming up">
+    <div class="cu-hd"><div class="cu-title">Coming up</div><div class="cu-meta" id="cu-meta">Next 5 working days</div></div>
+    <div class="cu-list" id="cu-list"><div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div></div>
+    <div class="cu-links"><a href="#pusu-section">PUSU timeline &#x2193;</a><a href="#kd-section">Key dates calendar &#x2193;</a></div>
   </div>
 
   <div class="kpi-row ai d2" id="kpis"></div>
@@ -709,7 +738,11 @@ async function loadData() {
     go();
     renderPusu();
     window.addEventListener('resize', debounce(renderPusu, 200));
-    initKeyDates();
+    initKeyDates().catch(function(e) {
+      console.error('Key dates failed:', e);
+      var cu = document.getElementById('cu-list');
+      if (cu) cu.innerHTML = '<span class="cu-empty">Unable to load key dates.</span>';
+    });
 
   } catch (err) {
     console.error('Error loading data:', err);
@@ -719,6 +752,8 @@ async function loadData() {
     if (ps) ps.innerHTML = '<div class="pusu-empty">Unable to load PUSU data.</div>';
     var kb = document.getElementById('kd-body');
     if (kb) kb.innerHTML = '<div class="kd-empty">Unable to load key dates.</div>';
+    var cu = document.getElementById('cu-list');
+    if (cu) cu.innerHTML = '<span class="cu-empty">Unable to load key dates.</span>';
   }
 }
 
@@ -1194,6 +1229,7 @@ async function initKeyDates() {
     });
   });
   renderKeyDates();
+  renderComingUp();
 }
 
 function kdName(t) {
@@ -1339,6 +1375,57 @@ function renderKeyDates() {
       }).join('')
     : '<li class="kd-empty">No key dates this month.</li>') + '</ul>';
   body.innerHTML = html;
+}
+
+// =====================================================================
+// COMING UP STRIP - key dates in the next five working days, at the top of the page
+// =====================================================================
+var CU_WORKING_DAYS = 5, CU_MAX = 6;
+var CU_LABELS = { meeting: 'Shareholder meeting', sanction: 'Sanction hearing', effective: 'Effective date', uncond: 'Day 60', pusu: 'PUSU deadline' };
+
+function cuWindowEnd(today) {
+  var d = new Date(today), n = 0;
+  while (n < CU_WORKING_DAYS) { d.setDate(d.getDate() + 1); if (d.getDay() !== 0 && d.getDay() !== 6) n++; }
+  return d;
+}
+
+function cuWhen(dt, today) {
+  var diff = Math.round((dt - today) / 864e5);
+  if (diff === 0) return 'Today';
+  if (diff === 1) return 'Tomorrow';
+  return ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][dt.getDay()] + ' ' + dt.getDate() + ' ' + KD_MONTHS[dt.getMonth()].slice(0, 3);
+}
+
+function renderComingUp() {
+  var box = document.getElementById('cu-list');
+  if (!box) return;
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  var end = cuWindowEnd(today);
+  var upcoming = kdEvents.filter(function(e) { return e.type !== 'news' && e.date >= today; });
+  var list = upcoming.filter(function(e) { return e.date <= end; });
+  var fallback = false;
+  if (!list.length && upcoming.length) {
+    // Nothing in the window - show whatever falls on the next date that has something on it
+    var first = upcoming[0].date.getTime();
+    list = upcoming.filter(function(e) { return e.date.getTime() === first; });
+    fallback = true;
+  }
+  var meta = document.getElementById('cu-meta');
+  if (meta) meta.textContent = fallback ? 'Next key date' : 'Next 5 working days';
+  if (!list.length) { box.innerHTML = '<span class="cu-empty">No key dates scheduled.</span>'; return; }
+  var shown = list.slice(0, CU_MAX);
+  var html = shown.map(function(e) {
+    var what = e.type === 'other' ? (e.label || 'Key date') : (CU_LABELS[e.type] || KD_TYPES[e.type]);
+    var when = cuWhen(e.date, today);
+    var title = e.name + (e.bidder ? ' / ' + e.bidder : '') + ' – ' + what + (e.expected ? ' (expected)' : '')
+      + ', ' + e.date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+    return '<a class="cu-ev kd-t-' + e.type + '" href="' + (e.type === 'pusu' ? '#pusu-section' : '#kd-section') + '" title="' + escHtml(title) + '">'
+      + '<span class="cu-when' + (when === 'Today' ? ' cu-today' : '') + '">' + escHtml(when) + '</span>'
+      + '<span class="cu-what">' + escHtml(what) + (e.expected ? ' (exp.)' : '') + '</span>'
+      + '<span class="cu-name">' + escHtml(e.name) + '</span></a>';
+  }).join('');
+  if (list.length > shown.length) html += '<a class="cu-more" href="#kd-section">+' + (list.length - shown.length) + ' more</a>';
+  box.innerHTML = html;
 }
 
 // Subscription link for the calendar.ics feed
