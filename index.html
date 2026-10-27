@@ -1037,7 +1037,7 @@ function renderUpdates(updates) {
     var t = formatTime(u.time);
     var stamp = [u.date || '', t].filter(Boolean).join(' \u00B7 ');
     var dateHtml = stamp ? '<span class="uc-date">' + escHtml(stamp) + '</span>' : '';
-    return '<div class="update-card"><div class="uc-status uc-status-' + u.s + '"></div><div class="uc-body">' + dateHtml + '<span class="uc-name">' + u.n + '</span><span class="uc-text">' + u.text + '</span></div></div>';
+    return '<div class="update-card"><div class="uc-status uc-status-' + String(u.s || '').replace(/[^a-z]/gi, '') + '"></div><div class="uc-body">' + dateHtml + '<span class="uc-name">' + escHtml(u.n) + '</span><span class="uc-text">' + escHtml(u.text) + '</span></div></div>';
   }).join('');
 }
 
@@ -1133,17 +1133,17 @@ function render(data) {
   for (var i = 0; i < data.length; i++) {
     var d = data[i];
     html += '<tr style="animation:fu .2s ease-out ' + (.01 * i) + 's both">'
-      + '<td class="col-target"><div class="target-cell"><span class="sd ' + statusColor(d.st) + '"></span><span class="tn">' + d.t + '</span></div></td>'
-      + '<td style="font-size:11.5px;color:var(--t2)">' + d.sec + '</td>'
-      + '<td class="col-status"><span class="status-badge ' + statusClass(d.st) + '">' + d.st + '</span></td>'
-      + '<td class="col-bidder"><span class="bn" title="' + d.b + '">' + d.b + '</span></td>'
-      + '<td class="dt">' + d.start + '</td>'
+      + '<td class="col-target"><div class="target-cell"><span class="sd ' + statusColor(d.st) + '"></span><span class="tn">' + escHtml(d.t) + '</span></div></td>'
+      + '<td style="font-size:11.5px;color:var(--t2)">' + escHtml(d.sec) + '</td>'
+      + '<td class="col-status"><span class="status-badge ' + statusClass(d.st) + '">' + escHtml(d.st) + '</span></td>'
+      + '<td class="col-bidder"><span class="bn" title="' + escHtml(d.b) + '">' + escHtml(d.b) + '</span></td>'
+      + '<td class="dt">' + escHtml(d.start) + '</td>'
       + '<td>' + hfHtml(d.hf, d.hfC) + '</td>'
-      + '<td class="offer-price">' + d.offer + '</td>'
+      + '<td class="offer-price">' + escHtml(d.offer) + '</td>'
       + '<td class="vc">' + fmtVal(d.v) + '</td>'
       + '<td>' + premHtml(d.prem) + '</td>'
       + '<td class="dt">' + pusuCellHtml(d) + '</td>'
-      + '<td class="comment-cell col-comments">' + d.com + '</td>'
+      + '<td class="comment-cell col-comments">' + escHtml(d.com) + '</td>'
       + '</tr>';
   }
   tb.innerHTML = html;
