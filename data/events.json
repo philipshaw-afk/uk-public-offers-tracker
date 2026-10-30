@@ -1,6 +1,14 @@
 [
   {
     "t": "Mobico Group plc",
+    "d": "29-10-2026",
+    "time": "7:00 AM",
+    "k": "Formal offer",
+    "o": "CMC Group / Asterion",
+    "c": "green"
+  },
+  {
+    "t": "Mobico Group plc",
     "d": "21-10-2026",
     "time": "9:47 AM",
     "k": "New offer period",
