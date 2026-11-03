@@ -1,5 +1,19 @@
 [
   {
+    "n": "80 Mile plc",
+    "s": "amber",
+    "text": "PUSU deadline expiring on 3 November 2026",
+    "date": "3 November 2026",
+    "time": "7:00 AM"
+  },
+  {
+    "n": "Mobico Group plc",
+    "s": "green",
+    "text": "New HF entrant: Sand Grove acquires 4.27%",
+    "date": "2 November 2026",
+    "time": "3:00 PM"
+  },
+  {
     "n": "Gresham House Energy Storage Fund plc",
     "s": "red",
     "text": "New addition: Launch of a Formal Sale Process. The Board is not in any active discussions with any potential offeror",
@@ -9,29 +23,15 @@
   {
     "n": "Dianomi plc",
     "s": "green",
-    "text": "The Scheme Court hearing is expected to take place on 12 November 2026 with an effective date of 16 November 2026",
+    "text": "The Court hearing is expected to take place on 12 November 2026 with an effective date of 16 November 2026",
     "date": "2 November 2026",
     "time": "2:20 PM"
   },
   {
     "n": "Gamma Communications plc",
     "s": "green",
-    "text": "The scheme is approved by the Court and General meetings. The scheme remains subject to the Court sanction and is expected to become effective during the first quarter of 2027",
+    "text": "The scheme is approved by the Court and General meetings, and remains subject to the Court sanction. The scheme is expected to become effective during the first quarter of 2027",
     "date": "2 November 2026",
     "time": "10:44 AM"
-  },
-  {
-    "n": "Spire Healthcare Group plc",
-    "s": "green",
-    "text": "The scheme is approved by the Court and General meetings, and remains subject to approval by the FCA and Court sanction",
-    "date": "30 October 2026",
-    "time": "3:55 PM"
-  },
-  {
-    "n": "Ashtead Technology Holdings Plc",
-    "s": "green",
-    "text": "2 new HF entrants: Ampfield (2.54%) & Trium (1.05%)",
-    "date": "30 October 2026",
-    "time": "2:50 PM"
   }
 ]
