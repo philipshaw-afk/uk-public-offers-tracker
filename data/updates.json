@@ -1,37 +1,30 @@
 [
   {
+    "n": "80 Mile plc",
+    "s": "amber",
+    "text": "PUSU deadline expiring today",
+    "date": "10 November 2026",
+    "time": "7:00 AM"
+  },
+  {
+    "n": "DCC Energy plc",
+    "s": "green",
+    "text": "Interim results published: \"good performance...despite a difficult demand environment\"",
+    "date": "10 November 2026",
+    "time": "7:00 AM"
+  },
+  {
     "n": "Irish Residential Properties REIT plc",
     "s": "green",
-    "text": "Recommended cash offer (scheme) of €1.386/sh by Baring International Investment (the same terms as previous indicative proposal)",
+    "text": "2 new HF entrants: Qube (1.01%) & LMR Partners (1.70%)",
+    "date": "9 November 2026",
+    "time": "12:30 AM"
+  },
+  {
+    "n": "Irish Residential Properties REIT plc",
+    "s": "green",
+    "text": "Recommended cash offer (scheme) of €1.386/sh by Baring International Investment (unchanged from the prior indicative proposal)",
     "date": "9 November 2026",
     "time": "11:20 AM"
-  },
-  {
-    "n": "Capricorn Energy plc",
-    "s": "green",
-    "text": "Deletion: DNO's offer has lapsed",
-    "date": "9 November 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "Irish Residential Properties REIT plc",
-    "s": "amber",
-    "text": "PUSU deadline extended to 10 November 2026",
-    "date": "9 November 2026",
-    "time": "7:00 AM"
-  },
-  {
-    "n": "Permanent TSB Group Holdings plc",
-    "s": "green",
-    "text": "Receipt of regulatory approval from the European Central Bank by BAWAG. The offer remains subject to sanction by the High Court",
-    "date": "6 November 2026",
-    "time": "3:42 PM"
-  },
-  {
-    "n": "First Tin plc",
-    "s": "amber",
-    "text": "Extension of PUSU deadline to 20 November 2026. Metals X also announces a revised proposal of 16.5p per share, which the Board would be \"minded\" to recommend",
-    "date": "6 November 2026",
-    "time": "10:31 AM"
   }
 ]
