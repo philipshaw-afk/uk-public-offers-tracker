@@ -1,16 +1,23 @@
 [
   {
-    "n": "SThree plc",
-    "s": "red",
-    "text": "Deletion: Circle8 Group Inc. confirms that it does not intend to make an offer for SThree",
-    "date": "18 November 2026",
-    "time": "5:11 PM"
+    "n": "First Tin plc",
+    "s": "green",
+    "text": "Recommended cash offer of 16.5p per share (same terms as the previous revised indicative proposal)",
+    "date": "20 November 2026",
+    "time": "7:00 AM"
   },
   {
-    "n": "Advanced Medical Solutions Group plc",
+    "n": "Mitie Group plc",
     "s": "green",
-    "text": "New HF entrant: Burren Capital (1.03%)",
-    "date": "18 November 2026",
-    "time": "8:25 AM"
+    "text": "Two new HF entrants (Hudson Bay and Alpine Associates)",
+    "date": "19 November 2026",
+    "time": "3:30 PM"
+  },
+  {
+    "n": "Capricorn Energy plc",
+    "s": "green",
+    "text": "Receipt of all regulatory approvals. Sanction hearing is scheduled for 10 December 2026 with an expected effective date of 14 December 2026",
+    "date": "19 November 2026",
+    "time": "3:03 PM"
   }
 ]
