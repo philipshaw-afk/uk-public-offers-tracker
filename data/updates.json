@@ -1,9 +1,23 @@
 [
   {
-    "n": "Intertek Group plc",
+    "n": "Gamma Communications plc",
     "s": "green",
-    "text": "Most of regulatory approvals satisfied, with certain approvals still outstanding. Completion is expected in Q1 2027",
-    "date": "25 November 2026",
-    "time": "2:44 PM"
+    "text": "Satisfaction of all regulatory clearances. The Scheme remains subject to Court sanction and is expected to become effective on 18 January 2027",
+    "date": "27 November 2026",
+    "time": "7:00 AM"
+  },
+  {
+    "n": "Permanent TSB Group Holdings plc",
+    "s": "green",
+    "text": "The High Court of Ireland declines to sanction the scheme",
+    "date": "26 November 2026",
+    "time": "3:16 PM"
+  },
+  {
+    "n": "Imperial Brands plc",
+    "s": "red",
+    "text": "Altria is considering a possible offer for Imperial Brands. PUSU deadline is 24 December 2026",
+    "date": "26 November 2026",
+    "time": "12:56 PM"
   }
 ]
